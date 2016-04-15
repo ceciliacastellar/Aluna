@@ -9,6 +9,7 @@ Website: http://geekslabs.com/
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(line-icons.css);
 
+
 body {
     color: #797979;
     background: #eeeeee;
@@ -33,8 +34,12 @@ a, a:hover, a:focus {
     outline: 0;
 }
 input:focus, textarea:focus { outline: none; }
-table tr th { color: #688a7e;}
-*:focus {outline: none;}
+table tr th {
+    color: #688a7e;
+}
+*:focus {
+    outline: none;
+}
 ::selection {
     background: #688a7e;
     color: #fff;
@@ -43,6 +48,29 @@ table tr th { color: #688a7e;}
     background: #688a7e;
     color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #container {
     width: 100%;
@@ -64,7 +92,8 @@ table tr th { color: #688a7e;}
     padding-top: 10px;
 }
 .lite{
-    color: #00a0df !important;
+    color: #7BC3C0 !important;
+    font: bold 150% monospace
 }
 
 /*login page*/
@@ -258,10 +287,10 @@ table tr th { color: #688a7e;}
 /*sidebar navigation*/
 
 #sidebar {
-    width: 180px;
+    width: 160px;
     height: 100%;
     position: fixed;
-    background: #394a59;
+    background: #BE0F29;
 }
 
 .nav-collapse.collapse {
@@ -529,10 +558,10 @@ ul.sidebar-menu li.active a i {
 
 a.logo {
     font-size: 22px;
-    font-weight: 300;
-    color: #fed189;
+    font-size: large;
+    color: #DE9726;
     float: left;
-    margin-top: 15px;
+    margin-top: 5px;
     text-transform: uppercase;
 }
 
@@ -981,8 +1010,8 @@ div[data-role="editor-toolbar"] {
 }
 .blue-bg {
   color : #fff;
-  background : #589C94;
-  background-color : #589C94;
+  background : #1C93D8;
+  background-color : #1C93D8;
 }
 .green-bg {
   color : #fff;
