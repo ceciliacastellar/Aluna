@@ -441,10 +441,7 @@
 
 
                                                   <div class="form-group">
-                                                      <div class="col-lg-offset-2 col-lg-10">
-                                                          <button class="btn btn-primary" type="submit">Save</button>
-                                                          <button class="btn btn-default" type="button">Cancel</button>
-                                                      </div>
+
                                                   </div>
                                               </form>
                                           </div>
@@ -496,10 +493,7 @@
 
 
                                         <div class="form-group">
-                                            <div class="col-lg-offset-2 col-lg-10">
-                                                <button class="btn btn-primary" type="submit">Save</button>
-                                                <button class="btn btn-default" type="button">Cancel</button>
-                                            </div>
+
                                         </div>
                                     </form>
                                 </div>
@@ -611,10 +605,7 @@
 
 
                                         <div class="form-group">
-                                            <div class="col-lg-offset-2 col-lg-10">
-                                                <button class="btn btn-primary" type="submit">Save</button>
-                                                <button class="btn btn-default" type="button">Cancel</button>
-                                            </div>
+
                                         </div>
                                     </form>
                                 </div>
@@ -723,10 +714,7 @@
 
 
                                         <div class="form-group">
-                                            <div class="col-lg-offset-2 col-lg-10">
-                                                <button class="btn btn-primary" type="submit">Save</button>
-                                                <button class="btn btn-default" type="button">Cancel</button>
-                                            </div>
+
                                         </div>
                                     </form>
                                 </div>
@@ -846,10 +834,7 @@
 
 
                                         <div class="form-group">
-                                            <div class="col-lg-offset-2 col-lg-10">
-                                                <button class="btn btn-primary" type="submit">Save</button>
-                                                <button class="btn btn-default" type="button">Cancel</button>
-                                            </div>
+
                                         </div>
                                     </form>
                                 </div>
@@ -939,10 +924,7 @@
 
 
                                         <div class="form-group">
-                                            <div class="col-lg-offset-2 col-lg-10">
-                                                <button class="btn btn-primary" type="submit">Save</button>
-                                                <button class="btn btn-default" type="button">Cancel</button>
-                                            </div>
+
                                         </div>
                                     </form>
                                 </div>
@@ -1269,10 +1251,7 @@
     <!-- -------------------------------------------------------  PROGRAMA ---------------------------------------------------- -->
 
                                         <div class="form-group">
-                                            <div class="col-lg-offset-2 col-lg-10">
-                                                <button class="btn btn-primary" type="submit">Save</button>
-                                                <button class="btn btn-default" type="button">Cancel</button>
-                                            </div>
+                                            
                                         </div>
                                     </form>
                                       </div>
@@ -1294,10 +1273,18 @@
 
     <!-- --------------------------------------- FUNDACION ----------------------------------------------------->
                                 </div>
+                                <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <button class="btn btn-primary" type="submit">Save</button>
+                                        <button class="btn btn-default" type="button">Cancel</button>
+                                    </div>
+                                </div>
                             </div>
                       </section>
                    </div>
+
     </div>
+    <!-- ---------------------------------------Fin Cuadro principal -------------------------------------------->
 
       </section>
   </section>

@@ -14,7 +14,11 @@ return [
     */
 
     'failed' => 'Datos de ingreso incorrectos.',
+    'userName' => 'Usuario',
+    'password' => 'Contraseña',
     'login' => 'Ingreso',
+    'rememberMe' => 'Recuerdame',
+    'forgotPassword' => 'Olvido la contraseña?',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];
