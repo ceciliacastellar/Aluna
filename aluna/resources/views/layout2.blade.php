@@ -46,7 +46,7 @@
             <!--logo start-->
             <a href="index.html" class="logo">FUNDACION <span class="lite">ALUNA</span>
                 <span class="profile-ava">
-                    <img alt="" src="img/al.png">
+
 
                 </span>
             </a>

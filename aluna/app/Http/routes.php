@@ -69,9 +69,15 @@ Route::get('formulario/{archivo}',[
   'middleware' => 'auth',
   'uses'=> 'StorageController@download']);
 
-  Route::get('inscripcion', function (){
+  /*Route::get('inscripcion', function (){
       return view('inscripcion');
-    });
+    });*/
     /*Route::get('/', function () {
         return view('welcome');
     });*/
+
+    Route::get('inscripcion',[
+      'uses' => 'InscripcionController@index',
+      'as' => 'inscripcion'
+    ]);
+    Route::post('inscripcion','InscripcionController@create');

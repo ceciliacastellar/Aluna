@@ -47,7 +47,6 @@
             <!--logo start-->
             <a href="index.html" class="logo">FUNDACION <span class="lite">ALUNA</span>
                 <span class="profile-ava">
-                    <img alt="" src="img/al.png">
 
                 </span>
             </a>
@@ -107,7 +106,7 @@
                   <li>
                       <a class="" href="inscripcion">
                           <i class="icon_documents_alt"></i>
-                          <span>Inscriopcion</span>
+                          <span>Inscripción</span>
 
                       </a>
 

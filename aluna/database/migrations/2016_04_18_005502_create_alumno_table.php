@@ -19,7 +19,8 @@ class CreateAlumnoTable extends Migration
           $table->string('tipo_documento');
           $table->string('numero_documento');
           $table->string('fecha_nacimiento');
-          $table->string('lugar_nacimiento');
+          $table->string('departamento');
+          $table->string('municipio');
           $table->string('edad');
           $table->string('direccion_residencia');
           $table->string('nombre_persona');

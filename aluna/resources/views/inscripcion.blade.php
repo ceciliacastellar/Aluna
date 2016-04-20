@@ -25,6 +25,7 @@
     <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
     <div class="row">
                    <div class="col-lg-12">
+                       <form method="POST" action="{{ route('file') }}" accept-charset="UTF-8" enctype="multipart/form-data">
                       <section class="panel">
                             <header class="panel-heading tab-bg-info">
                                 <ul class="nav nav-tabs">
@@ -79,13 +80,13 @@
                                               <div class="form">
                                                   <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
                 <!-- ------------------------------------- SUBIR IMAGEN -------------------------------------------------- -->
-                           <div class="form-group">
+                           <!--<div class="form-group">
                                       <input id="file-1" type="file" class="file" multiple=true data-preview-file-type="any">
                          </div>
                         <div class="form-group">
                                   <button class="btn btn-primary" type="submit">Subir</button>
                                   <button class="btn btn-default" type="button">Reset</button>
-                         </div>
+                         </div>-->
 
             <!-- ------------------------------------- SUBIR IMAGEN -------------------------------------------------- -->
 
@@ -95,17 +96,17 @@
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                                       <div class="form-group ">
-                                                           <label for="cname" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
+                                                           <label for="nombres" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                                            <div class="col-lg-10">
-                                                               <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                               <input class="form-control" name="nombres" minlength="5" type="text" required />
                                                            </div>
                                                        </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
                                                           <div class="form-group ">
-                                                              <label for="cname" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
+                                                              <label for="apellidos" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                                               <div class="col-lg-10">
-                                                                  <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                                  <input class="form-control" name="apellidos" minlength="5" type="text" required />
                                                               </div>
                                                           </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
@@ -113,19 +114,19 @@
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
 
                                                           <div class="form-group">
-                                                            <label for="cname" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
+                                                            <label for="tipo_documento" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                                               <div class="col-xs-3">
-                                                                  <select class="form-control">
-                                                                      <option>Tipo de documento</option>
-                                                                      <option>R.C.</option>
-                                                                      <option>T.I.</option>
-                                                                      <option>C.C.</option>
+                                                                  <select class="form-control" name="tipo_documento">
+                                                                      <option value= "" selected="selected">Tipo de documento</option>
+                                                                      <option value= "R.C" >R.C.</option>
+                                                                      <option value= "T.I" >T.I.</option>
+                                                                      <option value= "C.C" >C.C.</option>
                                                                   </select>
                                                               </div>
 
-                                                              <label for="cname" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
+                                                              <label for="numero_documento" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                                               <div class="col-lg-3">
-                                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                                <input class="form-control"  name="numero_documento" minlength="5" type="text" required />
                                                               </div>
 
                                                           </div>
@@ -137,247 +138,31 @@
 
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
               <!-- ------------------------------------------ -------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ -->
-                                                   <div class="form-group">
-                                                       <label for="cname" class="control-label col-xs-3">FECHA DE NACIMIENTO:<span class="required">*</span> </label>
-                                                         <div class="col-xs-3">
-                                                             <select class="form-control">
-                                                                 <option>Dia</option>
-                                                                 <option>1</option>
-                                                                 <option>2</option>
-                                                                 <option>3</option>
-                                                                 <option>4</option>
-                                                                 <option>5</option>
-                                                                 <option>6</option>
-                                                                 <option>7</option>
-                                                                 <option>8</option>
-                                                                 <option>9</option>
-                                                                 <option>10</option>
-                                                                 <option>11</option>
-                                                                 <option>12</option>
-                                                                 <option>13</option>
-                                                                 <option>14</option>
-                                                                 <option>15</option>
-                                                                 <option>16</option>
-                                                                 <option>17</option>
-                                                                 <option>18</option>
-                                                                 <option>19</option>
-                                                                 <option>20</option>
-                                                                 <option>21</option>
-                                                                 <option>22</option>
-                                                                 <option>23</option>
-                                                                 <option>24</option>
-                                                                 <option>25</option>
-                                                                 <option>26</option>
-                                                                 <option>27</option>
-                                                                 <option>28</option>
-                                                                 <option>29</option>
-                                                                 <option>30</option>
-                                                                 <option>31</option>
-
-                                                             </select>
-                                                         </div>
-
-                                                         <div class="col-xs-3">
-                                                             <select class="form-control">
-                                                                 <option>Mes</option>
-                                                                 <option>Enero</option>
-                                                                 <option>Febrero</option>
-                                                                 <option>Marzo</option>
-                                                                 <option>Abril</option>
-                                                                 <option>Mayo</option>
-                                                                 <option>Junio</option>
-                                                                 <option>Julio</option>
-                                                                 <option>Agosto</option>
-                                                                 <option>Septiembre</option>
-                                                                 <option>Octubre</option>
-                                                                 <option>Noviembre</option>
-                                                                 <option>Diciembre</option>
-
-                                                             </select>
-                                                         </div>
-                                                         <div class="col-xs-3">
-                                                             <select class="form-control">
-                                                                 <option>Año</option>
-                                                                 <option>1950</option>
-                                                                 <option>1951</option>
-                                                                 <option>1952</option>
-                                                                 <option>1953</option>
-                                                                 <option>1954</option>
-                                                                 <option>1955</option>
-                                                                 <option>1956</option>
-                                                                 <option>1957</option>
-                                                                 <option>1958</option>
-                                                                 <option>1959</option>
-                                                                 <option>1960</option>
-                                                                 <option>1961</option>
-                                                                 <option>1962</option>
-                                                                 <option>1963</option>
-                                                                 <option>1964</option>
-                                                                 <option>1965</option>
-                                                                 <option>1966</option>
-                                                                 <option>1967</option>
-                                                                 <option>1968</option>
-                                                                 <option>1969</option>
-                                                                 <option>1970</option>
-                                                                 <option>1971</option>
-                                                                 <option>1972</option>
-                                                                 <option>1973</option>
-                                                                 <option>1974</option>
-                                                                 <option>1975</option>
-                                                                 <option>1976</option>
-                                                                 <option>1977</option>
-                                                                 <option>1978</option>
-                                                                 <option>1979</option>
-                                                                 <option>1980</option>
-                                                                 <option>1981</option>
-                                                                 <option>1982</option>
-                                                                 <option>1983</option>
-                                                                 <option>1984</option>
-                                                                 <option>1985</option>
-                                                                 <option>1986</option>
-                                                                 <option>1987</option>
-                                                                 <option>1988</option>
-                                                                 <option>1989</option>
-                                                                 <option>1990</option>
-                                                                 <option>1991</option>
-                                                                 <option>1992</option>
-                                                                 <option>1993</option>
-                                                                 <option>1994</option>
-                                                                 <option>1995</option>
-                                                                 <option>1996</option>
-                                                                 <option>1997</option>
-                                                                 <option>1998</option>
-                                                                 <option>1999</option>
-                                                                 <option>2000</option>
-                                                                 <option>2001</option>
-                                                                 <option>2002</option>
-                                                                 <option>2003</option>
-                                                                 <option>2004</option>
-                                                                 <option>2005</option>
-                                                                 <option>2005</option>
-                                                                 <option>2006</option>
-                                                                 <option>2007</option>
-                                                                 <option>2008</option>
-                                                                 <option>2009</option>
-                                                                 <option>2010</option>
-                                                                 <option>2011</option>
-                                                                 <option>2012</option>
-                                                                 <option>2013</option>
-                                                                 <option>2014</option>
-                                                                 <option>2015</option>
-                                                                 <option>2016</option>
-                                                                 <option>2017</option>
-                                                                 <option>2018</option>
-                                                                 <option>2019</option>
-                                                                 <option>2020</option>
-                                                                 <option>2021</option>
-                                                                 <option>2022</option>
-                                                                 <option>2023</option>
-                                                                 <option>2024</option>
-                                                                 <option>2025</option>
-                                                                 <option>2026</option>
-                                                                 <option>2027</option>
-                                                                 <option>2028</option>
-                                                                 <option>2029</option>
-                                                                 <option>2030</option>
-                                                                 <option>2031</option>
-                                                                 <option>2032</option>
-                                                                 <option>2033</option>
-                                                                 <option>2034</option>
-                                                                 <option>2035</option>
-                                                                 <option>2036</option>
-                                                                 <option>2037</option>
-                                                                 <option>2038</option>
-                                                                 <option>2039</option>
-                                                                 <option>2040</option>
-                                                                 <option>2041</option>
-                                                                 <option>2042</option>
-                                                                 <option>2043</option>
-                                                                 <option>2044</option>
-                                                                 <option>2045</option>
-                                                                 <option>2046</option>
-                                                                 <option>2047</option>
-                                                                 <option>2048</option>
-                                                                 <option>2049</option>
-                                                                 <option>2050</option>
-                                                                 <option>2051</option>
-                                                                 <option>2052</option>
-                                                                 <option>2053</option>
-                                                                 <option>2054</option>
-                                                                 <option>2055</option>
-                                                                 <option>2056</option>
-                                                                 <option>2057</option>
-                                                                 <option>2058</option>
-                                                                 <option>2059</option>
-                                                                 <option>2060</option>
-                                                                 <option>2061</option>
-                                                                 <option>2062</option>
-                                                                 <option>2063</option>
-                                                                 <option>2064</option>
-                                                                 <option>2065</option>
-                                                                 <option>2066</option>
-                                                                 <option>2067</option>
-                                                                 <option>2068</option>
-                                                                 <option>2069</option>
-                                                                 <option>2070</option>
-                                                                 <option>2071</option>
-                                                                 <option>2072</option>
-                                                                 <option>2073</option>
-                                                                 <option>2074</option>
-                                                                 <option>2075</option>
-                                                                 <option>2076</option>
-                                                                 <option>2077</option>
-                                                                 <option>2078</option>
-                                                                 <option>2079</option>
-                                                                 <option>2080</option>
-                                                                 <option>2081</option>
-                                                                 <option>2082</option>
-                                                                 <option>2083</option>
-                                                                 <option>2084</option>
-                                                                 <option>2085</option>
-                                                                 <option>2086</option>
-                                                                 <option>2087</option>
-                                                                 <option>2088</option>
-                                                                 <option>2089</option>
-                                                                 <option>2090</option>
-                                                                 <option>2091</option>
-                                                                 <option>2092</option>
-                                                                 <option>2093</option>
-                                                                 <option>2093</option>
-                                                                 <option>2094</option>
-                                                                 <option>2095</option>
-                                                                 <option>2096</option>
-                                                                 <option>2097</option>
-                                                                 <option>2098</option>
-                                                                 <option>2099</option>
-                                                                 <option>2100</option>
-                                                                 <option>2101</option>
-                                                                 <option>2102</option>
-                                                                 <option>2103</option>
-                                                                 <option>2104</option>
-                                                                 <option>2105</option>
-                                                                 <option>2106</option>
-                                                                 <option>2107</option>
-                                                                 <option>2108</option>
-                                                                 <option>2109</option>
-                                                                 <option>2110</option>
-
-                                                             </select>
-                                                         </div>
-                                                     </div>
+              <div class="form-group ">
+                   <label for="fecha_nacimiento" class="control-label col-lg-2">FECHA DE NACIMIENTO<span class="required">*</span></label>
+                   <div class="col-lg-10">
+                       <input class="form-control"  name="fecha_nacimiento" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
+                   </div>
+               </div>
     <!-- -------------------------------------------------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR LUGAR DE NACIMIENTO ------------------------------------------------------ -->
                                                       <div class="form-group">
                                                         <label for="cname" class="control-label col-xs-3">LUGAR DE NACIMIENTO:<span class="required">*</span> </label>
                                                           <div class="col-xs-3">
-                                                              <select class="form-control">
-                                                                  <option>Municipio</option>
-                                                              </select>
+                                                            <div class="form-group ">
+
+                                                                 <div class="col-lg-10">
+                                                                     <input class="form-control" name="departamento" placeholder="Departamento" minlength="5" type="text" required />
+                                                                 </div>
+                                                             </div>
                                                           </div>
                                                           <div class="col-xs-3">
-                                                              <select class="form-control">
-                                                                  <option>Departamento</option>
-                                                              </select>
+                                                            <div class="form-group ">
+
+                                                                 <div class="col-lg-10">
+                                                                     <input class="form-control" name="municipio" placeholder="Municipio" minlength="5" type="text" required />
+                                                                 </div>
+                                                             </div>
                                                           </div>
 
                                                       </div>
@@ -386,12 +171,47 @@
 
     <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
                                                       <div class="form-group">
-                                                        <label for="cname" class="control-label col-xs-3">EDAD:<span class="required">*</span> </label>
-                                                          <div class="col-xs-3">
-                                                              <select class="form-control">
-                                                                  <option>Edad</option>
+                                                        <label for="edad" class="control-label col-xs-3">EDAD:<span class="required">*</span> </label>
+                                                        <input name="edad" min="0" max="60" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}">
+                                                          <!--<div class="col-xs-3">
+                                                              <select class="form-control" name="edad">
+                                                                <option value= "1" >1</option>
+                                                                <option value= "2" >2</option>
+                                                                <option value= "3" >3</option>
+                                                                <option value= "4" >4</option>
+                                                                <option value= "5" >5</option>
+                                                                <option value= "6" >6</option>
+                                                                <option value= "7" >7</option>
+                                                                <option value= "8" >8</option>
+                                                                <option value= "9" >9</option>
+                                                                <option value= "10" >0</option>
+                                                                <option value= "11" >1</option>
+                                                                <option value= "12" >2</option>
+                                                                <option value= "13" >3</option>
+                                                                <option value= "14" >4</option>
+                                                                <option value= "15" >5</option>
+                                                                <option value= "16" >6</option>
+                                                                <option value= "17" >7</option>
+                                                                <option value= "18" >8</option>
+                                                                <option value= "19" >9</option>
+                                                                <option value= "20" >0</option>
+                                                                <option value= "21" >1</option>
+                                                                <option value= "22" >2</option>
+                                                                <option value= "23" >3</option>
+                                                                <option value= "24" >4</option>
+                                                                <option value= "25" >5</option>
+                                                                <option value= "26" >6</option>
+                                                                <option value= "27" >7</option>
+                                                                <option value= "28" >8</option>
+                                                                <option value= "29" >9</option>
+                                                                <option value= "30" >3</option>
+                                                                <option value= "31" >1</option>
+                                                                <option value= "32" >2</option>
+                                                                <option value= "33" >3</option>
+
+
                                                               </select>
-                                                          </div>
+                                                          </div>-->
 
                                                       </div>
 
@@ -399,9 +219,9 @@
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
                                                       <div class="form-group ">
-                                                        <label for="address" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
+                                                        <label for="direccion_residencia" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                                         <div class="col-lg-10">
-                                                            <input class=" form-control" id="address" name="address" type="text" />
+                                                            <input class=" form-control" name="direccion_residencia" type="text" />
                                                         </div>
                                                     </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
@@ -462,26 +282,26 @@
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
+                                            <label for="nombre_persona" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="nombre_persona" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
                                         <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
+                                            <label for="apellido_persona" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_persona" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
 
     <!-- -------------------------------------------------- PARENTESCO ------------------------------------------------------ -->
                                          <div class="form-group">
-                                              <label for="cname" class="control-label col-lg-2">PARENTESCO <span class="required">*</span></label>
+                                              <label for="parentesco" class="control-label col-lg-2">PARENTESCO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="parentesco" minlength="5" type="text" required />
                                             </div>
 
                                            </div>
@@ -526,35 +346,35 @@
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
+                                            <label for="nombre_padre" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" type="nombre_padre" name="nombre_padre" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
                                         <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
+                                            <label for="apellido_padre" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_padre" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
-                                           <div class="form-group">
-                                            <label for="cname" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
-                                              <div class="col-xs-3">
-                                                  <select class="form-control">
-                                                      <option>Tipo de documento</option>
-                                                      <option>R.C.</option>
-                                                      <option>T.I.</option>
-                                                      <option>C.C.</option>
-                                                  </select>
-                                              </div>
+                                        <div class="form-group">
+                                          <label for="tipo_documentop" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
+                                          <div class="col-xs-3">
+                                            <select class="form-control" name="tipo_documentop">
+                                              <option value= "" selected="selected">Tipo de documento</option>
+                                              <option value= "R.C" >R.C.</option>
+                                              <option value= "T.I" >T.I.</option>
+                                              <option value= "C.C" >C.C.</option>
+                                            </select>
+                                          </div>
 
-                                              <label for="cname" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
+                                              <label for="numero_documentop" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                             <div class="col-lg-3">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="numero_documento" minlength="5" type="text" required />
                                             </div>
                                           </div>
 
@@ -567,36 +387,36 @@
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
                                           <div class="form-group ">
-                                            <label for="address" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
+                                            <label for="direccion_padre" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" id="address" name="address" type="text" />
+                                                <input class=" form-control" name="direccion_padre" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
                                           <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
+                                            <label for="tel_padre" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" type="tel_padre" name="tel_padre" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN DEL TRABAJO ------------------------------------------------------ -->
 
                                           <div class="form-group ">
-                                            <label for="address" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
+                                            <label for="dir_trabajop" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" id="address" name="address" type="text" />
+                                                <input class=" form-control" type="dir_trabajop" name="dir_trabajop" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
                                           <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
+                                            <label for="tel_trabajop" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_trabajop" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
@@ -635,35 +455,35 @@
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
+                                            <label for="nombre_madre" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" type="nombre_madre" name="nombre_madre" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
                                         <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
+                                            <label for="apellido_madre" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_madre" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
                                            <div class="form-group">
-                                            <label for="cname" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
+                                            <label for="tipo_documentom" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
-                                                  <select class="form-control">
-                                                      <option>Tipo de documento</option>
-                                                      <option>R.C.</option>
-                                                      <option>T.I.</option>
-                                                      <option>C.C.</option>
+                                                  <select class="form-control" name="tipo_documentom">
+                                                    <option value= "" selected="selected">Tipo de documento</option>
+                                                    <option value= "R.C" >R.C.</option>
+                                                    <option value= "T.I" >T.I.</option>
+                                                    <option value= "C.C" >C.C.</option>
                                                   </select>
                                               </div>
 
-                                              <label for="cname" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
+                                              <label for="numero_documentom" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                             <div class="col-lg-3">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="numero_documentom" minlength="5" type="text" required />
                                             </div>
 
                                           </div>
@@ -676,36 +496,36 @@
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
                                           <div class="form-group ">
-                                            <label for="address" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
+                                            <label for="direccion_madre" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" id="address" name="address" type="text" />
+                                                <input class=" form-control" name="direccion_madre" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
                                           <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
+                                            <label for="tel_madre" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" type="tel_madre" name="tel_madre" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN DEL TRABAJO ------------------------------------------------------ -->
 
                                           <div class="form-group ">
-                                            <label for="address" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
+                                            <label for="dir_trabajom" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" id="address" name="address" type="text" />
+                                                <input class=" form-control" type="dir_trabajom" name="dir_trabajom" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
                                           <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
+                                            <label for="tel_trabajom" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_trabajom" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
@@ -756,36 +576,36 @@
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
+                                            <label for="nombre_acudiente" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" type="nombre_acudiente" name="nombre_acudiente" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
                                         <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
+                                            <label for="apellido_acudiente" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_acudiente" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
                                            <div class="form-group">
-                                            <label for="cname" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
-                                              <div class="col-xs-3">
-                                                  <select class="form-control">
-                                                      <option>Tipo de documento</option>
-                                                      <option>R.C.</option>
-                                                      <option>T.I.</option>
-                                                      <option>C.C.</option>
-                                                  </select>
-                                              </div>
+                                             <label for="tipo_documentopa" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
+                                               <div class="col-xs-3">
+                                                   <select class="form-control" name="tipo_documentopa">
+                                                     <option value= "" selected="selected">Tipo de documento</option>
+                                                     <option value= "R.C" >R.C.</option>
+                                                     <option value= "T.I" >T.I.</option>
+                                                     <option value= "C.C" >C.C.</option>
+                                                   </select>
+                                               </div>
 
-                                              <label for="cname" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
-                                            <div class="col-lg-3">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
-                                            </div>
+                                               <label for="numero_documentoa" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
+                                             <div class="col-lg-3">
+                                                 <input class="form-control" name="numero_documentoma" minlength="5" type="text" required />
+                                             </div>
 
                                           </div>
 
@@ -796,36 +616,36 @@
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
                                           <div class="form-group ">
-                                            <label for="address" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
+                                            <label for="direccion_acudiente" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" id="address" name="address" type="text" />
+                                                <input class=" form-control" name="direccion_acudiente" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
                                           <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
+                                            <label for="tel_acudiente" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_acudiente" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN DEL TRABAJO ------------------------------------------------------ -->
 
                                           <div class="form-group ">
-                                            <label for="address" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
+                                            <label for="dir_trabajoa" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" id="address" name="address" type="text" />
+                                                <input class=" form-control" name="dir_trabajoa" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
                                           <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
+                                            <label for="tel_trabajoa" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_trabajoa" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
@@ -875,17 +695,17 @@
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
+                                            <label for="nombre_emergencia" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="nombre_emergencia" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
                                         <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
+                                            <label for="apellido_emergencia" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_emergencia" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
@@ -894,18 +714,18 @@
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
                                           <div class="form-group ">
-                                            <label for="address" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
+                                            <label for="direccion_emergencia" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" id="address" name="address" type="text" />
+                                                <input class=" form-control" name="direccion_emergencia" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
                                           <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
+                                            <label for="tel_emergencia" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" type="tel_emergencia" name="tel_emergencia" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
@@ -913,9 +733,9 @@
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
                                           <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
+                                            <label for="tel_trabajoe" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_trabajoe" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
@@ -963,249 +783,26 @@
                                           <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
 
     <!-- ------------------------------------------------  FECHA DE MATRICULA -------------------------------------------------- -->
-                               <div class="form-group">
-                                            <label for="cname" class="control-label col-xs-3">FECHA DE MATRICULA:<span class="required">*</span> </label>
-                                              <div class="col-xs-3">
-                                                  <select class="form-control">
-                                                      <option>Dia</option>
-                                                      <option>1</option>
-                                                      <option>2</option>
-                                                      <option>3</option>
-                                                      <option>4</option>
-                                                      <option>5</option>
-                                                      <option>6</option>
-                                                      <option>7</option>
-                                                      <option>8</option>
-                                                      <option>9</option>
-                                                      <option>10</option>
-                                                      <option>11</option>
-                                                      <option>12</option>
-                                                      <option>13</option>
-                                                      <option>14</option>
-                                                      <option>15</option>
-                                                      <option>16</option>
-                                                      <option>17</option>
-                                                      <option>18</option>
-                                                      <option>19</option>
-                                                      <option>20</option>
-                                                      <option>21</option>
-                                                      <option>22</option>
-                                                      <option>23</option>
-                                                      <option>24</option>
-                                                      <option>25</option>
-                                                      <option>26</option>
-                                                      <option>27</option>
-                                                      <option>28</option>
-                                                      <option>29</option>
-                                                      <option>30</option>
-                                                      <option>31</option>
-
-                                                  </select>
-                                              </div>
-
-                                              <div class="col-xs-3">
-                                                  <select class="form-control">
-                                                      <option>Mes</option>
-                                                      <option>Enero</option>
-                                                      <option>Febrero</option>
-                                                      <option>Marzo</option>
-                                                      <option>Abril</option>
-                                                      <option>Mayo</option>
-                                                      <option>Junio</option>
-                                                      <option>Julio</option>
-                                                      <option>Agosto</option>
-                                                      <option>Septiembre</option>
-                                                      <option>Octubre</option>
-                                                      <option>Noviembre</option>
-                                                      <option>Diciembre</option>
-
-                                                  </select>
-                                              </div>
-
-
-                                              <div class="col-xs-3">
-                                                  <select class="form-control">
-                                                      <option>Año</option>
-                                                      <option>1950</option>
-                                                      <option>1951</option>
-                                                      <option>1952</option>
-                                                      <option>1953</option>
-                                                      <option>1954</option>
-                                                      <option>1955</option>
-                                                      <option>1956</option>
-                                                      <option>1957</option>
-                                                      <option>1958</option>
-                                                      <option>1959</option>
-                                                      <option>1960</option>
-                                                      <option>1961</option>
-                                                      <option>1962</option>
-                                                      <option>1963</option>
-                                                      <option>1964</option>
-                                                      <option>1965</option>
-                                                      <option>1966</option>
-                                                      <option>1967</option>
-                                                      <option>1968</option>
-                                                      <option>1969</option>
-                                                      <option>1970</option>
-                                                      <option>1971</option>
-                                                      <option>1972</option>
-                                                      <option>1973</option>
-                                                      <option>1974</option>
-                                                      <option>1975</option>
-                                                      <option>1976</option>
-                                                      <option>1977</option>
-                                                      <option>1978</option>
-                                                      <option>1979</option>
-                                                      <option>1980</option>
-                                                      <option>1981</option>
-                                                      <option>1982</option>
-                                                      <option>1983</option>
-                                                      <option>1984</option>
-                                                      <option>1985</option>
-                                                      <option>1986</option>
-                                                      <option>1987</option>
-                                                      <option>1988</option>
-                                                      <option>1989</option>
-                                                      <option>1990</option>
-                                                      <option>1991</option>
-                                                      <option>1992</option>
-                                                      <option>1993</option>
-                                                      <option>1994</option>
-                                                      <option>1995</option>
-                                                      <option>1996</option>
-                                                      <option>1997</option>
-                                                      <option>1998</option>
-                                                      <option>1999</option>
-                                                      <option>2000</option>
-                                                      <option>2001</option>
-                                                      <option>2002</option>
-                                                      <option>2003</option>
-                                                      <option>2004</option>
-                                                      <option>2005</option>
-                                                      <option>2005</option>
-                                                      <option>2006</option>
-                                                      <option>2007</option>
-                                                      <option>2008</option>
-                                                      <option>2009</option>
-                                                      <option>2010</option>
-                                                      <option>2011</option>
-                                                      <option>2012</option>
-                                                      <option>2013</option>
-                                                      <option>2014</option>
-                                                      <option>2015</option>
-                                                      <option>2016</option>
-                                                      <option>2017</option>
-                                                      <option>2018</option>
-                                                      <option>2019</option>
-                                                      <option>2020</option>
-                                                      <option>2021</option>
-                                                      <option>2022</option>
-                                                      <option>2023</option>
-                                                      <option>2024</option>
-                                                      <option>2025</option>
-                                                      <option>2026</option>
-                                                      <option>2027</option>
-                                                      <option>2028</option>
-                                                      <option>2029</option>
-                                                      <option>2030</option>
-                                                      <option>2031</option>
-                                                      <option>2032</option>
-                                                      <option>2033</option>
-                                                      <option>2034</option>
-                                                      <option>2035</option>
-                                                      <option>2036</option>
-                                                      <option>2037</option>
-                                                      <option>2038</option>
-                                                      <option>2039</option>
-                                                      <option>2040</option>
-                                                      <option>2041</option>
-                                                      <option>2042</option>
-                                                      <option>2043</option>
-                                                      <option>2044</option>
-                                                      <option>2045</option>
-                                                      <option>2046</option>
-                                                      <option>2047</option>
-                                                      <option>2048</option>
-                                                      <option>2049</option>
-                                                      <option>2050</option>
-                                                      <option>2051</option>
-                                                      <option>2052</option>
-                                                      <option>2053</option>
-                                                      <option>2054</option>
-                                                      <option>2055</option>
-                                                      <option>2056</option>
-                                                      <option>2057</option>
-                                                      <option>2058</option>
-                                                      <option>2059</option>
-                                                      <option>2060</option>
-                                                      <option>2061</option>
-                                                      <option>2062</option>
-                                                      <option>2063</option>
-                                                      <option>2064</option>
-                                                      <option>2065</option>
-                                                      <option>2066</option>
-                                                      <option>2067</option>
-                                                      <option>2068</option>
-                                                      <option>2069</option>
-                                                      <option>2070</option>
-                                                      <option>2071</option>
-                                                      <option>2072</option>
-                                                      <option>2073</option>
-                                                      <option>2074</option>
-                                                      <option>2075</option>
-                                                      <option>2076</option>
-                                                      <option>2077</option>
-                                                      <option>2078</option>
-                                                      <option>2079</option>
-                                                      <option>2080</option>
-                                                      <option>2081</option>
-                                                      <option>2082</option>
-                                                      <option>2083</option>
-                                                      <option>2084</option>
-                                                      <option>2085</option>
-                                                      <option>2086</option>
-                                                      <option>2087</option>
-                                                      <option>2088</option>
-                                                      <option>2089</option>
-                                                      <option>2090</option>
-                                                      <option>2091</option>
-                                                      <option>2092</option>
-                                                      <option>2093</option>
-                                                      <option>2093</option>
-                                                      <option>2094</option>
-                                                      <option>2095</option>
-                                                      <option>2096</option>
-                                                      <option>2097</option>
-                                                      <option>2098</option>
-                                                      <option>2099</option>
-                                                      <option>2100</option>
-                                                      <option>2101</option>
-                                                      <option>2102</option>
-                                                      <option>2103</option>
-                                                      <option>2104</option>
-                                                      <option>2105</option>
-                                                      <option>2106</option>
-                                                      <option>2107</option>
-                                                      <option>2108</option>
-                                                      <option>2109</option>
-                                                      <option>2110</option>
-                                                  </select>
-                                              </div>
-                                          </div>
+                                    <div class="form-group ">
+                                        <label for="fecha_matricula" class="control-label col-lg-2">FECHA DE MATRICULA<span class="required">*</span></label>
+                                        <div class="col-lg-10">
+                                          <input class="form-control" name="fecha_matricula" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
+                                        </div>
+                                    </div>
 
     <!-- ------------------------------------------------  FECHA DE MATRICULA -------------------------------------------------- -->
     <!-- -------------------------------------------------------  CONVENIO -------------------------------------------------------- -->
 
                                          <div class="form-group">
-                                            <label for="cname" class="control-label col-xs-3">CONVENIO:<span class="required">*</span> </label>
+                                            <label for="convenio" class="control-label col-xs-3">CONVENIO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
 
-                                                      <select class="form-control">
-                                                          <option>Convenio</option>
-                                                          <option>Particular</option>
-                                                          <option>Exito</option>
-                                                          <option>Ferrocarriles</option>
-                                                          <option>ICBF</option>
+                                                      <select class="form-control" name="convenio">
+                                                          <option value="" selected="selected">Convenio</option>
+                                                          <option value="Particular">Particular</option>
+                                                          <option value="Exito">Exito</option>
+                                                          <option value="Ferrocarril">Ferrocarriles</option>
+                                                          <option value="ICBF">ICBF</option>
 
 
                                                       </select>
@@ -1221,15 +818,15 @@
     <!-- -------------------------------------------------------  MODULO -------------------------------------------------------- -->
 
                                           <div class="form-group">
-                                            <label for="cname" class="control-label col-xs-3">MODULO:<span class="required">*</span> </label>
+                                            <label for="modulo" class="control-label col-xs-3">MODULO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
 
-                                                      <select class="form-control">
-                                                          <option>Modulo</option>
-                                                          <option>Esmeralda</option>
-                                                          <option>Azul</option>
-                                                          <option>Rojo</option>
-                                                          <option>Japon</option>
+                                                      <select class="form-control" name="modulo">
+                                                          <option value= "" selected="selected">Modulo</option>
+                                                          <option value="Esmeralda">Esmeralda</option>
+                                                          <option value="Azul">Azul</option>
+                                                          <option value="Rojo">Rojo</option>
+                                                          <option value="Japon">Japon</option>
 
 
                                                       </select>
@@ -1243,15 +840,15 @@
     <!-- -------------------------------------------------------  PROGRAMA -------------------------------------------------------- -->
 
                                           <div class="form-group ">
-                                            <label for="cname" class="control-label col-lg-2">PROGRAMA <span class="required">*</span></label>
+                                            <label for="programa" class="control-label col-lg-2">PROGRAMA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                <input class="form-control" name="programa" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------  PROGRAMA ---------------------------------------------------- -->
 
                                         <div class="form-group">
-                                            
+
                                         </div>
                                     </form>
                                       </div>
