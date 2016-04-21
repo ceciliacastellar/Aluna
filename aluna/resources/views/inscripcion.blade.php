@@ -25,7 +25,8 @@
     <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
     <div class="row">
                    <div class="col-lg-12">
-                       <form method="POST" action="{{ route('file') }}" accept-charset="UTF-8" enctype="multipart/form-data">
+                       <form method="POST" action="{{ route('inscripcion') }}" accept-charset="UTF-8" enctype="multipart/form-data">
+                         <input type="hidden" name="_token" value="{{ csrf_token()}}">
                       <section class="panel">
                             <header class="panel-heading tab-bg-info">
                                 <ul class="nav nav-tabs">
@@ -284,7 +285,7 @@
                                        <div class="form-group ">
                                             <label for="nombre_persona" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="nombre_persona" minlength="5" type="text" required />
+                                                <input class="form-control" name="nombre_persona"  type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
@@ -866,6 +867,7 @@
                                             <div class="row">
                                             </div>
                                         </section>
+
                                     </div>
 
     <!-- --------------------------------------- FUNDACION ----------------------------------------------------->
