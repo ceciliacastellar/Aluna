@@ -41,20 +41,56 @@ table tr th {
     outline: none;
 }
 ::selection {
-    background: #688a7e;
+    background: #598788;
     color: #fff;
 }
 ::-moz-selection {
-    background: #688a7e;
+    background: #598788;
     color: #fff;
 }
 
+.round-fifty{
+    -webkit-border-radius: 10px;
+    margin-left: 45%;
+    margin-top: 25px;
+     border: ridge #E6E6E6 1px;
+}
+.ico-bg{
+    background:#2186DE;
+    width: 30px;
+    height: 30px;
+    
+}
+.icon-wrap i{
+   
+    color:whitesmoke ;
+    
+    margin-left: 20%;
+    margin-top: 10px;
+}
 
+.container-box{
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+   
+}
+.h-service{
+     border: ridge #808080 1px;
+}
 
+.register-form {
+    max-width: 550px;
+    margin: 300px auto 0;
+    background: #d5d7de;    
+}
 
-
-
-
+.registro{
+     margin-top: 130px;
+    margin-left: 30%;
+    margin-right: 20%
+   
+} 
 
 
 
@@ -559,7 +595,7 @@ ul.sidebar-menu li.active a i {
 a.logo {
     font-size: 22px;
     font-size: large;
-    color: #DE9726;
+    color: #E6E6E6;
     float: left;
     margin-top: 5px;
     text-transform: uppercase;
@@ -1010,8 +1046,8 @@ div[data-role="editor-toolbar"] {
 }
 .blue-bg {
   color : #fff;
-  background : #1C93D8;
-  background-color : #1C93D8;
+  background : #0288D1;
+  background-color : #0288D1;
 }
 .green-bg {
   color : #fff;

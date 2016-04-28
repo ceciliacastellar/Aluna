@@ -161,9 +161,8 @@
       <!--sidebar start-->
       
       <aside>
-          <div id="sidebar"  class="nav-collapse "> 
+          <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
-              
               <ul class="sidebar-menu">                
                   <li class="">
                       <a class="" href="index.html">
@@ -171,27 +170,35 @@
                           <span>Menu</span>
                       </a>
                   </li>
-		 <li class="sub-menu">
-                      <a href="Inscripcion.html" class="">
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
                           <i class="icon_document_alt"></i>
                           <span>Inscripcion</span>
-                          <!--<span class="menu-arrow arrow_carrot-right"></span>-->
                       </a>
-                     <!-- <ul class="sub">
-                          <li><a href="I.html" class="current">Alumno</a></li>
-                            <li><a href="Inscripcion2.html" class="current">Padres</a></li>
-                            <li><a href="Inscripcion3.html" class="current">Acudiente</a></li>
-                            <li><a href="Inscripcion4.html" class="current">Emergencia</a></li>
-                            <li><a href="Inscripcion5.html" class="current">Fundación</a></li>
-                      </ul>-->
-                  </li>  
-                  <li class="sub-menu">
+                      <ul class="sub">
+                          <li><a class="" href="Inscripcion.html">Alumnos</a></li>
+                          <li><a class="" href="registro.html">Empleados</a></li>
+                          
+                      </ul>
+                  </li>
+                  <!--<li class="sub-menu">
                       <a href="Asistencia.html" class="">
                           <i class="icon_document_alt"></i>
                           <span>Alumnos</span>
                       </a>
-                  </li>
-                <!--  <li class="sub-menu">
+                  </li>-->
+				<!--  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_document_alt"></i>
+                          <span>Forms</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="form_component.html">Form Elements</a></li>                          
+                          <li><a class="" href="form_validation.html">Form Validation</a></li>
+                      </ul>
+                  </li>       
+                  <li class="sub-menu">
                       <a href="javascript:;" class="">
                           <i class="icon_desktop"></i>
                           <span>UI Fitures</span>
@@ -225,7 +232,7 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="basic_table.html">Basic Table</a></li>
+                          <li><a class="active" href="basic_table.html">Basic Table</a></li>
                       </ul>
                   </li>
                   
@@ -234,18 +241,16 @@
                           <i class="icon_documents_alt"></i>
                           <span>Pages</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
-                      </a> -->
-<!-- ------------------------------------- BARRA DE MENU DEL LADO IZQUIERDO ------------------------------------------------- -->
-<!-- ------------------------------------- CONEXION A OTRAS PAGINAS ------------------------------------------------- -->
-                      <!--<ul class="sub">                          
+                      </a>
+                      <ul class="sub">                          
                           <li><a class="" href="profile.html">Profile</a></li>
                           <li><a class="" href="login.html"><span>Login Page</span></a></li>
                           <li><a class="" href="blank.html">Blank Page</a></li>
                           <li><a class="" href="404.html">404 Error</a></li>
-                      </ul>-->
+                      </ul>
                   </li>
                   
-              </ul>
+              </ul>-->
               <!-- sidebar menu end-->
           </div>
       </aside>
@@ -326,33 +331,34 @@
                                         </header>
                                         <div class="panel-body">
                                             <div class="form">
-                                                <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                                                <form class="form-horizontal" method="get">
                          <!-- ------------------------------------- SUBIR IMAGEN -------------------------------------------------- -->          
-                                                    <div class="form-group">
+                                                    
+                                                    <div class="form-group" align="center">
                                                         <input id="file-1" type="file" class="file" multiple=true data-preview-file-type="any">
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <button class="btn btn-primary" type="submit">Subir</button>
-                                                                            <button class="btn btn-default" type="button">Reset</button>
-                                                                        </div>
+                                                       
+                                                    </div>
+                                                                        
+                                                                            
+                                                                        
 
                         <!-- ------------------------------------- SUBIR IMAGEN -------------------------------------------------- -->                                
                                                     
  <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->                                   
                                       
                                                     <div class="form-group ">
-                                                         <label for="cname" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
-                                                         <div class="col-lg-10">
-                                                             <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                         <label for="nombre_alumno" class="control-label col-sm-2">NOMBRES <span class="required">*</span></label>
+                                                         <div class="col-sm-10">
+                                                             <input class="form-control" id="nombre_alumno" name="nombre_alumno" minlength="5" type="text" required />
                                                          </div>
                                                          
                                                      </div>
   <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->     
   <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->  
                                                         <div class="form-group ">
-                                                            <label for="cname" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
-                                                            <div class="col-lg-10">
-                                                                <input class="form-control" id="cname" name="fullname" minlength="5" type="text" required />
+                                                            <label for="apellido_alumno" class="control-label col-sm-2">APELLIDOS <span class="required">*</span></label>
+                                                            <div class="col-sm-10">
+                                                                <input class="form-control" id="apellido_alumno" name="apellido_alumno" minlength="5" type="text" required />
                                                             </div>
                                                         </div>
  <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ --> 
@@ -360,7 +366,7 @@
   <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ --> 
                                         
                                                         <div class="form-group">
-                                                          <label for="cname" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
+                                                          <label for="tipo_documento" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                                             <div class="col-xs-3">
                                                                 <select class="form-control">
                                                                     <option>Tipo de documento</option>
@@ -627,7 +633,41 @@
                                                         </div>
                                                         <div class="col-xs-3">
                                                             <select class="form-control">
-                                                                <option>Departamento</option>
+                                                                <option value="Departamento">Departamento</option>
+                                                                <option value="Amazonas">Amazonas</option>
+                                                                <option value="Antioquia ">Antioquia</option>
+                                                                <option value="Arauca">Arauca</option>
+                                                                <option value="Atlantico">Atlantico</option>
+                                                                <option value="Bolivar">Bolivar</option>
+                                                                <option value="Boyaca">Boyaca</option>
+                                                                <option value="Caldas">Caldas</option>
+                                                                <option value="Caqueta">Caqueta</option>
+                                                                <option value="Casanare">Casanare</option>
+                                                                <option value="Cauca">Cauca</option>
+                                                                <option value="Cesar">Cesar</option>
+                                                                <option value="Cordoba">Cordoba</option>
+                                                                <option value="Cundinamarca">Cundimarca</option>
+                                                                <option value="Guainia">Guainia</option>
+                                                                <option value="Guaviare">Guaviare</option>
+                                                                <option value="Huila">Huila</option>
+                                                                <option value="Guajira">Guajira</option>
+                                                                <option value="Magdalena">Magdalena</option>
+                                                                <option value="Meta">Meta</option>
+                                                                <option value="Nariño">Nariño</option>
+                                                                <option value="Norte de Santander">Norte de Santander</option>
+                                                                <option value="Putumayo">Putumayo</option>
+                                                                <option value="Quindio">Quindio</option>
+                                                                <option value="Risaralda">Risaralda</option>
+                                                                <option value="San Andres y Providencia">San Andres y Providencia</option>
+                                                                <option value="Santander">Santander</option>
+                                                                <option value="Sucre">Sucre</option>
+                                                                <option value="Tolima">Tolima</option>
+                                                                <option value="Valle del Cauca">Valle del Cauca</option>
+                                                                <option value="Vaupes">Vaupes</option>
+                                                                <option value="Vichada">Vichada</option>
+                                                                
+                                                                
+                                                                
                                                             </select>
                                                         </div>
 
@@ -691,12 +731,7 @@
                                       </div> -->
                                       
 
-                                                <div class="form-group">
-                                                    <div class="col-lg-offset-2 col-lg-10">
-                                                        <button class="btn btn-primary" type="submit">Save</button>
-                                                        <button class="btn btn-default" type="button">Cancel</button>
-                                                    </div>
-                                                </div>
+                                                
                                             </form>
                                         </div>
 
