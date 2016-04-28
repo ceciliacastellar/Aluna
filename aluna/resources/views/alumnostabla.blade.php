@@ -45,7 +45,7 @@
 
                               <td>
                                <div class="btn-group">
-                                   <a class="btn btn-primary"  href="">Editar</a>
+                                   <a class="btn btn-primary"  href="{{ URL::to('alumnostabla/' . $alumnos->id . '/alumnoupdate') }}">Editar</a>
                                </div>
                                </td>
 

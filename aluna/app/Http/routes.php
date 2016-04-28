@@ -86,3 +86,7 @@ Route::get('formulario/{archivo}',[
       'uses' => 'EditarController@index',
       'as'  =>'alumnostabla'
     ]);
+
+    Route::get('alumnoupdate', 'EditarController@edit');
+
+//    Route::put('alumnoupdate','EditarController');
