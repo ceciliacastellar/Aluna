@@ -63,7 +63,7 @@ public function create(Request $request){
        'tel_trabajoa'=> 'max:60',
        'nombre_emergencia'=> 'max:60',
        'apellido_emergencia'=> 'max:60',
-       'tipo_documentope'=> 'max:60',
+
        'numero_documentoe'=> 'max:60',
        'direccion_emergencia'=> 'max:60',
        'tel_emergencia'=> 'max:60',
@@ -113,11 +113,9 @@ public function create(Request $request){
         $alumno->tel_trabajoa = $request->tel_trabajoa;
         $alumno->nombre_emergencia = $request->nombre_emergencia;
         $alumno->apellido_emergencia = $request->apellido_emergencia;
-        $alumno->tipo_documentope = $request->tipo_documentope;
-        $alumno->numero_documentoe = $request->numero_documentoe;
+
         $alumno->direccion_emergencia = $request->direccion_emergencia;
         $alumno->tel_emergencia = $request->tel_emergencia;
-        $alumno->dir_trabajoe = $request->dir_trabajoe;
         $alumno->tel_trabajoe = $request->tel_trabajoe;
         $alumno->fecha_matricula = $request->fecha_matricula;
         $alumno->convenio = $request->convenio;

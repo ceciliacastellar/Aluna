@@ -11,24 +11,19 @@
     <title>ALUNA</title>
 
     <!-- Bootstrap CSS -->
-    <link href="assets/css/F
-		bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
     <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
     <!--external css-->
     <!-- font icon -->
     <link href="assets/css/elegant-icons-style.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- easy pie chart-->
-    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
-	<link href="assets/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+
     <!-- Custom styles -->
 
 	<link href="assets/css/widgets.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/style-responsive.css" rel="stylesheet" />
+  <link href="assets/css/style-responsive.css" rel="stylesheet" />
 	<link href="assets/css/xcharts.min.css" rel=" stylesheet">
 	<link href="assets/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
 

@@ -22,12 +22,11 @@
     <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
     <!-- owl carousel -->
     <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
-	<link href="assets/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <link href="assets/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
     <!-- Custom styles -->
-
-	<link href="assets/css/widgets.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/style-responsive.css" rel="stylesheet" />
+	  <link href="assets/css/widgets.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-responsive.css" rel="stylesheet" />
 	<link href="assets/css/xcharts.min.css" rel=" stylesheet">
 	<link href="assets/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
 
@@ -44,7 +43,7 @@
             </div>
 
             <!--logo start-->
-            <a href="index.html" class="logo">FUNDACION <span class="lite">ALUNA</span>
+            <a href="principal" class="logo">FUNDACION <span class="lite">ALUNA</span>
                 <span class="profile-ava">
 
 

@@ -14,10 +14,10 @@ class UserTableSeeder extends Seeder
     {
         $faker = Faker::create();
       DB::table('users')->insert([
-          'name' => str_random(10).'_1',
-          'email' => str_random(10).'@gmail.com',
+          'name' => "Javier",
+          'email' => "javiergaliver@gmail.com",
           //'role' => 'admin',
-          'password' => bcrypt('secret'),
+          'password' => bcrypt('1234567'),
           'created_at' => $faker->dateTime(),
           'updated_at' => $faker->dateTime()
       ]);

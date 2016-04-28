@@ -81,3 +81,8 @@ Route::get('formulario/{archivo}',[
       'as' => 'inscripcion'
     ]);
     Route::post('inscripcion','InscripcionController@create');
+
+    Route::get('alumnostabla',[
+      'uses' => 'EditarController@index',
+      'as'  =>'alumnostabla'
+    ]);

@@ -24,9 +24,11 @@
 
     <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
     <div class="row">
+      <form method="POST" action="{{ route('inscripcion') }}" accept-charset="UTF-8" enctype="multipart/form-data">
+        <input type="hidden" name="_token" value="{{ csrf_token()}}">
+
                    <div class="col-lg-12">
-                       <form method="POST" action="{{ route('inscripcion') }}" accept-charset="UTF-8" enctype="multipart/form-data">
-                         <input type="hidden" name="_token" value="{{ csrf_token()}}">
+
                       <section class="panel">
                             <header class="panel-heading tab-bg-info">
                                 <ul class="nav nav-tabs">
@@ -74,12 +76,13 @@
                                              <div class="row">
                                   <div class="col-lg-12">
                                       <section class="panel">
+
                                           <header class="panel-heading">
                                               Información del niño, niña o joven
                                           </header>
                                           <div class="panel-body">
                                               <div class="form">
-                                                  <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                                                  <form class="form-horizontal" method="get">
                 <!-- ------------------------------------- SUBIR IMAGEN -------------------------------------------------- -->
                            <!--<div class="form-group">
                                       <input id="file-1" type="file" class="file" multiple=true data-preview-file-type="any">
@@ -97,16 +100,16 @@
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                                       <div class="form-group ">
-                                                           <label for="nombres" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
-                                                           <div class="col-lg-10">
+                                                           <label for="nombres" class="control-label col-sm-2">NOMBRES <span class="required">*</span></label>
+                                                           <div class="col-sm-10">
                                                                <input class="form-control" name="nombres" minlength="5" type="text" required />
                                                            </div>
                                                        </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
                                                           <div class="form-group ">
-                                                              <label for="apellidos" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
-                                                              <div class="col-lg-10">
+                                                              <label for="apellidos" class="control-label col-sm-2">APELLIDOS <span class="required">*</span></label>
+                                                              <div class="col-sm-10">
                                                                   <input class="form-control" name="apellidos" minlength="5" type="text" required />
                                                               </div>
                                                           </div>
@@ -171,9 +174,13 @@
     <!-- -------------------------------------------------- PEDIR LUGAR DE NACIMIENTO ------------------------------------------------------ -->
 
     <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
+
+
                                                       <div class="form-group">
-                                                        <label for="edad" class="control-label col-xs-3">EDAD:<span class="required">*</span> </label>
-                                                        <input name="edad" min="0" max="60" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}">
+                                                        <label for="edad" class="control-label col-lg-2">EDAD:<span class="required">*</span></label>
+                                                        <div class="col-sm-2">
+                                                        <input class="form-control" name="edad" min="0" max="60" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}">
+                                                      </div>
                                                           <!--<div class="col-xs-3">
                                                               <select class="form-control" name="edad">
                                                                 <option value= "1" >1</option>
@@ -279,7 +286,7 @@
                                   </header>
                                   <div class="panel-body">
                                       <div class="form">
-                                          <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
@@ -302,7 +309,7 @@
                                          <div class="form-group">
                                               <label for="parentesco" class="control-label col-lg-2">PARENTESCO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="parentesco" minlength="5" type="text" required />
+                                                <input class="form-control" name="parentesco" minlength="3" type="text" required />
                                             </div>
 
                                            </div>
@@ -343,13 +350,13 @@
                             </header>
                             <div class="panel-body">
                                 <div class="form">
-                                    <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                                    <!--<form class="form-horizontal" method="get" >-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
                                             <label for="nombre_padre" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" type="nombre_padre" name="nombre_padre" minlength="5" type="text" required />
+                                                <input class="form-control" name="nombre_padre" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
@@ -375,7 +382,7 @@
 
                                               <label for="numero_documentop" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                             <div class="col-lg-3">
-                                                <input class="form-control" name="numero_documento" minlength="5" type="text" required />
+                                                <input class="form-control" name="numero_documentop" minlength="5" type="text" required />
                                             </div>
                                           </div>
 
@@ -452,7 +459,7 @@
                             </header>
                             <div class="panel-body">
                                 <div class="form">
-                                    <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                                    <!--<form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
@@ -573,7 +580,7 @@
                                   </header>
                             <div class="panel-body">
                                 <div class="form">
-                                    <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                                    <!--<form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
@@ -692,7 +699,7 @@
                                 </header>
                             <div class="panel-body">
                                 <div class="form">
-                                    <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                                  <!--  <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                        <div class="form-group ">
@@ -764,7 +771,7 @@
                                         </section>
                                     </div>
 
-    <!-- --------------------------------------- EMERGENCIA ------------------------------------------------- -->
+    <!-- --------------------------------------- EMERGENCIA ---------------------------------------------------->
     <!-- --------------------------------------- FUNDACION ----------------------------------------------------->
                                   <div id="fundacion" class="tab-pane">
                                       <section class="panel">
@@ -781,7 +788,7 @@
                                       </header>
                                   <div class="panel-body">
                                       <div class="form">
-                                          <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                                          <!--<form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
 
     <!-- ------------------------------------------------  FECHA DE MATRICULA -------------------------------------------------- -->
                                     <div class="form-group ">
@@ -849,7 +856,7 @@
     <!-- -------------------------------------------------------  PROGRAMA ---------------------------------------------------- -->
 
                                         <div class="form-group">
-
+                                            <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
                                         </div>
                                     </form>
                                       </div>
@@ -872,14 +879,14 @@
 
     <!-- --------------------------------------- FUNDACION ----------------------------------------------------->
                                 </div>
-                                <div class="form-group">
-                                    <div class="col-lg-offset-2 col-lg-10">
-                                        <button class="btn btn-primary" type="submit">Save</button>
-                                        <button class="btn btn-default" type="button">Cancel</button>
-                                    </div>
-                                </div>
-                            </div>
+
                       </section>
+                      <div class="form-group">
+                          <div class="col-lg-offset-2 col-lg-10">
+                              <button class="btn btn-primary" type="submit">Save</button>
+                              <button class="btn btn-default" type="button">Cancel</button>
+                          </div>
+                      </div>
                    </div>
 
     </div>
@@ -898,87 +905,9 @@
 <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
 <!-- bootstrap -->
 <script src="js/bootstrap.min.js"></script>
-<!-- nice scroll -->
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-<!-- charts scripts -->
-<script src="assets/jquery-knob/js/jquery.knob.js"></script>
-<script src="js/jquery.sparkline.js" type="text/javascript"></script>
-<script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-<script src="js/owl.carousel.js" ></script>
-<!-- jQuery full calendar -->
-<<script src="js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
-<script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
-<!--script for this page only-->
-<script src="js/calendar-custom.js"></script>
-<script src="js/jquery.rateit.min.js"></script>
-<!-- custom select -->
-<script src="js/jquery.customSelect.min.js" ></script>
-<script src="assets/chart-master/Chart.js"></script>
-
-<!--custome script for all page-->
-<script src="js/scripts.js"></script>
-<!-- custom script for this page-->
-<script src="js/sparkline-chart.js"></script>
-<script src="js/easy-pie-chart.js"></script>
-<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="js/jquery-jvectormap-world-mill-en.js"></script>
-<script src="js/xcharts.min.js"></script>
-<script src="js/jquery.autosize.min.js"></script>
-<script src="js/jquery.placeholder.min.js"></script>
-<script src="js/gdp-data.js"></script>
-<script src="js/morris.min.js"></script>
-<script src="js/sparklines.js"></script>
-<script src="js/charts.js"></script>
-<script src="js/jquery.slimscroll.min.js"></script>
-<script>
-
-  //knob
-  $(function() {
-    $(".knob").knob({
-      'draw' : function () {
-        $(this.i).val(this.cv + '%')
-      }
-    })
-  });
-
-  //carousel
-  $(document).ready(function() {
-      $("#owl-slider").owlCarousel({
-          navigation : true,
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          singleItem : true
-
-      });
-  });
-
-  //custom select box
-
-  $(function(){
-      $('select.styled').customSelect();
-  });
-
-/* ---------- Map ---------- */
-$(function(){
-$('#map').vectorMap({
-  map: 'world_mill_en',
-  series: {
-    regions: [{
-      values: gdpData,
-      scale: ['#000', '#000'],
-      normalizeFunction: 'polynomial'
-    }]
-  },
-backgroundColor: '#eef3f7',
-  onLabelShow: function(e, el, code){
-    el.html(el.html()+' (GDP - '+gdpData[code]+')');
-  }
-});
-});
 
 
 
-</script>
+
 </section>
 @endsection
