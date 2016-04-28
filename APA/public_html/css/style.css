@@ -77,20 +77,20 @@ table tr th {
 }
 .h-service{
      border: ridge #808080 1px;
+     height: 210px;
+}
+#tittlebox{
+    font-size: 16px;
 }
 
-.register-form {
-    max-width: 550px;
-    margin: 300px auto 0;
-    background: #d5d7de;    
-}
 
 .registro{
-     margin-top: 130px;
-    margin-left: 30%;
-    margin-right: 20%
+     margin-top: 48px;
+    margin-left: 20%;
+    margin-right: 10%
    
 } 
+
 
 
 
