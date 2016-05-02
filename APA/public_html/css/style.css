@@ -49,6 +49,9 @@ table tr th {
     color: #fff;
 }
 
+
+
+
 .round-fifty{
     -webkit-border-radius: 10px;
     margin-left: 45%;
@@ -90,10 +93,43 @@ table tr th {
     margin-right: 10%
    
 } 
+.panel-heading .nav > li >  .alumno{
+    background:#2775e2 ;
+}
+.panel-heading .nav > li >  .padres{
+    background: #00aced;
+}
+.panel-heading .nav > li >  .acudiente{
+    background: #f4b162;
+}
+.panel-heading .nav > li >  .emergencia{
+    background: #ff2121;
+}
+.panel-heading .nav > li >  .fundacion{
+    background: #79c447;
+}
 
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .alumno:hover{
+    color: #fff;
+    background: #2775e2 ;
+}
 
-
-
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .padres:hover{
+    color: #fff;
+    background: #00aced;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .acudiente:hover{
+    color: #fff;
+    background: #f4b162;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .emergencia:hover{
+    color: #fff;
+    background: #ff2121;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .fundacion:hover{
+    color: #fff;
+    background:#79c447;
+}
 
 
 
@@ -3501,7 +3537,7 @@ ul.inbox-pagination li {
 }
 
 .bio-row p span {
-    width: 100px;
+    width: 200px;
     display: inline-block;
 }
 
@@ -3929,12 +3965,12 @@ ul.amounts li {
 }
 
 .tab-bg-info {
-    background: #324c57; 
+    background: #FFFFFF; 
 	
     border-bottom: none;
 }
 .tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > a:hover{
-    color: #36464d;
+    color: #FFFFFF;
 }
 .tab-bg-info.panel-heading .nav{
     margin: -10px 15px -11px;
@@ -3947,11 +3983,12 @@ ul.amounts li {
 
 .panel-heading .nav > li > a {
     color: #fff;
+    
 }
 
 .panel-heading .nav > li.active > a, .panel-heading .nav > li > a:hover {
     color: #688a7e;
-    background: #fff;
+    background:#435A77;
 }
 
 .tab-right {

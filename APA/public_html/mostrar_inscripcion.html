@@ -292,33 +292,34 @@
                     <section class="panel">
                           <header class="panel-heading tab-bg-info">
                               <ul class="nav nav-tabs">
-                                  <li class="active">
-                                      <a data-toggle="tab" href="#alumno">
+                                  <li class="active panel panel-primary">
+                                      <a data-toggle="tab" href="#alumno" class="alumno">
                                           <i class="icon-home"></i>
+                                         
                                           Alumno
-                                      </a>
+                                       </a>
                                   </li>
-                                  <li>
-                                      <a data-toggle="tab" href="#padres">
+                                  <li class="panel panel-info">
+                                      <a data-toggle="tab" href="#padres" class="padres">
                                           <i class="icon-user"></i>
                                           Padres
                                       </a>
                                   </li>
-                                  <li class="">
-                                      <a data-toggle="tab" href="#acudiente">
+                                  <li class="panel panel-warning">
+                                      <a data-toggle="tab" href="#acudiente" class="acudiente">
                                           <i class="icon-envelope"></i>
                                           Acudiente
                                       </a>
                                   </li>
                                   
-                                  <li class="">
-                                      <a data-toggle="tab" href="#emergencia">
+                                  <li class="panel panel-danger">
+                                      <a data-toggle="tab" href="#emergencia" class="emergencia">
                                           <i class="icon-envelope"></i>
                                           Emergencia 
                                       </a>
                                   </li>
-                                  <li class="">
-                                      <a data-toggle="tab" href="#fundacion">
+                                  <li class="panel panel-success">
+                                      <a data-toggle="tab" href="#fundacion" class="fundacion">
                                           <i class="icon-envelope"></i>
                                           Fundación
                                       </a>
@@ -332,9 +333,11 @@
 <!-- --------------------------------------- ALUMNO --------------------------------------------------- -->
                                 <div id="alumno" class="tab-pane">
                                     
-                                     <section class="panel">
+                                     <section class="panel panel-primary">
                                       <div class="panel-body bio-graph-info">
+                                           <div class="panel-heading">
                                           <center> <h1>Foto Alumno</h1></center>
+                                           </div>
                                           <div class="row">
                                               <div  align=center>
                                                  <img src="img/estudiante.png" border= 0>
@@ -345,9 +348,11 @@
                                       </div>
                                     </section>
                                     
-                                    <section class="panel">
+                                    <section class="panel panel-primary">
                                       <div class="panel-body bio-graph-info">
-                                          <h1>Datos del alumno</h1>
+                                           <div class="panel-heading">
+                                               <h1>Datos del alumno</h1>
+                                           </div>
                                           <div class="row">
                                               <div class="bio-row">
                                                   
@@ -379,9 +384,11 @@
                                     </section>
                                     
                                     
-                                    <section class="panel">
+                                    <section class="panel panel-primary">
                                       <div class="panel-body bio-graph-info">
+                                          <div class="panel-heading">
                                           <h1>Información de la persona con quien vive</h1>
+                                          </div>
                                           <div class="row">
                                               <div class="bio-row">
                                                   <p><span>NOMBRES</span>: Carlos </p>
@@ -407,9 +414,11 @@
 <!-- --------------------------------------- ALUMNO --------------------------------------------------- -->
 <!--  ------------------------------------- PADRES------------------------------------------------------ -->
                             <div id="padres" class="tab-pane">
-                                    <section class="panel">
+                                    <section class="panel panel-info">
                                       <div class="panel-body bio-graph-info">
-                                          <h1>Datos del padre</h1>
+                                          <div class="panel-heading">
+                                              <h1>Datos del padre</h1>
+                                          </div>
                                           <div class="row">
                                               <div class="bio-row">
                                                   <p><span>NOMBRES</span>: Javier Enrique </p>
@@ -440,9 +449,11 @@
                                     </section>
                                 
                                 
-                                 <section class="panel">
+                                 <section class="panel panel-info">
                                       <div class="panel-body bio-graph-info">
-                                          <h1>Datos del madre</h1>
+                                          <div class="panel-heading">
+                                              <h1>Datos del madre</h1>
+                                          </div>
                                           <div class="row">
                                               <div class="bio-row">
                                                   <p><span>NOMBRES</span>: Mafalda </p>
@@ -481,9 +492,11 @@
 <!-- --------------------------------------- PADRES----------------------------------------------------- -->
 <!--  -------------------------------------- ACUDIENTE ------------------------------------------------- -->
                                  <div id="acudiente" class="tab-pane">
-                                    <section class="panel">
+                                    <section class="panel panel-warning">
                                       <div class="panel-body bio-graph-info">
-                                          <h1>Datos del acudiente</h1>
+                                           <div class="panel-heading">
+                                               <h1>Datos del acudiente</h1>
+                                           </div>
                                           <div class="row">
                                               <div class="bio-row">
                                                   <p><span>NOMBRES</span>: Javier Enrique </p>
@@ -515,9 +528,11 @@
 <!-- --------------------------------------- ACUDIENTE ------------------------------------------------- -->
 <!-- --------------------------------------- EMERGENCIA ------------------------------------------------- -->
                         <div id="emergencia" class="tab-pane">
-                                    <section class="panel">
+                                    <section class="panel panel-danger">
                                       <div class="panel-body bio-graph-info">
+                                           <div class="panel-heading">
                                           <h1>Información de otro familiar o persona de confianza en casos de emergencia</h1>
+                                           </div>
                                           <div class="row">
                                               <div class="bio-row">
                                                   <p><span>NOMBRES</span>: Javier Enrique </p>
@@ -553,9 +568,11 @@
                               
 
                           <div id="fundacion" class="tab-pane">
-                                    <section class="panel">
+                                    <section class="panel panel-success">
                                       <div class="panel-body bio-graph-info">
-                                          <h1>Datos de la fundación</h1>
+                                           <div class="panel-heading">
+                                               <h1>Datos de la fundación</h1>
+                                           </div>
                                           <div class="row">
                                               <div class="bio-row">
                                                 <p><span>FECHA DE MATRICULA</span>: 14 Abril 2016 </p>
@@ -569,18 +586,7 @@
                                               <div class="bio-row">
                                                   <p><span>PROGRAMA </span>: Delfin</p>
                                               </div>
-                                              <div class="bio-row">
-                                                  <p><span>DIRECIÓN DE RESIDENCIA </span>: Bocagrande</p>
-                                              </div>
-                                              <div class="bio-row">
-                                                  <p><span>TELEFONO DE RESIDENCIA </span>:6661111</p>
-                                              </div>
-                                              <div class="bio-row">
-                                                  <p><span>DIRECCIÓN DE TRABAJO</span>: Centro</p>
-                                              </div>
-                                              <div class="bio-row">
-                                                  <p><span>TELEFONO DE TRABAJO </span>: 6602222</p>
-                                              </div>
+                                              
                                           </div>
                                       </div>
                                     </section>

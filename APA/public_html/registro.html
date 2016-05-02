@@ -1,14 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  
-
-    <title>Rgistro de cuenta</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+<!-- ---------------------------------  Titulo pestaña ------------------------    -->
+    <title> FUNDACIÓN ALUNA  </title>
+<!-- ---------------------------------  Titulo pestaña ------------------------    -->
 
     <!-- Bootstrap CSS -->    
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,21 +20,27 @@
     <!--external css-->
     <!-- font icon -->
     <link href="css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
     <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
+    
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="js/lte-ie7.js"></script>
     <![endif]-->
-</head>
+  </head>
 
   <body>
-<!-- --------------------------- Barra de Arriba --------------------------------------------------------->
-       <header class="header blue-bg">
+  <!-- container section start -->
+  <section id="container" class="">
+      <!--header start-->
+      <header class="header blue-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
             </div>
@@ -146,12 +155,118 @@
                 </ul>
                 <!-- notificatoin dropdown end-->
             </div>
-      </header> 
-  <!-- --------------------------- Barra de Arriba --------------------------------------------------------->
+      </header>      
+      <!--header end-->
 <!-- ------------------------------------- BARRA DE MENU DEL LADO IZQUIERDO ------------------------------------------------- -->
       <!--sidebar start-->
       
       <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">                
+                  <li class="">
+                      <a class="" href="index.html">
+                          <i class="icon_house_alt"></i>
+                          <span>Menu</span>
+                      </a>
+                  </li>
+                  
+                 <li class="sub-menu">
+                            <a href="javascript:;" class="">
+                                <i class="icon_pencil-edit"></i>
+                                <span>Registrar</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a class="" href="Inscripcion.html">Alumnos</a></li>
+                                <li><a class="" href="registro.html">Empleados</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;" class="">
+                                <i class="icon_document_alt"></i>
+                                <span>Inscripcion</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a class="" href="Asistencia.html">Alumnos</a></li>
+                                <li><a class="" href="mostrar_registro.html">Empleados</a></li>
+
+                            </ul>
+                        </li>
+                  <!--<li class="sub-menu">
+                      <a href="Asistencia.html" class="">
+                          <i class="icon_document_alt"></i>
+                          <span>Alumnos</span>
+                      </a>
+                  </li>-->
+				<!--  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_document_alt"></i>
+                          <span>Forms</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="form_component.html">Form Elements</a></li>                          
+                          <li><a class="" href="form_validation.html">Form Validation</a></li>
+                      </ul>
+                  </li>       
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_desktop"></i>
+                          <span>UI Fitures</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="" href="general.html">Components</a></li>
+                          <li><a class="" href="buttons.html">Buttons</a></li>
+                          <li><a class="" href="grids.html">Grids</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="" href="widgets.html">
+                          <i class="icon_genius"></i>
+                          <span>Widgets</span>
+                      </a>
+                  </li>
+                  <li>                     
+                      <a class="" href="chart-chartjs.html">
+                          <i class="icon_piechart"></i>
+                          <span>Charts</span>
+                          
+                      </a>
+                                         
+                  </li>
+                             
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_table"></i>
+                          <span>Tables</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          <li><a class="active" href="basic_table.html">Basic Table</a></li>
+                      </ul>
+                  </li>
+                  
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <i class="icon_documents_alt"></i>
+                          <span>Pages</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">                          
+                          <li><a class="" href="profile.html">Profile</a></li>
+                          <li><a class="" href="login.html"><span>Login Page</span></a></li>
+                          <li><a class="" href="blank.html">Blank Page</a></li>
+                          <li><a class="" href="404.html">404 Error</a></li>
+                      </ul>
+                  </li>-->
+                  
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
@@ -201,7 +316,7 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
                             <div class="panel panel-info registro">
                                 <div class="panel-heading ">
                                     Registro de empleados
@@ -211,9 +326,9 @@
 
 
 
-                                                <div class="form-group col-md-5">
-                                                    <div class="input-group">
-                                                        <label for="nombre_completo"class=" control-label ">Nombre</label>
+                                                <div class="form-group ">
+                                                    <div class="input-group col-md-9">
+                                                        <label for="nombre_completo"class=" control-label">Nombre</label>
                                                         <span class="input-group-addon"><i class="icon_profile"></i></span>
                                                         <input type="text" class="form-control" placeholder="Nombre completo" autofocus>
                                                     </div>
@@ -222,7 +337,7 @@
                                                 <div class="form-group col-md-5">
                                                     <div class="input-group">
                                                         <label for="area_trabajo" class="control-label">Area de trabajo</label>
-                                                        <span class="input-group-addon"><i class="fa fa-graduation-cap"></i></span>
+                                                        <span class="input-group-addon"><i class="fa fa-graduation-cap "></i></span>
                                                         <select class="form-control">
                                                             <option value="Personal administrativo">Personal administrativo</option>
                                                             <option value="Personal educativo">Personal educativo</option>
@@ -251,7 +366,7 @@
                                                 <div class="form-group col-md-5">
                                                     <div class="input-group">
                                                         <label for="confirmar_contraseña" class="control-label">Confirmar contraseña</label>
-                                                        <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                                                        <span class="input-group-addon"><i class="icon_key_alt" ></i></span>
                                                         <input type="password" class="form-control" placeholder="Confirmar contraseña" autofocus>
                                                     </div>
                                                 </div>
