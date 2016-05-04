@@ -15,6 +15,7 @@
     return view('welcome');
 });*/
 
+
 Route::get('/', [
         'uses' => 'HomeController@index',
         'as' => 'home'
@@ -58,35 +59,24 @@ Route::post('changepassword', 'changePassword@postResetPassword');
 // Password reset routes...
 Route::get('reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('reset', 'Auth\PasswordController@postReset');
+Route::post('nuevo','AlumnoController@save');
+/*Route::get('principal', function () {
+    return view('principal');
+});*/
 
-Route::get('formulario', [
-  'middleware' => 'auth',
-  'uses' => 'StorageController@index',
-  'as'  =>  'file'
-  ]);
-Route::post('formulario','StorageController@save');
-Route::get('formulario/{archivo}',[
-  'middleware' => 'auth',
-  'uses'=> 'StorageController@download']);
 
-  /*Route::get('inscripcion', function (){
-      return view('inscripcion');
-    });*/
-    /*Route::get('/', function () {
-        return view('welcome');
-    });*/
 
-    Route::get('inscripcion',[
-      'uses' => 'InscripcionController@index',
-      'as' => 'inscripcion'
-    ]);
-    Route::post('inscripcion','InscripcionController@create');
-
-    Route::get('alumnostabla',[
-      'uses' => 'EditarController@index',
-      'as'  =>'alumnostabla'
-    ]);
-
-    Route::get('alumnoupdate', 'EditarController@edit');
-
-//    Route::put('alumnoupdate','EditarController');
+/**
+ * Rutas para alumnos
+ */
+ Route::get('nuevo',[
+ 'uses' => 'AlumnoController@create',
+ 'as'  =>'nuevo'
+ ]);
+Route::post('nuevo','AlumnoController@save');
+Route::get('alumno/index', 'AlumnoController@index');
+Route::get('alumno/{id}/editar', 'AlumnoController@edit');
+Route::post('editar',[
+  'uses'=>'AlumnoController@update',
+  'as' => 'editar'
+]);

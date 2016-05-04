@@ -11,21 +11,21 @@
     <title>ALUNA</title>
 
     <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
     <!--external css-->
     <!-- font icon -->
-    <link href="assets/css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- Custom styles -->
 
-	<link href="assets/css/widgets.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/style-responsive.css" rel="stylesheet" />
-	<link href="assets/css/xcharts.min.css" rel=" stylesheet">
-	<link href="assets/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+	<link href="/css/widgets.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/style-responsive.css" rel="stylesheet" />
+	<link href="/css/xcharts.min.css" rel=" stylesheet">
+	<link href="/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
 
   </head>
 
@@ -93,13 +93,13 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">
                   <li class="active">
-                      <a class="" href="principal">
+                      <a  href="principal">
                           <i class="icon_house_alt"></i>
                           <span>{{ trans('pagination.home') }}</span>
                       </a>
                   </li>
                   <li>
-                      <a class="" href="inscripcion">
+                      <a class="" href="nuevo">
                           <i class="icon_documents_alt"></i>
                           <span>Inscripción</span>
 

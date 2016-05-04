@@ -28,8 +28,17 @@
 <div class="info-box blue-bg">
 <!--<a href="LINK"><img src="LINK IMAGEN"></a>-->
 
-                                    <a href="inscripcion" img src="img/azulver.jpg">Inscripcion</a>
+                                    <a href="nuevo" img src="img/azulver.jpg">Inscripcion</a>
+
 </div><!--/.info-box-->
+
+<div class="info-box blue-bg">
+<!--<a href="LINK"><img src="LINK IMAGEN"></a>-->
+
+                                    <a href="alumno/index" img src="img/azulver.jpg">Alumno</a>
+
+</div><!--/.info-box-->
+
 </div><!--/.col-->
 
 
@@ -70,17 +79,8 @@
 <!-- container section start -->
 
 <!-- javascripts -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery-ui-1.10.4.min.js"></script>
-<script src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
-<!-- bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- nice scroll -->
 
-<!-- custom select -->
-<script src="js/jquery.customSelect.min.js" ></script>
-<script src="assets/chart-master/Chart.js"></script>
+
 
 
 @endsection
