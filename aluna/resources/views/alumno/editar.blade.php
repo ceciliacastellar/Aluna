@@ -4,8 +4,8 @@
 @section('content')
 
 <section id="container" class="">
-
-
+  @include('partials/errors')
+<form method="POST" action="{{ route('alumno/editar') }}" accept-charset="UTF-8" enctype="multipart/form-data">
 
   <!--main content start-->
   <section id="main-content">
@@ -26,7 +26,7 @@
 
     <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
     <div class="row">
-      <form method="POST" action="{{ route('editar') }}" accept-charset="UTF-8" enctype="multipart/form-data">
+
         <input type="hidden" name="_token" value="{{ csrf_token()}}">
 
                    <div class="col-lg-12">
@@ -34,33 +34,33 @@
                       <section class="panel">
                             <header class="panel-heading tab-bg-info">
                                 <ul class="nav nav-tabs">
-                                    <li class="active">
-                                        <a data-toggle="tab" href="#alumno">
+                                    <li class="active panel panel-primary">
+                                        <a data-toggle="tab" href="#alumno" class="alumno">
                                             <i class="icon-home"></i>
                                             Alumno
                                         </a>
                                     </li>
-                                    <li>
-                                        <a data-toggle="tab" href="#padres">
+                                    <li class="panel panel-info">
+                                        <a data-toggle="tab" href="#padres" class="alumno">
                                             <i class="icon-user"></i>
                                             Padres
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a data-toggle="tab" href="#acudiente">
+                                    <li class="panel panel-warning">
+                                        <a data-toggle="tab" href="#acudiente" class="alumno">
                                             <i class="icon-envelope"></i>
                                             Acudiente
                                         </a>
                                     </li>
 
-                                    <li class="">
-                                        <a data-toggle="tab" href="#emergencia">
+                                    <li class="panel panel-danger">
+                                        <a data-toggle="tab" href="#emergencia" class="alumno">
                                             <i class="icon-envelope"></i>
                                             Emergencia
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a data-toggle="tab" href="#fundacion">
+                                    <li class="panel panel-success">
+                                        <a data-toggle="tab" href="#fundacion" class="alumno">
                                             <i class="icon-envelope"></i>
                                             Fundación
                                         </a>

@@ -32,33 +32,33 @@
                       <section class="panel">
                             <header class="panel-heading tab-bg-info">
                                 <ul class="nav nav-tabs">
-                                    <li class="active">
-                                        <a data-toggle="tab" href="#alumno">
+                                    <li class="active panel panel-primary">
+                                        <a data-toggle="tab" href="#alumno" class="alumno">
                                             <i class="icon-home"></i>
                                             Alumno
                                         </a>
                                     </li>
-                                    <li>
-                                        <a data-toggle="tab" href="#padres">
+                                    <li class="panel panel-info">
+                                        <a data-toggle="tab" href="#padres" class="padres">
                                             <i class="icon-user"></i>
                                             Padres
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a data-toggle="tab" href="#acudiente">
+                                    <li class="panel panel-warning">
+                                        <a data-toggle="tab" href="#acudiente" class="acudiente">
                                             <i class="icon-envelope"></i>
                                             Acudiente
                                         </a>
                                     </li>
 
-                                    <li class="">
-                                        <a data-toggle="tab" href="#emergencia">
+                                    <li class="panel panel-danger">
+                                        <a data-toggle="tab" href="#emergencia" class="emergencia">
                                             <i class="icon-envelope"></i>
                                             Emergencia
                                         </a>
                                     </li>
-                                    <li class="">
-                                        <a data-toggle="tab" href="#fundacion">
+                                    <li class="panel panel-success">
+                                        <a data-toggle="tab" href="#fundacion" class="fundacion">
                                             <i class="icon-envelope"></i>
                                             Fundación
                                         </a>
@@ -75,7 +75,7 @@
                                         <div class="alumno">
                                              <div class="row">
                                   <div class="col-lg-12">
-                                      <section class="panel">
+                                      <section class="panel panel-primary">
 
                                           <header class="panel-heading">
                                               Información del niño, niña o joven
@@ -280,7 +280,7 @@
                              </div>
                                             <div class="row">
                           <div class="col-lg-12">
-                              <section class="panel">
+                              <section class="panel panel-primary">
                                   <header class="panel-heading">
                                       Información de la persona con quien vive
                                   </header>
@@ -344,7 +344,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <section class="panel">
+                            <section class="panel panel-info">
                             <header class="panel-heading">
                                 Información del padre
                             </header>
@@ -453,7 +453,7 @@
                 <!-- Form validations -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <section class="panel">
+                        <section class="panel panel-info">
                             <header class="panel-heading">
                                 Información de la madre
                             </header>
@@ -574,7 +574,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <section class="panel">
+                            <section class="panel panel-warning">
                                 <header class="panel-heading">
                                     Información del acudiente
                                   </header>
@@ -693,7 +693,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <section class="panel">
+                            <section class="panel panel-danger">
                                 <header class="panel-heading">
                                     Información de otro familiar o persona de confianza para casos de emergencia
                                 </header>
@@ -782,7 +782,7 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <section class="panel">
+                                <section class="panel panel-success">
                                     <header class="panel-heading">
                                           Información para la fundación
                                       </header>

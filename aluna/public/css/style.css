@@ -9,6 +9,7 @@ Website: http://geekslabs.com/
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 @import url(line-icons.css);
 
+
 body {
     color: #797979;
     background: #eeeeee;
@@ -17,28 +18,9 @@ body {
     margin: 0px !important;
     font-size:14px !important;
 }
-
-.span.a{
-    color: #ffffff
-}
-
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
     font-weight: 300;
 }
-
-h5{
-    font-weight: 300;
-    text-align: center;
-    font: oblique 250% sans-serif bold;
-    color: #1cb2b7;
-}
-h6{
-    font-weight: 400;
-    text-align: center;
-    font: oblique 250% sans-serif bold;
-    color: #16525F;
-}
-
 label{
     font-weight: 300;
 }
@@ -52,16 +34,118 @@ a, a:hover, a:focus {
     outline: 0;
 }
 input:focus, textarea:focus { outline: none; }
-table tr th { color: #688a7e;}
-*:focus {outline: none;}
+table tr th {
+    color: #688a7e;
+}
+*:focus {
+    outline: none;
+}
 ::selection {
-    background: #688a7e;
+    background: #598788;
     color: #fff;
 }
 ::-moz-selection {
-    background: #688a7e;
+    background: #598788;
     color: #fff;
 }
+
+
+
+
+.round-fifty{
+    -webkit-border-radius: 10px;
+    margin-left: 45%;
+    margin-top: 25px;
+     border: ridge #E6E6E6 1px;
+}
+.ico-bg{
+    background:#2186DE;
+    width: 30px;
+    height: 30px;
+
+}
+.icon-wrap i{
+
+    color:whitesmoke ;
+
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+.container-box{
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+
+}
+.h-service{
+     border: ridge #808080 1px;
+     height: 210px;
+}
+#tittlebox{
+    font-size: 16px;
+}
+
+
+.registro{
+     margin-top: 48px;
+    margin-left: 20%;
+    margin-right: 10%
+
+}
+.panel-heading .nav > li >  .alumno{
+    background:#2775e2 ;
+}
+.panel-heading .nav > li >  .padres{
+    background: #00aced;
+}
+.panel-heading .nav > li >  .acudiente{
+    background: #f4b162;
+}
+.panel-heading .nav > li >  .emergencia{
+    background: #ff2121;
+}
+.panel-heading .nav > li >  .fundacion{
+    background: #79c447;
+}
+
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .alumno:hover{
+    color: #fff;
+    background: #2775e2 ;
+}
+
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .padres:hover{
+    color: #fff;
+    background: #00aced;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .acudiente:hover{
+    color: #fff;
+    background: #f4b162;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .emergencia:hover{
+    color: #fff;
+    background: #ff2121;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .fundacion:hover{
+    color: #fff;
+    background:#79c447;
+}
+
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .sitio:hover{
+    color: #fff;
+    background:#F2731F;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #container {
     width: 100%;
@@ -83,7 +167,8 @@ table tr th { color: #688a7e;}
     padding-top: 10px;
 }
 .lite{
-    color: #00a0df !important;
+    color: #7BC3C0 !important;
+    font: bold 150% monospace
 }
 
 /*login page*/
@@ -132,37 +217,9 @@ table tr th { color: #688a7e;}
     border: 1px solid #B0B6BE;
     background: rgba(213,215,222,0.9);
 }
-.login-form .a .btn-primary{
-    color: #FFF;
-    background-color: #007AFF;
-    border-color: #007AFF;
-
+.login-form a{
+    color: #688a7e !important;
 }
-
-.login-form .a .btn{
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0px;
-    font-size: 14px;
-    line-height: 1.42857;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    white-space: nowrap;
-    -moz-user-select: none;
-    font-weight: 300;
-    transition: all 0.15s ease 0s;
-}
-
-/*.login-form .a:visited{
-    color: #ffffff;
-}
-.login-form .a:hover:visited{
-    color: #007AFF;
-}*/
-
 .login-form h2.login-form-heading {
     margin: 0;
     padding:20px 15px;
@@ -243,14 +300,13 @@ table tr th { color: #688a7e;}
 .login-img3-body .login-form p,.login-img2-body .login-form p {
     color: #34aadc;
 }
-/*
 .login-form a {
     color: #b6b6b6;
 }
 
 .login-form a:hover {
     color: #34aadc;
-}*/
+}
 .form .required{
     font-size: 16px;
     color: #00a0df;
@@ -306,10 +362,10 @@ table tr th { color: #688a7e;}
 /*sidebar navigation*/
 
 #sidebar {
-    width: 180px;
+    width: 160px;
     height: 100%;
     position: fixed;
-    background: #394a59;
+    background: #BE0F29;
 }
 
 .nav-collapse.collapse {
@@ -577,10 +633,10 @@ ul.sidebar-menu li.active a i {
 
 a.logo {
     font-size: 22px;
-    font-weight: 300;
-    color: #fed189;
+    font-size: large;
+    color: #E6E6E6;
     float: left;
-    margin-top: 20px;
+    margin-top: 5px;
     text-transform: uppercase;
 }
 
@@ -879,7 +935,7 @@ div[data-role="editor-toolbar"] {
 
 .top-nav .username {
     font-size: 13px;
-    color: #bdbdbd;
+    color: #E6E6E6;
 }
 
 .top-nav ul.top-menu > li > a {
@@ -1029,8 +1085,8 @@ div[data-role="editor-toolbar"] {
 }
 .blue-bg {
   color : #fff;
-  background : #57889c;
-  background-color : #57889c;
+  background : #0288D1;
+  background-color : #0288D1;
 }
 .green-bg {
   color : #fff;
@@ -1246,7 +1302,7 @@ div[data-role="editor-toolbar"] {
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
 
 }
-
+}
 .panel.panel-default.panel-heading {
   background: #97d3c5;
 }
@@ -1553,7 +1609,7 @@ div[data-role="editor-toolbar"] {
   -moz-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
-/*Widget-Content */
+* /Widget-Content */
 
 .widget-content .error .form-inline button{
 	margin-left:-2px;
@@ -1731,7 +1787,7 @@ div[data-role="editor-toolbar"] {
   cursor:move;
 }
 /*-----	map-----*/
-/* Google maps */
+* Google maps */
 
 .gmap iframe{
 	width: 100%;
@@ -3484,7 +3540,7 @@ ul.inbox-pagination li {
 }
 
 .bio-row p span {
-    width: 100px;
+    width: 200px;
     display: inline-block;
 }
 
@@ -3912,12 +3968,12 @@ ul.amounts li {
 }
 
 .tab-bg-info {
-    background: #324c57;
+    background: #FFFFFF;
 
     border-bottom: none;
 }
 .tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > a:hover{
-    color: #36464d;
+    color: #FFFFFF;
 }
 .tab-bg-info.panel-heading .nav{
     margin: -10px 15px -11px;
@@ -3930,11 +3986,12 @@ ul.amounts li {
 
 .panel-heading .nav > li > a {
     color: #fff;
+
 }
 
 .panel-heading .nav > li.active > a, .panel-heading .nav > li > a:hover {
     color: #688a7e;
-    background: #fff;
+    background:#435A77;
 }
 
 .tab-right {

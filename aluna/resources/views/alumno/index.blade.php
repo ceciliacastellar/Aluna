@@ -39,7 +39,7 @@
 
                              <td>
                               <div class="btn-group">
-                                  <a class="btn btn-primary" href="">Ver</a>
+                                  <a class="btn btn-primary" href="{{ URL::to('alumno/'.$alumnos->id.'/ver')}}">Ver</a>
                               </div>
                               </td>
 

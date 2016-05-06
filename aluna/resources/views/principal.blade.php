@@ -23,24 +23,34 @@
 
 <!-- Comienzo-->
 
-<div class="row">
-<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-<div class="info-box blue-bg">
-<!--<a href="LINK"><img src="LINK IMAGEN"></a>-->
+<div class="container-box">
+  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                              <div class="h-service " >
 
-                                    <a href="nuevo" img src="img/azulver.jpg">Inscripcion</a>
-
-</div><!--/.info-box-->
-
-<div class="info-box blue-bg">
-<!--<a href="LINK"><img src="LINK IMAGEN"></a>-->
-
-                                    <a href="alumno/index" img src="img/azulver.jpg">Alumno</a>
-
-</div><!--/.info-box-->
-
-</div><!--/.col-->
-
+                                  <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
+                                      <i class="fa fa-pencil fa-lg"></i>
+                                  </div>
+                                  <div class="h-service-content wow fadeInUp">
+                                      <br> <center> <h3 id="tittlebox"> Inscripcion alumnos </h3><br>
+                                          <a class="btn btn-info" href="nuevo"><span>Inscribir</span></a><br>
+                                          <br>
+                                      </center>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                          <div class="h-service" >
+                              <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
+                                  <i class="fa fa-folder-open fa-lg"></i>
+                              </div>
+                              <div class="h-service-content wow fadeInUp">
+                                  <br> <center> <h3 id="tittlebox"> Alumnos registrados </h3><br>
+                                      <a class="btn btn-primary" href="alumno/index"><span>Ver</span></a><br>
+                                      <br>
+                                  </center>
+                              </div>
+                          </div>
+                      </div>
 
 
 

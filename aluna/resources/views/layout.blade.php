@@ -34,7 +34,7 @@
   <section id="container" class="">
 
 
-      <header class="header dark-bg">
+      <header class="header blue-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
             </div>
@@ -57,7 +57,7 @@
 															<li><a href="{{ route('register') }}">Register</a></li>
 												@else
 															<li class="dropdown">
-																			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span>
+																			<a class="dropdown-toggle username" data-toggle="dropdown"  aria-expanded="false">{{ Auth::user()->name }} <span role="button" class="caret"></span>
 																				<span class="profile-ava">
 						                                <img alt="" src="img/avatar1_small.png">
 						                            </span>
@@ -65,14 +65,6 @@
 																				<ul class="dropdown-menu extended logout">
 																						<div class="log-arrow-up"></div>
 																						<li class="eborder-top">
-																								<a href="#"><i class="icon_profile"></i> My Profile</a>
-																						</li>
-																						<li>
-																								<a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
-																						</li>
-																						<li>
-																								<a href="#"><i class="icon_chat_alt"></i> Chats</a>
-																						</li>
 																						<li>
 																								<a href="{{ route('logout') }}"><i class="icon_key_alt"></i> Log Out</a>
 																						</li>

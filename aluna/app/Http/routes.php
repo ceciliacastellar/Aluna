@@ -75,8 +75,9 @@ Route::post('nuevo','AlumnoController@save');
  ]);
 Route::post('nuevo','AlumnoController@save');
 Route::get('alumno/index', 'AlumnoController@index');
-Route::get('alumno/{id}/editar', 'AlumnoController@edit');
-Route::post('editar',[
+Route::post('alumno/editar',[
   'uses'=>'AlumnoController@update',
-  'as' => 'editar'
+  'as' => 'alumno/editar'
 ]);
+Route::get('alumno/{id}/ver', 'AlumnoController@show');
+Route::get('alumno/{id}/editar', 'AlumnoController@edit');
