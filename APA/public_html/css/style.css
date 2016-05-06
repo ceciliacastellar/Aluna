@@ -130,6 +130,10 @@ table tr th {
     color: #fff;
     background:#79c447;
 }
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .sitio:hover{
+    color: #fff;
+    background:#F2731F;
+}
 
 
 
@@ -629,12 +633,14 @@ ul.sidebar-menu li.active a i {
 }
 
 a.logo {
+    
     font-size: 22px;
     font-size: large;
     color: #E6E6E6;
     float: left;
     margin-top: 5px;
     text-transform: uppercase;
+    font-family: 
 }
 
 a.logo:hover, a.logo:focus {
