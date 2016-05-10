@@ -130,12 +130,15 @@ table tr th {
     color: #fff;
     background:#79c447;
 }
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .hmedico:hover{
+    color: #fff;
+    background:#8383EE;
+}
+
 .tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .sitio:hover{
     color: #fff;
     background:#F2731F;
 }
-
-
 
 
 
