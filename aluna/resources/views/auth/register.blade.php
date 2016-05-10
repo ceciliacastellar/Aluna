@@ -1,4 +1,4 @@
-@extends('layout2')
+@extends('layout')
 
 @section('content')
 
@@ -7,7 +7,7 @@
 					<body>
 
 				    <div class="container">
-							@include('partials/errors')
+
 				      <form class="login-form" role="form" method="POST" action="{{ route('register') }}">
 								<input type="hidden" name="_token" value="{{ csrf_token() }}">
 				        <div class="login-wrap">

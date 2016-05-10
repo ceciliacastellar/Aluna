@@ -5,7 +5,8 @@
 
 <section id="container" class="">
   @include('partials/errors')
-<form method="POST" action="{{ route('alumno/editar') }}" accept-charset="UTF-8" enctype="multipart/form-data">
+<form method="PATCH" action="{{ route('alumno/index', $alumnos->id) }}" accept-charset="UTF-8" enctype="multipart/form-data">
+  <input type="hidden" name="_token" value="{{ csrf_token()}}">
 
   <!--main content start-->
   <section id="main-content">
@@ -27,9 +28,7 @@
     <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
     <div class="row">
 
-        <input type="hidden" name="_token" value="{{ csrf_token()}}">
-
-                   <div class="col-lg-12">
+                         <div class="col-lg-12">
 
                       <section class="panel">
                             <header class="panel-heading tab-bg-info">
@@ -615,7 +614,7 @@
 
                                                <label for="numero_documentoa" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                              <div class="col-lg-3">
-                                                 <input class="form-control" name="numero_documentoaa" value="{{ $alumnos->numero_documentoa }}" minlength="5" type="text" required />
+                                                 <input class="form-control" name="numero_documentoa" value="{{ $alumnos->numero_documentoa }}" minlength="5" type="text" required />
                                              </div>
 
                                           </div>

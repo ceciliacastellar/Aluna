@@ -612,7 +612,7 @@
 
                                                <label for="numero_documentoa" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                              <div class="col-lg-3">
-                                                 <input class="form-control" name="numero_documentoma" minlength="5" type="text" required />
+                                                 <input class="form-control" name="numero_documentoa" minlength="5" type="text" required />
                                              </div>
 
                                           </div>

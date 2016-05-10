@@ -52,11 +52,11 @@ class CreateAlumnoTable extends Migration
           $table->string('tel_trabajoa')->nullable();
           $table->string('nombre_emergencia')->nullable();
           $table->string('apellido_emergencia')->nullable();
-          //$table->string('tipo_documentope')->nullable();
-          //$table->string('numero_documentoe')->nullable();
+          $table->string('tipo_documentope')->nullable();
+          $table->string('numero_documentoe')->nullable();
           $table->string('direccion_emergencia')->nullable();
           $table->string('tel_emergencia')->nullable();
-          //$table->string('dir_trabajoe')->nullable();
+          $table->string('dir_trabajoe')->nullable();
           $table->string('tel_trabajoe')->nullable();
           $table->string('fecha_matricula')->nullable();
           $table->string('convenio')->nullable();

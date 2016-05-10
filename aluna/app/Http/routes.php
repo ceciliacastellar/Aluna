@@ -41,6 +41,11 @@ Route::get('principal', [ 'middleware' => 'auth',
 
 );
 // Registration routes...
+Route::get('auth/register', ['middleware' => 'auth',
+  'uses' => 'UsuarioController@show',
+  'as' => 'auth/register'
+]);
+
 Route::get('register', [
     'uses'=> 'Auth\AuthController@getRegister',
   'as' => 'register'
@@ -48,7 +53,7 @@ Route::get('register', [
 Route::post('register', 'Auth\AuthController@postRegister');
 
 // Password reset link request routes...
-Route::get('password', 'Auth\PasswordController@getEmail');
+/*Route::get('password', 'Auth\PasswordController@getEmail');
 Route::post('password', 'Auth\PasswordController@postEmail');
 Route::get('changepassword', ['middleware' => 'auth',
       'uses' => 'changePassword@index',
@@ -59,7 +64,7 @@ Route::post('changepassword', 'changePassword@postResetPassword');
 // Password reset routes...
 Route::get('reset/{token}', 'Auth\PasswordController@getReset');
 Route::post('reset', 'Auth\PasswordController@postReset');
-Route::post('nuevo','AlumnoController@save');
+Route::post('nuevo','AlumnoController@save');*/
 /*Route::get('principal', function () {
     return view('principal');
 });*/
@@ -69,15 +74,26 @@ Route::post('nuevo','AlumnoController@save');
 /**
  * Rutas para alumnos
  */
- Route::get('nuevo',[
+
+ Route::get('nuevo',[ 'middleware' => 'auth',
  'uses' => 'AlumnoController@create',
  'as'  =>'nuevo'
  ]);
 Route::post('nuevo','AlumnoController@save');
-Route::get('alumno/index', 'AlumnoController@index');
-Route::post('alumno/editar',[
-  'uses'=>'AlumnoController@update',
-  'as' => 'alumno/editar'
+Route::get('alumno/index', ['middleware' => 'auth',
+  'uses' => 'AlumnoController@index',
+  'as' => 'alumno/index'
 ]);
-Route::get('alumno/{id}/ver', 'AlumnoController@show');
-Route::get('alumno/{id}/editar', 'AlumnoController@edit');
+Route::get('alumno/{id}/ver', ['middleware' => 'auth',
+  'uses' => 'AlumnoController@show',
+  'as' => 'alumno/{id}/ver'
+]);
+Route::get('alumno/{id}/editar', ['middleware' => 'auth',
+  'uses' => 'AlumnoController@edit',
+  'as' => 'alumno/{id}/editar'
+]);
+Route::patch('alumno/index, {id}','AlumnoController@update');
+Route::get('auth/index', ['middleware' => 'auth',
+  'uses' => 'UsuarioController@index',
+  'as' => 'auth/index'
+]);

@@ -22,19 +22,18 @@
                     <table class="table table-striped table-advance table-hover">
                      <tbody>
                         <tr>
-                           <th><i class="icon_documents_alt"></i> Numero Documento</th>
-                           <th><i class="icon_calendar"></i> Nombres</th>
-                           <th><i class="icon_profile"></i> Apellidos</th>
-                           <th><i class="icon_document"></i> Convenio</th>
+                           <th><i class="icon_calendar"></i> Nombre</th>
+                           <th><i class="icon_profile"></i> Email</th>
+                           <th><i class="icon_document"></i> Password</th>
                            <th colspan="3"><i class="icon_cogs"></i> Acción</th>
                         </tr>
 
-                        @foreach($alumnos as $alumnos)
+                        @foreach($users as $users)
                         <tr>
-                          <td>{{ $alumnos->numero_documento }}</td>
-                           <td>{{ $alumnos->nombres }}</td>
-                           <td>{{ $alumnos->apellidos }}</td>
-                           <td>{{ $alumnos->convenio }}</td>
+                           <td>{{ $users->name }}</td>
+                           <td>{{ $users->email }}</td>
+                           <td>{{ $users->password }}</td>
+
 
 
                              <td>
@@ -45,7 +44,7 @@
 
                               <td>
                                <div class="btn-group">
-                                   <a class="btn btn-primary"  href="{{ URL::to('alumnostabla/' . $alumnos->id . '/alumnoupdate') }}">Editar</a>
+                                   <a class="btn btn-primary"  href="">Editar</a>
                                </div>
                                </td>
 

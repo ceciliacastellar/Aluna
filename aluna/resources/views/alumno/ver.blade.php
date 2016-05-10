@@ -212,7 +212,7 @@
                                               <p><span>DIRECCIÓN DE TRABAJO</span>: {{ $alumnos->dir_trabajom }} </p>
                                           </div>
                                           <div class="bio-row">
-                                              <p><span>TELEFONO DE TRABAJO </span>: {{ $alumnos->tel_trabajom }}6602222</p>
+                                              <p><span>TELEFONO DE TRABAJO </span>: {{ $alumnos->tel_trabajom }}</p>
                                           </div>
                                       </div>
                                   </div>
@@ -239,14 +239,22 @@
                                           <div class="bio-row">
                                               <p><span>APELLIDOS</span>: {{ $alumnos->apellido_acudiente }} </p>
                                           </div>
-
+                                          <div class="bio-row">
+                                              <p><span>TIPO DE DOCUMENTO</span>: {{ $alumnos->tipo_documentopa }}</p>
+                                          </div>
+                                          <div class="bio-row">
+                                              <p><span>NUMERO DEL DOCUMENTO </span>: {{ $alumnos->numero_documentoa }} </p>
+                                          </div>
                                           <div class="bio-row">
                                               <p><span>DIRECIÓN DE RESIDENCIA </span>: {{ $alumnos->direccion_acudiente }} </p>
                                           </div>
                                           <div class="bio-row">
                                               <p><span>TELEFONO DE RESIDENCIA </span>: {{ $alumnos->tel_acudiente }}</p>
                                           </div>
-                                                                                        <div class="bio-row">
+                                          <div class="bio-row">
+                                              <p><span>DIRECCIÓN DE TRABAJO</span>: {{ $alumnos->dir_trabajoa }} </p>
+                                          </div>
+                                          <div class="bio-row">
                                               <p><span>TELEFONO DE TRABAJO </span>: {{ $alumnos->tel_trabajoa }} </p>
                                           </div>
                                       </div>
