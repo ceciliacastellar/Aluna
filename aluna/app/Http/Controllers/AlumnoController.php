@@ -20,24 +20,24 @@ class AlumnoController extends Controller
    }
 
   public function create(){
-       return view('nuevo');
+         return view('alumno.create');
   }
 
   public function show($id)
   {
       $alumnos = Alumno::find($id);
-      return View::make('alumno.ver')->with('alumnos', $alumnos);
+      return View::make('alumno.show')->with('alumnos', $alumnos);
   }
 
 
   public function edit($id)
     {
           $alumnos = Alumno::find($id);
-          return  View::make('alumno.editar')->with('alumnos', $alumnos);
+          return  View::make('alumno.edit')->with('alumnos', $alumnos);
     }
 
 
-  public function save(Request $request){
+  public function store(Request $request){
     $this ->validate($request, [
          'nombres'=> 'max:60',
          'apellidos'=> 'max:60',
@@ -137,67 +137,15 @@ class AlumnoController extends Controller
           $alumno->modulo = $request->modulo;
           $alumno->programa = $request->programa;
           $alumno->save();
-          return view('nuevo');
+          return view('alumno.create');
 
         }
 
         public function update(Request $request, $id)
           {
-          /*  $this ->validate($request, [
-                 'nombres'=> 'max:60',
-                 'apellidos'=> 'max:60',
-                 'tipo_documento'=> 'max:60',
-                 'numero_documento'=> 'max:60',
-                 'fecha_nacimiento'=> 'max:60',
-                 'departamento'=> 'max:60',
-                 'municipio'=> 'max:60',
-                 'edad'=> 'max:60',
-                 'direccion_residencia'=> 'max:60',
-                 'nombre_persona'=> 'max:60',
-                 'apellido_persona'=> 'max:60',
-                 'parentesco'=> 'max:60',
-                 'nombre_padre'=> 'max:60',
-                 'apellido_persona'=> 'max:60',
-                 'tipo_documentop'=> 'max:60',
-                 'numero_documentop'=> 'max:60',
-                 'direccion_padre'=> 'max:60',
-                 'tel_padre'=> 'max:60',
-                 'dir_trabajop'=> 'max:60',
-                 'tel_trabajop'=> 'max:60',
-                 'dir_trabajop'=> 'max:60',
-                 'tel_trabajop'=> 'max:60',
-                 'nombre_madre'=> 'max:60',
-                 'apellido_madre'=> 'max:60',
-                 'tipo_documentom'=> 'max:60',
-                 'direccion_madre'=> 'max:60',
-                 'tel_madre'=> 'max:60',
-                 'dir_trabajom'=> 'max:60',
-                 'tel_trabajom'=> 'max:60',
-                 'nombre_acudiente'=> 'max:60',
-                 'apellido_acudiente'=> 'max:60',
-                 'tipo_documentopa'=> 'max:60',
-                 'numero_documentoa'=> 'max:60',
-                 'direccion_acudiente'=> 'max:60',
-                 'tel_acudiente'=> 'max:60',
-                 'dir_trabajoa'=> 'max:60',
-                 'tel_trabajoa'=> 'max:60',
-                 'nombre_emergencia'=> 'max:60',
-                 'apellido_emergencia'=> 'max:60',
-
-                 'numero_documentoe'=> 'max:60',
-                 'direccion_emergencia'=> 'max:60',
-                 'tel_emergencia'=> 'max:60',
-                 'dir_trabajoe'=> 'max:60',
-                 'tel_trabajoe'=> 'max:60',
-                 'fecha_matricula'=> 'max:60',
-                 'convenio'=> 'max:60',
-                 'modulo'=> 'max:60',
-                 'programa'=> 'max:60',
-            ]);*/
-
-            $alumno = Alumno::find($request->$id);
-            $alumno->fill(Request::all());
-            /*$alumno->nombres = $request->nombres;
+            $alumno = Alumno::find($id);
+            //$alumno->fill(Request::all());
+            $alumno->nombres = $request->nombres;
             $alumno->apellidos = $request->apellidos;
             $alumno->tipo_documento = $request->tipo_documento;
             $alumno->numero_documento = $request->numero_documento;
@@ -241,11 +189,9 @@ class AlumnoController extends Controller
             $alumno->fecha_matricula = $request->fecha_matricula;
             $alumno->convenio = $request->convenio;
             $alumno->modulo = $request->modulo;
-            $alumno->programa = $request->programa;*/
-            $alumno->save();
-            //Session::flash('message', 'Alumno editado exitosamente');
-            return redirect('alumno/index');
-
+            $alumno->programa = $request->programa;
+            $alumno->update();
+            return  view('/principal');
           }
 
 

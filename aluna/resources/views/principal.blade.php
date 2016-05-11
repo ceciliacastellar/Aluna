@@ -32,7 +32,7 @@
                                   </div>
                                   <div class="h-service-content wow fadeInUp">
                                       <br> <center> <h3 id="tittlebox"> Inscripcion alumnos </h3><br>
-                                          <a class="btn btn-info" href="nuevo"><span>Inscribir</span></a><br>
+                                          <a class="btn btn-info" href="alumno/create"><span>Inscribir</span></a><br>
                                           <br>
                                       </center>
                                   </div>
@@ -45,7 +45,7 @@
                               </div>
                               <div class="h-service-content wow fadeInUp">
                                   <br> <center> <h3 id="tittlebox"> Alumnos registrados </h3><br>
-                                      <a class="btn btn-primary" href="alumno/index"><span>Ver</span></a><br>
+                                      <a class="btn btn-primary" href="alumno"><span>Ver</span></a><br>
                                       <br>
                                   </center>
                               </div>

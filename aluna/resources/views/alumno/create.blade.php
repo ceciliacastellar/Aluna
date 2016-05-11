@@ -2,11 +2,8 @@
 
 
 @section('content')
-
 <section id="container" class="">
   @include('partials/errors')
-<form method="PATCH" action="{{ route('alumno/index', $alumnos->id) }}" accept-charset="UTF-8" enctype="multipart/form-data">
-  <input type="hidden" name="_token" value="{{ csrf_token()}}">
 
   <!--main content start-->
   <section id="main-content">
@@ -27,8 +24,10 @@
 
     <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
     <div class="row">
+      <form method="POST" action="{{ route('alumno.store') }}" accept-charset="UTF-8" enctype="multipart/form-data">
+        <input type="hidden" name="_token" value="{{ csrf_token()}}">
 
-                         <div class="col-lg-12">
+                   <div class="col-lg-12">
 
                       <section class="panel">
                             <header class="panel-heading tab-bg-info">
@@ -40,26 +39,26 @@
                                         </a>
                                     </li>
                                     <li class="panel panel-info">
-                                        <a data-toggle="tab" href="#padres" class="alumno">
+                                        <a data-toggle="tab" href="#padres" class="padres">
                                             <i class="icon-user"></i>
                                             Padres
                                         </a>
                                     </li>
                                     <li class="panel panel-warning">
-                                        <a data-toggle="tab" href="#acudiente" class="alumno">
+                                        <a data-toggle="tab" href="#acudiente" class="acudiente">
                                             <i class="icon-envelope"></i>
                                             Acudiente
                                         </a>
                                     </li>
 
                                     <li class="panel panel-danger">
-                                        <a data-toggle="tab" href="#emergencia" class="alumno">
+                                        <a data-toggle="tab" href="#emergencia" class="emergencia">
                                             <i class="icon-envelope"></i>
                                             Emergencia
                                         </a>
                                     </li>
                                     <li class="panel panel-success">
-                                        <a data-toggle="tab" href="#fundacion" class="alumno">
+                                        <a data-toggle="tab" href="#fundacion" class="fundacion">
                                             <i class="icon-envelope"></i>
                                             Fundación
                                         </a>
@@ -76,7 +75,7 @@
                                         <div class="alumno">
                                              <div class="row">
                                   <div class="col-lg-12">
-                                      <section class="panel">
+                                      <section class="panel panel-primary">
 
                                           <header class="panel-heading">
                                               Información del niño, niña o joven
@@ -103,9 +102,7 @@
                                                       <div class="form-group ">
                                                            <label for="nombres" class="control-label col-sm-2">NOMBRES <span class="required">*</span></label>
                                                            <div class="col-sm-10">
-
-                                                               <input class="form-control" name="nombres"  value="{{ $alumnos->nombres }}"  minlength="5" type="text" required />
-
+                                                               <input class="form-control" name="nombres" minlength="5" type="text" required />
                                                            </div>
                                                        </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
@@ -113,7 +110,7 @@
                                                           <div class="form-group ">
                                                               <label for="apellidos" class="control-label col-sm-2">APELLIDOS <span class="required">*</span></label>
                                                               <div class="col-sm-10">
-                                                                  <input class="form-control" name="apellidos" value="{{ $alumnos->apellidos }}"  minlength="5" type="text" required />
+                                                                  <input class="form-control" name="apellidos" minlength="5" type="text" required />
                                                               </div>
                                                           </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
@@ -123,8 +120,8 @@
                                                           <div class="form-group">
                                                             <label for="tipo_documento" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                                               <div class="col-xs-3">
-                                                                  <select class="form-control" name="tipo_documento" >
-                                                                      <option value= "{{ $alumnos->tipo_documento }}">{{ $alumnos->tipo_documento }}</option>
+                                                                  <select class="form-control" name="tipo_documento">
+                                                                      <option value= "" selected="selected">Tipo de documento</option>
                                                                       <option value= "R.C" >R.C.</option>
                                                                       <option value= "T.I" >T.I.</option>
                                                                       <option value= "C.C" >C.C.</option>
@@ -133,7 +130,7 @@
 
                                                               <label for="numero_documento" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                                               <div class="col-lg-3">
-                                                                <input class="form-control"  name="numero_documento" value="{{ $alumnos->numero_documento }}" minlength="5" type="text" required />
+                                                                <input class="form-control"  name="numero_documento" minlength="5" type="text" required />
                                                               </div>
 
                                                           </div>
@@ -148,7 +145,7 @@
               <div class="form-group ">
                    <label for="fecha_nacimiento" class="control-label col-lg-2">FECHA DE NACIMIENTO<span class="required">*</span></label>
                    <div class="col-lg-10">
-                       <input class="form-control"  name="fecha_nacimiento" value="{{ $alumnos->fecha_nacimiento }}" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
+                       <input class="form-control"  name="fecha_nacimiento" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
                    </div>
                </div>
     <!-- -------------------------------------------------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ -->
@@ -159,7 +156,7 @@
                                                             <div class="form-group ">
 
                                                                  <div class="col-lg-10">
-                                                                     <input class="form-control" name="departamento" value="{{ $alumnos->departamento }}" placeholder="Departamento" minlength="5" type="text" required />
+                                                                     <input class="form-control" name="departamento" placeholder="Departamento" minlength="5" type="text" required />
                                                                  </div>
                                                              </div>
                                                           </div>
@@ -167,7 +164,7 @@
                                                             <div class="form-group ">
 
                                                                  <div class="col-lg-10">
-                                                                     <input class="form-control" name="municipio" value="{{ $alumnos->municipio }}"placeholder="Municipio" minlength="5" type="text" required />
+                                                                     <input class="form-control" name="municipio" placeholder="Municipio" minlength="5" type="text" required />
                                                                  </div>
                                                              </div>
                                                           </div>
@@ -182,7 +179,7 @@
                                                       <div class="form-group">
                                                         <label for="edad" class="control-label col-lg-2">EDAD:<span class="required">*</span></label>
                                                         <div class="col-sm-2">
-                                                        <input class="form-control" name="edad" min="0" max="60" value="{{ $alumnos->edad }}" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}">
+                                                        <input class="form-control" name="edad" min="0" max="60" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}">
                                                       </div>
                                                           <!--<div class="col-xs-3">
                                                               <select class="form-control" name="edad">
@@ -232,7 +229,7 @@
                                                       <div class="form-group ">
                                                         <label for="direccion_residencia" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                                         <div class="col-lg-10">
-                                                            <input class=" form-control" name="direccion_residencia" value="{{ $alumnos->direccion_residencia }}" type="text" />
+                                                            <input class=" form-control" name="direccion_residencia" type="text" />
                                                         </div>
                                                     </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
@@ -283,7 +280,7 @@
                              </div>
                                             <div class="row">
                           <div class="col-lg-12">
-                              <section class="panel">
+                              <section class="panel panel-primary">
                                   <header class="panel-heading">
                                       Información de la persona con quien vive
                                   </header>
@@ -295,7 +292,7 @@
                                        <div class="form-group ">
                                             <label for="nombre_persona" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="nombre_persona" value="{{ $alumnos->nombre_persona }}"  type="text" required />
+                                                <input class="form-control" name="nombre_persona"  type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
@@ -303,7 +300,7 @@
                                         <div class="form-group ">
                                             <label for="apellido_persona" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="apellido_persona" value="{{ $alumnos->apellido_persona }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_persona" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
@@ -312,7 +309,7 @@
                                          <div class="form-group">
                                               <label for="parentesco" class="control-label col-lg-2">PARENTESCO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="parentesco" value="{{ $alumnos->parentesco }}" minlength="3" type="text" required />
+                                                <input class="form-control" name="parentesco" minlength="3" type="text" required />
                                             </div>
 
                                            </div>
@@ -347,7 +344,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <section class="panel">
+                            <section class="panel panel-info">
                             <header class="panel-heading">
                                 Información del padre
                             </header>
@@ -359,7 +356,7 @@
                                        <div class="form-group ">
                                             <label for="nombre_padre" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="nombre_padre" value="{{ $alumnos->nombre_padre }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="nombre_padre" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
@@ -367,7 +364,7 @@
                                         <div class="form-group ">
                                             <label for="apellido_padre" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="apellido_padre" value="{{ $alumnos->apellido_padre }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_padre" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
@@ -376,7 +373,7 @@
                                           <label for="tipo_documentop" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                           <div class="col-xs-3">
                                             <select class="form-control" name="tipo_documentop">
-                                              <option value= "{{ $alumnos->tipo_documentop }}">{{ $alumnos->tipo_documentop }}</option>
+                                              <option value= "" selected="selected">Tipo de documento</option>
                                               <option value= "R.C" >R.C.</option>
                                               <option value= "T.I" >T.I.</option>
                                               <option value= "C.C" >C.C.</option>
@@ -385,7 +382,7 @@
 
                                               <label for="numero_documentop" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                             <div class="col-lg-3">
-                                                <input class="form-control" name="numero_documentop" value="{{ $alumnos->numero_documentop }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="numero_documentop" minlength="5" type="text" required />
                                             </div>
                                           </div>
 
@@ -400,7 +397,7 @@
                                           <div class="form-group ">
                                             <label for="direccion_padre" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" name="direccion_padre" value="{{ $alumnos->direccion_padre }}" type="text" />
+                                                <input class=" form-control" name="direccion_padre" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
@@ -409,7 +406,7 @@
                                           <div class="form-group ">
                                             <label for="tel_padre" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" type="tel_padre" name="tel_padre" value="{{ $alumnos->tel_padre }}" minlength="5" type="text" required />
+                                                <input class="form-control" type="tel_padre" name="tel_padre" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
@@ -418,7 +415,7 @@
                                           <div class="form-group ">
                                             <label for="dir_trabajop" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" type="dir_trabajop" name="dir_trabajop" value="{{ $alumnos->dir_trabajop }}" type="text" />
+                                                <input class=" form-control" type="dir_trabajop" name="dir_trabajop" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
@@ -427,7 +424,7 @@
                                           <div class="form-group ">
                                             <label for="tel_trabajop" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="tel_trabajop" value="{{ $alumnos->tel_trabajop }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_trabajop" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
@@ -456,7 +453,7 @@
                 <!-- Form validations -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <section class="panel">
+                        <section class="panel panel-info">
                             <header class="panel-heading">
                                 Información de la madre
                             </header>
@@ -468,7 +465,7 @@
                                        <div class="form-group ">
                                             <label for="nombre_madre" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" type="nombre_madre" name="nombre_madre" value="{{ $alumnos->nombre_madre }}" minlength="5" type="text" required />
+                                                <input class="form-control" type="nombre_madre" name="nombre_madre" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
@@ -476,7 +473,7 @@
                                         <div class="form-group ">
                                             <label for="apellido_madre" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="apellido_madre" value="{{ $alumnos->apellido_madre }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_madre" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
@@ -485,7 +482,8 @@
                                             <label for="tipo_documentom" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
                                                   <select class="form-control" name="tipo_documentom">
-                                                    <option value= "{{ $alumnos->tipo_documentom }}">{{ $alumnos->tipo_documentom }}</option>
+                                                    <option value= "" selected="selected">Tipo de documento</option>
+                                                    <option value= "R.C" >R.C.</option>
                                                     <option value= "T.I" >T.I.</option>
                                                     <option value= "C.C" >C.C.</option>
                                                   </select>
@@ -493,7 +491,7 @@
 
                                               <label for="numero_documentom" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                             <div class="col-lg-3">
-                                                <input class="form-control" name="numero_documentom" value="{{ $alumnos->numero_documentom }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="numero_documentom" minlength="5" type="text" required />
                                             </div>
 
                                           </div>
@@ -508,7 +506,7 @@
                                           <div class="form-group ">
                                             <label for="direccion_madre" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" name="direccion_madre" value="{{ $alumnos->direccion_madre }}" type="text" />
+                                                <input class=" form-control" name="direccion_madre" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
@@ -517,7 +515,7 @@
                                           <div class="form-group ">
                                             <label for="tel_madre" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" type="tel_madre" name="tel_madre" value="{{ $alumnos->tel_madre }}" minlength="5" type="text" required />
+                                                <input class="form-control" type="tel_madre" name="tel_madre" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
@@ -526,7 +524,7 @@
                                           <div class="form-group ">
                                             <label for="dir_trabajom" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" type="dir_trabajom" value="{{ $alumnos->dir_trabajom }}" name="dir_trabajom" type="text" />
+                                                <input class=" form-control" type="dir_trabajom" name="dir_trabajom" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
@@ -535,7 +533,7 @@
                                           <div class="form-group ">
                                             <label for="tel_trabajom" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="tel_trabajom" value="{{ $alumnos->tel_trabajom }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_trabajom" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
@@ -576,7 +574,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <section class="panel">
+                            <section class="panel panel-warning">
                                 <header class="panel-heading">
                                     Información del acudiente
                                   </header>
@@ -588,7 +586,7 @@
                                        <div class="form-group ">
                                             <label for="nombre_acudiente" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" type="nombre_acudiente" name="nombre_acudiente" value="{{ $alumnos->nombre_acudiente }}" minlength="5" type="text" required />
+                                                <input class="form-control" type="nombre_acudiente" name="nombre_acudiente" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
@@ -596,7 +594,7 @@
                                         <div class="form-group ">
                                             <label for="apellido_acudiente" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="apellido_acudiente" value="{{ $alumnos->apellido_acudiente }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_acudiente" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
@@ -605,7 +603,7 @@
                                              <label for="tipo_documentopa" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                                <div class="col-xs-3">
                                                    <select class="form-control" name="tipo_documentopa">
-                                                     <option value= "{{ $alumnos->tipo_documentopa }}">{{ $alumnos->tipo_documentopa }}</option>
+                                                     <option value= "" selected="selected">Tipo de documento</option>
                                                      <option value= "R.C" >R.C.</option>
                                                      <option value= "T.I" >T.I.</option>
                                                      <option value= "C.C" >C.C.</option>
@@ -614,7 +612,7 @@
 
                                                <label for="numero_documentoa" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                              <div class="col-lg-3">
-                                                 <input class="form-control" name="numero_documentoa" value="{{ $alumnos->numero_documentoa }}" minlength="5" type="text" required />
+                                                 <input class="form-control" name="numero_documentoa" minlength="5" type="text" required />
                                              </div>
 
                                           </div>
@@ -628,7 +626,7 @@
                                           <div class="form-group ">
                                             <label for="direccion_acudiente" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" name="direccion_acudiente" value="{{ $alumnos->direccion_acudiente }}" type="text" />
+                                                <input class=" form-control" name="direccion_acudiente" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
@@ -637,7 +635,7 @@
                                           <div class="form-group ">
                                             <label for="tel_acudiente" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="tel_acudiente" value="{{ $alumnos->tel_acudiente }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_acudiente" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
@@ -646,7 +644,7 @@
                                           <div class="form-group ">
                                             <label for="dir_trabajoa" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" name="dir_trabajoa" value="{{ $alumnos->dir_trabajoa }}" type="text" />
+                                                <input class=" form-control" name="dir_trabajoa" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
@@ -655,7 +653,7 @@
                                           <div class="form-group ">
                                             <label for="tel_trabajoa" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="tel_trabajoa" value="{{ $alumnos->tel_trabajoa }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_trabajoa" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
@@ -695,7 +693,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <section class="panel">
+                            <section class="panel panel-danger">
                                 <header class="panel-heading">
                                     Información de otro familiar o persona de confianza para casos de emergencia
                                 </header>
@@ -707,7 +705,7 @@
                                        <div class="form-group ">
                                             <label for="nombre_emergencia" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="nombre_emergencia" value="{{ $alumnos->nombre_emergencia }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="nombre_emergencia" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
@@ -715,7 +713,7 @@
                                         <div class="form-group ">
                                             <label for="apellido_emergencia" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="apellido_emergencia" value="{{ $alumnos->apellido_emergencia }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="apellido_emergencia" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
@@ -726,7 +724,7 @@
                                           <div class="form-group ">
                                             <label for="direccion_emergencia" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class=" form-control" name="direccion_emergencia" value="{{ $alumnos->direccion_emergencia }}" type="text" />
+                                                <input class=" form-control" name="direccion_emergencia" type="text" />
                                             </div>
                                         </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
@@ -735,7 +733,7 @@
                                           <div class="form-group ">
                                             <label for="tel_emergencia" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" type="tel_emergencia" name="tel_emergencia" value="{{ $alumnos->tel_emergencia }}" minlength="5" type="text" required />
+                                                <input class="form-control" type="tel_emergencia" name="tel_emergencia" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
@@ -745,7 +743,7 @@
                                           <div class="form-group ">
                                             <label for="tel_trabajoe" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="tel_trabajoe" value="{{ $alumnos->tel_trabajoe }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="tel_trabajoe" minlength="5" type="text" required />
                                             </div>
                                         </div>
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
@@ -784,7 +782,7 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <section class="panel">
+                                <section class="panel panel-success">
                                     <header class="panel-heading">
                                           Información para la fundación
                                       </header>
@@ -796,7 +794,7 @@
                                     <div class="form-group ">
                                         <label for="fecha_matricula" class="control-label col-lg-2">FECHA DE MATRICULA<span class="required">*</span></label>
                                         <div class="col-lg-10">
-                                          <input class="form-control" name="fecha_matricula" value="{{ $alumnos->fecha_matricula }}" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
+                                          <input class="form-control" name="fecha_matricula" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
                                         </div>
                                     </div>
 
@@ -808,7 +806,7 @@
                                               <div class="col-xs-3">
 
                                                       <select class="form-control" name="convenio">
-                                                          <option value= "{{ $alumnos->convenio }}">{{ $alumnos->convenio }}</option>
+                                                          <option value="" selected="selected">Convenio</option>
                                                           <option value="Particular">Particular</option>
                                                           <option value="Exito">Exito</option>
                                                           <option value="Ferrocarril">Ferrocarriles</option>
@@ -832,7 +830,7 @@
                                               <div class="col-xs-3">
 
                                                       <select class="form-control" name="modulo">
-                                                          <option value= "{{ $alumnos->modulo }}">{{ $alumnos->modulo }}</option>
+                                                          <option value= "" selected="selected">Modulo</option>
                                                           <option value="Esmeralda">Esmeralda</option>
                                                           <option value="Azul">Azul</option>
                                                           <option value="Rojo">Rojo</option>
@@ -852,7 +850,7 @@
                                           <div class="form-group ">
                                             <label for="programa" class="control-label col-lg-2">PROGRAMA <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="programa" value="{{ $alumnos->programa }}" minlength="5" type="text" required />
+                                                <input class="form-control" name="programa" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------  PROGRAMA ---------------------------------------------------- -->
@@ -866,8 +864,6 @@
                                 </section>
                             </div>
                         </div>
-
-
     <!-- ------------------------------------------------------  FORMULARIOS 7 ------------------------------------------------------------- -->
 
 
@@ -900,5 +896,12 @@
   </section>
   <!--main content end-->
 </section>
+<!-- container section start -->
 
+<!-- javascripts -->
+
+
+
+
+</section>
 @endsection

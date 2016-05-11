@@ -74,25 +74,7 @@ Route::post('nuevo','AlumnoController@save');*/
 /**
  * Rutas para alumnos
  */
-
- Route::get('nuevo',[ 'middleware' => 'auth',
- 'uses' => 'AlumnoController@create',
- 'as'  =>'nuevo'
- ]);
-Route::post('nuevo','AlumnoController@save');
-Route::get('alumno/index', ['middleware' => 'auth',
-  'uses' => 'AlumnoController@index',
-  'as' => 'alumno/index'
-]);
-Route::get('alumno/{id}/ver', ['middleware' => 'auth',
-  'uses' => 'AlumnoController@show',
-  'as' => 'alumno/{id}/ver'
-]);
-Route::get('alumno/{id}/editar', ['middleware' => 'auth',
-  'uses' => 'AlumnoController@edit',
-  'as' => 'alumno/{id}/editar'
-]);
-Route::patch('alumno/index, {id}','AlumnoController@update');
+Route::resource('alumno', 'AlumnoController');
 Route::get('auth/index', ['middleware' => 'auth',
   'uses' => 'UsuarioController@index',
   'as' => 'auth/index'

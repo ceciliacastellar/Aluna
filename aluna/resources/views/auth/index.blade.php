@@ -24,7 +24,7 @@
                         <tr>
                            <th><i class="icon_calendar"></i> Nombre</th>
                            <th><i class="icon_profile"></i> Email</th>
-                           <th><i class="icon_document"></i> Password</th>
+                          
                            <th colspan="3"><i class="icon_cogs"></i> Acción</th>
                         </tr>
 
@@ -32,7 +32,7 @@
                         <tr>
                            <td>{{ $users->name }}</td>
                            <td>{{ $users->email }}</td>
-                           <td>{{ $users->password }}</td>
+
 
 
 

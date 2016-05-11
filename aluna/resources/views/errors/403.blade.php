@@ -34,7 +34,7 @@
     <p class="text-403">403</p>
 
     <h2>Aww Snap!</h2>
-    <p>You don't have permission to access this page or you're not logged in. <br><a href="index.html">Return Home</a></p>
+    <p>You don't have permission to access this page or you're not logged in. <br><a href="principal">Return Home</a></p>
   </div>
 
   </body>

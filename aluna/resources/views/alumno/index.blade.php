@@ -39,13 +39,13 @@
 
                              <td>
                               <div class="btn-group">
-                                  <a class="btn btn-primary" href="{{ URL::to('alumno/'.$alumnos->id.'/ver')}}">Ver</a>
+                                  <a class="btn btn-primary" href="{{ route('alumno.show', $alumnos)}}">Ver</a>
                               </div>
                               </td>
 
                               <td>
                                <div class="btn-group">
-                                   <a class="btn btn-primary"  href="{{ URL::to('alumno/'.$alumnos->id.'/editar') }}">Editar</a>
+                                   <a class="btn btn-primary"  href="{{ route('alumno.edit', $alumnos)}}">Editar</a>
                                </div>
                                </td>
 

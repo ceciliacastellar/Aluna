@@ -85,15 +85,39 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">
                   <li class="active">
-                      <a  href="principal">
+                      <a  href="/principal">
                           <i class="icon_house_alt"></i>
                           <span>{{ trans('pagination.home') }}</span>
                       </a>
                   </li>
                   <li>
-                      <a class="" href="nuevo">
+                      <a class="" href="/alumno/create">
                           <i class="icon_documents_alt"></i>
-                          <span>Inscripción</span>
+                          <span>Registro Alumno</span>
+
+                      </a>
+
+                  </li>
+                  <li>
+                      <a class="" href="/alumno">
+                          <i class="icon_documents_alt"></i>
+                          <span>Lista Alumnos</span>
+
+                      </a>
+
+                  </li>
+                  <li>
+                      <a class="" href="auth/register">
+                          <i class="icon_documents_alt"></i>
+                          <span>Registro Personal</span>
+
+                      </a>
+
+                  </li>
+                  <li>
+                      <a class="" href="auth/index">
+                          <i class="icon_documents_alt"></i>
+                          <span>Lista Usuarios</span>
 
                       </a>
 
