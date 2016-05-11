@@ -108,6 +108,9 @@ table tr th {
 .panel-heading .nav > li >  .fundacion{
     background: #79c447;
 }
+.panel-heading .nav > li >  .hmedico{
+    background: #8383EE;
+}
 
 .tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .alumno:hover{
     color: #fff;
@@ -139,6 +142,7 @@ table tr th {
     color: #fff;
     background:#F2731F;
 }
+
 
 
 
