@@ -373,7 +373,7 @@ table tr th {
     width: 160px;
     height: 100%;
     position: fixed;
-    background: #BE0F29;
+    background: #0288D1;
 }
 
 .nav-collapse.collapse {
@@ -1095,8 +1095,8 @@ div[data-role="editor-toolbar"] {
 }
 .blue-bg {
   color : #fff;
-  background : #0288D1;
-  background-color : #0288D1;
+  background : #3C81C5;
+  background-color : #3C81C5;
 }
 .green-bg {
   color : #fff;
