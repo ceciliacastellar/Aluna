@@ -34,13 +34,13 @@
   <section id="container" class="">
 
 
-      <header class="header blue-bg">
+      <header class="header">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
             </div>
 
             <!--logo start-->
-            <a href="index.html" class="logo">FUNDACION <span class="lite">ALUNA</span>
+            <a href="index.html" class="logo"><strong>Sistema de información de la fundacion </strong> <span class="litea">A</span><span class="litel">L</span><span class="liteu">U</span><span class="liten">N</span><span class="liteaa">A</span>
                 <span class="profile-ava">
 
                 </span>
@@ -58,9 +58,7 @@
 												@else
 															<li class="dropdown">
 																			<a class="dropdown-toggle username" data-toggle="dropdown"  aria-expanded="false">{{ Auth::user()->name }} <span role="button" class="caret"></span>
-																				<span class="profile-ava">
-						                                <img alt="" src="img/avatar1_small.png">
-						                            </span>
+
 																			</a>
 																				<ul class="dropdown-menu extended logout">
 																						<div class="log-arrow-up"></div>
@@ -84,7 +82,7 @@
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">
-                  <li class="active">
+                  <li class="">
                       <a  href="/principal">
                           <i class="icon_house_alt"></i>
                           <span>{{ trans('pagination.home') }}</span>
@@ -92,8 +90,8 @@
                   </li>
                   <li>
                       <a class="" href="/alumno/create">
-                          <i class="icon_documents_alt"></i>
-                          <span>Registro Alumno</span>
+                          <i class="icon_pencil-edit"></i>
+                          <span>Registrar Alumno</span>
 
                       </a>
 
@@ -101,29 +99,21 @@
                   <li>
                       <a class="" href="/alumno">
                           <i class="icon_documents_alt"></i>
-                          <span>Lista Alumnos</span>
-
+                          <span>Listar Alumnos</span>
                       </a>
-
                   </li>
                   <li>
                       <a class="" href="/auth/register">
-                          <i class="fa fa-book fa-sm"></i>
-                          <span>Registro Personal</span>
-
+                          <i class="icon_pencil-edit"></i>
+                          <span>Registrar personal</span>
                       </a>
-
                   </li>
                   <li>
                       <a class="" href="/auth/index">
                           <i class="icon_documents_alt"></i>
-                          <span>Lista Usuarios</span>
-
+                          <span>Listar personal</span>
                       </a>
-
                   </li>
-
-
               </ul>
               <!-- sidebar menu end-->
           </div>

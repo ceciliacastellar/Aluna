@@ -80,6 +80,7 @@ Route::post('nuevo','AlumnoController@save');*/
  */
 Route::resource('alumno', 'AlumnoController');
 
+
 //                    Rutas para Citas medicas
 
 Route::get('cita/{alumno}', [
@@ -95,6 +96,16 @@ Route::get('auth/index', ['middleware' => 'auth',
   'uses' => 'UsuarioController@index',
   'as' => 'auth/index'
 ]);
+
+Route::get('auth/{user}', [
+  'uses' => 'UsuarioController@edit',
+  'as' => 'auth.edit'
+]);
+
+/*Route::post('auth/{user}', [
+  'uses' => 'UsuarioController@update',
+  'as' => 'auth.update'
+]);*/
 
 
 /*Route::get('citas.create', function () {

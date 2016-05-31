@@ -13,8 +13,8 @@
       <h3 class="page-header"><i class="fa fa-files-o"></i> DATOS DEL ALUMNO</h3>
       <ol class="breadcrumb">
 
-        <li><i class="fa fa-home"></i><a href="principal">Principal </a></li>
-        <li><i class="fa fa-table"></i><a href="alumno/index">Tabla de alumnos</a></li>>
+        <li><i class="fa fa-home"></i>Principal</li>
+        <li><i class="fa fa-table"></i>Tabla de alumnos</li>
                                             <li><i class="fa fa-files-o"></i>Información del niño, niña o joven</li>
       </ol>
     </div>
@@ -66,7 +66,7 @@
                 <div class="panel-body">
                         <div class="tab-content">
 <!-- --------------------------------------- ALUMNO --------------------------------------------------- -->
-                            <div id="alumno" class="tab-pane">
+                            <div id="alumno" class="tab-pane active">
 
                                  <!--<section class="panel panel-primary">
                                   <div class="panel-body bio-graph-info">

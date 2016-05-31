@@ -9,9 +9,9 @@
   <div class="col-lg-12">
     <h3 class="page-header"><i class="fa fa-table"></i> Table</h3>
     <ol class="breadcrumb">
-      <li><i class="fa fa-home"></i><a href="principal">Home</a></li>
-      <li><i class="fa fa-table"></i>Table</li>
-      <li><i class="fa fa-th-list"></i>Basic Table</li>
+      <li><i class="fa fa-home"></i><a href="principal">{{ trans('pagination.home') }}</a></li>
+      <li><i class="fa fa-table"></i>Listado de alumnos</li>
+      <li><i class="fa fa-th-list"></i>Listado de citas</li>
     </ol>
   </div>
 </div>

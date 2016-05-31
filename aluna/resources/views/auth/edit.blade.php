@@ -57,6 +57,9 @@
 					                    </div>
 
 					                    <div class="row">
+                                <form method="POST" action="{{route('auth.update', $users->id)}}" accept-charset="UTF-8" enctype="multipart/form-data">
+                                  <input type="hidden" name="_method" value="PATCH" >
+                                  <input type="hidden" name="_token" value="{{ csrf_token()}}">
 					                        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
 					                            <div class="panel panel-info registro">
 					                                <div class="panel-heading ">

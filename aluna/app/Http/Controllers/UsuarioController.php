@@ -22,5 +22,11 @@ class UsuarioController extends Controller
        return View::make('auth.register');
     }
 
+    public function edit($id)
+      {
+            $users = User::find($id);
+            return  View::make('auth.edit')->with('users', $users);
+      }
+
 
 }

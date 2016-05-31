@@ -17,7 +17,7 @@ class CreateCitasTable extends Migration
           $table->string('nombre_medico');
           $table->string('area');
           $table->string('fecha');
-          $table->dateTime('hora');
+          $table->string('hora');
           $table->string('motivo_consulta');
           $table->longText('descripcion');
           $table->integer('alumno_id')->unsigned();

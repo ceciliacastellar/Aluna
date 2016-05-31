@@ -10,12 +10,11 @@
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-files-o"></i> FUNDACIÓN ALUNA</h3>
+            <h3 class="page-header"><i class="fa fa-files-o"></i>REGISTRAR ALUMNOS</h3>
             <ol class="breadcrumb">
 
               <li><i class="fa fa-home"></i><a href="principal">{{ trans('pagination.home') }}</a></li>
               <li><i class="icon_document_alt"></i>Ficha de matricula</li>
-              <li><i class="fa fa-files-o"></i>Información del niño, niña o joven</li>
             </ol>
           </div>
         </div>
@@ -100,8 +99,8 @@
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
                                                       <div class="form-group bio-row">
-                                                           <label for="nombres" class="control-label col-sm-2">NOMBRES <span class="required">*</span></label>
-                                                           <div class="col-sm-10">
+                                                           <label for="nombres" class="control-label col-sm-2">NOMBRES<span class="required">*</span></label>
+                                                           <div class="col-lg-10">
                                                                <input class="form-control" name="nombres" minlength="5" type="text" required />
                                                            </div>
                                                        </div>
@@ -109,8 +108,8 @@
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
                                                           <div class="form-group bio-row">
-                                                              <label for="apellidos" class="control-label col-sm-2">APELLIDOS <span class="required">*</span></label>
-                                                              <div class="col-sm-10">
+                                                              <label for="apellidos" class="control-label col-sm-2">APELLIDOS<span class="required">*</span></label>
+                                                              <div class="col-lg-10">
                                                                   <input class="form-control" name="apellidos" minlength="5" type="text" required />
                                                               </div>
                                                           </div>
@@ -121,8 +120,8 @@
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
 
                                                           <div class="form-group bio-row">
-                                                            <label for="tipo_documento" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
-                                                              <div class="col-xs-3">
+                                                            <label for="tipo_documento" class="control-label col-xs-5">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
+                                                              <div class="col-xs-7">
                                                                   <select class="form-control" name="tipo_documento">
                                                                       <option value= "" selected="selected">Tipo de documento</option>
                                                                       <option value= "R.C" >R.C.</option>
@@ -130,14 +129,17 @@
                                                                       <option value= "C.C" >C.C.</option>
                                                                   </select>
                                                               </div>
+                                                            </div>
 
-
-                                                              <label for="numero_documento" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
-                                                              <div class="col-lg-3">
+                                                            <div class="form-group bio-row">
+                                                              <label for="numero_documento" class="control-label col-xs-5">NUMERO DE DOCUMENTO<span class="required">*</span></label>
+                                                              <div class="col-xs-6">
                                                                 <input class="form-control"  name="numero_documento" minlength="5" type="text" required />
                                                               </div>
 
                                                           </div>
+
+
 
 
 
@@ -146,11 +148,12 @@
               <div class="form-group bio-row">
                    <label for="fecha_nacimiento" class="control-label col-lg-2">FECHA DE NACIMIENTO<span class="required">*</span></label>
                    <div class="col-lg-10">
-                       <input class="form-control"  name="fecha_nacimiento" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
+                       <input class="form-control"  name="fecha_nacimiento" placeholder="Dia/Mes/Año" minlength="5" type="date" required />
                    </div>
                </div>
 
     <!-- -------------------------------------------------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ -->
+
     <!-- -------------------------------------------------- PEDIR LUGAR DE NACIMIENTO ------------------------------------------------------ -->
                                                       <div class="form-group bio-row">
                                                         <label for="cname" class="control-label col-lg-3">LUGAR DE NACIMIENTO:<span class="required">*</span> </label>
@@ -161,6 +164,8 @@
                                                                  </div>
                                                              </div>
                                                           </div>
+
+
                                                           <div class="col-lg-4">
                                                             <div class="form-group">
                                                                  <div class="col-lg-10">
@@ -172,24 +177,9 @@
 
 
 
-
-
-
-
     <!-- -------------------------------------------------- PEDIR LUGAR DE NACIMIENTO ------------------------------------------------------ -->
 
-    <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
 
-
-
-                                                      <div class="form-group bio-row">
-                                                        <label for="edad" class="control-label col-sm-2">EDAD:<span class="required">*</span></label>
-                                                          <div class="col-sm-10">
-                                                            <input class="form-control" name="edad" min="0" max="60" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}">
-                                                          </div>
-                                                      </div>
-
-    <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
                                                       <div class="form-group bio-row">
@@ -199,6 +189,19 @@
                                                         </div>
                                                     </div>
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
+
+    <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
+
+
+
+                                                      <div class="form-group bio-row">
+                                                        <label for="edad" class="control-label col-lg-2">EDAD:<span class="required">*</span></label>
+                                                          <div class="col-sm-10">
+                                                            <input class="form-control" name="edad" min="0" max="60" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}" >
+                                                          </div>
+                                                      </div>
+
+    <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
     <!--
 
                                         <div class="form-group ">
@@ -767,7 +770,7 @@
                                     <div class="form-group  bio-row">
                                         <label for="fecha_matricula" class="control-label col-lg-2">FECHA DE MATRICULA<span class="required">*</span></label>
                                         <div class="col-lg-10">
-                                          <input class="form-control" name="fecha_matricula" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
+                                          <input class="form-control" name="fecha_matricula" placeholder="Dia/Mes/Año" minlength="5" type="date" required />
                                         </div>
                                     </div>
 
@@ -834,6 +837,11 @@
                                     </form>
                                       </div>
                                   </div>
+                                  <div class="form-group  bio-row">
+                                      <div class="col-lg-offset-2 col-lg-10">
+                                          <button class="btn btn-primary" type="submit">Guardar</button>
+                                      </div>
+                                  </div>
                                 </section>
                             </div>
                         </div>
@@ -854,12 +862,7 @@
 
     <!-- --------------------------------------- FUNDACION ----------------------------------------------------->
                                 </div>
-                                <div class="form-group  bio-row">
-                                    <div class="col-lg-offset-2 col-lg-10">
-                                        <button class="btn btn-primary" type="submit">Save</button>
-                                        <button class="btn btn-default" type="button">Cancel</button>
-                                    </div>
-                                </div>
+
                              </div>
 
 

@@ -12,8 +12,10 @@
                 <div class="col-lg-12">
                     <h3 class="page-header"><i class="fa fa-laptop"></i> Citas Medicas</h3>
                     <ol class="breadcrumb">
-                        <li><i class="fa fa-home"></i><a href="indexsalud.html">Principal</a></li>
-                        <li><i class="fa fa-stethoscope"></i><a href="indexsalud.html">Citas medicas</a></li>
+                      <li><i class="fa fa-home"></i>{{ trans('pagination.home') }}</li>
+                      <li><i class="fa fa-table"></i>Listado de alumnos</li>
+                      <li><i class="fa fa-th-list"></i>Listado de citas</li>
+                      <li><i class="fa fa-th-list"></i>Cita de {{ $citas->alumno->nombres}} {{ $citas->alumno->apellidos }} </li>
 
                     </ol>
                 </div>

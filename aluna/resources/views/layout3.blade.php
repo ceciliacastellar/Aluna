@@ -37,14 +37,14 @@
   <section id="container" class="">
 
 
-      <header class="header blue-bg">
+      <header class="header blue-gray">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
             </div>
 
             <!--logo start-->
-            <a href="principal" class="logo">FUNDACION <span class="lite">ALUNA</span>
-                <span class="profile-ava"></span>
+            <a href="principal" class="logo"><strong>Sistema de información de la fundacion </strong><span class="litea">A</span><span class="litel">L</span><span class="liteu">U</span><span class="liten">N</span><span class="liteaa">A</span>
+
 
             </a>
 

@@ -157,10 +157,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group bio-row">
-                                      <label for="alumno_id" class="control-label col-sm-2">ID<span class="required"></span></label>
-                                        <div class="col-sm-10">
-                                            <input class="form-control" name="alumno_id"  value="{{ $alumnos->id }}"  minlength="5" type="text" required />
-                                </div>
+
+                                            <input type="hidden" class="form-control" name="alumno_id"  value="{{ $alumnos->id }}"  minlength="5" type="text" required />
+
                                 </div>
 
 
