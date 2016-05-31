@@ -14,4 +14,7 @@ class Alumno extends Model
     'nombre_acudiente','apellido_acudiente','tipo_documentopa','numero_documentoa','direccion_acudiente','tel_acudiente','dir_trabajoa','tel_trabajoa',
     'nombre_emergencia','apellido_emergencia','direccion_emergencia','tel_emergencia','tel_trabajoe','fecha_matricula','convenio','modulo','programa'];
 
+    public function cita(){
+      return $this->hasMany('\App\Cita');
+    }
 }

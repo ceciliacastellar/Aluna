@@ -26,7 +26,7 @@
                            <th><i class="icon_calendar"></i> Nombres</th>
                            <th><i class="icon_profile"></i> Apellidos</th>
                            <th><i class="icon_document"></i> Convenio</th>
-                           <th colspan="3"><i class="icon_cogs"></i> Acción</th>
+                           <th colspan="4"><center><i class="icon_cogs"></i>Acción</center></th>
                         </tr>
 
                         @foreach($alumnos as $alumnos)
@@ -48,6 +48,21 @@
                                    <a class="btn btn-primary"  href="{{ route('alumno.edit', $alumnos)}}">Editar</a>
                                </div>
                                </td>
+
+                               <td>
+                                <div class="btn-group">               <!--"{{ route('alumno.edit', $alumnos)}}"-->
+                                    <a class="btn btn-primary"  href="cita">Citas</a>
+                                </div>
+                                </td>
+
+                                <td>
+                                 <div class="btn-group">
+                                     <a class="btn btn-primary"  href="{{ route('cita.seecreate', $alumnos)}}">Crear Cita</a>
+                                 </div>
+                                 </td>
+
+
+
 
                         </tr>
 

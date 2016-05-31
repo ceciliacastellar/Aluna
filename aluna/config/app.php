@@ -126,6 +126,8 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+        Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
+        Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -149,6 +151,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         //Illuminate\Html\HtmlServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+  //      Zizaco\Entrust\EntrustServiceProvider::class,
 
 
         /*
@@ -207,7 +210,8 @@ return [
       //  'Form' => Illuminate\Html\FormFacade::class,
       //  'Html' => Illuminate\Html\Facade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-
+      //  'Bican' => Bican\Roles\RolesServiceProvider::class,
+      //  'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
     ],
 
 ];

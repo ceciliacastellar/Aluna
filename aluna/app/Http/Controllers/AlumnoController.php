@@ -19,6 +19,8 @@ class AlumnoController extends Controller
       return View::make('alumno.index')->with('alumnos', $alumnos);
    }
 
+
+
   public function create(){
          return view('alumno.create');
   }
@@ -144,7 +146,6 @@ class AlumnoController extends Controller
         public function update(Request $request, $id)
           {
             $alumno = Alumno::find($id);
-            //$alumno->fill(Request::all());
             $alumno->nombres = $request->nombres;
             $alumno->apellidos = $request->apellidos;
             $alumno->tipo_documento = $request->tipo_documento;
@@ -191,7 +192,8 @@ class AlumnoController extends Controller
             $alumno->modulo = $request->modulo;
             $alumno->programa = $request->programa;
             $alumno->update();
-            return  view('/principal');
+            $alumnos = Alumno::find($id);
+            return View::make('alumno.show')->with('alumnos', $alumnos);
           }
 
 

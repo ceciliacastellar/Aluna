@@ -18,10 +18,13 @@
     <!-- font icon -->
     <link href="/css/elegant-icons-style.css" rel="stylesheet" />
     <link href="/css/font-awesome.min.css" rel="stylesheet" />
-
+    <!-- easy pie chart-->
+    <link href="/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="/css/owl.carousel.css" type="text/css">
+    <link href="/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
     <!-- Custom styles -->
-
-	<link href="/css/widgets.css" rel="stylesheet">
+	  <link href="/css/widgets.css" rel="stylesheet">
   <link href="/css/style.css" rel="stylesheet">
   <link href="/css/style-responsive.css" rel="stylesheet" />
 	<link href="/css/xcharts.min.css" rel=" stylesheet">
@@ -29,7 +32,7 @@
 
   </head>
 
-  <body>
+  <body >
   <!-- container section start -->
   <section id="container" class="">
 
@@ -40,22 +43,16 @@
             </div>
 
             <!--logo start-->
-            <a href="index.html" class="logo">FUNDACION <span class="lite">ALUNA</span>
-                <span class="profile-ava">
+            <a href="principal" class="logo">FUNDACION <span class="lite">ALUNA</span>
+                <span class="profile-ava"></span>
 
-                </span>
             </a>
-            <!--logo end-->
-
 
             <div class="top-nav notification-row">
 
                     <!-- user login dropdown start-->
 										<ul class="nav navbar-nav navbar-right">
-												@if (Auth::guest())
-															<li><a href="{{ route('home') }}">Login</a></li>
-															<li><a href="{{ route('register') }}">Register</a></li>
-												@else
+
 															<li class="dropdown">
 																			<a class="dropdown-toggle username" data-toggle="dropdown"  aria-expanded="false">{{ Auth::user()->name }} <span role="button" class="caret"></span>
 																				<span class="profile-ava">
@@ -70,71 +67,24 @@
 																						</li>
 																				</ul>
 															</li>
-											 @endif
+
 										</ul>
                     <!-- user login dropdown end -->
                 </ul>
                 <!-- notificatoin dropdown end-->
             </div>
+            <!--logo end-->
+
+
       </header>
       <!--header end-->
 
-      <!--sidebar start-->
-      <aside>
-          <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
-              <ul class="sidebar-menu">
-                  <li class="active">
-                      <a  href="/principal">
-                          <i class="icon_house_alt"></i>
-                          <span>{{ trans('pagination.home') }}</span>
-                      </a>
-                  </li>
-                  <li>
-                      <a class="" href="/alumno/create">
-                          <i class="icon_documents_alt"></i>
-                          <span>Registro Alumno</span>
 
-                      </a>
-
-                  </li>
-                  <li>
-                      <a class="" href="/alumno">
-                          <i class="icon_documents_alt"></i>
-                          <span>Lista Alumnos</span>
-
-                      </a>
-
-                  </li>
-                  <li>
-                      <a class="" href="/auth/register">
-                          <i class="fa fa-book fa-sm"></i>
-                          <span>Registro Personal</span>
-
-                      </a>
-
-                  </li>
-                  <li>
-                      <a class="" href="/auth/index">
-                          <i class="icon_documents_alt"></i>
-                          <span>Lista Usuarios</span>
-
-                      </a>
-
-                  </li>
-
-
-              </ul>
-              <!-- sidebar menu end-->
-          </div>
-      </aside>
-      <!--sidebar end-->
 	@yield('content')
 
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
 	@yield('scripts')
 </body>
 </html>

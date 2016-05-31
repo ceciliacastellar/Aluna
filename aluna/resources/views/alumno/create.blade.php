@@ -99,25 +99,28 @@
 
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                                      <div class="form-group ">
+                                                      <div class="form-group bio-row">
                                                            <label for="nombres" class="control-label col-sm-2">NOMBRES <span class="required">*</span></label>
                                                            <div class="col-sm-10">
                                                                <input class="form-control" name="nombres" minlength="5" type="text" required />
                                                            </div>
                                                        </div>
+
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                                          <div class="form-group ">
+                                                          <div class="form-group bio-row">
                                                               <label for="apellidos" class="control-label col-sm-2">APELLIDOS <span class="required">*</span></label>
                                                               <div class="col-sm-10">
                                                                   <input class="form-control" name="apellidos" minlength="5" type="text" required />
                                                               </div>
                                                           </div>
+
+
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
 
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
 
-                                                          <div class="form-group">
+                                                          <div class="form-group bio-row">
                                                             <label for="tipo_documento" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                                               <div class="col-xs-3">
                                                                   <select class="form-control" name="tipo_documento">
@@ -128,6 +131,7 @@
                                                                   </select>
                                                               </div>
 
+
                                                               <label for="numero_documento" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
                                                               <div class="col-lg-3">
                                                                 <input class="form-control"  name="numero_documento" minlength="5" type="text" required />
@@ -137,98 +141,60 @@
 
 
 
-
-
-
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
               <!-- ------------------------------------------ -------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ -->
-              <div class="form-group ">
+              <div class="form-group bio-row">
                    <label for="fecha_nacimiento" class="control-label col-lg-2">FECHA DE NACIMIENTO<span class="required">*</span></label>
                    <div class="col-lg-10">
                        <input class="form-control"  name="fecha_nacimiento" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
                    </div>
                </div>
+
     <!-- -------------------------------------------------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR LUGAR DE NACIMIENTO ------------------------------------------------------ -->
-                                                      <div class="form-group">
-                                                        <label for="cname" class="control-label col-xs-3">LUGAR DE NACIMIENTO:<span class="required">*</span> </label>
-                                                          <div class="col-xs-3">
-                                                            <div class="form-group ">
-
+                                                      <div class="form-group bio-row">
+                                                        <label for="cname" class="control-label col-lg-3">LUGAR DE NACIMIENTO:<span class="required">*</span> </label>
+                                                          <div class="col-lg-4">
+                                                            <div class="form-group">
                                                                  <div class="col-lg-10">
                                                                      <input class="form-control" name="departamento" placeholder="Departamento" minlength="5" type="text" required />
                                                                  </div>
                                                              </div>
                                                           </div>
-                                                          <div class="col-xs-3">
-                                                            <div class="form-group ">
-
+                                                          <div class="col-lg-4">
+                                                            <div class="form-group">
                                                                  <div class="col-lg-10">
                                                                      <input class="form-control" name="municipio" placeholder="Municipio" minlength="5" type="text" required />
                                                                  </div>
                                                              </div>
                                                           </div>
+                                                        </div>
 
-                                                      </div>
+
+
+
+
+
 
     <!-- -------------------------------------------------- PEDIR LUGAR DE NACIMIENTO ------------------------------------------------------ -->
 
     <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
 
 
-                                                      <div class="form-group">
-                                                        <label for="edad" class="control-label col-lg-2">EDAD:<span class="required">*</span></label>
-                                                        <div class="col-sm-2">
-                                                        <input class="form-control" name="edad" min="0" max="60" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}">
-                                                      </div>
-                                                          <!--<div class="col-xs-3">
-                                                              <select class="form-control" name="edad">
-                                                                <option value= "1" >1</option>
-                                                                <option value= "2" >2</option>
-                                                                <option value= "3" >3</option>
-                                                                <option value= "4" >4</option>
-                                                                <option value= "5" >5</option>
-                                                                <option value= "6" >6</option>
-                                                                <option value= "7" >7</option>
-                                                                <option value= "8" >8</option>
-                                                                <option value= "9" >9</option>
-                                                                <option value= "10" >0</option>
-                                                                <option value= "11" >1</option>
-                                                                <option value= "12" >2</option>
-                                                                <option value= "13" >3</option>
-                                                                <option value= "14" >4</option>
-                                                                <option value= "15" >5</option>
-                                                                <option value= "16" >6</option>
-                                                                <option value= "17" >7</option>
-                                                                <option value= "18" >8</option>
-                                                                <option value= "19" >9</option>
-                                                                <option value= "20" >0</option>
-                                                                <option value= "21" >1</option>
-                                                                <option value= "22" >2</option>
-                                                                <option value= "23" >3</option>
-                                                                <option value= "24" >4</option>
-                                                                <option value= "25" >5</option>
-                                                                <option value= "26" >6</option>
-                                                                <option value= "27" >7</option>
-                                                                <option value= "28" >8</option>
-                                                                <option value= "29" >9</option>
-                                                                <option value= "30" >3</option>
-                                                                <option value= "31" >1</option>
-                                                                <option value= "32" >2</option>
-                                                                <option value= "33" >3</option>
 
-
-                                                              </select>
-                                                          </div>-->
-
+                                                      <div class="form-group bio-row">
+                                                        <label for="edad" class="control-label col-sm-2">EDAD:<span class="required">*</span></label>
+                                                          <div class="col-sm-10">
+                                                            <input class="form-control" name="edad" min="0" max="60" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}">
+                                                          </div>
                                                       </div>
 
     <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                                      <div class="form-group ">
+                                                      <div class="form-group bio-row">
                                                         <label for="direccion_residencia" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
-                                                        <div class="col-lg-10">
+                                                        <div class="col-lg-8">
                                                             <input class=" form-control" name="direccion_residencia" type="text" />
                                                         </div>
                                                     </div>
@@ -289,30 +255,36 @@
 
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
+                                       <div class="form-group bio-row ">
                                             <label for="nombre_persona" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="nombre_persona"  type="text" required />
                                             </div>
                                         </div>
+
+
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
+                                        <div class="form-group bio-row">
                                             <label for="apellido_persona" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_persona" minlength="5" type="text" required />
                                             </div>
                                         </div>
+
+
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
 
     <!-- -------------------------------------------------- PARENTESCO ------------------------------------------------------ -->
-                                         <div class="form-group">
+                                         <div class="form-group bio-row">
                                               <label for="parentesco" class="control-label col-lg-2">PARENTESCO <span class="required">*</span></label>
                                             <div class="col-lg-10">
-                                                <input class="form-control" name="parentesco" minlength="3" type="text" required />
+                                                <input class="form-control" name="parentesco" minlength="5" type="text" required />
                                             </div>
 
                                            </div>
+
+
 
 
     <!-- -------------------------------------------------- PARENTESCO ------------------------------------------------------ -->
@@ -350,26 +322,27 @@
                             </header>
                             <div class="panel-body">
                                 <div class="form">
-                                    <!--<form class="form-horizontal" method="get" >-->
-    <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
+    <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
+                                    <div class="form-group bio-row">
                                             <label for="nombre_padre" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="nombre_padre" minlength="5" type="text" required />
                                             </div>
-                                        </div>
+                                      </div>
+
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
+                                      <div class="form-group bio-row">
                                             <label for="apellido_padre" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_padre" minlength="5" type="text" required />
                                             </div>
-                                        </div>
+                                      </div>
+
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
-                                        <div class="form-group">
+                                        <div class="form-group bio-row">
                                           <label for="tipo_documentop" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                           <div class="col-xs-3">
                                             <select class="form-control" name="tipo_documentop">
@@ -380,7 +353,7 @@
                                             </select>
                                           </div>
 
-                                              <label for="numero_documentop" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
+                                              <label for="numero_documentop" class="control-label col-lg-2">NUMERO DEL DOCUMENTO<span class="required">*</span></label>
                                             <div class="col-lg-3">
                                                 <input class="form-control" name="numero_documentop" minlength="5" type="text" required />
                                             </div>
@@ -394,7 +367,7 @@
 
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="direccion_padre" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="direccion_padre" type="text" />
@@ -403,7 +376,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_padre" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="tel_padre" name="tel_padre" minlength="5" type="text" required />
@@ -412,7 +385,7 @@
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN DEL TRABAJO ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="dir_trabajop" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" type="dir_trabajop" name="dir_trabajop" type="text" />
@@ -421,7 +394,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_trabajop" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_trabajop" minlength="5" type="text" required />
@@ -462,7 +435,7 @@
                                     <!--<form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
+                                       <div class="form-group bio-row">
                                             <label for="nombre_madre" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="nombre_madre" name="nombre_madre" minlength="5" type="text" required />
@@ -470,7 +443,7 @@
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
+                                        <div class="form-group bio-row">
                                             <label for="apellido_madre" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_madre" minlength="5" type="text" required />
@@ -478,7 +451,7 @@
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
-                                           <div class="form-group">
+                                           <div class="form-group bio-row">
                                             <label for="tipo_documentom" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
                                                   <select class="form-control" name="tipo_documentom">
@@ -489,7 +462,7 @@
                                                   </select>
                                               </div>
 
-                                              <label for="numero_documentom" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
+                                              <label for="numero_documentom" class="control-label col-lg-2">NUMERO DEL DOCUMENTO<span class="required">*</span></label>
                                             <div class="col-lg-3">
                                                 <input class="form-control" name="numero_documentom" minlength="5" type="text" required />
                                             </div>
@@ -503,7 +476,7 @@
 
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="direccion_madre" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="direccion_madre" type="text" />
@@ -512,7 +485,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_madre" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="tel_madre" name="tel_madre" minlength="5" type="text" required />
@@ -521,7 +494,7 @@
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN DEL TRABAJO ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="dir_trabajom" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" type="dir_trabajom" name="dir_trabajom" type="text" />
@@ -530,7 +503,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_trabajom" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_trabajom" minlength="5" type="text" required />
@@ -583,7 +556,7 @@
                                     <!--<form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
+                                       <div class="form-group  bio-row">
                                             <label for="nombre_acudiente" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="nombre_acudiente" name="nombre_acudiente" minlength="5" type="text" required />
@@ -591,7 +564,7 @@
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
+                                        <div class="form-group  bio-row">
                                             <label for="apellido_acudiente" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_acudiente" minlength="5" type="text" required />
@@ -599,7 +572,7 @@
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
-                                           <div class="form-group">
+                                           <div class="form-group  bio-row">
                                              <label for="tipo_documentopa" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                                <div class="col-xs-3">
                                                    <select class="form-control" name="tipo_documentopa">
@@ -623,7 +596,7 @@
 
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group  bio-row">
                                             <label for="direccion_acudiente" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="direccion_acudiente" type="text" />
@@ -632,7 +605,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group  bio-row">
                                             <label for="tel_acudiente" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_acudiente" minlength="5" type="text" required />
@@ -641,7 +614,7 @@
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN DEL TRABAJO ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group  bio-row">
                                             <label for="dir_trabajoa" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="dir_trabajoa" type="text" />
@@ -650,7 +623,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group  bio-row">
                                             <label for="tel_trabajoa" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_trabajoa" minlength="5" type="text" required />
@@ -702,7 +675,7 @@
                                   <!--  <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
+                                       <div class="form-group  bio-row">
                                             <label for="nombre_emergencia" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="nombre_emergencia" minlength="5" type="text" required />
@@ -710,7 +683,7 @@
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
+                                        <div class="form-group  bio-row">
                                             <label for="apellido_emergencia" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_emergencia" minlength="5" type="text" required />
@@ -721,7 +694,7 @@
 
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group  bio-row">
                                             <label for="direccion_emergencia" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="direccion_emergencia" type="text" />
@@ -730,7 +703,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group  bio-row">
                                             <label for="tel_emergencia" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="tel_emergencia" name="tel_emergencia" minlength="5" type="text" required />
@@ -740,7 +713,7 @@
 
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group  bio-row">
                                             <label for="tel_trabajoe" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_trabajoe" minlength="5" type="text" required />
@@ -791,7 +764,7 @@
                                           <!--<form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
 
     <!-- ------------------------------------------------  FECHA DE MATRICULA -------------------------------------------------- -->
-                                    <div class="form-group ">
+                                    <div class="form-group  bio-row">
                                         <label for="fecha_matricula" class="control-label col-lg-2">FECHA DE MATRICULA<span class="required">*</span></label>
                                         <div class="col-lg-10">
                                           <input class="form-control" name="fecha_matricula" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
@@ -801,7 +774,7 @@
     <!-- ------------------------------------------------  FECHA DE MATRICULA -------------------------------------------------- -->
     <!-- -------------------------------------------------------  CONVENIO -------------------------------------------------------- -->
 
-                                         <div class="form-group">
+                                         <div class="form-group  bio-row">
                                             <label for="convenio" class="control-label col-xs-3">CONVENIO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
 
@@ -825,7 +798,7 @@
 
     <!-- -------------------------------------------------------  MODULO -------------------------------------------------------- -->
 
-                                          <div class="form-group">
+                                          <div class="form-group  bio-row">
                                             <label for="modulo" class="control-label col-xs-3">MODULO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
 
@@ -847,7 +820,7 @@
     <!-- -------------------------------------------------------  MODULO ---------------------------------------------------- -->
     <!-- -------------------------------------------------------  PROGRAMA -------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group  bio-row">
                                             <label for="programa" class="control-label col-lg-2">PROGRAMA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="programa" minlength="5" type="text" required />
@@ -855,7 +828,7 @@
                                         </div>
     <!-- -------------------------------------------------------  PROGRAMA ---------------------------------------------------- -->
 
-                                        <div class="form-group">
+                                        <div class="form-group  bio-row">
                                             <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
                                         </div>
                                     </form>
@@ -875,19 +848,22 @@
                                             </div>
                                         </section>
 
+
+
                                     </div>
 
     <!-- --------------------------------------- FUNDACION ----------------------------------------------------->
                                 </div>
+                                <div class="form-group  bio-row">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <button class="btn btn-primary" type="submit">Save</button>
+                                        <button class="btn btn-default" type="button">Cancel</button>
+                                    </div>
+                                </div>
+                             </div>
+
 
                       </section>
-                      <div class="form-group">
-                          <div class="col-lg-offset-2 col-lg-10">
-                              <button class="btn btn-primary" type="submit">Save</button>
-                              <button class="btn btn-default" type="button">Cancel</button>
-                          </div>
-                      </div>
-                   </div>
 
     </div>
     <!-- ---------------------------------------Fin Cuadro principal -------------------------------------------->

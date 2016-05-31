@@ -79,7 +79,7 @@
                                         <div class="alumno">
                                              <div class="row">
                                   <div class="col-lg-12">
-                                      <section class="panel">
+                                      <section class="panel panel-primary">
 
                                           <header class="panel-heading">
                                               Información del niño, niña o joven
@@ -103,7 +103,7 @@
 
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                                      <div class="form-group ">
+                                                      <div class="form-group bio-row">
                                                            <label for="nombres" class="control-label col-sm-2">NOMBRES <span class="required">*</span></label>
                                                            <div class="col-sm-10">
 
@@ -113,7 +113,7 @@
                                                        </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                                          <div class="form-group ">
+                                                          <div class="form-group bio-row">
                                                               <label for="apellidos" class="control-label col-sm-2">APELLIDOS <span class="required">*</span></label>
                                                               <div class="col-sm-10">
                                                                   <input class="form-control" name="apellidos" value="{{ $alumnos->apellidos }}"  minlength="5" type="text" required />
@@ -123,7 +123,7 @@
 
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
 
-                                                          <div class="form-group">
+                                                          <div class="form-group bio-row">
                                                             <label for="tipo_documento" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                                               <div class="col-xs-3">
                                                                   <select class="form-control" name="tipo_documento" >
@@ -148,7 +148,7 @@
 
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
               <!-- ------------------------------------------ -------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ -->
-              <div class="form-group ">
+              <div class="form-group bio-row">
                    <label for="fecha_nacimiento" class="control-label col-lg-2">FECHA DE NACIMIENTO<span class="required">*</span></label>
                    <div class="col-lg-10">
                        <input class="form-control"  name="fecha_nacimiento" value="{{ $alumnos->fecha_nacimiento }}" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
@@ -156,7 +156,7 @@
                </div>
     <!-- -------------------------------------------------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR LUGAR DE NACIMIENTO ------------------------------------------------------ -->
-                                                      <div class="form-group">
+                                                      <div class="form-group bio-row">
                                                         <label for="cname" class="control-label col-xs-3">LUGAR DE NACIMIENTO:<span class="required">*</span> </label>
                                                           <div class="col-xs-3">
                                                             <div class="form-group ">
@@ -182,7 +182,7 @@
     <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
 
 
-                                                      <div class="form-group">
+                                                      <div class="form-group bio-row">
                                                         <label for="edad" class="control-label col-lg-2">EDAD:<span class="required">*</span></label>
                                                         <div class="col-sm-2">
                                                         <input class="form-control" name="edad" min="0" max="60" value="{{ $alumnos->edad }}" onkeyup="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}">
@@ -232,7 +232,7 @@
     <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                                      <div class="form-group ">
+                                                      <div class="form-group bio-row">
                                                         <label for="direccion_residencia" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                                         <div class="col-lg-10">
                                                             <input class=" form-control" name="direccion_residencia" value="{{ $alumnos->direccion_residencia }}" type="text" />
@@ -286,7 +286,7 @@
                              </div>
                                             <div class="row">
                           <div class="col-lg-12">
-                              <section class="panel">
+                              <section class="panel panel-primary">
                                   <header class="panel-heading">
                                       Información de la persona con quien vive
                                   </header>
@@ -295,7 +295,7 @@
 
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
+                                       <div class="form-group bio-row">
                                             <label for="nombre_persona" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="nombre_persona" value="{{ $alumnos->nombre_persona }}"  type="text" required />
@@ -303,7 +303,7 @@
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
+                                        <div class="form-group bio-row">
                                             <label for="apellido_persona" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_persona" value="{{ $alumnos->apellido_persona }}" minlength="5" type="text" required />
@@ -312,7 +312,7 @@
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
 
     <!-- -------------------------------------------------- PARENTESCO ------------------------------------------------------ -->
-                                         <div class="form-group">
+                                         <div class="form-group bio-row">
                                               <label for="parentesco" class="control-label col-lg-2">PARENTESCO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="parentesco" value="{{ $alumnos->parentesco }}" minlength="3" type="text" required />
@@ -350,7 +350,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <section class="panel">
+                            <section class="panel panel-info">
                             <header class="panel-heading">
                                 Información del padre
                             </header>
@@ -359,7 +359,7 @@
                                     <!--<form class="form-horizontal" method="get" >-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
+                                       <div class="form-group bio-row">
                                             <label for="nombre_padre" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="nombre_padre" value="{{ $alumnos->nombre_padre }}" minlength="5" type="text" required />
@@ -367,7 +367,7 @@
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
+                                        <div class="form-group bio-row">
                                             <label for="apellido_padre" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_padre" value="{{ $alumnos->apellido_padre }}" minlength="5" type="text" required />
@@ -375,7 +375,7 @@
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
-                                        <div class="form-group">
+                                        <div class="form-group bio-row">
                                           <label for="tipo_documentop" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                           <div class="col-xs-3">
                                             <select class="form-control" name="tipo_documentop">
@@ -386,7 +386,7 @@
                                             </select>
                                           </div>
 
-                                              <label for="numero_documentop" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
+                                              <label for="numero_documentop" class="control-label col-lg-2">NUMERO DEL DOCUMENTO<span class="required">*</span></label>
                                             <div class="col-lg-3">
                                                 <input class="form-control" name="numero_documentop" value="{{ $alumnos->numero_documentop }}" minlength="5" type="text" required />
                                             </div>
@@ -400,7 +400,7 @@
 
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="direccion_padre" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="direccion_padre" value="{{ $alumnos->direccion_padre }}" type="text" />
@@ -409,7 +409,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_padre" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="tel_padre" name="tel_padre" value="{{ $alumnos->tel_padre }}" minlength="5" type="text" required />
@@ -418,7 +418,7 @@
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN DEL TRABAJO ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="dir_trabajop" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" type="dir_trabajop" name="dir_trabajop" value="{{ $alumnos->dir_trabajop }}" type="text" />
@@ -427,7 +427,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_trabajop" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_trabajop" value="{{ $alumnos->tel_trabajop }}" minlength="5" type="text" required />
@@ -438,7 +438,7 @@
 
 
 
-                                        <div class="form-group">
+                                        <div class="form-group bio-row">
 
                                         </div>
                                     </form>
@@ -459,7 +459,7 @@
                 <!-- Form validations -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <section class="panel">
+                        <section class="panel panel-info">
                             <header class="panel-heading">
                                 Información de la madre
                             </header>
@@ -468,23 +468,23 @@
                                     <!--<form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
-                                            <label for="nombre_madre" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
+                                       <div class="form-group bio-row">
+                                            <label for="nombre_madre" class="control-label col-lg-2">NOMBRES<span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="nombre_madre" name="nombre_madre" value="{{ $alumnos->nombre_madre }}" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
-                                            <label for="apellido_madre" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
+                                        <div class="form-group bio-row">
+                                            <label for="apellido_madre" class="control-label col-lg-2">APELLIDOS<span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_madre" value="{{ $alumnos->apellido_madre }}" minlength="5" type="text" required />
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
-                                           <div class="form-group">
+                                           <div class="form-group bio-row">
                                             <label for="tipo_documentom" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
                                                   <select class="form-control" name="tipo_documentom">
@@ -494,7 +494,7 @@
                                                   </select>
                                               </div>
 
-                                              <label for="numero_documentom" class="control-label col-lg-2">NUMERO DEL DOCUMENTO <span class="required">*</span></label>
+                                              <label for="numero_documentom" class="control-label col-lg-2">NUMERO DEL DOCUMENTO<span class="required">*</span></label>
                                             <div class="col-lg-3">
                                                 <input class="form-control" name="numero_documentom" value="{{ $alumnos->numero_documentom }}" minlength="5" type="text" required />
                                             </div>
@@ -508,8 +508,8 @@
 
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
-                                            <label for="direccion_madre" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
+                                          <div class="form-group bio-row">
+                                            <label for="direccion_madre" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA<span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="direccion_madre" value="{{ $alumnos->direccion_madre }}" type="text" />
                                             </div>
@@ -517,8 +517,8 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
-                                            <label for="tel_madre" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
+                                          <div class="form-group bio-row">
+                                            <label for="tel_madre" class="control-label col-lg-2">TELEFONO DE RESIDENCIA<span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="tel_madre" name="tel_madre" value="{{ $alumnos->tel_madre }}" minlength="5" type="text" required />
                                             </div>
@@ -526,8 +526,8 @@
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN DEL TRABAJO ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
-                                            <label for="dir_trabajom" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
+                                          <div class="form-group bio-row">
+                                            <label for="dir_trabajom" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO<span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" type="dir_trabajom" value="{{ $alumnos->dir_trabajom }}" name="dir_trabajom" type="text" />
                                             </div>
@@ -535,8 +535,8 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
-                                            <label for="tel_trabajom" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
+                                          <div class="form-group bio-row">
+                                            <label for="tel_trabajom" class="control-label col-lg-2">TELEFONO DE TRABAJO<span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_trabajom" value="{{ $alumnos->tel_trabajom }}" minlength="5" type="text" required />
                                             </div>
@@ -579,7 +579,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <section class="panel">
+                            <section class="panel panel-warning">
                                 <header class="panel-heading">
                                     Información del acudiente
                                   </header>
@@ -588,7 +588,7 @@
                                     <!--<form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
+                                       <div class="form-group bio-row">
                                             <label for="nombre_acudiente" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="nombre_acudiente" name="nombre_acudiente" value="{{ $alumnos->nombre_acudiente }}" minlength="5" type="text" required />
@@ -596,7 +596,7 @@
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
+                                        <div class="form-group bio-row">
                                             <label for="apellido_acudiente" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_acudiente" value="{{ $alumnos->apellido_acudiente }}" minlength="5" type="text" required />
@@ -604,7 +604,7 @@
                                         </div>
     <!-- -------------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ -->
-                                           <div class="form-group">
+                                           <div class="form-group bio-row">
                                              <label for="tipo_documentopa" class="control-label col-xs-3">TIPO DE DOCUMENTO:<span class="required">*</span> </label>
                                                <div class="col-xs-3">
                                                    <select class="form-control" name="tipo_documentopa">
@@ -628,7 +628,7 @@
 
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="direccion_acudiente" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="direccion_acudiente" value="{{ $alumnos->direccion_acudiente }}" type="text" />
@@ -637,7 +637,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_acudiente" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_acudiente" value="{{ $alumnos->tel_acudiente }}" minlength="5" type="text" required />
@@ -646,7 +646,7 @@
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN DEL TRABAJO ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="dir_trabajoa" class="control-label col-lg-2">DIRECCIÓN DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="dir_trabajoa" value="{{ $alumnos->dir_trabajoa }}" type="text" />
@@ -655,7 +655,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN DEL TRABAJO --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_trabajoa" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_trabajoa" value="{{ $alumnos->tel_trabajoa }}" minlength="5" type="text" required />
@@ -698,7 +698,7 @@
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <section class="panel">
+                            <section class="panel panel-danger">
                                 <header class="panel-heading">
                                     Información de otro familiar o persona de confianza para casos de emergencia
                                 </header>
@@ -707,7 +707,7 @@
                                   <!--  <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
 
-                                       <div class="form-group ">
+                                       <div class="form-group bio-row">
                                             <label for="nombre_emergencia" class="control-label col-lg-2">NOMBRES <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="nombre_emergencia" value="{{ $alumnos->nombre_emergencia }}" minlength="5" type="text" required />
@@ -715,7 +715,7 @@
                                         </div>
     <!-- -------------------------------------------------- PEDIR NOMBRES ------------------------------------------------------ -->
     <!-- -------------------------------------------------- PEDIR APELLIDOS ------------------------------------------------------ -->
-                                        <div class="form-group ">
+                                        <div class="form-group bio-row">
                                             <label for="apellido_emergencia" class="control-label col-lg-2">APELLIDOS <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="apellido_emergencia" value="{{ $alumnos->apellido_emergencia }}" minlength="5" type="text" required />
@@ -726,7 +726,7 @@
 
     <!-- -------------------------------------------------- PEDIR DIRECCIÓN RESIDENCIA ------------------------------------------------------ -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="direccion_emergencia" class="control-label col-lg-2">DIRECCIÓN DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class=" form-control" name="direccion_emergencia" value="{{ $alumnos->direccion_emergencia }}" type="text" />
@@ -735,7 +735,7 @@
     <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- -->
      <!-- ------------------------------------------------------ PEDIR TELEFONO RESIDENCIA --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_emergencia" class="control-label col-lg-2">TELEFONO DE RESIDENCIA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" type="tel_emergencia" name="tel_emergencia" value="{{ $alumnos->tel_emergencia }}" minlength="5" type="text" required />
@@ -745,7 +745,7 @@
 
      <!-- ------------------------------------------------------ PEDIR TELEFONO TRABAJO --------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="tel_trabajoe" class="control-label col-lg-2">TELEFONO DE TRABAJO <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="tel_trabajoe" value="{{ $alumnos->tel_trabajoe }}" minlength="5" type="text" required />
@@ -787,7 +787,7 @@
 
                         <div class="row">
                             <div class="col-lg-12">
-                                <section class="panel">
+                                <section class="panel panel-success">
                                     <header class="panel-heading">
                                           Información para la fundación
                                       </header>
@@ -796,7 +796,7 @@
                                           <!--<form class="form-validate form-horizontal" id="feedback_form" method="get" action="">-->
 
     <!-- ------------------------------------------------  FECHA DE MATRICULA -------------------------------------------------- -->
-                                    <div class="form-group ">
+                                    <div class="form-group bio-row">
                                         <label for="fecha_matricula" class="control-label col-lg-2">FECHA DE MATRICULA<span class="required">*</span></label>
                                         <div class="col-lg-10">
                                           <input class="form-control" name="fecha_matricula" value="{{ $alumnos->fecha_matricula }}" placeholder="Dia/Mes/Año" minlength="5" type="text" required />
@@ -806,7 +806,7 @@
     <!-- ------------------------------------------------  FECHA DE MATRICULA -------------------------------------------------- -->
     <!-- -------------------------------------------------------  CONVENIO -------------------------------------------------------- -->
 
-                                         <div class="form-group">
+                                         <div class="form-group bio-row">
                                             <label for="convenio" class="control-label col-xs-3">CONVENIO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
 
@@ -830,7 +830,7 @@
 
     <!-- -------------------------------------------------------  MODULO -------------------------------------------------------- -->
 
-                                          <div class="form-group">
+                                          <div class="form-group bio-row">
                                             <label for="modulo" class="control-label col-xs-3">MODULO:<span class="required">*</span> </label>
                                               <div class="col-xs-3">
 
@@ -852,7 +852,7 @@
     <!-- -------------------------------------------------------  MODULO ---------------------------------------------------- -->
     <!-- -------------------------------------------------------  PROGRAMA -------------------------------------------------------- -->
 
-                                          <div class="form-group ">
+                                          <div class="form-group bio-row">
                                             <label for="programa" class="control-label col-lg-2">PROGRAMA <span class="required">*</span></label>
                                             <div class="col-lg-10">
                                                 <input class="form-control" name="programa" value="{{ $alumnos->programa }}" minlength="5" type="text" required />

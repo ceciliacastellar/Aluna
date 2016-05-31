@@ -1,4 +1,4 @@
-<?php
+   <?php
 
 use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
@@ -14,10 +14,10 @@ class AlumnoTableSeeder extends Seeder
     {
       $faker = Faker::create();
       DB::table('alumno')->insert([
-      'nombres' => "Cecilia Alejandra",
+      'nombres' => "Javier Eduardo",
       'apellidos' => "Castellar Bustillo",
       'tipo_documento' => "C.C",
-      'numero_documento' => "1168262483",
+      'numero_documento' => "465484949",
       'fecha_nacimiento' => "01/07/1989",
       'departamento' => "Bolivar",
       'municipio' =>  "Cartagena",
@@ -50,10 +50,10 @@ class AlumnoTableSeeder extends Seeder
       'tel_acudiente' => "6642707",
       'dir_trabajoa' => "no tiene",
       'tel_trabajoa' => "6642707",
-      'nombre_emergencia' => "Javier",
-      'apellido_emergencia' => "Galindo Vergel",
+      'nombre_emergencia' => "Cecilia",
+      'apellido_emergencia' => "Castellar Bustillo",
 
-      'direccion_emergencia' => "Crespo",
+      'direccion_emergencia' => "avenida siempreviva 123",
       'tel_emergencia' => "3173796062",
       'tel_trabajoe' => "3173796062",
       'fecha_matricula' => "22/04/2016",
@@ -67,7 +67,59 @@ class AlumnoTableSeeder extends Seeder
 
       'created_at' => $faker->dateTime(),
       'updated_at' => $faker->dateTime()
+    ]);
 
-      ]);
+    /*  for($i = 0; $i <=50; $i ++ ) {
+        DB::table('alumno')->insert([
+        'nombres' => $faker->firstname,
+        'apellidos' => $faker->lastname,
+        'tipo_documento' => "T.I",
+        'numero_documento' => $faker->ean13,
+        'fecha_nacimiento' => $faker->date($format = 'Y-m-d', $max = 'now'),
+        'departamento' => "Bolivar",
+        'municipio' => "Cartagena",
+        'edad' => "12",
+        'direccion_residencia' => $faker->address,
+        'nombre_persona' => $faker->firstname,
+        'apellido_persona' => $faker->lastname,
+        'parentesco' => "hermana",
+        'nombre_padre' => $faker->firstname,
+        'apellido_padre' => $faker->lastname,
+        'tipo_documentop' => "C.C",
+        'numero_documentop' => $faker->ean13,
+        'direccion_padre' => $faker->address,
+        'tel_padre' => $faker->phoneNumber,
+        'dir_trabajop' => $faker->address,
+        'tel_trabajop' => $faker->phoneNumber,
+        'nombre_madre' => $faker->firstname,
+        'apellido_madre' => $faker->lastname,
+        'tipo_documentom' => $faker->"C.C",
+        'numero_documentom' => $faker->ean13,
+        'direccion_madre' => $faker->address,
+        'tel_madre' => $faker->phoneNumber,
+        'dir_trabajom' => $faker->address,
+        'tel_trabajom' => $faker->phoneNumber,
+        'nombre_acudiente' => $faker->firstname,
+        'apellido_acudiente' => $faker->lastname,
+        'tipo_documentopa' => $faker->"C.C",
+        'numero_documentoa' => $faker->ean13,
+        'direccion_acudiente' => $faker->address,
+        'tel_acudiente' => $faker->phone,
+        'dir_trabajoa' => $faker->address,
+        'tel_trabajoa' => $faker->phoneNumber,
+        'nombre_emergencia' => $faker->firstname,
+        'apellido_emergencia' => $faker->lastname,
+        'direccion_emergencia' => $faker->address,
+        'tel_emergencia' => $faker->phoneNumber,
+        'tel_trabajoe' => $faker->phoneNumber,
+        'fecha_matricula' => $faker->date($format = 'Y-m-d', $max = 'now'),
+        'convenio' => "ICBF",
+        'modulo' => "Azul",
+        'programa' => "Delfin",
+        'created_at' => $faker->dateTime(),
+        'updated_at' => $faker->dateTime()
+      ]);*/
+      }
+
+
     }
-}
