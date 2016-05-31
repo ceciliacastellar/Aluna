@@ -12,7 +12,7 @@ Website: http://geekslabs.com/
 
 body {
     color: #797979;
-    background: #eeeeee;
+    background: #FFFFFF;
     font-family: 'Lato', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -78,12 +78,24 @@ table tr th {
     width: 100%;
    
 }
-.h-service{
-     border: ridge #808080 1px;
+.h-serviceuno{
+     border: ridge #007DEB 4px;
+     height: 210px;
+}
+.h-servicedos{
+     border: ridge #F23327 4px;
+     height: 210px;
+}
+.h-servicetres{
+     border: ridge #007F40 4px;
+     height: 210px;
+}
+.h-servicecuatro{
+     border: ridge #7234C5 4px;
      height: 210px;
 }
 #tittlebox{
-    font-size: 16px;
+    font-size: 20px;
 }
 
 
@@ -143,9 +155,40 @@ table tr th {
     background:#F2731F;
 }
 
+.blue-gray{
+    color: #fff;
+    background: linear-gradient(90deg,#FFFFFF , #576160 , #0045A0 1500px);
+    background-color: linear-gradient(90deg,#FFFFFF , #576160  , #0045A0 1500px );
+        
+}
 
-
-
+.litea{
+    color: #003F73!important;
+    font: bold 200% monospace
+}
+.litel{
+    color: #840000!important;
+    font: bold 200% monospace
+ }
+.liteu{
+    color: #11127F!important;
+    font: bold 200% monospace
+}
+.liten{
+    color: #003C00!important;
+    font: bold 200% monospace
+}
+.liteaa{
+    color: #920000!important;
+    font: bold 200% monospace
+    
+}
+hr {
+ /* background-color: red;*/
+  height: 4px;
+   width: 100%;
+  
+}
 
 
 
@@ -174,10 +217,7 @@ table tr th {
     padding-bottom: 10px;
     padding-top: 10px;
 }
-.lite{
-    color: #7BC3C0 !important;
-    font: bold 150% monospace
-}
+
 
 /*login page*/
 
@@ -373,7 +413,7 @@ table tr th {
     width: 160px;
     height: 100%;
     position: fixed;
-    background: #0288D1;
+    background: #FFFFFF;
 }
 
 .nav-collapse.collapse {
@@ -453,20 +493,21 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    color: #d0d8df;
+    color: #000000;
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
+    
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 600;
     outline: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    border-right: 1px solid #D7D7D7;
-    border-bottom: 1px solid #D7D7D7;
+    /*border-right: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;*/
 }
 /*ul.sidebar-menu li a i{
     position: relative;
@@ -643,11 +684,11 @@ a.logo {
     
     font-size: 22px;
     font-size: large;
-    color: #E6E6E6;
+    color: #454744;
     float: left;
     margin-top: 5px;
     text-transform: uppercase;
-    font-family: 
+    font-family: Arial;
 }
 
 a.logo:hover, a.logo:focus {
@@ -1262,7 +1303,7 @@ div[data-role="editor-toolbar"] {
 }
 .panel .panel-body {
   border-width: 1px 1px 2px;
-  border-style: solid;
+  /*border-style: solid;*/
   border-top: none;
   border-right-color: #ccc!important;
   border-bottom-color: #ccc!important;
