@@ -16,7 +16,8 @@ body {
     font-family: 'Lato', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
-    font-size:14px !important;    
+    font-size:14px !important;  
+    overflow: hidden;
 }
 h1,h2,h3,h4,h5{
     font-weight: 300;
@@ -124,28 +125,28 @@ table tr th {
     background: #8383EE;
 }
 
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .alumno:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .alumno{
     color: #fff;
     background: #2775e2 ;
 }
 
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .padres:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .padres{
     color: #fff;
     background: #00aced;
 }
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .acudiente:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .acudiente{
     color: #fff;
     background: #f4b162;
 }
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .emergencia:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .emergencia{
     color: #fff;
     background: #ff2121;
 }
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .fundacion:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .fundacion{
     color: #fff;
     background:#79c447;
 }
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .hmedico:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .hmedico{
     color: #fff;
     background:#8383EE;
 }
@@ -189,10 +190,68 @@ hr {
    width: 100%;
   
 }
+/*  ---- ---- ---- --- --- --- ---- El sidebar movible ---- --- -- --- -- -- */
+.sidebar{
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    
+}
+.sidebar h2{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background: #2a2a2a;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li{
+    outline: 1px solid #2a2a2a;
+    transition: all 0.3s;
+ }
+.sidebar li:hover{
+    background: #444;
+    border-left: 5px solid #eee;
+}
+.sidebar a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #eee;
+    padding: 30px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+.menu-bar{
+    cursor: pointer;
+ }
+ .abrir{
+     transform: translateX(250px);
+ }
+
+/*--- - ----- -- -- ---- ---- El sidebar movible --- ---- ----- ----- --- */
 
 
 
 
+ 
+
+ 
+  
+
+  
 
 
 
