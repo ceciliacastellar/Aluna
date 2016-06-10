@@ -1,291 +1,140 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
-    <meta name="author" content="GeeksLabs">
-    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <link rel="shortcut icon" href="img/favicon.png">
-    
-<!-- ---------------------------------  Titulo pestaña ------------------------    -->
-    <title> FUNDACIÓN ALUNA  </title>
-<!-- ---------------------------------  Titulo pestaña ------------------------    -->
+    <head>
 
-    <!-- Bootstrap CSS -->    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- bootstrap theme -->
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <!--external css-->
-    <!-- font icon -->
-    <link href="css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet" />
-    
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+        <meta name="author" content="GeeksLabs">
+        <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <meta charset="UTF-8">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-      <script src="js/lte-ie7.js"></script>
-    <![endif]-->
-  </head>
+        <title>Inscripcion alumnos | Fundacion Aluna </title>
 
-  <body>
-  <!-- container section start -->
-  <section id="container" class="">
-      <!--header start-->
-      <header class="header white-bg">
-            <div class="toggle-nav">
-                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
-            </div>
+        <!-- Bootstrap CSS -->    
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- bootstrap theme -->
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <!--external css-->
+        <!-- font icon -->
+        <link href="css/elegant-icons-style.css" rel="stylesheet" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" />    
+        <!-- full calendar css-->
+        <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+        <link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+        <!-- easy pie chart-->
+        <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+        <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="css/fullcalendar.css">
+        <link href="css/widgets.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style-responsive.css" rel="stylesheet" />
+        <link href="css/xcharts.min.css" rel=" stylesheet">	
+        <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>
+          <script src="js/respond.min.js"></script>
+          <script src="js/lte-ie7.js"></script>
+        <![endif]-->
+    </head>
 
-<!-- -------------------------------- LOGO CON COLORES ---------------------------------- -->
-          <!--logo start-->
-          
-            <a href="index.html" class="logo"> SISTEMA DE INFORMACION DE LA <strong>FUNDACION </strong><span class="litea">A</span><span class="litel">L</span><span class="liteu">U</span><span class="liten">N</span><span class="liteaa">A</span>
-                
-            </a>
-            <!--logo end-->
-<!-- -------------------------------- LOGO CON COLORES ---------------------------------- -->
-<!-- -------------------------------- BUSCADOR ---------------------------------- -->
-
-        <!--    <div class="nav search-row" id="top_menu">-->
-                <!--  search form start -->
-             <!--   <ul class="nav top-menu">                    
-                    <li>
-                        <form class="navbar-form">
-                            <input class="form-control" placeholder="Search" type="text">
-                        </form>
-                    </li>                    
-                </ul>-->
-                <!--  search form end -->               
-          <!--  </div>-->
-<!-- -------------------------------- BUSCADOR ---------------------------------- -->
-<!-- ------------------------------------- NOTIFICACIONES PENDIENTES (TRES LINEAS) --------------------------------- -->
-            <div class="top-nav notification-row">                
-                <!-- notificatoin dropdown start-->
-                <ul class="nav pull-right top-menu">
-                    
-                    <!-- task notificatoin start -->
-                    <li id="task_notificatoin_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            
-                            
-                        </a>
-                        
-                    </li>
-                    <!-- task notificatoin end -->
-                    
-                    
-<!-- ------------------------------------- NOTIFICACIONES PENDIENTES (TRES LINEAS) --------------------------------- -->   
-
-<!-- ------------------------------------- MENSAJERIA PENDIENTES (SOBRE) --------------------------------- -->
-                    <!-- inbox notificatoin start-->
-                    <li id="mail_notificatoin_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            
-                        </a>
-                        <ul class="dropdown-menu extended inbox">
-                            <div class="notify-arrow notify-arrow-blue"></div>
-                            
-                            
-                            
-                            
-                            
-                        </ul>
-                    </li>
-                    <!-- inbox notificatoin end -->
-                    
-  <!-- ------------------------------------- MENSAJERIA PENDIENTES (SOBRE) --------------------------------- --> 
- <!-- ------------------------------------- ALERTA DE NOTIFICACIONES (CAMPANA) --------------------------------- --> 
-
-                    <!-- alert notification start-->
-                    <li id="alert_notificatoin_bar" class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-
-                           
-                        </a>
-                        <ul class="dropdown-menu extended notification">
-                            <div class="notify-arrow notify-arrow-blue"></div>
-                            
-                            
-                            
-                                                 
-                            
-                        </ul>
-                    </li>
-                    <!-- alert notification end-->
- <!-- ------------------------------------- ALERTA DE NOTIFICACIONES (CAMPANA) --------------------------------- --> 
+    <body>
+        <!-- container section start -->
+        <nav id="container" class="">
+          <!--header end-->
+            <header class="main-header blue-bg">
  
- <!-- ------------------------------------- LOGIN Y SU BARRA ------------------------------------------------- -->
-                    
-                    <!-- user login dropdown start-->
-                    <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="profile-ava">
-                                <img alt="" src="img/chat-avatar.jpg">
-                            </span>
-                            <span class="username">Jenifer Smith</span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu extended logout">
-                            <div class="log-arrow-up"></div>
-                            <li class="eborder-top">
-                                <a href="#"><i class="icon_profile"></i> My Profile</a>
-                            </li>
-                                                                                    
-                            <li>
-                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
-                            </li>
-                            
-                            
-                        </ul>
-                    </li>
-                    <!-- user login dropdown end -->
-<!-- ------------------------------------- LOGIN Y SU BARRA ------------------------------------------------- -->
-
-                </ul>
-                <!-- notificatoin dropdown end-->
-            </div>
-      </header>      
-      <!--header end-->
-<!-- ------------------------------------- BARRA DE MENU DEL LADO IZQUIERDO ------------------------------------------------- -->
-      <!--sidebar start-->
-      
-      <aside>
-          <div id="sidebar"  class="nav-collapse ">
-              <!-- sidebar menu start-->
-              <ul class="sidebar-menu">                
-                  <li class="">
-                      <a class="" href="index.html">
-                          <i class="icon_house_alt"></i>
-                          <span>Menu</span>
-                      </a>
-                  </li>
-                  
-                 <li class="sub-menu">
-                            <a href="javascript:;" class="">
-                                <i class="icon_pencil-edit"></i>
-                                <span>Registrar</span>
+    <!-- LOGO -->
+    <div class="logo navbar-form">
+        <i href="#navigation-main" class="btn btn-purple menu-bar fa fa-bars" ></i>
+        <span ></span>
+        <a href="index.html" id="logo">  <strong>FUNDACION </strong><span class="litea">A</span><span class="litel">L</span><span class="liteu">U</span><span class="liten">N</span><span class="liteaa">A</span></a>
+    </div>
+    
+  
+    <!-- Navbar Right Menu -->
+    <div class="top-nav notification-row">
+      <ul class="nav pull-right top-menu ">
+        
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                
+                                <span class="username">Jenifer Smith</span>
+                                <b class="caret"></b>
                             </a>
-                            <ul class="sub">
-                                <li><a class="" href="Inscripcion.html">Alumnos</a></li>
-                                <li><a class="" href="registro.html">Empleados</a></li>
+                            <ul class="dropdown-menu extended logout">
+                                <div class="log-arrow-up"></div>
+                                <li class="eborder-top">
+                                    <a href="#"><i class="icon_profile"></i> My Profile</a>
+                                </li>
+
+                                <li>
+                                    <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                                </li>
+
 
                             </ul>
                         </li>
-                        <li class="sub-menu">
-                            <a href="javascript:;" class="">
-                                <i class="icon_document_alt"></i>
-                                <span>Inscripcion</span>
-                            </a>
-                            <ul class="sub">
+       
+        
+          
+      </ul>
+    </div>
+   
+</header>
+    
+  
+            <!-------------------------------------------------HASTA AQUI LA BARRA DE ARRIBA--------------------------------- -->
+            <!-- ------------------------------------- BARRA DE MENU DEL LADO IZQUIERDO ------------------------------------------------- -->
+            <!--sidebar start-->
+            <aside>
+                <div class="sidebar">
+                    
+                    <h2>Menú</h2>
+                    <ul>
+                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Registrar<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="" href="Inscripcion.html">Alumnos</a></li>
+                                <li><a class="" href="registro.html">Empleados</a></li>  
+                            </ul>
+                        
+                        </li>
+                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Inscripcion<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
                                 <li><a class="" href="Asistencia.html">Alumnos</a></li>
                                 <li><a class="" href="mostrar_registro.html">Empleados</a></li>
-
                             </ul>
                         </li>
-                  <!--<li class="sub-menu">
-                      <a href="Asistencia.html" class="">
-                          <i class="icon_document_alt"></i>
-                          <span>Alumnos</span>
-                      </a>
-                  </li>-->
-				<!--  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_document_alt"></i>
-                          <span>Forms</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="form_component.html">Form Elements</a></li>                          
-                          <li><a class="" href="form_validation.html">Form Validation</a></li>
-                      </ul>
-                  </li>       
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_desktop"></i>
-                          <span>UI Fitures</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="general.html">Components</a></li>
-                          <li><a class="" href="buttons.html">Buttons</a></li>
-                          <li><a class="" href="grids.html">Grids</a></li>
-                      </ul>
-                  </li>
-                  <li>
-                      <a class="" href="widgets.html">
-                          <i class="icon_genius"></i>
-                          <span>Widgets</span>
-                      </a>
-                  </li>
-                  <li>                     
-                      <a class="" href="chart-chartjs.html">
-                          <i class="icon_piechart"></i>
-                          <span>Charts</span>
-                          
-                      </a>
-                                         
-                  </li>
-                             
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_table"></i>
-                          <span>Tables</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="active" href="basic_table.html">Basic Table</a></li>
-                      </ul>
-                  </li>
-                  
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_documents_alt"></i>
-                          <span>Pages</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">                          
-                          <li><a class="" href="profile.html">Profile</a></li>
-                          <li><a class="" href="login.html"><span>Login Page</span></a></li>
-                          <li><a class="" href="blank.html">Blank Page</a></li>
-                          <li><a class="" href="404.html">404 Error</a></li>
-                      </ul>
-                  </li>-->
-                  
-              </ul>
-              <!-- sidebar menu end-->
-          </div>
-      </aside>
-      <!--sidebar end-->
-<!-- ------------------------------------- CONEXION A OTRAS PAGINAS ------------------------------------------------- -->
-
-<!-- -------------------------------------- LOS NOMBRES DE LOS FORMULARIOS ------------------------------------------ -->
-
-      <!--main content start-->
-      <section id="main-content">
-          <section class="wrapper">
-		  <div class="row">
+                        
+                        
+                    </ul>
+                </div>
+                
+               
+                <div class="contenido">
+                   <!-- <img src="img/menu.png" alt="" class="menu-bar">-->
+                   
+                    <div class="row ">
 				<div class="col-lg-12">
 					<h3 class="page-header"><i class="fa fa-files-o"></i> INSCRIPCION</h3>
-					<ol class="breadcrumb">
+					
                                             
-						<li><i class="fa fa-home"></i><a href="index.html">Principal </a></li>
-                                                <li><i class="icon_document_alt"></i><a href="Inscripcion.html">Ficha de matricula del niño, niña o joven</a></li>
+						<i class="fa fa-home"></i><a href="index.html">Principal </a>
+                                                <i class="icon_document_alt"></i><a href="Inscripcion.html">Ficha de matricula del niño, niña o joven</a>
 						
-					</ol>
+					
 				</div>
-			</div>
-<!-- -------------------------------------- LOS NOMBRES DE LOS FORMULARIOS ------------------------------------------ -->
-
-<!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
+                    </div>
+                   <br>
+                   <br>
+                   
+                   <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
 <div class="row">
                  <div class="col-lg-12">
                     <section class="panel">
@@ -406,233 +255,12 @@
                                                                                    
   <!-- -------------------------------------------------- PEDIR DOCUMENTO DE IDENTIDAD ------------------------------------------------------ --> 
             <!-- ------------------------------------------ -------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ -->  
-                                                 <div class="form-group">
-                                                     <label for="cname" class="control-label col-xs-3">FECHA DE NACIMIENTO:<span class="required">*</span> </label>
-                                                       <div class="col-xs-3">
-                                                           <select class="form-control">
-                                                               <option>Dia</option>
-                                                               <option>1</option>
-                                                               <option>2</option>
-                                                               <option>3</option>
-                                                               <option>4</option>
-                                                               <option>5</option>
-                                                               <option>6</option>
-                                                               <option>7</option>
-                                                               <option>8</option>
-                                                               <option>9</option>
-                                                               <option>10</option>
-                                                               <option>11</option>
-                                                               <option>12</option>
-                                                               <option>13</option>
-                                                               <option>14</option>
-                                                               <option>15</option>
-                                                               <option>16</option>
-                                                               <option>17</option>
-                                                               <option>18</option>
-                                                               <option>19</option>
-                                                               <option>20</option>
-                                                               <option>21</option>
-                                                               <option>22</option>
-                                                               <option>23</option>
-                                                               <option>24</option>
-                                                               <option>25</option>
-                                                               <option>26</option>
-                                                               <option>27</option>
-                                                               <option>28</option>
-                                                               <option>29</option>
-                                                               <option>30</option>
-                                                               <option>31</option>
+                                                 <div class="form-group ">
+                                                     <label for="fecha_nacimiento" class="control-label  col-sm-2">FECHA DE NACIMIENTO:<span class="required">*</span> </label>
+                                                     <div class="col-sm-3">
+                                                         <input type="date" name="fecha" class="form-control">
+                                                     </div>
 
-                                                           </select>
-                                                       </div>
-
-                                                       <div class="col-xs-3">
-                                                           <select class="form-control">
-                                                               <option>Mes</option>
-                                                               <option>Enero</option>
-                                                               <option>Febrero</option>
-                                                               <option>Marzo</option>
-                                                               <option>Abril</option>
-                                                               <option>Mayo</option>
-                                                               <option>Junio</option>
-                                                               <option>Julio</option>
-                                                               <option>Agosto</option>
-                                                               <option>Septiembre</option>
-                                                               <option>Octubre</option>
-                                                               <option>Noviembre</option>
-                                                               <option>Diciembre</option>
-
-                                                           </select>
-                                                       </div>
-                                                       <div class="col-xs-3">
-                                                           <select class="form-control">
-                                                               <option>Año</option>
-                                                               <option>1950</option>
-                                                               <option>1951</option>
-                                                               <option>1952</option>
-                                                               <option>1953</option>
-                                                               <option>1954</option>
-                                                               <option>1955</option>
-                                                               <option>1956</option>
-                                                               <option>1957</option>
-                                                               <option>1958</option>
-                                                               <option>1959</option>
-                                                               <option>1960</option>
-                                                               <option>1961</option>
-                                                               <option>1962</option>
-                                                               <option>1963</option>
-                                                               <option>1964</option>
-                                                               <option>1965</option>
-                                                               <option>1966</option>
-                                                               <option>1967</option>
-                                                               <option>1968</option>
-                                                               <option>1969</option>
-                                                               <option>1970</option>
-                                                               <option>1971</option>
-                                                               <option>1972</option>
-                                                               <option>1973</option>
-                                                               <option>1974</option>
-                                                               <option>1975</option>
-                                                               <option>1976</option>
-                                                               <option>1977</option>
-                                                               <option>1978</option>
-                                                               <option>1979</option>
-                                                               <option>1980</option>
-                                                               <option>1981</option>
-                                                               <option>1982</option>
-                                                               <option>1983</option>
-                                                               <option>1984</option>
-                                                               <option>1985</option>
-                                                               <option>1986</option>
-                                                               <option>1987</option>
-                                                               <option>1988</option>
-                                                               <option>1989</option>
-                                                               <option>1990</option>
-                                                               <option>1991</option>
-                                                               <option>1992</option>
-                                                               <option>1993</option>
-                                                               <option>1994</option>
-                                                               <option>1995</option>
-                                                               <option>1996</option>
-                                                               <option>1997</option>
-                                                               <option>1998</option>
-                                                               <option>1999</option>
-                                                               <option>2000</option>
-                                                               <option>2001</option>
-                                                               <option>2002</option>
-                                                               <option>2003</option>
-                                                               <option>2004</option>
-                                                               <option>2005</option>
-                                                               <option>2005</option>
-                                                               <option>2006</option>
-                                                               <option>2007</option>
-                                                               <option>2008</option>
-                                                               <option>2009</option>
-                                                               <option>2010</option>
-                                                               <option>2011</option>
-                                                               <option>2012</option>
-                                                               <option>2013</option>
-                                                               <option>2014</option>
-                                                               <option>2015</option>
-                                                               <option>2016</option>
-                                                               <option>2017</option>
-                                                               <option>2018</option>
-                                                               <option>2019</option>
-                                                               <option>2020</option>
-                                                               <option>2021</option>
-                                                               <option>2022</option>
-                                                               <option>2023</option>
-                                                               <option>2024</option>
-                                                               <option>2025</option>
-                                                               <option>2026</option>
-                                                               <option>2027</option>
-                                                               <option>2028</option>
-                                                               <option>2029</option>
-                                                               <option>2030</option>
-                                                               <option>2031</option>
-                                                               <option>2032</option>
-                                                               <option>2033</option>
-                                                               <option>2034</option>
-                                                               <option>2035</option>
-                                                               <option>2036</option>
-                                                               <option>2037</option>
-                                                               <option>2038</option>
-                                                               <option>2039</option>
-                                                               <option>2040</option>
-                                                               <option>2041</option>
-                                                               <option>2042</option>
-                                                               <option>2043</option>
-                                                               <option>2044</option>
-                                                               <option>2045</option>
-                                                               <option>2046</option>
-                                                               <option>2047</option>
-                                                               <option>2048</option>
-                                                               <option>2049</option>
-                                                               <option>2050</option>
-                                                               <option>2051</option>
-                                                               <option>2052</option>
-                                                               <option>2053</option>
-                                                               <option>2054</option>
-                                                               <option>2055</option>
-                                                               <option>2056</option>
-                                                               <option>2057</option>
-                                                               <option>2058</option>
-                                                               <option>2059</option>
-                                                               <option>2060</option>
-                                                               <option>2061</option>
-                                                               <option>2062</option>
-                                                               <option>2063</option>
-                                                               <option>2064</option>
-                                                               <option>2065</option>
-                                                               <option>2066</option>
-                                                               <option>2067</option>
-                                                               <option>2068</option>
-                                                               <option>2069</option>
-                                                               <option>2070</option>
-                                                               <option>2071</option>
-                                                               <option>2072</option>
-                                                               <option>2073</option>
-                                                               <option>2074</option>
-                                                               <option>2075</option>
-                                                               <option>2076</option>
-                                                               <option>2077</option>
-                                                               <option>2078</option>
-                                                               <option>2079</option>
-                                                               <option>2080</option>
-                                                               <option>2081</option>
-                                                               <option>2082</option>
-                                                               <option>2083</option>
-                                                               <option>2084</option>
-                                                               <option>2085</option>
-                                                               <option>2086</option>
-                                                               <option>2087</option>
-                                                               <option>2088</option>
-                                                               <option>2089</option>
-                                                               <option>2090</option>
-                                                               <option>2091</option>
-                                                               <option>2092</option>
-                                                               <option>2093</option>
-                                                               <option>2093</option>
-                                                               <option>2094</option>
-                                                               <option>2095</option>
-                                                               <option>2096</option>
-                                                               <option>2097</option>
-                                                               <option>2098</option>
-                                                               <option>2099</option>
-                                                               <option>2100</option>
-                                                               <option>2101</option>
-                                                               <option>2102</option>
-                                                               <option>2103</option>
-                                                               <option>2104</option>
-                                                               <option>2105</option>
-                                                               <option>2106</option>
-                                                               <option>2107</option>
-                                                               <option>2108</option>
-                                                               <option>2109</option>
-                                                               <option>2110</option>
-
-                                                           </select>
-                                                       </div>
                                                    </div>
   <!-- -------------------------------------------------- PEDIR FECHA DE NACIMIENTO ------------------------------------------------------ --> 
   <!-- -------------------------------------------------- PEDIR LUGAR DE NACIMIENTO ------------------------------------------------------ -->
@@ -641,6 +269,1116 @@
                                                         <div class="col-xs-3">
                                                             <select class="form-control">
                                                                 <option>Municipio</option>
+                                                                <option value = "	MEDELLIN	">	MEDELLIN	</option>
+                                                                <option value = "	ABEJORRAL	">	ABEJORRAL	</option>
+                                                                <option value = "	ABRIAQUI	">	ABRIAQUI	</option>
+                                                                <option value = "	ALEJANDRIA	">	ALEJANDRIA	</option>
+                                                                <option value = "	AMAGA	">	AMAGA	</option>
+                                                                <option value = "	AMALFI	">	AMALFI	</option>
+                                                                <option value = "	ANDES	">	ANDES	</option>
+                                                                <option value = "	ANGELOPOLIS	">	ANGELOPOLIS	</option>
+                                                                <option value = "	ANGOSTURA	">	ANGOSTURA	</option>
+                                                                <option value = "	ANORI	">	ANORI	</option>
+                                                                <option value = "	ANTIOQUIA	">	ANTIOQUIA	</option>
+                                                                <option value = "	ANZA	">	ANZA	</option>
+                                                                <option value = "	APARTADO	">	APARTADO	</option>
+                                                                <option value = "	ARBOLETES	">	ARBOLETES	</option>
+                                                                <option value = "	ARGELIA	">	ARGELIA	</option>
+                                                                <option value = "	ARMENIA	">	ARMENIA	</option>
+                                                                <option value = "	BARBOSA	">	BARBOSA	</option>
+                                                                <option value = "	BELMIRA	">	BELMIRA	</option>
+                                                                <option value = "	BELLO	">	BELLO	</option>
+                                                                <option value = "	BETANIA	">	BETANIA	</option>
+                                                                <option value = "	BETULIA	">	BETULIA	</option>
+                                                                <option value = "	BOLIVAR	">	BOLIVAR	</option>
+                                                                <option value = "	BRICEÑO	">	BRICEÑO	</option>
+                                                                <option value = "	BURITICA	">	BURITICA	</option>
+                                                                <option value = "	CACERES	">	CACERES	</option>
+                                                                <option value = "	CAICEDO	">	CAICEDO	</option>
+                                                                <option value = "	CALDAS	">	CALDAS	</option>
+                                                                <option value = "	CAMPAMENTO	">	CAMPAMENTO	</option>
+                                                                <option value = "	CAÑASGORDAS	">	CAÑASGORDAS	</option>
+                                                                <option value = "	CARACOLI	">	CARACOLI	</option>
+                                                                <option value = "	CARAMANTA	">	CARAMANTA	</option>
+                                                                <option value = "	CAREPA	">	CAREPA	</option>
+                                                                <option value = "	CARMEN DE VIBORAL	">	CARMEN DE VIBORAL	</option>
+                                                                <option value = "	CAROLINA	">	CAROLINA	</option>
+                                                                <option value = "	CAUCASIA	">	CAUCASIA	</option>
+                                                                <option value = "	CHIGORODO	">	CHIGORODO	</option>
+                                                                <option value = "	CISNEROS	">	CISNEROS	</option>
+                                                                <option value = "	COCORNA	">	COCORNA	</option>
+                                                                <option value = "	CONCEPCION	">	CONCEPCION	</option>
+                                                                <option value = "	CONCORDIA	">	CONCORDIA	</option>
+                                                                <option value = "	COPACABANA	">	COPACABANA	</option>
+                                                                <option value = "	DABEIBA	">	DABEIBA	</option>
+                                                                <option value = "	DON MATIAS	">	DON MATIAS	</option>
+                                                                <option value = "	EBEJICO	">	EBEJICO	</option>
+                                                                <option value = "	EL BAGRE	">	EL BAGRE	</option>
+                                                                <option value = "	ENTRERRIOS	">	ENTRERRIOS	</option>
+                                                                <option value = "	ENVIGADO	">	ENVIGADO	</option>
+                                                                <option value = "	FREDONIA	">	FREDONIA	</option>
+                                                                <option value = "	FRONTINO	">	FRONTINO	</option>
+                                                                <option value = "	GIRALDO	">	GIRALDO	</option>
+                                                                <option value = "	GIRARDOTA	">	GIRARDOTA	</option>
+                                                                <option value = "	GOMEZ PLATA	">	GOMEZ PLATA	</option>
+                                                                <option value = "	GRANADA	">	GRANADA	</option>
+                                                                <option value = "	GUADALUPE	">	GUADALUPE	</option>
+                                                                <option value = "	GUARNE	">	GUARNE	</option>
+                                                                <option value = "	GUATAPE	">	GUATAPE	</option>
+                                                                <option value = "	HELICONIA	">	HELICONIA	</option>
+                                                                <option value = "	HISPANIA	">	HISPANIA	</option>
+                                                                <option value = "	ITAGUI	">	ITAGUI	</option>
+                                                                <option value = "	ITUANGO	">	ITUANGO	</option>
+                                                                <option value = "	JARDIN	">	JARDIN	</option>
+                                                                <option value = "	JERICO	">	JERICO	</option>
+                                                                <option value = "	LA CEJA	">	LA CEJA	</option>
+                                                                <option value = "	LA ESTRELLA	">	LA ESTRELLA	</option>
+                                                                <option value = "	LA PINTADA	">	LA PINTADA	</option>
+                                                                <option value = "	LA UNION	">	LA UNION	</option>
+                                                                <option value = "	LIBORINA	">	LIBORINA	</option>
+                                                                <option value = "	MACEO	">	MACEO	</option>
+                                                                <option value = "	MARINILLA	">	MARINILLA	</option>
+                                                                <option value = "	MONTEBELLO	">	MONTEBELLO	</option>
+                                                                <option value = "	MURINDO	">	MURINDO	</option>
+                                                                <option value = "	MUTATA	">	MUTATA	</option>
+                                                                <option value = "	NARIÑO	">	NARIÑO	</option>
+                                                                <option value = "	NECOCLI	">	NECOCLI	</option>
+                                                                <option value = "	NECHI	">	NECHI	</option>
+                                                                <option value = "	OLAYA	">	OLAYA	</option>
+                                                                <option value = "	PEÑOL	">	PEÑOL	</option>
+                                                                <option value = "	PEQUE	">	PEQUE	</option>
+                                                                <option value = "	PUEBLORRICO	">	PUEBLORRICO	</option>
+                                                                <option value = "	PUERTO BERRIO	">	PUERTO BERRIO	</option>
+                                                                <option value = "	PUERTO NARE (LA MAGDALENA)	">	PUERTO NARE (LA MAGDALENA)	</option>
+                                                                <option value = "	PUERTO TRIUNFO	">	PUERTO TRIUNFO	</option>
+                                                                <option value = "	REMEDIOS	">	REMEDIOS	</option>
+                                                                <option value = "	RETIRO	">	RETIRO	</option>
+                                                                <option value = "	RIONEGRO	">	RIONEGRO	</option>
+                                                                <option value = "	SABANALARGA	">	SABANALARGA	</option>
+                                                                <option value = "	SABANETA	">	SABANETA	</option>
+                                                                <option value = "	SALGAR	">	SALGAR	</option>
+                                                                <option value = "	SAN ANDRES	">	SAN ANDRES	</option>
+                                                                <option value = "	SAN CARLOS	">	SAN CARLOS	</option>
+                                                                <option value = "	SAN FRANCISCO	">	SAN FRANCISCO	</option>
+                                                                <option value = "	SAN JERONIMO	">	SAN JERONIMO	</option>
+                                                                <option value = "	SAN JOSE DE LA MONTAÑA	">	SAN JOSE DE LA MONTAÑA	</option>
+                                                                <option value = "	SAN JUAN DE URABA	">	SAN JUAN DE URABA	</option>
+                                                                <option value = "	SAN LUIS	">	SAN LUIS	</option>
+                                                                <option value = "	SAN PEDRO	">	SAN PEDRO	</option>
+                                                                <option value = "	SAN PEDRO DE URABA	">	SAN PEDRO DE URABA	</option>
+                                                                <option value = "	SAN RAFAEL	">	SAN RAFAEL	</option>
+                                                                <option value = "	SAN ROQUE	">	SAN ROQUE	</option>
+                                                                <option value = "	SAN VICENTE	">	SAN VICENTE	</option>
+                                                                <option value = "	SANTA BARBARA	">	SANTA BARBARA	</option>
+                                                                <option value = "	SANTA ROSA DE OSOS	">	SANTA ROSA DE OSOS	</option>
+                                                                <option value = "	SANTO DOMINGO	">	SANTO DOMINGO	</option>
+                                                                <option value = "	SANTUARIO	">	SANTUARIO	</option>
+                                                                <option value = "	SEGOVIA	">	SEGOVIA	</option>
+                                                                <option value = "	SONSON	">	SONSON	</option>
+                                                                <option value = "	SOPETRAN	">	SOPETRAN	</option>
+                                                                <option value = "	TAMESIS	">	TAMESIS	</option>
+                                                                <option value = "	TARAZA	">	TARAZA	</option>
+                                                                <option value = "	TARSO	">	TARSO	</option>
+                                                                <option value = "	TITIRIBI	">	TITIRIBI	</option>
+                                                                <option value = "	TOLEDO	">	TOLEDO	</option>
+                                                                <option value = "	TURBO	">	TURBO	</option>
+                                                                <option value = "	URAMITA	">	URAMITA	</option>
+                                                                <option value = "	URRAO	">	URRAO	</option>
+                                                                <option value = "	VALDIVIA	">	VALDIVIA	</option>
+                                                                <option value = "	VALPARAISO	">	VALPARAISO	</option>
+                                                                <option value = "	VEGACHI	">	VEGACHI	</option>
+                                                                <option value = "	VENECIA	">	VENECIA	</option>
+                                                                <option value = "	VIGIA VIGIA DEL FUERTE	">	VIGIA VIGIA DEL FUERTE	</option>
+                                                                <option value = "	YALI	">	YALI	</option>
+                                                                <option value = "	YARUMAL	">	YARUMAL	</option>
+                                                                <option value = "	YOLOMBO	">	YOLOMBO	</option>
+                                                                <option value = "	YONDO	">	YONDO	</option>
+                                                                <option value = "	ZARAGOZA	">	ZARAGOZA	</option>
+                                                                <option value = "	BARANOA	">	BARANOA	</option>
+                                                                <option value = "	CAMPO DE LA CRUZ	">	CAMPO DE LA CRUZ	</option>
+                                                                <option value = "	CANDELARIA	">	CANDELARIA	</option>
+                                                                <option value = "	GALAPA	">	GALAPA	</option>
+                                                                <option value = "	JUAN DE ACOSTA	">	JUAN DE ACOSTA	</option>
+                                                                <option value = "	LURUACO	">	LURUACO	</option>
+                                                                <option value = "	MALAMBO	">	MALAMBO	</option>
+                                                                <option value = "	MANATI	">	MANATI	</option>
+                                                                <option value = "	PALMAR DE VARELA	">	PALMAR DE VARELA	</option>
+                                                                <option value = "	PIOJO	">	PIOJO	</option>
+                                                                <option value = "	POLO NUEVO	">	POLO NUEVO	</option>
+                                                                <option value = "	PONEDERA	">	PONEDERA	</option>
+                                                                <option value = "	PUERTO COLOMBIA	">	PUERTO COLOMBIA	</option>
+                                                                <option value = "	REPELON	">	REPELON	</option>
+                                                                <option value = "	SABANAGRANDE	">	SABANAGRANDE	</option>
+                                                                <option value = "	SABANALARGA	">	SABANALARGA	</option>
+                                                                <option value = "	SANTA LUCIA	">	SANTA LUCIA	</option>
+                                                                <option value = "	SANTO TOMAS	">	SANTO TOMAS	</option>
+                                                                <option value = "	SOLEDAD	">	SOLEDAD	</option>
+                                                                <option value = "	SUAN	">	SUAN	</option>
+                                                                <option value = "	TUBARA	">	TUBARA	</option>
+                                                                <option value = "	USIACURI	">	USIACURI	</option>
+                                                                <option value = "	"CARTAGENA (DISTRITO
+                                                                TURISTICO Y CULTURAL DE
+                                                                CARTAGENA)"	">	"CARTAGENA (DISTRITO
+                                                                TURISTICO Y CULTURAL DE
+                                                                CARTAGENA)"	</option>
+                                                                <option value = "	ACHI	">	ACHI	</option>
+                                                                <option value = "	ALTOS DEL ROSARIO	">	ALTOS DEL ROSARIO	</option>
+                                                                <option value = "	ARENAL	">	ARENAL	</option>
+                                                                <option value = "	ARJONA	">	ARJONA	</option>
+                                                                <option value = "	ARROYOHONDO	">	ARROYOHONDO	</option>
+                                                                <option value = "	BARRANCO DE LOBA	">	BARRANCO DE LOBA	</option>
+                                                                <option value = "	CALAMAR	">	CALAMAR	</option>
+                                                                <option value = "	CANTAGALLO	">	CANTAGALLO	</option>
+                                                                <option value = "	CICUCO	">	CICUCO	</option>
+                                                                <option value = "	CORDOBA	">	CORDOBA	</option>
+                                                                <option value = "	CLEMENCIA	">	CLEMENCIA	</option>
+                                                                <option value = "	EL CARMEN DE BOLIVAR	">	EL CARMEN DE BOLIVAR	</option>
+                                                                <option value = "	EL GUAMO	">	EL GUAMO	</option>
+                                                                <option value = "	EL PEÑON	">	EL PEÑON	</option>
+                                                                <option value = "	HATILLO DE LOBA	">	HATILLO DE LOBA	</option>
+                                                                <option value = "	MAGANGUE	">	MAGANGUE	</option>
+                                                                <option value = "	MAHATES	">	MAHATES	</option>
+                                                                <option value = "	MARGARITA	">	MARGARITA	</option>
+                                                                <option value = "	MARIA LA BAJA	">	MARIA LA BAJA	</option>
+                                                                <option value = "	MONTECRISTO	">	MONTECRISTO	</option>
+                                                                <option value = "	MOMPOS	">	MOMPOS	</option>
+                                                                <option value = "	MORALES	">	MORALES	</option>
+                                                                <option value = "	PINILLOS	">	PINILLOS	</option>
+                                                                <option value = "	REGIDOR	">	REGIDOR	</option>
+                                                                <option value = "	RIO VIEJO	">	RIO VIEJO	</option>
+                                                                <option value = "	SAN CRISTOBAL	">	SAN CRISTOBAL	</option>
+                                                                <option value = "	SAN ESTANISLAO	">	SAN ESTANISLAO	</option>
+                                                                <option value = "	SAN FERNANDO	">	SAN FERNANDO	</option>
+                                                                <option value = "	SAN JACIENTO	">	SAN JACIENTO	</option>
+                                                                <option value = "	SAN JACIENTO DEL CAUCA	">	SAN JACIENTO DEL CAUCA	</option>
+                                                                <option value = "	SAN JUAN NEPOMUCENO	">	SAN JUAN NEPOMUCENO	</option>
+                                                                <option value = "	SAN MARTIN DE LOBA	">	SAN MARTIN DE LOBA	</option>
+                                                                <option value = "	SAN PABLO	">	SAN PABLO	</option>
+                                                                <option value = "	SANTA CATALINA	">	SANTA CATALINA	</option>
+                                                                <option value = "	SANTA ROSA	">	SANTA ROSA	</option>
+                                                                <option value = "	SANTA ROSA DEL SUR	">	SANTA ROSA DEL SUR	</option>
+                                                                <option value = "	SIMITI	">	SIMITI	</option>
+                                                                <option value = "	SOPLAVIENTO	">	SOPLAVIENTO	</option>
+                                                                <option value = "	TALAIGUA NUEVO	">	TALAIGUA NUEVO	</option>
+                                                                <option value = "	TIQUISIO (PUERTO RICO)	">	TIQUISIO (PUERTO RICO)	</option>
+                                                                <option value = "	TURBACO	">	TURBACO	</option>
+                                                                <option value = "	TURBANA	">	TURBANA	</option>
+                                                                <option value = "	VILLANUEVA	">	VILLANUEVA	</option>
+                                                                <option value = "	ZAMBRANO	">	ZAMBRANO	</option>
+                                                                <option value = "	TUNJA	">	TUNJA	</option>
+                                                                <option value = "	ALMEIDA	">	ALMEIDA	</option>
+                                                                <option value = "	AQUITANIA	">	AQUITANIA	</option>
+                                                                <option value = "	ARCABUCO	">	ARCABUCO	</option>
+                                                                <option value = "	BELEN	">	BELEN	</option>
+                                                                <option value = "	BERBEO	">	BERBEO	</option>
+                                                                <option value = "	BETEITIVA	">	BETEITIVA	</option>
+                                                                <option value = "	BOAVITA	">	BOAVITA	</option>
+                                                                <option value = "	BOYACA	">	BOYACA	</option>
+                                                                <option value = "	BRICEÑO	">	BRICEÑO	</option>
+                                                                <option value = "	BUENAVISTA	">	BUENAVISTA	</option>
+                                                                <option value = "	BUSBANZA	">	BUSBANZA	</option>
+                                                                <option value = "	CALDAS	">	CALDAS	</option>
+                                                                <option value = "	CAMPOHERMOSO	">	CAMPOHERMOSO	</option>
+                                                                <option value = "	CERINZA	">	CERINZA	</option>
+                                                                <option value = "	CHINAVITA	">	CHINAVITA	</option>
+                                                                <option value = "	CHIQUINQUIRA	">	CHIQUINQUIRA	</option>
+                                                                <option value = "	CHISCAS	">	CHISCAS	</option>
+                                                                <option value = "	CHITA	">	CHITA	</option>
+                                                                <option value = "	CHITARAQUE	">	CHITARAQUE	</option>
+                                                                <option value = "	CHIVATA	">	CHIVATA	</option>
+                                                                <option value = "	CIENEGA	">	CIENEGA	</option>
+                                                                <option value = "	COMBITA	">	COMBITA	</option>
+                                                                <option value = "	COPER	">	COPER	</option>
+                                                                <option value = "	CORRALES	">	CORRALES	</option>
+                                                                <option value = "	COVARACHIA	">	COVARACHIA	</option>
+                                                                <option value = "	CUBARA	">	CUBARA	</option>
+                                                                <option value = "	CUCAITA	">	CUCAITA	</option>
+                                                                <option value = "	CUITIVA	">	CUITIVA	</option>
+                                                                <option value = "	CHIQUIZA	">	CHIQUIZA	</option>
+                                                                <option value = "	CHIVOR	">	CHIVOR	</option>
+                                                                <option value = "	DUITAMA	">	DUITAMA	</option>
+                                                                <option value = "	EL COCUY	">	EL COCUY	</option>
+                                                                <option value = "	EL ESPINO	">	EL ESPINO	</option>
+                                                                <option value = "	FIRAVITOBA	">	FIRAVITOBA	</option>
+                                                                <option value = "	FLORESTA	">	FLORESTA	</option>
+                                                                <option value = "	GACHANTIVA	">	GACHANTIVA	</option>
+                                                                <option value = "	GAMEZA	">	GAMEZA	</option>
+                                                                <option value = "	GARAGOA	">	GARAGOA	</option>
+                                                                <option value = "	GUACAMAYAS	">	GUACAMAYAS	</option>
+                                                                <option value = "	GUATEQUE	">	GUATEQUE	</option>
+                                                                <option value = "	GUAYATA	">	GUAYATA	</option>
+                                                                <option value = "	GUICAN	">	GUICAN	</option>
+                                                                <option value = "	IZA	">	IZA	</option>
+                                                                <option value = "	JENESANO	">	JENESANO	</option>
+                                                                <option value = "	JERICO	">	JERICO	</option>
+                                                                <option value = "	LABRANZAGRANDE	">	LABRANZAGRANDE	</option>
+                                                                <option value = "	LA CAPILLA	">	LA CAPILLA	</option>
+                                                                <option value = "	LA VICTORIA	">	LA VICTORIA	</option>
+                                                                <option value = "	LA UVITA	">	LA UVITA	</option>
+                                                                <option value = "	VILLA DE LEIVA	">	VILLA DE LEIVA	</option>
+                                                                <option value = "	MACANAL	">	MACANAL	</option>
+                                                                <option value = "	MARIPI	">	MARIPI	</option>
+                                                                <option value = "	MIRAFLORES	">	MIRAFLORES	</option>
+                                                                <option value = "	MONGUA	">	MONGUA	</option>
+                                                                <option value = "	MONGUI	">	MONGUI	</option>
+                                                                <option value = "	MONIQUIRA	">	MONIQUIRA	</option>
+                                                                <option value = "	MOTAVITA	">	MOTAVITA	</option>
+                                                                <option value = "	MUZO	">	MUZO	</option>
+                                                                <option value = "	NOBSA	">	NOBSA	</option>
+                                                                <option value = "	NUEVO COLON	">	NUEVO COLON	</option>
+                                                                <option value = "	OICATA	">	OICATA	</option>
+                                                                <option value = "	OTANCHE	">	OTANCHE	</option>
+                                                                <option value = "	PACHAVITA	">	PACHAVITA	</option>
+                                                                <option value = "	PAEZ	">	PAEZ	</option>
+                                                                <option value = "	PAIPA	">	PAIPA	</option>
+                                                                <option value = "	PAJARITO	">	PAJARITO	</option>
+                                                                <option value = "	PANQUEBA	">	PANQUEBA	</option>
+                                                                <option value = "	PAUNA	">	PAUNA	</option>
+                                                                <option value = "	PAYA	">	PAYA	</option>
+                                                                <option value = "	PAZ DEL RIO	">	PAZ DEL RIO	</option>
+                                                                <option value = "	PESCA	">	PESCA	</option>
+                                                                <option value = "	PISBA	">	PISBA	</option>
+                                                                <option value = "	PUERTO BOYACA	">	PUERTO BOYACA	</option>
+                                                                <option value = "	QUIPAMA	">	QUIPAMA	</option>
+                                                                <option value = "	RAMIRIQUI	">	RAMIRIQUI	</option>
+                                                                <option value = "	RAQUIRA	">	RAQUIRA	</option>
+                                                                <option value = "	RONDON	">	RONDON	</option>
+                                                                <option value = "	SABOYA	">	SABOYA	</option>
+                                                                <option value = "	SACHICA	">	SACHICA	</option>
+                                                                <option value = "	SAMACA	">	SAMACA	</option>
+                                                                <option value = "	SAN EDUARDO	">	SAN EDUARDO	</option>
+                                                                <option value = "	SAN JOSE DE PARE	">	SAN JOSE DE PARE	</option>
+                                                                <option value = "	SAN LUIS DE GACENO	">	SAN LUIS DE GACENO	</option>
+                                                                <option value = "	SAN MATEO	">	SAN MATEO	</option>
+                                                                <option value = "	SAN MIGUEL DE SEMA	">	SAN MIGUEL DE SEMA	</option>
+                                                                <option value = "	SAN PABLO DE BORBUR	">	SAN PABLO DE BORBUR	</option>
+                                                                <option value = "	SANTANA	">	SANTANA	</option>
+                                                                <option value = "	SANTA MARIA	">	SANTA MARIA	</option>
+                                                                <option value = "	SANTA ROSA DE VITERBO	">	SANTA ROSA DE VITERBO	</option>
+                                                                <option value = "	SANTA SOFIA	">	SANTA SOFIA	</option>
+                                                                <option value = "	SATIVANORTE	">	SATIVANORTE	</option>
+                                                                <option value = "	SATIVASUR	">	SATIVASUR	</option>
+                                                                <option value = "	SIACHOQUE	">	SIACHOQUE	</option>
+                                                                <option value = "	SOATA	">	SOATA	</option>
+                                                                <option value = "	SOCOTA	">	SOCOTA	</option>
+                                                                <option value = "	SOCHA	">	SOCHA	</option>
+                                                                <option value = "	SOGAMOSO	">	SOGAMOSO	</option>
+                                                                <option value = "	SOMONDOCO	">	SOMONDOCO	</option>
+                                                                <option value = "	SORA	">	SORA	</option>
+                                                                <option value = "	SOTAQUIRA	">	SOTAQUIRA	</option>
+                                                                <option value = "	SORACA	">	SORACA	</option>
+                                                                <option value = "	SUSACON	">	SUSACON	</option>
+                                                                <option value = "	SUTAMARCHAN	">	SUTAMARCHAN	</option>
+                                                                <option value = "	SUTATENZA	">	SUTATENZA	</option>
+                                                                <option value = "	TASCO	">	TASCO	</option>
+                                                                <option value = "	TENZA	">	TENZA	</option>
+                                                                <option value = "	TIBANA	">	TIBANA	</option>
+                                                                <option value = "	TIBASOSA	">	TIBASOSA	</option>
+                                                                <option value = "	TINJACA	">	TINJACA	</option>
+                                                                <option value = "	TIPACOQUE	">	TIPACOQUE	</option>
+                                                                <option value = "	TOCA	">	TOCA	</option>
+                                                                <option value = "	TOGUI	">	TOGUI	</option>
+                                                                <option value = "	TOPAGA	">	TOPAGA	</option>
+                                                                <option value = "	TOTA	">	TOTA	</option>
+                                                                <option value = "	TUNUNGUA	">	TUNUNGUA	</option>
+                                                                <option value = "	TURMEQUE	">	TURMEQUE	</option>
+                                                                <option value = "	TUTA	">	TUTA	</option>
+                                                                <option value = "	TUTASA	">	TUTASA	</option>
+                                                                <option value = "	UMBITA	">	UMBITA	</option>
+                                                                <option value = "	VENTAQUEMADA	">	VENTAQUEMADA	</option>
+                                                                <option value = "	VIRACACHA	">	VIRACACHA	</option>
+                                                                <option value = "	ZETAQUIRA	">	ZETAQUIRA	</option>
+                                                                <option value = "	MANIZALES	">	MANIZALES	</option>
+                                                                <option value = "	AGUADAS	">	AGUADAS	</option>
+                                                                <option value = "	ANSERMA	">	ANSERMA	</option>
+                                                                <option value = "	ARANZAZU	">	ARANZAZU	</option>
+                                                                <option value = "	BELALCAZAR	">	BELALCAZAR	</option>
+                                                                <option value = "	CHINCHINA	">	CHINCHINA	</option>
+                                                                <option value = "	FILADELFIA	">	FILADELFIA	</option>
+                                                                <option value = "	LA DORADA	">	LA DORADA	</option>
+                                                                <option value = "	LA MERCED	">	LA MERCED	</option>
+                                                                <option value = "	MANZANARES	">	MANZANARES	</option>
+                                                                <option value = "	MARMATO	">	MARMATO	</option>
+                                                                <option value = "	MARQUETALIA	">	MARQUETALIA	</option>
+                                                                <option value = "	MARULANDA	">	MARULANDA	</option>
+                                                                <option value = "	NEIRA	">	NEIRA	</option>
+                                                                <option value = "	NORCASIA	">	NORCASIA	</option>
+                                                                <option value = "	PACORA	">	PACORA	</option>
+                                                                <option value = "	PALESTINA	">	PALESTINA	</option>
+                                                                <option value = "	PENSILVANIA	">	PENSILVANIA	</option>
+                                                                <option value = "	RIOSUCIO	">	RIOSUCIO	</option>
+                                                                <option value = "	RISARALDA	">	RISARALDA	</option>
+                                                                <option value = "	SALAMINA	">	SALAMINA	</option>
+                                                                <option value = "	SAMANA	">	SAMANA	</option>
+                                                                <option value = "	SAN JOSE	">	SAN JOSE	</option>
+                                                                <option value = "	SUPIA	">	SUPIA	</option>
+                                                                <option value = "	VICTORIA	">	VICTORIA	</option>
+                                                                <option value = "	VILLAMARIA	">	VILLAMARIA	</option>
+                                                                <option value = "	VITERBO	">	VITERBO	</option>
+                                                                <option value = "	FLORENCIA	">	FLORENCIA	</option>
+                                                                <option value = "	ALBANIA	">	ALBANIA	</option>
+                                                                <option value = "	BELEN DE LOS ANDAQUIES	">	BELEN DE LOS ANDAQUIES	</option>
+                                                                <option value = "	CARTAGENA DEL CHAIRA	">	CARTAGENA DEL CHAIRA	</option>
+                                                                <option value = "	CURILLO	">	CURILLO	</option>
+                                                                <option value = "	EL DONCELLO	">	EL DONCELLO	</option>
+                                                                <option value = "	EL PAUJIL	">	EL PAUJIL	</option>
+                                                                <option value = "	LA MONTAÑITA	">	LA MONTAÑITA	</option>
+                                                                <option value = "	MILAN	">	MILAN	</option>
+                                                                <option value = "	MORELIA	">	MORELIA	</option>
+                                                                <option value = "	PUERTO RICO	">	PUERTO RICO	</option>
+                                                                <option value = "	SAN JOSE DE FRAGUA	">	SAN JOSE DE FRAGUA	</option>
+                                                                <option value = "	SAN VICENTE DEL CAGUAN	">	SAN VICENTE DEL CAGUAN	</option>
+                                                                <option value = "	SOLANO	">	SOLANO	</option>
+                                                                <option value = "	SOLITA	">	SOLITA	</option>
+                                                                <option value = "	VALPARAISO	">	VALPARAISO	</option>
+                                                                <option value = "	POPAYAN	">	POPAYAN	</option>
+                                                                <option value = "	ALMAGUER	">	ALMAGUER	</option>
+                                                                <option value = "	ARGELIA	">	ARGELIA	</option>
+                                                                <option value = "	BALBOA	">	BALBOA	</option>
+                                                                <option value = "	BOLIVAR	">	BOLIVAR	</option>
+                                                                <option value = "	BUENOS AIRES	">	BUENOS AIRES	</option>
+                                                                <option value = "	CAJIBIO	">	CAJIBIO	</option>
+                                                                <option value = "	CALDONO	">	CALDONO	</option>
+                                                                <option value = "	CALOTO	">	CALOTO	</option>
+                                                                <option value = "	CORINTO	">	CORINTO	</option>
+                                                                <option value = "	EL TAMBO	">	EL TAMBO	</option>
+                                                                <option value = "	FLORENCIA	">	FLORENCIA	</option>
+                                                                <option value = "	GUAPI	">	GUAPI	</option>
+                                                                <option value = "	INZA	">	INZA	</option>
+                                                                <option value = "	JAMBALO	">	JAMBALO	</option>
+                                                                <option value = "	LA SIERRA	">	LA SIERRA	</option>
+                                                                <option value = "	LA VEGA	">	LA VEGA	</option>
+                                                                <option value = "	LOPEZ (MICAY)	">	LOPEZ (MICAY)	</option>
+                                                                <option value = "	MERCADERES	">	MERCADERES	</option>
+                                                                <option value = "	MIRANDA	">	MIRANDA	</option>
+                                                                <option value = "	MORALES	">	MORALES	</option>
+                                                                <option value = "	PADILLA	">	PADILLA	</option>
+                                                                <option value = "	PAEZ (BELALCAZAR)	">	PAEZ (BELALCAZAR)	</option>
+                                                                <option value = "	PATIA (EL DORADO)	">	PATIA (EL DORADO)	</option>
+                                                                <option value = "	PIAMONTE	">	PIAMONTE	</option>
+                                                                <option value = "	PIENDAMO	">	PIENDAMO	</option>
+                                                                <option value = "	PUERTO TEJADA	">	PUERTO TEJADA	</option>
+                                                                <option value = "	PURACE (COCONUCO)	">	PURACE (COCONUCO)	</option>
+                                                                <option value = "	ROSAS	">	ROSAS	</option>
+                                                                <option value = "	SAN SEBASTIAN	">	SAN SEBASTIAN	</option>
+                                                                <option value = "	SANTANDER DE QUILICHAO	">	SANTANDER DE QUILICHAO	</option>
+                                                                <option value = "	SANTA ROSA	">	SANTA ROSA	</option>
+                                                                <option value = "	SILVIA	">	SILVIA	</option>
+                                                                <option value = "	SOTARA (PAISPAMBA)	">	SOTARA (PAISPAMBA)	</option>
+                                                                <option value = "	SUAREZ	">	SUAREZ	</option>
+                                                                <option value = "	TIMBIO	">	TIMBIO	</option>
+                                                                <option value = "	TIMBIQUI	">	TIMBIQUI	</option>
+                                                                <option value = "	TORIBIO	">	TORIBIO	</option>
+                                                                <option value = "	TOTORO	">	TOTORO	</option>
+                                                                <option value = "	VILLARICA	">	VILLARICA	</option>
+                                                                <option value = "	VALLEDUPAR	">	VALLEDUPAR	</option>
+                                                                <option value = "	AGUACHICA	">	AGUACHICA	</option>
+                                                                <option value = "	AGUSTIN CODAZZI	">	AGUSTIN CODAZZI	</option>
+                                                                <option value = "	ASTREA	">	ASTREA	</option>
+                                                                <option value = "	BECERRIL	">	BECERRIL	</option>
+                                                                <option value = "	BOSCONIA	">	BOSCONIA	</option>
+                                                                <option value = "	CHIMICHAGUA	">	CHIMICHAGUA	</option>
+                                                                <option value = "	CHIRIGUANA	">	CHIRIGUANA	</option>
+                                                                <option value = "	CURUMANI	">	CURUMANI	</option>
+                                                                <option value = "	EL COPEY	">	EL COPEY	</option>
+                                                                <option value = "	EL PASO	">	EL PASO	</option>
+                                                                <option value = "	GAMARRA	">	GAMARRA	</option>
+                                                                <option value = "	GONZALEZ	">	GONZALEZ	</option>
+                                                                <option value = "	LA GLORIA	">	LA GLORIA	</option>
+                                                                <option value = "	LA JAGUA IBIRICO	">	LA JAGUA IBIRICO	</option>
+                                                                <option value = "	MANAURE (BALCON DEL CESAR)	">	MANAURE (BALCON DEL CESAR)	</option>
+                                                                <option value = "	PAILITAS	">	PAILITAS	</option>
+                                                                <option value = "	PELAYA	">	PELAYA	</option>
+                                                                <option value = "	PUEBLO BELLO	">	PUEBLO BELLO	</option>
+                                                                <option value = "	RIO DE ORO	">	RIO DE ORO	</option>
+                                                                <option value = "	LA PAZ (ROBLES)	">	LA PAZ (ROBLES)	</option>
+                                                                <option value = "	SAN ALBERTO	">	SAN ALBERTO	</option>
+                                                                <option value = "	SAN DIEGO	">	SAN DIEGO	</option>
+                                                                <option value = "	SAN MARTIN 	">	SAN MARTIN 	</option>
+                                                                <option value = "	TAMALAMEQUE	">	TAMALAMEQUE	</option>
+                                                                <option value = "	MONTERIA	">	MONTERIA	</option>
+                                                                <option value = "	AYAPEL	">	AYAPEL	</option>
+                                                                <option value = "	BUENAVISTA	">	BUENAVISTA	</option>
+                                                                <option value = "	CANALETE	">	CANALETE	</option>
+                                                                <option value = "	CERETE	">	CERETE	</option>
+                                                                <option value = "	CHIMA	">	CHIMA	</option>
+                                                                <option value = "	CHINU	">	CHINU	</option>
+                                                                <option value = "	CIENAGA DE ORO	">	CIENAGA DE ORO	</option>
+                                                                <option value = "	COTORRA	">	COTORRA	</option>
+                                                                <option value = "	LA APARTADA	">	LA APARTADA	</option>
+                                                                <option value = "	LORICA	">	LORICA	</option>
+                                                                <option value = "	LOS CORDOBAS	">	LOS CORDOBAS	</option>
+                                                                <option value = "	MOMIL	">	MOMIL	</option>
+                                                                <option value = "	MONTELIBANO	">	MONTELIBANO	</option>
+                                                                <option value = "	MOÑITOS	">	MOÑITOS	</option>
+                                                                <option value = "	PLANETA RICA	">	PLANETA RICA	</option>
+                                                                <option value = "	PUEBLO NUEVO	">	PUEBLO NUEVO	</option>
+                                                                <option value = "	PUERTO ESCONDIDO	">	PUERTO ESCONDIDO	</option>
+                                                                <option value = "	PUERTO LIBERTADOR	">	PUERTO LIBERTADOR	</option>
+                                                                <option value = "	PURISIMA	">	PURISIMA	</option>
+                                                                <option value = "	SAHAGUN	">	SAHAGUN	</option>
+                                                                <option value = "	SAN ANDRES SOTAVENTO	">	SAN ANDRES SOTAVENTO	</option>
+                                                                <option value = "	SAN ANTERO	">	SAN ANTERO	</option>
+                                                                <option value = "	SAN BERNARDO DEL VIENTO	">	SAN BERNARDO DEL VIENTO	</option>
+                                                                <option value = "	SAN CARLOS	">	SAN CARLOS	</option>
+                                                                <option value = "	SAN PELAYO	">	SAN PELAYO	</option>
+                                                                <option value = "	TIERRALTA	">	TIERRALTA	</option>
+                                                                <option value = "	VALENCIA	">	VALENCIA	</option>
+                                                                <option value = "	AGUA DE DIOS	">	AGUA DE DIOS	</option>
+                                                                <option value = "	ALBAN	">	ALBAN	</option>
+                                                                <option value = "	ANAPOIMA	">	ANAPOIMA	</option>
+                                                                <option value = "	ANOLAIMA	">	ANOLAIMA	</option>
+                                                                <option value = "	ARBELAEZ	">	ARBELAEZ	</option>
+                                                                <option value = "	BELTRAN	">	BELTRAN	</option>
+                                                                <option value = "	BITUIMA	">	BITUIMA	</option>
+                                                                <option value = "	BOJACA	">	BOJACA	</option>
+                                                                <option value = "	CABRERA	">	CABRERA	</option>
+                                                                <option value = "	CACHIPAY	">	CACHIPAY	</option>
+                                                                <option value = "	CAJICA	">	CAJICA	</option>
+                                                                <option value = "	CAPARRAPI	">	CAPARRAPI	</option>
+                                                                <option value = "	CAQUEZA	">	CAQUEZA	</option>
+                                                                <option value = "	CARMEN DE CARUPA	">	CARMEN DE CARUPA	</option>
+                                                                <option value = "	CHAGUANI	">	CHAGUANI	</option>
+                                                                <option value = "	CHIA	">	CHIA	</option>
+                                                                <option value = "	CHIPAQUE	">	CHIPAQUE	</option>
+                                                                <option value = "	CHOACHI	">	CHOACHI	</option>
+                                                                <option value = "	CHOCONTA	">	CHOCONTA	</option>
+                                                                <option value = "	COGUA	">	COGUA	</option>
+                                                                <option value = "	COTA	">	COTA	</option>
+                                                                <option value = "	CUCUNUBA	">	CUCUNUBA	</option>
+                                                                <option value = "	EL COLEGIO	">	EL COLEGIO	</option>
+                                                                <option value = "	EL PEÑON	">	EL PEÑON	</option>
+                                                                <option value = "	EL ROSAL	">	EL ROSAL	</option>
+                                                                <option value = "	FACATATIVA	">	FACATATIVA	</option>
+                                                                <option value = "	FOMEQUE	">	FOMEQUE	</option>
+                                                                <option value = "	FOSCA	">	FOSCA	</option>
+                                                                <option value = "	FUNZA	">	FUNZA	</option>
+                                                                <option value = "	FUQUENE	">	FUQUENE	</option>
+                                                                <option value = "	FUSAGASUGA	">	FUSAGASUGA	</option>
+                                                                <option value = "	GACHALA	">	GACHALA	</option>
+                                                                <option value = "	GACHANCIPA	">	GACHANCIPA	</option>
+                                                                <option value = "	GACHETA	">	GACHETA	</option>
+                                                                <option value = "	GAMA	">	GAMA	</option>
+                                                                <option value = "	GIRARDOT	">	GIRARDOT	</option>
+                                                                <option value = "	GRANADA	">	GRANADA	</option>
+                                                                <option value = "	GUACHETA	">	GUACHETA	</option>
+                                                                <option value = "	GUADUAS	">	GUADUAS	</option>
+                                                                <option value = "	GUASCA	">	GUASCA	</option>
+                                                                <option value = "	GUATAQUI	">	GUATAQUI	</option>
+                                                                <option value = "	GUATAVITA	">	GUATAVITA	</option>
+                                                                <option value = "	GUAYABAL DE SIQUIMA	">	GUAYABAL DE SIQUIMA	</option>
+                                                                <option value = "	GUAYABETAL	">	GUAYABETAL	</option>
+                                                                <option value = "	GUTIERREZ	">	GUTIERREZ	</option>
+                                                                <option value = "	JERUSALEN	">	JERUSALEN	</option>
+                                                                <option value = "	JUNIN	">	JUNIN	</option>
+                                                                <option value = "	LA CALERA	">	LA CALERA	</option>
+                                                                <option value = "	LA MESA	">	LA MESA	</option>
+                                                                <option value = "	LA PALMA	">	LA PALMA	</option>
+                                                                <option value = "	LA PEÑA	">	LA PEÑA	</option>
+                                                                <option value = "	LA VEGA	">	LA VEGA	</option>
+                                                                <option value = "	LENGUAZAQUE	">	LENGUAZAQUE	</option>
+                                                                <option value = "	MACHETA	">	MACHETA	</option>
+                                                                <option value = "	MADRID	">	MADRID	</option>
+                                                                <option value = "	MANTA	">	MANTA	</option>
+                                                                <option value = "	MEDINA	">	MEDINA	</option>
+                                                                <option value = "	MOSQUERA	">	MOSQUERA	</option>
+                                                                <option value = "	NARIÑO	">	NARIÑO	</option>
+                                                                <option value = "	NEMOCON	">	NEMOCON	</option>
+                                                                <option value = "	NILO	">	NILO	</option>
+                                                                <option value = "	NIMAIMA	">	NIMAIMA	</option>
+                                                                <option value = "	NOCAIMA	">	NOCAIMA	</option>
+                                                                <option value = "	VENECIA(OSPINA PREZ)	">	VENECIA(OSPINA PREZ)	</option>
+                                                                <option value = "	PACHO	">	PACHO	</option>
+                                                                <option value = "	PAIME	">	PAIME	</option>
+                                                                <option value = "	PANDI	">	PANDI	</option>
+                                                                <option value = "	PARATEBUENO	">	PARATEBUENO	</option>
+                                                                <option value = "	PASCA	">	PASCA	</option>
+                                                                <option value = "	PUERTO SALGAR	">	PUERTO SALGAR	</option>
+                                                                <option value = "	PULI	">	PULI	</option>
+                                                                <option value = "	QUEBRADANEGRA	">	QUEBRADANEGRA	</option>
+                                                                <option value = "	QUETAME	">	QUETAME	</option>
+                                                                <option value = "	QUIPILE	">	QUIPILE	</option>
+                                                                <option value = "	APULO(RAFAEL REYES)	">	APULO(RAFAEL REYES)	</option>
+                                                                <option value = "	RICAURTE	">	RICAURTE	</option>
+                                                                <option value = "	SAN ANTONIO DEL TEQUENDAMA	">	SAN ANTONIO DEL TEQUENDAMA	</option>
+                                                                <option value = "	SAN BERNARDO	">	SAN BERNARDO	</option>
+                                                                <option value = "	SAN CAYETANO	">	SAN CAYETANO	</option>
+                                                                <option value = "	SAN FRANCISCO	">	SAN FRANCISCO	</option>
+                                                                <option value = "	SAN JUAN DE RIOSECO	">	SAN JUAN DE RIOSECO	</option>
+                                                                <option value = "	SASAIMA	">	SASAIMA	</option>
+                                                                <option value = "	SESQUILE	">	SESQUILE	</option>
+                                                                <option value = "	SIBATE	">	SIBATE	</option>
+                                                                <option value = "	SILVANIA	">	SILVANIA	</option>
+                                                                <option value = "	SIMIJACA	">	SIMIJACA	</option>
+                                                                <option value = "	SOACHA	">	SOACHA	</option>
+                                                                <option value = "	SOPO	">	SOPO	</option>
+                                                                <option value = "	SUBACHOQUE	">	SUBACHOQUE	</option>
+                                                                <option value = "	SUESCA	">	SUESCA	</option>
+                                                                <option value = "	SUPATA	">	SUPATA	</option>
+                                                                <option value = "	SUSA	">	SUSA	</option>
+                                                                <option value = "	SUTATAUSA	">	SUTATAUSA	</option>
+                                                                <option value = "	TABIO	">	TABIO	</option>
+                                                                <option value = "	TAUSA	">	TAUSA	</option>
+                                                                <option value = "	TENA	">	TENA	</option>
+                                                                <option value = "	TENJO	">	TENJO	</option>
+                                                                <option value = "	TIBACUY	">	TIBACUY	</option>
+                                                                <option value = "	TIBIRITA	">	TIBIRITA	</option>
+                                                                <option value = "	TOCAIMA	">	TOCAIMA	</option>
+                                                                <option value = "	TOCANCIPA	">	TOCANCIPA	</option>
+                                                                <option value = "	TOPAIPI	">	TOPAIPI	</option>
+                                                                <option value = "	UBALA	">	UBALA	</option>
+                                                                <option value = "	UBAQUE	">	UBAQUE	</option>
+                                                                <option value = "	UBATE	">	UBATE	</option>
+                                                                <option value = "	UNE	">	UNE	</option>
+                                                                <option value = "	UTICA	">	UTICA	</option>
+                                                                <option value = "	VERGARA	">	VERGARA	</option>
+                                                                <option value = "	VIANI	">	VIANI	</option>
+                                                                <option value = "	VILLAGOMEZ	">	VILLAGOMEZ	</option>
+                                                                <option value = "	VILLAPINZON	">	VILLAPINZON	</option>
+                                                                <option value = "	VILLETA	">	VILLETA	</option>
+                                                                <option value = "	VIOTA	">	VIOTA	</option>
+                                                                <option value = "	YACOPI	">	YACOPI	</option>
+                                                                <option value = "	ZIPACON	">	ZIPACON	</option>
+                                                                <option value = "	ZIPAQUIRA	">	ZIPAQUIRA	</option>
+                                                                <option value = "	QUIBDO (SAN FRANCISCO DE QUIBDO)	">	QUIBDO (SAN FRANCISCO DE QUIBDO)	</option>
+                                                                <option value = "	ACANDI	">	ACANDI	</option>
+                                                                <option value = "	ALTO BAUDO (PIE DE PATO)	">	ALTO BAUDO (PIE DE PATO)	</option>
+                                                                <option value = "	ATRATO	">	ATRATO	</option>
+                                                                <option value = "	BAGADO	">	BAGADO	</option>
+                                                                <option value = "	BAHIA SOLANO(MUTIS)	">	BAHIA SOLANO(MUTIS)	</option>
+                                                                <option value = "	BAJO BAUDO (PIZARRO)	">	BAJO BAUDO (PIZARRO)	</option>
+                                                                <option value = "	BOJAYA(BELLAVISTA)	">	BOJAYA(BELLAVISTA)	</option>
+                                                                <option value = "	CANTON DE SAN PABLO	">	CANTON DE SAN PABLO	</option>
+                                                                <option value = "	CONDOTO	">	CONDOTO	</option>
+                                                                <option value = "	EL CARMEN DE ATRATO	">	EL CARMEN DE ATRATO	</option>
+                                                                <option value = "	LITORAL DEL BAJO SAN JUAN (SANTA GENOVEVA DE DOCORDO)">	LITORAL DEL BAJO SAN JUAN (SANTA GENOVEVA DE DOCORDO) 	</option>
+                                                                <option value = "	ISTMINA	">	ISTMINA	</option>
+                                                                <option value = "	JURADO	">	JURADO	</option>
+                                                                <option value = "	LLORO	">	LLORO	</option>
+                                                                <option value = "	MEDIO ATRATO	">	MEDIO ATRATO	</option>
+                                                                <option value = "	MEDIO BAUDO	">	MEDIO BAUDO	</option>
+                                                                <option value = "	NOVITA	">	NOVITA	</option>
+                                                                <option value = "	NUQUI	">	NUQUI	</option>
+                                                                <option value = "	RIOQUITO	">	RIOQUITO	</option>
+                                                                <option value = "	RIOSUCIO	">	RIOSUCIO	</option>
+                                                                <option value = "	SAN JOSE DEL PALMAR	">	SAN JOSE DEL PALMAR	</option>
+                                                                <option value = "	SIPI	">	SIPI	</option>
+                                                                <option value = "	TADO	">	TADO	</option>
+                                                                <option value = "	UNGUIA	">	UNGUIA	</option>
+                                                                <option value = "	UNION PANAMERICANA	">	UNION PANAMERICANA	</option>
+                                                                <option value = "	NEIVA	">	NEIVA	</option>
+                                                                <option value = "	ACEVEDO	">	ACEVEDO	</option>
+                                                                <option value = "	AGRADO	">	AGRADO	</option>
+                                                                <option value = "	AIPE	">	AIPE	</option>
+                                                                <option value = "	ALGECIRAS	">	ALGECIRAS	</option>
+                                                                <option value = "	ALTAMIRA	">	ALTAMIRA	</option>
+                                                                <option value = "	BARAYA	">	BARAYA	</option>
+                                                                <option value = "	CAMPOALEGRE	">	CAMPOALEGRE	</option>
+                                                                <option value = "	COLOMBIA	">	COLOMBIA	</option>
+                                                                <option value = "	ELIAS	">	ELIAS	</option>
+                                                                <option value = "	GARZON	">	GARZON	</option>
+                                                                <option value = "	GIGANTE	">	GIGANTE	</option>
+                                                                <option value = "	GUADALUPE	">	GUADALUPE	</option>
+                                                                <option value = "	HOBO	">	HOBO	</option>
+                                                                <option value = "	IQUIRA	">	IQUIRA	</option>
+                                                                <option value = "	ISNOS (SANJOSE DE ISNOS)	">	ISNOS (SANJOSE DE ISNOS)	</option>
+                                                                <option value = "	LA ARGENTINA	">	LA ARGENTINA	</option>
+                                                                <option value = "	LA PLATA	">	LA PLATA	</option>
+                                                                <option value = "	NATAGA	">	NATAGA	</option>
+                                                                <option value = "	OPORAPA	">	OPORAPA	</option>
+                                                                <option value = "	PAICOL	">	PAICOL	</option>
+                                                                <option value = "	PALERMO	">	PALERMO	</option>
+                                                                <option value = "	PALESTINA	">	PALESTINA	</option>
+                                                                <option value = "	PITAL	">	PITAL	</option>
+                                                                <option value = "	PITALITO	">	PITALITO	</option>
+                                                                <option value = "	RIVERA	">	RIVERA	</option>
+                                                                <option value = "	SALADOBLANCO	">	SALADOBLANCO	</option>
+                                                                <option value = "	SAN AGUSTIN	">	SAN AGUSTIN	</option>
+                                                                <option value = "	SANTA MARIA	">	SANTA MARIA	</option>
+                                                                <option value = "	SUAZA	">	SUAZA	</option>
+                                                                <option value = "	TARQUI	">	TARQUI	</option>
+                                                                <option value = "	TESALIA	">	TESALIA	</option>
+                                                                <option value = "	TELLO	">	TELLO	</option>
+                                                                <option value = "	TERUEL	">	TERUEL	</option>
+                                                                <option value = "	TIMANA	">	TIMANA	</option>
+                                                                <option value = "	VILLAVIEJA	">	VILLAVIEJA	</option>
+                                                                <option value = "	YAGUARA	">	YAGUARA	</option>
+                                                                <option value = "	RIOHACHA	">	RIOHACHA	</option>
+                                                                <option value = "	BARRANCAS	">	BARRANCAS	</option>
+                                                                <option value = "	DIBULLA	">	DIBULLA	</option>
+                                                                <option value = "	DISTRACCION	">	DISTRACCION	</option>
+                                                                <option value = "	EL MOLINO	">	EL MOLINO	</option>
+                                                                <option value = "	FONSECA	">	FONSECA	</option>
+                                                                <option value = "	HATONUEVO	">	HATONUEVO	</option>
+                                                                <option value = "	LA JAGUA DEL PILAR	">	LA JAGUA DEL PILAR	</option>
+                                                                <option value = "	MAICAO	">	MAICAO	</option>
+                                                                <option value = "	MANAURE	">	MANAURE	</option>
+                                                                <option value = "	SAN JUAN DEL CESAR	">	SAN JUAN DEL CESAR	</option>
+                                                                <option value = "	URIBIA	">	URIBIA	</option>
+                                                                <option value = "	URUMITA	">	URUMITA	</option>
+                                                                <option value = "	VILLANUEVA	">	VILLANUEVA	</option>
+                                                                <option value = "	SANTA MARTA (DISTRITO TURISTICO, CULTURAL E HISTORICODE SANTA MARTA)	">	SANTA MARTA (DISTRITO TURISTICO, CULTURAL E HISTORICODE SANTA MARTA)	</option>
+                                                                <option value = "	ALGARROBO	">	ALGARROBO	</option>
+                                                                <option value = "	ARACATACA	">	ARACATACA	</option>
+                                                                <option value = "	ARIGUANI (EL DIFICIL)	">	ARIGUANI (EL DIFICIL)	</option>
+                                                                <option value = "	CERRO SAN ANTONIO	">	CERRO SAN ANTONIO	</option>
+                                                                <option value = "	CHIVOLO	">	CHIVOLO	</option>
+                                                                <option value = "	CIENAGA	">	CIENAGA	</option>
+                                                                <option value = "	CONCORDIA	">	CONCORDIA	</option>
+                                                                <option value = "	EL BANCO	">	EL BANCO	</option>
+                                                                <option value = "	EL PIÑON	">	EL PIÑON	</option>
+                                                                <option value = "	EL RETEN	">	EL RETEN	</option>
+                                                                <option value = "	FUNDACION	">	FUNDACION	</option>
+                                                                <option value = "	GUAMAL	">	GUAMAL	</option>
+                                                                <option value = "	PEDRAZA	">	PEDRAZA	</option>
+                                                                <option value = "	PIJIÑO DEL CARMEN	">	PIJIÑO DEL CARMEN	</option>
+                                                                <option value = "	PIVIJAY	">	PIVIJAY	</option>
+                                                                <option value = "	PLATO	">	PLATO	</option>
+                                                                <option value = "	PUEBLOVIEJO	">	PUEBLOVIEJO	</option>
+                                                                <option value = "	REMOLINO	">	REMOLINO	</option>
+                                                                <option value = "	SABANAS DE SAN ANGEL	">	SABANAS DE SAN ANGEL	</option>
+                                                                <option value = "	SALAMINA	">	SALAMINA	</option>
+                                                                <option value = "	SAN SEBASTIAN DE BUENAVISTA	">	SAN SEBASTIAN DE BUENAVISTA	</option>
+                                                                <option value = "	SAN ZENON	">	SAN ZENON	</option>
+                                                                <option value = "	SANTA ANA	">	SANTA ANA	</option>
+                                                                <option value = "	SITIONUEVO	">	SITIONUEVO	</option>
+                                                                <option value = "	TENERIFE	">	TENERIFE	</option>
+                                                                <option value = "	VILLAVICENCIO	">	VILLAVICENCIO	</option>
+                                                                <option value = "	ACACIAS	">	ACACIAS	</option>
+                                                                <option value = "	BARRANCA DE UPIA	">	BARRANCA DE UPIA	</option>
+                                                                <option value = "	CABUYARO	">	CABUYARO	</option>
+                                                                <option value = "	CASTILLA LA NUEVA	">	CASTILLA LA NUEVA	</option>
+                                                                <option value = "	SAN LUIS DE CUBARRAL	">	SAN LUIS DE CUBARRAL	</option>
+                                                                <option value = "	CUMARAL	">	CUMARAL	</option>
+                                                                <option value = "	EL CALVARIO	">	EL CALVARIO	</option>
+                                                                <option value = "	EL CASTILLO	">	EL CASTILLO	</option>
+                                                                <option value = "	EL DORADO	">	EL DORADO	</option>
+                                                                <option value = "	FUENTE DE ORO	">	FUENTE DE ORO	</option>
+                                                                <option value = "	GRANADA	">	GRANADA	</option>
+                                                                <option value = "	GUAMAL	">	GUAMAL	</option>
+                                                                <option value = "	MAPIRIPAN	">	MAPIRIPAN	</option>
+                                                                <option value = "	MESETAS	">	MESETAS	</option>
+                                                                <option value = "	LA MACARENA	">	LA MACARENA	</option>
+                                                                <option value = "	LA URIBE	">	LA URIBE	</option>
+                                                                <option value = "	LEJANIAS	">	LEJANIAS	</option>
+                                                                <option value = "	PUERTO CONCORDIA	">	PUERTO CONCORDIA	</option>
+                                                                <option value = "	PUERTO GAITAN	">	PUERTO GAITAN	</option>
+                                                                <option value = "	PUERTO LOPEZ	">	PUERTO LOPEZ	</option>
+                                                                <option value = "	PUERTO LLERAS	">	PUERTO LLERAS	</option>
+                                                                <option value = "	PUERTO RICO	">	PUERTO RICO	</option>
+                                                                <option value = "	RESTREPO	">	RESTREPO	</option>
+                                                                <option value = "	SAN CARLOS DE GUAROA	">	SAN CARLOS DE GUAROA	</option>
+                                                                <option value = "	SAN JUAN DE ARAMA	">	SAN JUAN DE ARAMA	</option>
+                                                                <option value = "	SAN JUANITO	">	SAN JUANITO	</option>
+                                                                <option value = "	SAN MARTIN 	">	SAN MARTIN 	</option>
+                                                                <option value = "	VISTAHERMOSA	">	VISTAHERMOSA	</option>
+                                                                <option value = "	PASTO (SAN JUAN DE PASTO)	">	PASTO (SAN JUAN DE PASTO)	</option>
+                                                                <option value = "	ALBAN  (SAN JOSE)	">	ALBAN  (SAN JOSE)	</option>
+                                                                <option value = "	ALDANA	">	ALDANA	</option>
+                                                                <option value = "	ANCUYA	">	ANCUYA	</option>
+                                                                <option value = "	ARBOLEDA(BERRUECOS)	">	ARBOLEDA(BERRUECOS)	</option>
+                                                                <option value = "	BARBACOAS	">	BARBACOAS	</option>
+                                                                <option value = "	BELEN	">	BELEN	</option>
+                                                                <option value = "	BUESACO	">	BUESACO	</option>
+                                                                <option value = "	COLON(GENOVA)	">	COLON(GENOVA)	</option>
+                                                                <option value = "	CONSACA	">	CONSACA	</option>
+                                                                <option value = "	CONTADERO	">	CONTADERO	</option>
+                                                                <option value = "	CORDOBA	">	CORDOBA	</option>
+                                                                <option value = "	CUASPUD (CARLOSAMA)	">	CUASPUD (CARLOSAMA)	</option>
+                                                                <option value = "	CUMBAL	">	CUMBAL	</option>
+                                                                <option value = "	CUMBITARA	">	CUMBITARA	</option>
+                                                                <option value = "	CHACHAGUI	">	CHACHAGUI	</option>
+                                                                <option value = "	EL CHARCO	">	EL CHARCO	</option>
+                                                                <option value = "	EL PEÑOL	">	EL PEÑOL	</option>
+                                                                <option value = "	EL ROSARIO	">	EL ROSARIO	</option>
+                                                                <option value = "	EL TABLON	">	EL TABLON	</option>
+                                                                <option value = "	EL TAMBO	">	EL TAMBO	</option>
+                                                                <option value = "	FUNES	">	FUNES	</option>
+                                                                <option value = "	GUACHUCAL	">	GUACHUCAL	</option>
+                                                                <option value = "	GUAITARILLA	">	GUAITARILLA	</option>
+                                                                <option value = "	GUALMATAN	">	GUALMATAN	</option>
+                                                                <option value = "	ILES	">	ILES	</option>
+                                                                <option value = "	IMUES	">	IMUES	</option>
+                                                                <option value = "	IPIALES	">	IPIALES	</option>
+                                                                <option value = "	LA CRUZ	">	LA CRUZ	</option>
+                                                                <option value = "	LA FLORIDA	">	LA FLORIDA	</option>
+                                                                <option value = "	LA LLANDA	">	LA LLANDA	</option>
+                                                                <option value = "	LA TOLA	">	LA TOLA	</option>
+                                                                <option value = "	LA UNION	">	LA UNION	</option>
+                                                                <option value = "	LEIVA	">	LEIVA	</option>
+                                                                <option value = "	LINARES	">	LINARES	</option>
+                                                                <option value = "	LOS ANDES	">	LOS ANDES	</option>
+                                                                <option value = "	MAGUI(PAYAN)	">	MAGUI(PAYAN)	</option>
+                                                                <option value = "	MALLAMA(PIEDRANCHA)	">	MALLAMA(PIEDRANCHA)	</option>
+                                                                <option value = "	MOSQUERA	">	MOSQUERA	</option>
+                                                                <option value = "	OLAYA HERRERA	">	OLAYA HERRERA	</option>
+                                                                <option value = "	Nariño	">	Nariño	</option>
+                                                                <option value = "	OSPINA	">	OSPINA	</option>
+                                                                <option value = "	FRANCISCO PIZARRO	">	FRANCISCO PIZARRO	</option>
+                                                                <option value = "	POLICARPA	">	POLICARPA	</option>
+                                                                <option value = "	POTOSI	">	POTOSI	</option>
+                                                                <option value = "	PROVIDENCIA	">	PROVIDENCIA	</option>
+                                                                <option value = "	PUERRES	">	PUERRES	</option>
+                                                                <option value = "	PUPIALES	">	PUPIALES	</option>
+                                                                <option value = "	RICAURTE	">	RICAURTE	</option>
+                                                                <option value = "	ROBERTO PAYAN	">	ROBERTO PAYAN	</option>
+                                                                <option value = "	SAMANIEGO	">	SAMANIEGO	</option>
+                                                                <option value = "	SANDONA	">	SANDONA	</option>
+                                                                <option value = "	SAN BERNARDO	">	SAN BERNARDO	</option>
+                                                                <option value = "	SAN LORENZO	">	SAN LORENZO	</option>
+                                                                <option value = "	SAN PABLO	">	SAN PABLO	</option>
+                                                                <option value = "	SAN PEDRO DE CARTAGO	">	SAN PEDRO DE CARTAGO	</option>
+                                                                <option value = "	SANTA BARBARA	">	SANTA BARBARA	</option>
+                                                                <option value = "	SANTA CRUZ	">	SANTA CRUZ	</option>
+                                                                <option value = "	SAPUYES	">	SAPUYES	</option>
+                                                                <option value = "	TAMINANGO	">	TAMINANGO	</option>
+                                                                <option value = "	TANGUA	">	TANGUA	</option>
+                                                                <option value = "	TUMACO	">	TUMACO	</option>
+                                                                <option value = "	TUQUERRES	">	TUQUERRES	</option>
+                                                                <option value = "	YACUANQUER	">	YACUANQUER	</option>
+                                                                <option value = "	CUCUTA	">	CUCUTA	</option>
+                                                                <option value = "	ABREGO	">	ABREGO	</option>
+                                                                <option value = "	ARBOLEDAS	">	ARBOLEDAS	</option>
+                                                                <option value = "	BOCHALEMA	">	BOCHALEMA	</option>
+                                                                <option value = "	BUCARASICA	">	BUCARASICA	</option>
+                                                                <option value = "	CACOTA	">	CACOTA	</option>
+                                                                <option value = "	CACHIRA	">	CACHIRA	</option>
+                                                                <option value = "	CHINACOTA	">	CHINACOTA	</option>
+                                                                <option value = "	CHITAGA	">	CHITAGA	</option>
+                                                                <option value = "	CONVENCION	">	CONVENCION	</option>
+                                                                <option value = "	CUCUTILLA	">	CUCUTILLA	</option>
+                                                                <option value = "	DURANIA	">	DURANIA	</option>
+                                                                <option value = "	EL CARMEN	">	EL CARMEN	</option>
+                                                                <option value = "	EL TARRA	">	EL TARRA	</option>
+                                                                <option value = "	EL ZULIA	">	EL ZULIA	</option>
+                                                                <option value = "	GRAMALOTE	">	GRAMALOTE	</option>
+                                                                <option value = "	HACARI	">	HACARI	</option>
+                                                                <option value = "	HERRAN	">	HERRAN	</option>
+                                                                <option value = "	LABATECA	">	LABATECA	</option>
+                                                                <option value = "	LA ESPERANZA	">	LA ESPERANZA	</option>
+                                                                <option value = "	LA PLAYA	">	LA PLAYA	</option>
+                                                                <option value = "	LOS PATIOS	">	LOS PATIOS	</option>
+                                                                <option value = "	LOURDES	">	LOURDES	</option>
+                                                                <option value = "	MUTISCUA	">	MUTISCUA	</option>
+                                                                <option value = "	OCAÑA	">	OCAÑA	</option>
+                                                                <option value = "	PAMPLONA	">	PAMPLONA	</option>
+                                                                <option value = "	PAMPLONITA	">	PAMPLONITA	</option>
+                                                                <option value = "	PUERTO SANTANDER	">	PUERTO SANTANDER	</option>
+                                                                <option value = "	RAGONVALIA	">	RAGONVALIA	</option>
+                                                                <option value = "	SALAZAR	">	SALAZAR	</option>
+                                                                <option value = "	SAN CALIXTO	">	SAN CALIXTO	</option>
+                                                                <option value = "	SAN CAYETANO	">	SAN CAYETANO	</option>
+                                                                <option value = "	SANTIAGO	">	SANTIAGO	</option>
+                                                                <option value = "	SARDINATA	">	SARDINATA	</option>
+                                                                <option value = "	SILOS	">	SILOS	</option>
+                                                                <option value = "	TEORAMA	">	TEORAMA	</option>
+                                                                <option value = "	TIBU	">	TIBU	</option>
+                                                                <option value = "	TOLEDO	">	TOLEDO	</option>
+                                                                <option value = "	VILLACARO	">	VILLACARO	</option>
+                                                                <option value = "	VILLA DE ROSARIO 	">	VILLA DE ROSARIO 	</option>
+                                                                <option value = "	ARMENIA	">	ARMENIA	</option>
+                                                                <option value = "	BUENAVISTA	">	BUENAVISTA	</option>
+                                                                <option value = "	CALARCA	">	CALARCA	</option>
+                                                                <option value = "	CIRCASIA	">	CIRCASIA	</option>
+                                                                <option value = "	CORDOBA	">	CORDOBA	</option>
+                                                                <option value = "	FILANDIA	">	FILANDIA	</option>
+                                                                <option value = "	GENOVA	">	GENOVA	</option>
+                                                                <option value = "	LA TEBAIDA	">	LA TEBAIDA	</option>
+                                                                <option value = "	MONTENEGRO	">	MONTENEGRO	</option>
+                                                                <option value = "	PIJAO	">	PIJAO	</option>
+                                                                <option value = "	QUIMBAYA	">	QUIMBAYA	</option>
+                                                                <option value = "	SALENTO	">	SALENTO	</option>
+                                                                <option value = "	PEREIRA	">	PEREIRA	</option>
+                                                                <option value = "	APIA	">	APIA	</option>
+                                                                <option value = "	BALBOA	">	BALBOA	</option>
+                                                                <option value = "	BELEN DE UMBRIA	">	BELEN DE UMBRIA	</option>
+                                                                <option value = "	DOS QUEBRADAS	">	DOS QUEBRADAS	</option>
+                                                                <option value = "	GUATICA	">	GUATICA	</option>
+                                                                <option value = "	LA CELIA	">	LA CELIA	</option>
+                                                                <option value = "	LA VIRGINIA	">	LA VIRGINIA	</option>
+                                                                <option value = "	MARSELLA	">	MARSELLA	</option>
+                                                                <option value = "	MISTRATO	">	MISTRATO	</option>
+                                                                <option value = "	PUEBLO RICO	">	PUEBLO RICO	</option>
+                                                                <option value = "	QUINCHIA	">	QUINCHIA	</option>
+                                                                <option value = "	SANTA ROSA DE CABAL	">	SANTA ROSA DE CABAL	</option>
+                                                                <option value = "	SANTUARIO	">	SANTUARIO	</option>
+                                                                <option value = "	BUCARAMANGA	">	BUCARAMANGA	</option>
+                                                                <option value = "	AGUADA	">	AGUADA	</option>
+                                                                <option value = "	ALBANIA	">	ALBANIA	</option>
+                                                                <option value = "	ARATOCA	">	ARATOCA	</option>
+                                                                <option value = "	BARBOSA	">	BARBOSA	</option>
+                                                                <option value = "	BARICHARA	">	BARICHARA	</option>
+                                                                <option value = "	BARRANCABERMEJA	">	BARRANCABERMEJA	</option>
+                                                                <option value = "	BETULIA	">	BETULIA	</option>
+                                                                <option value = "	BOLIVAR	">	BOLIVAR	</option>
+                                                                <option value = "	CABRERA	">	CABRERA	</option>
+                                                                <option value = "	CALIFORNIA	">	CALIFORNIA	</option>
+                                                                <option value = "	CAPITANEJO	">	CAPITANEJO	</option>
+                                                                <option value = "	CARCASI	">	CARCASI	</option>
+                                                                <option value = "	CEPITA	">	CEPITA	</option>
+                                                                <option value = "	CERRITO	">	CERRITO	</option>
+                                                                <option value = "	CHARALA	">	CHARALA	</option>
+                                                                <option value = "	CHARTA	">	CHARTA	</option>
+                                                                <option value = "	CHIMA	">	CHIMA	</option>
+                                                                <option value = "	CHIPATA	">	CHIPATA	</option>
+                                                                <option value = "	CIMITARRA	">	CIMITARRA	</option>
+                                                                <option value = "	CONCEPCION	">	CONCEPCION	</option>
+                                                                <option value = "	CONFINES	">	CONFINES	</option>
+                                                                <option value = "	CONTRATACION	">	CONTRATACION	</option>
+                                                                <option value = "	COROMORO	">	COROMORO	</option>
+                                                                <option value = "	CURITI	">	CURITI	</option>
+                                                                <option value = "	EL CARMEN CHUCURY	">	EL CARMEN CHUCURY	</option>
+                                                                <option value = "	EL GUACAMAYO	">	EL GUACAMAYO	</option>
+                                                                <option value = "	EL PEÑON	">	EL PEÑON	</option>
+                                                                <option value = "	EL PALYON	">	EL PALYON	</option>
+                                                                <option value = "	ENCINO	">	ENCINO	</option>
+                                                                <option value = "	ENCISO	">	ENCISO	</option>
+                                                                <option value = "	FLORIAN	">	FLORIAN	</option>
+                                                                <option value = "	FLORIDABLANCA	">	FLORIDABLANCA	</option>
+                                                                <option value = "	GALAN	">	GALAN	</option>
+                                                                <option value = "	GAMBITA	">	GAMBITA	</option>
+                                                                <option value = "	GIRON	">	GIRON	</option>
+                                                                <option value = "	GUACA	">	GUACA	</option>
+                                                                <option value = "	GUADALUPE	">	GUADALUPE	</option>
+                                                                <option value = "	GUAPOTA	">	GUAPOTA	</option>
+                                                                <option value = "	GUAVATA	">	GUAVATA	</option>
+                                                                <option value = "	GUEPSA	">	GUEPSA	</option>
+                                                                <option value = "	HATO	">	HATO	</option>
+                                                                <option value = "	JESUS MARIA	">	JESUS MARIA	</option>
+                                                                <option value = "	JORDAN	">	JORDAN	</option>
+                                                                <option value = "	LA BELLEZA	">	LA BELLEZA	</option>
+                                                                <option value = "	LANDAZURI	">	LANDAZURI	</option>
+                                                                <option value = "	LA PAZ	">	LA PAZ	</option>
+                                                                <option value = "	LEBRIJA	">	LEBRIJA	</option>
+                                                                <option value = "	LOS SANTOS	">	LOS SANTOS	</option>
+                                                                <option value = "	MACARAVITA	">	MACARAVITA	</option>
+                                                                <option value = "	MALAGA	">	MALAGA	</option>
+                                                                <option value = "	MATANZA	">	MATANZA	</option>
+                                                                <option value = "	MOGOTES	">	MOGOTES	</option>
+                                                                <option value = "	MOLAGAVITA	">	MOLAGAVITA	</option>
+                                                                <option value = "	OCAMONTE	">	OCAMONTE	</option>
+                                                                <option value = "	OIBA	">	OIBA	</option>
+                                                                <option value = "	ONZAGA	">	ONZAGA	</option>
+                                                                <option value = "	PALMAR	">	PALMAR	</option>
+                                                                <option value = "	PALMAS DEL SOCORRO	">	PALMAS DEL SOCORRO	</option>
+                                                                <option value = "	PARAMO	">	PARAMO	</option>
+                                                                <option value = "	PIEDECUESTA	">	PIEDECUESTA	</option>
+                                                                <option value = "	PINCHOTE	">	PINCHOTE	</option>
+                                                                <option value = "	PUENTE NACIONAL	">	PUENTE NACIONAL	</option>
+                                                                <option value = "	PUERTO PARRA	">	PUERTO PARRA	</option>
+                                                                <option value = "	PUERTO WILCHES	">	PUERTO WILCHES	</option>
+                                                                <option value = "	RIONEGRO	">	RIONEGRO	</option>
+                                                                <option value = "	SABANA DE TORRES	">	SABANA DE TORRES	</option>
+                                                                <option value = "	SAN ANDRES	">	SAN ANDRES	</option>
+                                                                <option value = "	SAN BENITO	">	SAN BENITO	</option>
+                                                                <option value = "	SAN GIL	">	SAN GIL	</option>
+                                                                <option value = "	SAN JOAQUIN	">	SAN JOAQUIN	</option>
+                                                                <option value = "	SAN JOSE 	">	SAN JOSE 	</option>
+                                                                <option value = "	SAN MIGUEL	">	SAN MIGUEL	</option>
+                                                                <option value = "	SAN VICENTE DE CHUCURI	">	SAN VICENTE DE CHUCURI	</option>
+                                                                <option value = "	SANTA BARBARA	">	SANTA BARBARA	</option>
+                                                                <option value = "	SANTA HELEN DEL OPON	">	SANTA HELEN DEL OPON	</option>
+                                                                <option value = "	SIMACOTA	">	SIMACOTA	</option>
+                                                                <option value = "	SOCORRO	">	SOCORRO	</option>
+                                                                <option value = "	SUAITA	">	SUAITA	</option>
+                                                                <option value = "	SUCRE	">	SUCRE	</option>
+                                                                <option value = "	SURATA	">	SURATA	</option>
+                                                                <option value = "	TONA	">	TONA	</option>
+                                                                <option value = "	VALLE SAN JOSE 	">	VALLE SAN JOSE 	</option>
+                                                                <option value = "	VELEZ	">	VELEZ	</option>
+                                                                <option value = "	VETAS	">	VETAS	</option>
+                                                                <option value = "	VILLANUEVA	">	VILLANUEVA	</option>
+                                                                <option value = "	ZAPATOCA	">	ZAPATOCA	</option>
+                                                                <option value = "	SINCELEJO	">	SINCELEJO	</option>
+                                                                <option value = "	BUENAVISTA	">	BUENAVISTA	</option>
+                                                                <option value = "	CAIMITO	">	CAIMITO	</option>
+                                                                <option value = "	COLOSO	">	COLOSO	</option>
+                                                                <option value = "	COROZAL	">	COROZAL	</option>
+                                                                <option value = "	CHALAN	">	CHALAN	</option>
+                                                                <option value = "	GALERAS	">	GALERAS	</option>
+                                                                <option value = "	GUARANDA	">	GUARANDA	</option>
+                                                                <option value = "	LA UNION	">	LA UNION	</option>
+                                                                <option value = "	LOS PALMITOS	">	LOS PALMITOS	</option>
+                                                                <option value = "	MAJAGUAL	">	MAJAGUAL	</option>
+                                                                <option value = "	MORROA	">	MORROA	</option>
+                                                                <option value = "	OVEJAS	">	OVEJAS	</option>
+                                                                <option value = "	PALMITO	">	PALMITO	</option>
+                                                                <option value = "	SAMPUES	">	SAMPUES	</option>
+                                                                <option value = "	SAN BENITO ABAD	">	SAN BENITO ABAD	</option>
+                                                                <option value = "	SAN JUAN DE BETULIA	">	SAN JUAN DE BETULIA	</option>
+                                                                <option value = "	SAN MARCOS	">	SAN MARCOS	</option>
+                                                                <option value = "	SAN ONOFRE	">	SAN ONOFRE	</option>
+                                                                <option value = "	SAN PEDRO 	">	SAN PEDRO 	</option>
+                                                                <option value = "	SINCE	">	SINCE	</option>
+                                                                <option value = "	SUCRE	">	SUCRE	</option>
+                                                                <option value = "	TOLU	">	TOLU	</option>
+                                                                <option value = "	TOLUVIEJO	">	TOLUVIEJO	</option>
+                                                                <option value = "	IBAGUE	">	IBAGUE	</option>
+                                                                <option value = "	ALPUJARRA	">	ALPUJARRA	</option>
+                                                                <option value = "	ALVARADO	">	ALVARADO	</option>
+                                                                <option value = "	AMBALEMA	">	AMBALEMA	</option>
+                                                                <option value = "	ANZOATEGUI	">	ANZOATEGUI	</option>
+                                                                <option value = "	ARMERO	">	ARMERO	</option>
+                                                                <option value = "	ATACO	">	ATACO	</option>
+                                                                <option value = "	CAJAMARCA	">	CAJAMARCA	</option>
+                                                                <option value = "	CARMEN APICALA	">	CARMEN APICALA	</option>
+                                                                <option value = "	CASABIANCA	">	CASABIANCA	</option>
+                                                                <option value = "	CHAPARRAL	">	CHAPARRAL	</option>
+                                                                <option value = "	COELLO	">	COELLO	</option>
+                                                                <option value = "	COYAIMA	">	COYAIMA	</option>
+                                                                <option value = "	CUNDAY	">	CUNDAY	</option>
+                                                                <option value = "	DOLORES	">	DOLORES	</option>
+                                                                <option value = "	ESPINAL	">	ESPINAL	</option>
+                                                                <option value = "	FALAN	">	FALAN	</option>
+                                                                <option value = "	FLANDES	">	FLANDES	</option>
+                                                                <option value = "	FRESNO	">	FRESNO	</option>
+                                                                <option value = "	GUAMO	">	GUAMO	</option>
+                                                                <option value = "	HERVEO	">	HERVEO	</option>
+                                                                <option value = "	HONDA	">	HONDA	</option>
+                                                                <option value = "	ICONONZO	">	ICONONZO	</option>
+                                                                <option value = "	LERIDA	">	LERIDA	</option>
+                                                                <option value = "	LIBANO	">	LIBANO	</option>
+                                                                <option value = "	MARIQUITA	">	MARIQUITA	</option>
+                                                                <option value = "	MELGAR	">	MELGAR	</option>
+                                                                <option value = "	MURILLO	">	MURILLO	</option>
+                                                                <option value = "	NATAGAIMA	">	NATAGAIMA	</option>
+                                                                <option value = "	ORTEGA	">	ORTEGA	</option>
+                                                                <option value = "	PALOCABILDO	">	PALOCABILDO	</option>
+                                                                <option value = "	PIEDRAS	">	PIEDRAS	</option>
+                                                                <option value = "	PLANADAS	">	PLANADAS	</option>
+                                                                <option value = "	PRADO	">	PRADO	</option>
+                                                                <option value = "	PURIFICACION	">	PURIFICACION	</option>
+                                                                <option value = "	RIOBLANCO	">	RIOBLANCO	</option>
+                                                                <option value = "	RONCESVALLES	">	RONCESVALLES	</option>
+                                                                <option value = "	ROVIRA	">	ROVIRA	</option>
+                                                                <option value = "	SALDAÑA	">	SALDAÑA	</option>
+                                                                <option value = "	SAN ANTONIO	">	SAN ANTONIO	</option>
+                                                                <option value = "	SAN LUIS	">	SAN LUIS	</option>
+                                                                <option value = "	SANTA ISABEL	">	SANTA ISABEL	</option>
+                                                                <option value = "	SUAREZ	">	SUAREZ	</option>
+                                                                <option value = "	VALLE DE SAN JUAN	">	VALLE DE SAN JUAN	</option>
+                                                                <option value = "	VENADILLO	">	VENADILLO	</option>
+                                                                <option value = "	VILLAHERMOSA	">	VILLAHERMOSA	</option>
+                                                                <option value = "	VILLARRICA	">	VILLARRICA	</option>
+                                                                <option value = "	CALI (SANTIANGO DE CALI)	">	CALI (SANTIANGO DE CALI)	</option>
+                                                                <option value = "	ALCALA	">	ALCALA	</option>
+                                                                <option value = "	ANDALUCIA	">	ANDALUCIA	</option>
+                                                                <option value = "	ANSERMANUEVO	">	ANSERMANUEVO	</option>
+                                                                <option value = "	ARGELIA	">	ARGELIA	</option>
+                                                                <option value = "	BOLIVAR	">	BOLIVAR	</option>
+                                                                <option value = "	BUENAVENTURA	">	BUENAVENTURA	</option>
+                                                                <option value = "	BUGA	">	BUGA	</option>
+                                                                <option value = "	BUGALAGRANDE	">	BUGALAGRANDE	</option>
+                                                                <option value = "	CAICEDONIA	">	CAICEDONIA	</option>
+                                                                <option value = "	CALIMA(DARIEN)	">	CALIMA(DARIEN)	</option>
+                                                                <option value = "	CANDELARIA	">	CANDELARIA	</option>
+                                                                <option value = "	CARTAGO	">	CARTAGO	</option>
+                                                                <option value = "	DAGUA	">	DAGUA	</option>
+                                                                <option value = "	EL AGUILA	">	EL AGUILA	</option>
+                                                                <option value = "	EL CAIRO	">	EL CAIRO	</option>
+                                                                <option value = "	EL CERRITO	">	EL CERRITO	</option>
+                                                                <option value = "	EL DOVIO	">	EL DOVIO	</option>
+                                                                <option value = "	FLORIDA	">	FLORIDA	</option>
+                                                                <option value = "	GINEBRA	">	GINEBRA	</option>
+                                                                <option value = "	GUACARI	">	GUACARI	</option>
+                                                                <option value = "	JAMUNDI	">	JAMUNDI	</option>
+                                                                <option value = "	LA CUMBRE	">	LA CUMBRE	</option>
+                                                                <option value = "	LA UNION	">	LA UNION	</option>
+                                                                <option value = "	LA VICTORIA	">	LA VICTORIA	</option>
+                                                                <option value = "	OBANDO	">	OBANDO	</option>
+                                                                <option value = "	PALMIRA	">	PALMIRA	</option>
+                                                                <option value = "	PRADERA	">	PRADERA	</option>
+                                                                <option value = "	RESTREPO	">	RESTREPO	</option>
+                                                                <option value = "	RIOFRIO	">	RIOFRIO	</option>
+                                                                <option value = "	ROLDANILLO	">	ROLDANILLO	</option>
+                                                                <option value = "	SAN PEDRO	">	SAN PEDRO	</option>
+                                                                <option value = "	SEVILLA	">	SEVILLA	</option>
+                                                                <option value = "	TORO	">	TORO	</option>
+                                                                <option value = "	TRUJILLO	">	TRUJILLO	</option>
+                                                                <option value = "	TULUA	">	TULUA	</option>
+                                                                <option value = "	ULLOA	">	ULLOA	</option>
+                                                                <option value = "	VERSALLES	">	VERSALLES	</option>
+                                                                <option value = "	VIJES	">	VIJES	</option>
+                                                                <option value = "	YOTOCO	">	YOTOCO	</option>
+                                                                <option value = "	YUMBO	">	YUMBO	</option>
+                                                                <option value = "	ZARZAL	">	ZARZAL	</option>
+                                                                <option value = "	ARAUCA	">	ARAUCA	</option>
+                                                                <option value = "	ARAUQUITA	">	ARAUQUITA	</option>
+                                                                <option value = "	CRAVO NOTE	">	CRAVO NOTE	</option>
+                                                                <option value = "	FORTUL	">	FORTUL	</option>
+                                                                <option value = "	PUERTO RONDON	">	PUERTO RONDON	</option>
+                                                                <option value = "	SARAVENA	">	SARAVENA	</option>
+                                                                <option value = "	TAME	">	TAME	</option>
+                                                                <option value = "	YOPAL	">	YOPAL	</option>
+                                                                <option value = "	AGUAZUL	">	AGUAZUL	</option>
+                                                                <option value = "	CHAMEZA	">	CHAMEZA	</option>
+                                                                <option value = "	HATO COROZAL	">	HATO COROZAL	</option>
+                                                                <option value = "	LA SALINA	">	LA SALINA	</option>
+                                                                <option value = "	MANI	">	MANI	</option>
+                                                                <option value = "	MONTERREY	">	MONTERREY	</option>
+                                                                <option value = "	NUNCHIA	">	NUNCHIA	</option>
+                                                                <option value = "	OROCUE	">	OROCUE	</option>
+                                                                <option value = "	PAZ DE ARIPORO	">	PAZ DE ARIPORO	</option>
+                                                                <option value = "	PORE	">	PORE	</option>
+                                                                <option value = "	RECETOR	">	RECETOR	</option>
+                                                                <option value = "	SABANALARGA	">	SABANALARGA	</option>
+                                                                <option value = "	SACAMA	">	SACAMA	</option>
+                                                                <option value = "	SAN LUIS DE PALENQUE	">	SAN LUIS DE PALENQUE	</option>
+                                                                <option value = "	TAMARA	">	TAMARA	</option>
+                                                                <option value = "	TAURAMENA	">	TAURAMENA	</option>
+                                                                <option value = "	TRINIDAD	">	TRINIDAD	</option>
+                                                                <option value = "	VILLANUEVA	">	VILLANUEVA	</option>
+                                                                <option value = "	MOCOA	">	MOCOA	</option>
+                                                                <option value = "	COLON	">	COLON	</option>
+                                                                <option value = "	ORITO	">	ORITO	</option>
+                                                                <option value = "	PUERTO ASIS	">	PUERTO ASIS	</option>
+                                                                <option value = "	PUERTO CAICEDO	">	PUERTO CAICEDO	</option>
+                                                                <option value = "	PUERTO GUZMAN	">	PUERTO GUZMAN	</option>
+                                                                <option value = "	PUERTO LEGUIZAMO	">	PUERTO LEGUIZAMO	</option>
+                                                                <option value = "	SIBUNDOY	">	SIBUNDOY	</option>
+                                                                <option value = "	SAN FRANCISCO	">	SAN FRANCISCO	</option>
+                                                                <option value = "	SAN MIGUEL(LA DORADA)	">	SAN MIGUEL(LA DORADA)	</option>
+                                                                <option value = "	SANTIAGO	">	SANTIAGO	</option>
+                                                                <option value = "	LA HORMIGA	">	LA HORMIGA	</option>
+                                                                <option value = "	VILLAGARZON	">	VILLAGARZON	</option>
+                                                                <option value = "	SAN ANDRES	">	SAN ANDRES	</option>
+                                                                <option value = "	PROVIDENCIA	">	PROVIDENCIA	</option>
+                                                                <option value = "	LETICIA	">	LETICIA	</option>
+                                                                <option value = "	EL ENCANTO	">	EL ENCANTO	</option>
+                                                                <option value = "	LA CHORRERA	">	LA CHORRERA	</option>
+                                                                <option value = "	LA PEDRERA	">	LA PEDRERA	</option>
+                                                                <option value = "	LA VICTORIA	">	LA VICTORIA	</option>
+                                                                <option value = "	MIRITI-PARANA	">	MIRITI-PARANA	</option>
+                                                                <option value = "	PUERTO ALEGRIA	">	PUERTO ALEGRIA	</option>
+                                                                <option value = "	PUERTO ARICA	">	PUERTO ARICA	</option>
+                                                                <option value = "	PUERTO NARIÑO	">	PUERTO NARIÑO	</option>
+                                                                <option value = "	PUERTO SANTANDER	">	PUERTO SANTANDER	</option>
+                                                                <option value = "	TARAPACA	">	TARAPACA	</option>
+                                                                <option value = "	PUERTO INIRIDA	">	PUERTO INIRIDA	</option>
+                                                                <option value = "	BARRANCO MINAS	">	BARRANCO MINAS	</option>
+                                                                <option value = "	SAN FELIPE	">	SAN FELIPE	</option>
+                                                                <option value = "	PUERTO COLOMBIA	">	PUERTO COLOMBIA	</option>
+                                                                <option value = "	LA GUADALUPE	">	LA GUADALUPE	</option>
+                                                                <option value = "	CACAHUAL	">	CACAHUAL	</option>
+                                                                <option value = "	PANA PANA	">	PANA PANA	</option>
+                                                                <option value = "	MORICHAL	">	MORICHAL	</option>
+                                                                <option value = "	SAN JOSE DEL GUAVIARES	">	SAN JOSE DEL GUAVIARES	</option>
+                                                                <option value = "	CALAMAR	">	CALAMAR	</option>
+                                                                <option value = "	EL RETORNO	">	EL RETORNO	</option>
+                                                                <option value = "	MIRAFLORES	">	MIRAFLORES	</option>
+                                                                <option value = "	MITU	">	MITU	</option>
+                                                                <option value = "	CARURU	">	CARURU	</option>
+                                                                <option value = "	PACOA	">	PACOA	</option>
+                                                                <option value = "	TARAIRA	">	TARAIRA	</option>
+                                                                <option value = "	PAPUNAUA (MORICHAL)	">	PAPUNAUA (MORICHAL)	</option>
+                                                                <option value = "	YAVARATE	">	YAVARATE	</option>
+                                                                <option value = "	PUERTO CARREÑO	">	PUERTO CARREÑO	</option>
+                                                                <option value = "	LA PRIMAVERA	">	LA PRIMAVERA	</option>
+                                                                <option value = "	SANTA RITA	">	SANTA RITA	</option>
+                                                                <option value = "	SANTA ROSALIA	">	SANTA ROSALIA	</option>
+                                                                <option value = "	SAN JOSE DE OCUNE	">	SAN JOSE DE OCUNE	</option>
+                                                                <option value = "	CUMARIBO	">	CUMARIBO	</option>
+
                                                             </select>
                                                         </div>
                                                         <div class="col-xs-3">
@@ -689,11 +1427,9 @@
   
   <!-- -------------------------------------------------- PEDIR EDAD DEL ALUMNO ------------------------------------------------------ --> 
                                                     <div class="form-group">
-                                                      <label for="cname" class="control-label col-xs-3">EDAD:<span class="required">*</span> </label>
-                                                        <div class="col-xs-3">
-                                                            <select class="form-control">
-                                                                <option>Edad</option>
-                                                            </select>
+                                                      <label for="cname" class="control-label col-sm-3">EDAD:<span class="required">*</span> </label>
+                                                        <div class="col-sm-3">
+                                                            <input type="number" name="num" min="0" max="50">
                                                         </div>  
 
                                                     </div>   
@@ -708,39 +1444,7 @@
                                                       </div>
                                                   </div>
   <!-- ------------------------------------------------------ PEDIR DIRECCIÓN RESIDENCIA --------------------------------------------------------- --> 
-  <!--  
   
-                                      <div class="form-group ">
-                                          <label for="cemail" class="control-label col-lg-2">E-Mail <span class="required">*</span></label>
-                                          <div class="col-lg-10">
-                                              <input class="form-control " id="cemail" type="email" name="email" required />
-                                          </div>
-                                      </div>
-                                      
-                                      
-                                      <div class="form-group ">
-                                          <label for="curl" class="control-label col-lg-2">Website</label>
-                                          <div class="col-lg-10">
-                                              <input class="form-control " id="curl" type="url" name="url" />
-                                          </div>
-                                      </div>
-                                      
-                                      
-                                      
-                                      <div class="form-group ">
-                                          <label for="cname" class="control-label col-lg-2">Subject <span class="required">*</span></label>
-                                          <div class="col-lg-10">
-                                              <input class="form-control" id="subject" name="subject" minlength="5" type="text" required />
-                                          </div>
-                                      </div>
-                                      
-                                      
-                                      <div class="form-group ">
-                                          <label for="ccomment" class="control-label col-lg-2">Feedback</label>
-                                          <div class="col-lg-10">
-                                              <textarea class="form-control " id="ccomment" name="comment" required></textarea>
-                                          </div>
-                                      </div> -->
                                       
 
                                                 
@@ -1601,34 +2305,106 @@
                           </div>
                     </section>
                  </div>
-</div>
-          </section>
-                  
-     
-  
+</div>               
+                </div>
+                   
+              
+            </aside>
+            <!--sidebar end-->
+
+          
+        </nav>
+        <!-- container section start -->
+
+        <!-- javascripts -->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui-1.10.4.min.js"></script>
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+        <!-- bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- nice scroll -->
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+        <!-- charts scripts -->
+        <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+        <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+        <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+        <script src="js/owl.carousel.js" ></script>
+        <!-- jQuery full calendar -->
+        <<script src="js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
+        <script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+        <!--script for this page only-->
+        <script src="js/calendar-custom.js"></script>
+        <script src="js/jquery.rateit.min.js"></script>
+        <!-- custom select -->
+        <script src="js/jquery.customSelect.min.js" ></script>
+        <script src="assets/chart-master/Chart.js"></script>
+
+        <!--custome script for all page-->
+        <script src="js/scripts.js"></script>
+        <!-- custom script for this page-->
+        <script src="js/sparkline-chart.js"></script>
+        <script src="js/easy-pie-chart.js"></script>
+        <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="js/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="js/xcharts.min.js"></script>
+        <script src="js/jquery.autosize.min.js"></script>
+        <script src="js/jquery.placeholder.min.js"></script>
+        <script src="js/gdp-data.js"></script>	
+        <script src="js/morris.min.js"></script>
+        <script src="js/sparklines.js"></script>	
+        <script src="js/charts.js"></script>
+        <script src="js/jquery.slimscroll.min.js"></script>
+        <script>
+
+            //knob
+            $(function () {
+                $(".knob").knob({
+                    'draw': function () {
+                        $(this.i).val(this.cv + '%')
+                    }
+                })
+            });
+
+            //carousel
+            $(document).ready(function () {
+                $("#owl-slider").owlCarousel({
+                    navigation: true,
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    singleItem: true
+
+                });
+            });
+
+            //custom select box
+
+            $(function () {
+                $('select.styled').customSelect();
+            });
+
+            /* ---------- Map ---------- */
+            $(function () {
+                $('#map').vectorMap({
+                    map: 'world_mill_en',
+                    series: {
+                        regions: [{
+                                values: gdpData,
+                                scale: ['#000', '#000'],
+                                normalizeFunction: 'polynomial'
+                            }]
+                    },
+                    backgroundColor: '#eef3f7',
+                    onLabelShow: function (e, el, code) {
+                        el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
+                    }
+                });
+            });
 
 
-              <!-- page end-->
-          </section>
-      </section>
-      <!--main content end-->
-  </section>
-  <!-- container section end -->
 
-    <!-- javascripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- nice scroll -->
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-    <!-- jquery validate js -->
-    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-
-    <!-- custom form validation script for this page-->
-    <script src="js/form-validation-script.js"></script>
-    <!--custome script for all page-->
-    <script src="js/scripts.js"></script>    
-
-
-  </body>
+        </script>
+        <script src="js/abrir.js"></script>
+    </body>
 </html>

@@ -82,6 +82,7 @@ table tr th {
 .h-serviceuno{
      border: ridge #007DEB 4px;
      height: 210px;
+    
 }
 .h-servicedos{
      border: ridge #F23327 4px;
@@ -229,10 +230,11 @@ hr {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #eee;
+    background: #fff;
     padding: 30px;
     transition: all 0.3s;
     box-sizing: border-box;
+    flex: 4 auto;
 }
 .menu-bar{
     cursor: pointer;
@@ -255,7 +257,11 @@ hr {
 
 
 
-
+#logo{
+    color: #fff;
+    font-size: 18px;
+    
+}
 
 #container {
     width: 100%;
@@ -706,6 +712,7 @@ ul.sidebar-menu li.active a i {
 .header, .footer {
     min-height: 60px;
     padding: 0 15px;
+    
 }
 .box1 {
     font-size: 16px;
@@ -715,10 +722,13 @@ ul.sidebar-menu li.active a i {
     margin: 20px 10px 0 0;
 }
 .header {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
-    z-index: 1002;
+   /* z-index: 1002;*/
+    margin: 0 auto;
+    height: 100%;
+    width: 250px;
 }
 
 .white-bg {    
@@ -825,8 +835,9 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     -webkit-border-radius: 4px;
 }
 .navbar-form{
-    padding: 0px;
-    margin: 0 0 0 10px;    
+    padding: 5px;
+    margin: 0 0 0 10px;  
+    
 }
 
 .navbar-form .form-control{

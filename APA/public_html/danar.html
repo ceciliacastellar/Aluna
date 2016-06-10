@@ -11,7 +11,7 @@
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         
 
-        <title>Menu | Fundacion Aluna </title>
+        <title>Registro de alumno | Fundacion Aluna </title>
 
         <!-- Bootstrap CSS -->    
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,22 +46,23 @@
 
     <body>
         <!-- container section start -->
-        <section id="container" class="">
-
-    
-            <!--header end-->
-            <header class="main-header green-bg">
-  <a href="../../index2.html" class="logo">
+        <nav id="container" class="">
+          <!--header end-->
+            <header class="main-header blue-bg">
+ 
     <!-- LOGO -->
-   <a href="index.html" class="logo">  <strong>FUNDACION </strong><span class="litea">A</span><span class="litel">L</span><span class="liteu">U</span><span class="liten">N</span><span class="liteaa">A</span>
-  </a>
-  <!-- Header Navbar: style can be found in header.less -->
-  <nav class="navbar navbar-static-top" role="navigation">
+    <div class="logo navbar-form">
+        <i href="#navigation-main" class="btn btn-purple menu-bar fa fa-bars" ></i>
+        <span ></span>
+        <a href="index.html" id="logo">  <strong>FUNDACION </strong><span class="litea">A</span><span class="litel">L</span><span class="liteu">U</span><span class="liten">N</span><span class="liteaa">A</span></a>
+    </div>
+    
+  
     <!-- Navbar Right Menu -->
-    <div class="navbar-custom-menu">
-      <ul class="nav navbar-nav">
+    <div class="top-nav notification-row">
+      <ul class="nav pull-right top-menu ">
         
-      <li class="dropdown">
+                        <li class="dropdown">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 
                                 <span class="username">Jenifer Smith</span>
@@ -85,68 +86,388 @@
           
       </ul>
     </div>
-  </nav>
+   
 </header>
+    
+  
             <!-------------------------------------------------HASTA AQUI LA BARRA DE ARRIBA--------------------------------- -->
             <!-- ------------------------------------- BARRA DE MENU DEL LADO IZQUIERDO ------------------------------------------------- -->
             <!--sidebar start-->
-           <!-- <aside>-->
+            <aside>
                 <div class="sidebar">
+                    
                     <h2>Menú</h2>
                     <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">servicios</a></li>
-                        <li><a href="">Productos</a></li>
-                        <li><a href="">Contacto</a></li>
+                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Registrar<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="" href="Inscripcion.html">Alumnos</a></li>
+                                <li><a class="" href="registro.html">Empleados</a></li>  
+                            </ul>
+                        
+                        </li>
+                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Inscripcion<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="Asistencia.html">Alumnos</a></li>
+                                <li><a class="" href="mostrar_registro.html">Empleados</a></li>
+                            </ul>
+                        </li>
+                        
                         
                     </ul>
                 </div>
+                
+               
                 <div class="contenido">
                    <!-- <img src="img/menu.png" alt="" class="menu-bar">-->
-                   <nav class="btn btn-primary menu-bar" href="#navigation-main">
-                        <i class="fa fa-bars" aria-hidden="true" title="Skip to main navigation"></i>
-                        
-                    </nav>
-              
-                    
-                      <!--main content start-->
-            <section id="main-content">
-                <section class="wrapper">            
-                    <!--overview start-->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h3 class="page-header"><i class="fa fa-laptop"></i> Menu</h3>
-                            <ol class="breadcrumb">
-                                <li><i class="fa fa-home"></i><a href="index.html">Principal</a></li>
-                                						  	
-                            </ol>
-                        </div>
+                   
+                    <div class="row ">
+				<div class="col-lg-12">
+					<h3 class="page-header"><i class="fa fa-files-o"></i> LISTADO DE  ALUMNOS</h3>
+					
+                                            
+						<i class="fa fa-home"></i><a href="index.html">Principal </a>
+                                                <i class="icon_document_alt"></i><a href="Asistencia.html">Listado de alumnos</a>
+                                                <i class="icon_document_alt"></i><a href="">Registro  de alumnos</a>
+						
+					
+				</div>
                     </div>
+                   <br>
+                  
+                                             
+                   <br>
+                   
+                         
+<!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
+<div class="row">
+                 <div class="col-lg-12">
+                    <section class="panel">
+                          <header class="panel-heading tab-bg-info">
+                              <ul class="nav nav-tabs">
+                                  <li class="active panel panel-primary">
+                                      <a data-toggle="tab" href="#alumno" class="alumno">
+                                          <i class="icon-home"></i>
+                                         
+                                          Alumno
+                                       </a>
+                                  </li>
+                                  <li class="panel panel-info">
+                                      <a data-toggle="tab" href="#padres" class="padres">
+                                          <i class="icon-user"></i>
+                                          Padres
+                                      </a>
+                                  </li>
+                                  <li class="panel panel-warning">
+                                      <a data-toggle="tab" href="#acudiente" class="acudiente">
+                                          <i class="icon-envelope"></i>
+                                          Acudiente
+                                      </a>
+                                  </li>
+                                  
+                                  <li class="panel panel-danger">
+                                      <a data-toggle="tab" href="#emergencia" class="emergencia">
+                                          <i class="icon-envelope"></i>
+                                          Emergencia 
+                                      </a>
+                                  </li>
+                                  <li class="panel panel-success">
+                                      <a data-toggle="tab" href="#fundacion" class="fundacion">
+                                          <i class="icon-envelope"></i>
+                                          Fundación
+                                      </a>
+                                      
+                                  </li>
+                              </ul>
+ 
+<!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
+                    <div class="panel-body">
+                            <div class="tab-content">
+<!-- --------------------------------------- ALUMNO --------------------------------------------------- -->
+                                <div id="alumno" class="tab-pane active">
+                                    
+                                     <section class="panel panel-primary">
+                                      <div class="panel-body bio-graph-info">
+                                           <div class="panel-heading">
+                                          <center> <h1>Foto Alumno</h1></center>
+                                           </div>
+                                          <div class="row">
+                                              <div  align=center>
+                                                 <img src="img/estudiante.png" border= 0>
+                                                 
+                                                  </div>
+                                              
+                                          </div>
+                                      </div>
+                                    </section>
+                                    
+                                    <section class="panel panel-primary">
+                                      <div class="panel-body bio-graph-info">
+                                           <div class="panel-heading">
+                                               <h1>Datos del alumno</h1>
+                                           </div>
+                                          <div class="row">
+                                              <div class="bio-row">
+                                                  
+                                                  <p><span>NOMBRES</span>: Javier Enrique </p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>APELLIDOS</span>: Galindo Vergel</p>
+                                              </div>                                              
+                                              <div class="bio-row">
+                                                  <p><span>TIPO DE DOCUMENTO</span>: C.C</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>NUMERO DEL DOCUMENTO </span>: 12.345.678</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>FECHA DE NACIMIENTO </span>: 05 MAYO 1988</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>LUGAR DE NACIMIENTO </span>:Cartagena Bolivar</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>EDAD </span>: 27</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>DIRECCIÓN DE RESIDENCIA </span>: Crespo Edif. Solimar</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </section>
+                                    
+                                    
+                                    <section class="panel panel-primary">
+                                      <div class="panel-body bio-graph-info">
+                                          <div class="panel-heading">
+                                          <h1>Información de la persona con quien vive</h1>
+                                          </div>
+                                          <div class="row">
+                                              <div class="bio-row">
+                                                  <p><span>NOMBRES</span>: Carlos </p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>APELLIDOS</span>: Galindo Vergel</p>
+                                              </div>                                              
+                                              <div class="bio-row">
+                                                  <p><span>PARENTESCO</span>:Hermano</p>
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                    </section>
+                                      <section>
+                                          <div class="row">                                              
+                                          </div>
+                                      </section>
+                                  </div>
 
-                 
-                    
-                    <!-- project team & activity end -->
 
-                </section>
-            </section>
-            <!--main content end-->
-                    
-                    
-                    
-                    
+
+<!-- --------------------------------------- ALUMNO --------------------------------------------------- -->
+<!--  ------------------------------------- PADRES------------------------------------------------------ -->
+                            <div id="padres" class="tab-pane">
+                                    <section class="panel panel-info">
+                                      <div class="panel-body bio-graph-info">
+                                          <div class="panel-heading">
+                                              <h1>Datos del padre</h1>
+                                          </div>
+                                          <div class="row">
+                                              <div class="bio-row">
+                                                  <p><span>NOMBRES</span>: Javier Enrique </p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>APELLIDOS</span>: Galindo Mejia</p>
+                                              </div>                                              
+                                              <div class="bio-row">
+                                                  <p><span>TIPO DE DOCUMENTO</span>: C.C</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>NUMERO DEL DOCUMENTO </span>: 87.654.321</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>DIRECIÓN DE RESIDENCIA </span>: Bocagrande</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>TELEFONO DE RESIDENCIA </span>:6661111</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>DIRECCIÓN DE TRABAJO</span>: Centro</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>TELEFONO DE TRABAJO </span>: 6602222</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </section>
+                                
+                                
+                                 <section class="panel panel-info">
+                                      <div class="panel-body bio-graph-info">
+                                          <div class="panel-heading">
+                                              <h1>Datos del madre</h1>
+                                          </div>
+                                          <div class="row">
+                                              <div class="bio-row">
+                                                  <p><span>NOMBRES</span>: Mafalda </p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>APELLIDOS</span>: Vergel Armenta</p>
+                                              </div>                                              
+                                              <div class="bio-row">
+                                                  <p><span>TIPO DE DOCUMENTO</span>: C.C</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>NUMERO DEL DOCUMENTO </span>: 87.654.321</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>DIRECIÓN DE RESIDENCIA </span>: Bocagrande</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>TELEFONO DE RESIDENCIA </span>:6661111</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>DIRECCIÓN DE TRABAJO</span>: Centro</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>TELEFONO DE TRABAJO </span>: 6602222</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </section>
+                                      <section>
+                                          <div class="row">                                              
+                                          </div>
+                                      </section>
+                                  </div>
+
+                                
+<!-- --------------------------------------- PADRES----------------------------------------------------- -->
+<!--  -------------------------------------- ACUDIENTE ------------------------------------------------- -->
+                                 <div id="acudiente" class="tab-pane">
+                                    <section class="panel panel-warning">
+                                      <div class="panel-body bio-graph-info">
+                                           <div class="panel-heading">
+                                               <h1>Datos del acudiente</h1>
+                                           </div>
+                                          <div class="row">
+                                              <div class="bio-row">
+                                                  <p><span>NOMBRES</span>: Javier Enrique </p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>APELLIDOS</span>: Galindo Mejia</p>
+                                              </div>                                              
+                                              
+                                              <div class="bio-row">
+                                                  <p><span>DIRECIÓN DE RESIDENCIA </span>: Bocagrande</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>TELEFONO DE RESIDENCIA </span>:6661111</p>
+                                              </div>
+                                                                                            <div class="bio-row">
+                                                  <p><span>TELEFONO DE TRABAJO </span>: 6602222</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </section>
+                                
+                                
+                              
+                                      <section>
+                                          <div class="row">                                              
+                                          </div>
+                                      </section>
+                                  </div>
+<!-- --------------------------------------- ACUDIENTE ------------------------------------------------- -->
+<!-- --------------------------------------- EMERGENCIA ------------------------------------------------- -->
+                        <div id="emergencia" class="tab-pane">
+                                    <section class="panel panel-danger">
+                                      <div class="panel-body bio-graph-info">
+                                           <div class="panel-heading">
+                                          <h1>Información de otro familiar o persona de confianza en casos de emergencia</h1>
+                                           </div>
+                                          <div class="row">
+                                              <div class="bio-row">
+                                                  <p><span>NOMBRES</span>: Javier Enrique </p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>APELLIDOS</span>: Galindo Mejia</p>
+                                              </div>                                              
+                                              
+                                              <div class="bio-row">
+                                                  <p><span>DIRECIÓN DE RESIDENCIA </span>: Bocagrande</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>TELEFONO DE RESIDENCIA </span>:6661111</p>
+                                              </div>
+                                              
+                                              <div class="bio-row">
+                                                  <p><span>TELEFONO DE TRABAJO </span>: 6602222</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </section>
+                                
+                                
+                                
+                                      <section>
+                                          <div class="row">                                              
+                                          </div>
+                                      </section>
+                                  </div>
+
+<!-- --------------------------------------- EMERGENCIA ------------------------------------------------- -->
+<!-- --------------------------------------- FUNDACION ----------------------------------------------------->
+                              
+
+                          <div id="fundacion" class="tab-pane">
+                                    <section class="panel panel-success">
+                                      <div class="panel-body bio-graph-info">
+                                           <div class="panel-heading">
+                                               <h1>Datos de la fundación</h1>
+                                           </div>
+                                          <div class="row">
+                                              <div class="bio-row">
+                                                <p><span>FECHA DE MATRICULA</span>: 14 Abril 2016 </p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>CONVENIO</span>: Exito</p>
+                                              </div>                                              
+                                              <div class="bio-row">
+                                                  <p><span>MODULO</span>: Rojo</p>
+                                              </div>
+                                              <div class="bio-row">
+                                                  <p><span>PROGRAMA </span>: Delfin</p>
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                    </section>
+                                
+                                
+                              
+                                      <section>
+                                          <div class="row">                                              
+                                          </div>
+                                      </section>
+                                  </div>
+
+<!-- --------------------------------------- FUNDACION ----------------------------------------------------->
+                              </div>
+                          </div>
+                    </section>
+                 </div>
+</div>
+                     
+                  
+               
                 </div>
                    
-                    
               
-                    
-                    
-                        <!-- sidebar menu end-->
-                <!--</div>-->
-           <!-- </aside>-->
+            </aside>
             <!--sidebar end-->
 
           
-        </section>
+        </nav>
         <!-- container section start -->
 
         <!-- javascripts -->
@@ -238,6 +559,6 @@
 
 
         </script>
-        <script src="abrir.js"></script>
+        <script src="js/abrir.js"></script>
     </body>
 </html>
