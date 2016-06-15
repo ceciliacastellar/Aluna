@@ -4,8 +4,7 @@
 
 
     <!--main content start-->
-    <section id="main-content">
-        <section class="wrapper">
+<div class="contenido">
             <!--overview start-->
             <div class="row">
 
@@ -162,7 +161,5 @@
             <!-- project team & activity end -->
 
         </section>
-    </section>
-    <!--main content end-->
-</section>
+    </div>
 @endsection

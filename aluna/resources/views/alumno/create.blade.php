@@ -2,12 +2,10 @@
 
 
 @section('content')
-<section id="container" class="">
-  @include('partials/errors')
+
 
   <!--main content start-->
-  <section id="main-content">
-      <section class="wrapper">
+<div class="contenido">
         <div class="row">
           <div class="col-lg-12">
             <h3 class="page-header"><i class="fa fa-files-o"></i>REGISTRAR ALUMNOS</h3>
@@ -83,13 +81,11 @@
                                               <div class="form">
                                                   <form class="form-horizontal" method="get">
                 <!-- ------------------------------------- SUBIR IMAGEN -------------------------------------------------- -->
-                           <!--<div class="form-group">
-                                      <input id="file-1" type="file" class="file" multiple=true data-preview-file-type="any">
+
+                         <div class="form-group" align="center">
+                             <input id="file" type="file" class="file" name="file" multiple=true data-preview-file-type="any">
+
                          </div>
-                        <div class="form-group">
-                                  <button class="btn btn-primary" type="submit">Subir</button>
-                                  <button class="btn btn-default" type="button">Reset</button>
-                         </div>-->
 
             <!-- ------------------------------------- SUBIR IMAGEN -------------------------------------------------- -->
 
@@ -871,10 +867,9 @@
     </div>
     <!-- ---------------------------------------Fin Cuadro principal -------------------------------------------->
 
-      </section>
-  </section>
+
   <!--main content end-->
-</section>
+
 <!-- container section start -->
 
 <!-- javascripts -->
@@ -882,5 +877,6 @@
 
 
 
-</section>
+</div>
+
 @endsection

@@ -12,11 +12,12 @@ Website: http://geekslabs.com/
 
 body {
     color: #797979;
-    /*background: #eeeeee;*/
+    background: #FFFFFF;
     font-family: 'Lato', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
     font-size:14px !important;
+    overflow: hidden;
 }
 h1,h2,h3,h4,h5{
     font-weight: 300;
@@ -79,24 +80,22 @@ table tr th {
 
 }
 .h-serviceuno{
-    border: ridge #007DEB 4px;
-    height: 210px;
-}
+     border: ridge #007DEB 4px;
+     height: 210px;
 
+}
 .h-servicedos{
      border: ridge #F23327 4px;
      height: 210px;
 }
 .h-servicetres{
      border: ridge #007F40 4px;
-     height: 210px
+     height: 210px;
 }
 .h-servicecuatro{
      border: ridge #7234C5 4px;
      height: 210px;
 }
-
-
 #tittlebox{
     font-size: 20px;
 }
@@ -123,27 +122,34 @@ table tr th {
 .panel-heading .nav > li >  .fundacion{
     background: #79c447;
 }
+.panel-heading .nav > li >  .hmedico{
+    background: #8383EE;
+}
 
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .alumno:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .alumno{
     color: #fff;
     background: #2775e2 ;
 }
 
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .padres:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .padres{
     color: #fff;
     background: #00aced;
 }
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .acudiente:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .acudiente{
     color: #fff;
     background: #f4b162;
 }
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .emergencia:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .emergencia{
     color: #fff;
     background: #ff2121;
 }
-.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .fundacion:hover{
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .fundacion{
     color: #fff;
     background:#79c447;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .hmedico{
+    color: #fff;
+    background:#8383EE;
 }
 
 .tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .sitio:hover{
@@ -152,33 +158,93 @@ table tr th {
 }
 
 .blue-gray{
-   color: #fff;
-   /*background: linear-gradient(90deg,#FFFFFF, #576160, #0045A0 1100px);
-   background-color: linear-gradient(90deg,FFFFFF, #576160, #0045A0 1100px);*/
- }
+    color: #fff;
+    background: linear-gradient(90deg,#FFFFFF , #576160 , #0045A0 1500px);
+    background-color: linear-gradient(90deg,#FFFFFF , #576160  , #0045A0 1500px );
 
- .litea{
-   color: #003F73!important;
-   font: bold 200% monospace
- }
- .litel{
+}
+
+.litea{
+    color: #003F73!important;
+    font: bold 200% monospace
+}
+.litel{
     color: #840000!important;
     font: bold 200% monospace
  }
-
- .liteu{
-   color: #11127F!important;
-   font: bold 200% monospace
+.liteu{
+    color: #11127F!important;
+    font: bold 200% monospace
 }
 .liten{
-   color: #003C00!important;
-   font: bold 200% monospace
+    color: #003C00!important;
+    font: bold 200% monospace
 }
 .liteaa{
-   color: #920000!important;
-   font: bold 200% monospace
+    color: #920000!important;
+    font: bold 200% monospace
+
+}
+hr {
+ /* background-color: red;*/
+  height: 4px;
+   width: 100%;
+
+}
+/*  ---- ---- ---- --- --- --- ---- El sidebar movible ---- --- -- --- -- -- */
+.sidebar{
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+
+}
+.sidebar h2{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background: #2a2a2a;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li{
+    outline: 1px solid #2a2a2a;
+    transition: all 0.3s;
+ }
+.sidebar li:hover{
+    background: #444;
+    border-left: 5px solid #eee;
+}
+.sidebar a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
 }
 
+.contenido{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    padding: 30px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    flex: 4 auto;
+}
+.menu-bar{
+    cursor: pointer;
+ }
+ .abrir{
+     transform: translateX(250px);
+     width: calc(100% - 250px);
+ }
+
+/*--- - ----- -- -- ---- ---- El sidebar movible --- ---- ----- ----- --- */
 
 
 
@@ -186,6 +252,17 @@ table tr th {
 
 
 
+
+
+
+
+
+
+#logo{
+    color: #fff;
+    font-size: 18px;
+
+}
 
 #container {
     width: 100%;
@@ -206,10 +283,7 @@ table tr th {
     padding-bottom: 10px;
     padding-top: 10px;
 }
-/*.lite{
-    color: #7BC3C0 !important;
-    font: bold 150% monospace
-}*/
+
 
 /*login page*/
 
@@ -217,21 +291,21 @@ table tr th {
     background-color: #f1f2f7;
 }
 .login-img-body{
-  background: url('../img/Aluna.jpg') no-repeat center center fixed;
+  background: url('../img/bg-1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .login-img2-body{
-  background: url('../img/Aluna.jpg') no-repeat center center fixed;
+  background: url('../img/bg-1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .login-img3-body{
-  background: url('../img/Aluna.jpg') no-repeat center center fixed;
+  background: url('../img/bg-1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -405,8 +479,7 @@ table tr th {
     width: 160px;
     height: 100%;
     position: fixed;
-    /*background: linear-gradient(180deg,#686B67,#FFFFFF );*/
-
+    background: #FFFFFF;
 }
 
 .nav-collapse.collapse {
@@ -489,8 +562,9 @@ ul.sidebar-menu li a{
     color: #000000;
     text-decoration: none;
     display: block;
-    padding: 15px 0 10px 5px;
-    font-size: meddiam;
+    padding: 15px 0 15px 10px;
+
+    font-size: 16px;
     font-weight: 600;
     outline: none;
     -webkit-transition: all 0.3s ease;
@@ -639,6 +713,7 @@ ul.sidebar-menu li.active a i {
 .header, .footer {
     min-height: 60px;
     padding: 0 15px;
+
 }
 .box1 {
     font-size: 16px;
@@ -648,10 +723,13 @@ ul.sidebar-menu li.active a i {
     margin: 20px 10px 0 0;
 }
 .header {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
-    z-index: 1002;
+   /* z-index: 1002;*/
+    margin: 0 auto;
+    height: 100%;
+    width: 250px;
 }
 
 .white-bg {
@@ -673,13 +751,14 @@ ul.sidebar-menu li.active a i {
 }
 
 a.logo {
+
+    font-size: 22px;
     font-size: large;
     color: #454744;
     float: left;
-    margin-top: 10px;
+    margin-top: 5px;
     text-transform: uppercase;
     font-family: Arial;
-
 }
 
 a.logo:hover, a.logo:focus {
@@ -757,8 +836,9 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     -webkit-border-radius: 4px;
 }
 .navbar-form{
-    padding: 0px;
+    padding: 5px;
     margin: 0 0 0 10px;
+
 }
 
 .navbar-form .form-control{
@@ -977,7 +1057,7 @@ div[data-role="editor-toolbar"] {
 
 .top-nav .username {
     font-size: 13px;
-    /*color: #E6E6E6;*/
+    color: #bdbdbd;
 }
 
 .top-nav ul.top-menu > li > a {
@@ -1127,8 +1207,8 @@ div[data-role="editor-toolbar"] {
 }
 .blue-bg {
   color : #fff;
-  background : #0288D1;
-  background-color : #0288D1;
+  background : #3C81C5;
+  background-color : #3C81C5;
 }
 .green-bg {
   color : #fff;

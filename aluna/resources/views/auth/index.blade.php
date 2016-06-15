@@ -1,10 +1,12 @@
 @extends('layout')
 
 @section('content')
+  <section id="container" class="">
+    @include('partials/errors')
 
 <!--main content start-->
-<section id="main-content">
-    <section class="wrapper">
+<div class="contenido">
+
 <div class="row">
   <div class="col-lg-12">
     <h3 class="page-header"><i class="fa fa-table"></i> Lista de empleados</h3>
@@ -18,21 +20,23 @@
         <!-- page start-->
 
 
-
+<div class="container-box">
                     <table class="table table-striped table-advance table-hover">
                      <tbody>
                         <tr>
                            <th><i class="icon_calendar"></i> Nombre</th>
                            <th><i class="icon_profile"></i> Email</th>
-
                            <th colspan="3"><i class="icon_profile"></i> Password</th>
+
                         </tr>
 
                         @foreach($users as $users)
                         <tr>
                            <td>{{ $users->name }}</td>
                            <td>{{ $users->email }}</td>
-                            <td>{{ $users->password}}</td>
+                           <td>{{ $users->password}}</td>
+
+
 
 
 
@@ -50,8 +54,10 @@
 
 
                   </table>
-                </section>
+
             </div>
-        </div>
+          </div>
+          </section>
+
 
         @endsection

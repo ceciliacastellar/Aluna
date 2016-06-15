@@ -3,8 +3,7 @@
 @section('content')
 
 <!--main content start-->
-<section id="main-content">
-    <section class="wrapper">
+<div class="contenido">
 <div class="row">
   <div class="col-lg-12">
     <h3 class="page-header"><i class="fa fa-table"></i> Table</h3>
@@ -67,8 +66,7 @@
 
 
                   </table>
-                </section>
-            </div>
+
         </div>
 
         @endsection

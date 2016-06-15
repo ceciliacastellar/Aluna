@@ -1,4 +1,4 @@
-@extends('layout3')
+@extends('layout')
 
 
 @section('content')
@@ -6,8 +6,7 @@
   @include('partials/errors')
 
   <!--main content start-->
-  <section id="main-content">
-      <section class="wrapper">
+<div class="contenido">
           <!--overview start-->
     <div class="row">
     <div class="col-lg-12">
@@ -109,8 +108,7 @@
 
           <!-- project team & activity end -->
 
-      </section>
-  </section>
+</div>
   <!--main content end-->
 </section>
 <!-- container section start -->

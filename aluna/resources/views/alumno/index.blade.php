@@ -3,8 +3,7 @@
 @section('content')
 
 <!--main content start-->
-<section id="main-content">
-    <section class="wrapper">
+<div class="contenido">
 <div class="row">
   <div class="col-lg-12">
     <h3 class="page-header"><i class="fa fa-table"></i> LISTADO DE ALUMNOS</h3>
@@ -26,7 +25,7 @@
                            <th><i class="icon_calendar"></i> Nombres</th>
                            <th><i class="icon_profile"></i> Apellidos</th>
                            <th><i class="icon_document"></i> Convenio</th>
-                           <th colspan="4"><center><i class="icon_cogs"></i>Acción</center></th>
+                           <th colspan="4"><center><i class="icon_cogs"></i>Accion</center></th>
                         </tr>
 
                         @foreach($alumnos as $alumnos)
@@ -39,13 +38,13 @@
 
                              <td>
                               <div class="btn-group">
-                                  <a class="btn btn-primary" href="{{ route('alumno.show', $alumnos)}}">Ver</a>
+                                  <a class="btn btn-primary" href="{{ route('alumno.show', $alumnos)}}"><i class="fa fa-eye"></i></a>
                               </div>
                               </td>
 
                               <td>
                                <div class="btn-group">
-                                   <a class="btn btn-primary"  href="{{ route('alumno.edit', $alumnos)}}">Editar</a>
+                                   <a class="btn btn-primary"  href="{{ route('alumno.edit', $alumnos)}}"><i class="fa fa-edit"></i></a>
                                </div>
                                </td>
 
@@ -75,8 +74,6 @@
 
 
                   </table>
-                </section>
-            </div>
-        </div>
+</div>
 
         @endsection

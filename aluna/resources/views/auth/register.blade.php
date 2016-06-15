@@ -43,8 +43,7 @@
 
 
 
-						<section id="main-content">
-					                <section class="wrapper">
+				<div class="contenido">
 					                    <!--overview start-->
 					                    <div class="row">
 					                        <div class="col-lg-12">
@@ -126,9 +125,7 @@
 					                            </div>
 					                        </div>
 					                    </div>
-					                </section>
-					    </section>
-
+</div>
 
 
 

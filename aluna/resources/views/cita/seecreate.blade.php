@@ -4,8 +4,8 @@
 
 
     <!--main content start-->
-    <section id="main-content">
-        <section class="wrapper">
+
+<div class="contenido">
             <!--overview start-->
             <div class="row">
               <form method="POST" action="{{ route('cita.store') }}" accept-charset="UTF-8" enctype="multipart/form-data">
@@ -91,9 +91,9 @@
 
                 </div>
                 </div>
-               </div>
 
-            </div>
+
+
 
                <div class="row ">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12">
@@ -179,7 +179,7 @@
 
 
 
-            </div>
+
 
 
 
@@ -192,16 +192,9 @@
                 <div class="widget-foot">
                     <!-- Footer goes here -->
                 </div>
-            </div>
-            </div>
 
-            </div>
-
-            </div>
             <!-- project team & activity end -->
 
-        </section>
-    </section>
-    <!--main content end-->
-</section>
+        </div>
+
 @endsection

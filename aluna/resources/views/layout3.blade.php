@@ -7,6 +7,7 @@
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <title>ALUNA</title>
 
@@ -37,7 +38,7 @@
   <section id="container" class="">
 
 
-      <header class="header blue-gray">
+        <header class="main-header blue-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
             </div>

@@ -6,8 +6,7 @@
   @include('partials/errors')
 
   <!--main content start-->
-  <section id="main-content">
-      <section class="wrapper">
+<div class="contenido">
   <div class="row">
     <div class="col-lg-12">
       <h3 class="page-header"><i class="fa fa-files-o"></i> DATOS DEL ALUMNO</h3>
@@ -355,15 +354,5 @@
 
 
           <!-- page end-->
-      </section>
-
-
-
-
-
-
-
-
-
-</section>
+</div>
 @endsection
