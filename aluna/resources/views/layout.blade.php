@@ -7,7 +7,7 @@
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 
     <title>ALUNA</title>
 
@@ -109,6 +109,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script src="/js/abrir.js"></script>
+  <script src="/js/jquery-1.11.3.min.js"></script>
 
 	@yield('scripts')
 </body>
