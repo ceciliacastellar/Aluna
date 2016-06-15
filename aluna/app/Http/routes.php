@@ -75,21 +75,24 @@ Route::post('nuevo','AlumnoController@save');*/
 
 
 
+Route::group(['middleware' => 'auth'], function(){
+
 /**
-                    * Rutas para alumnos
- */
+                  * Rutas para alumnos
+*/
 Route::resource('alumno', 'AlumnoController');
 
 
 //                    Rutas para Citas medicas
 
 Route::get('cita/{alumno}', [
-  'uses' => 'CitaController@seecreate',
-  'as' => 'cita.seecreate'
+'uses' => 'CitaController@seecreate',
+'as' => 'cita.seecreate'
 ]);
 
 
 Route::resource('cita', 'CitaController');
+});
 
 
 Route::get('auth/index', ['middleware' => 'auth',
