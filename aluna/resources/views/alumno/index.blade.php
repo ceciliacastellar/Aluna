@@ -8,7 +8,7 @@
   <div class="col-lg-12">
     <h3 class="page-header"><i class="fa fa-table"></i> LISTADO DE ALUMNOS</h3>
     <ol class="breadcrumb">
-      <li><i class="fa fa-home"></i><a href="principal">{{ trans('pagination.home') }}</a></li>
+      <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
       <li><i class="fa fa-table"></i>Listado de alumnos</li>
 
     </ol>

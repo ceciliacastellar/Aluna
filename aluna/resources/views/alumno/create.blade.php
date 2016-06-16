@@ -11,7 +11,7 @@
             <h3 class="page-header"><i class="fa fa-files-o"></i>REGISTRAR ALUMNOS</h3>
             <ol class="breadcrumb">
 
-              <li><i class="fa fa-home"></i><a href="principal">{{ trans('pagination.home') }}</a></li>
+              <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
               <li><i class="icon_document_alt"></i>Ficha de matricula</li>
             </ol>
           </div>

@@ -1,4 +1,4 @@
-@extends('layout')
+  @extends('layout')
 
 @section('content')
   <section id="container" class="">
@@ -11,7 +11,7 @@
   <div class="col-lg-12">
     <h3 class="page-header"><i class="fa fa-table"></i> Lista de empleados</h3>
     <ol class="breadcrumb">
-      <li><i class="fa fa-home"></i><a href="principal">{{ trans('pagination.home') }}</a></li>
+      <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
       <li><i class="fa fa-table"></i>Lista de personal</li>
 
     </ol>
@@ -27,7 +27,7 @@
                            <th><i class="icon_calendar"></i> Nombre</th>
                            <th><i class="icon_profile"></i> Email</th>
                            <th colspan="3"><i class="icon_profile"></i> Password</th>
-
+                           <th><i class="icon_profile"></i> Area de trabajo</th>
                         </tr>
 
                         @foreach($users as $users)
@@ -35,7 +35,7 @@
                            <td>{{ $users->name }}</td>
                            <td>{{ $users->email }}</td>
                            <td>{{ $users->password}}</td>
-
+                           <td>{{ $users->role->name}}</td>
 
 
 

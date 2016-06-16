@@ -15,8 +15,8 @@
             <h3 class="page-header"><i class="fa fa-files-o"></i> FUNDACIÓN ALUNA</h3>
             <ol class="breadcrumb">
 
-              <li><i class="fa fa-home"></i>{{ trans('pagination.home') }}</li>
-              <li><i class="icon_document_alt"></i>Listado de alumnos</li>
+              <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
+              <li><i class="icon_document_alt"></i><a href="/alumno">Listado de alumnos</a></li>
               <li><i class="fa fa-files-o"></i>Editar ficha matricula</li>
             </ol>
           </div>

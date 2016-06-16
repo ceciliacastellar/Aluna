@@ -13,8 +13,8 @@
                 <div class="col-lg-12">
                     <h3 class="page-header"><i class="fa fa-laptop"></i> Citas Medicas</h3>
                     <ol class="breadcrumb">
-                        <li><i class="fa fa-home"></i><a href="indexsalud.html">Principal</a></li>
-                        <li><i class="fa fa-stethoscope"></i><a href="indexsalud.html">Citas medicas</a></li>
+                        <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
+                        <li><i class="fa fa-stethoscope"></i>Citas medicas</li>
 
                     </ol>
                 </div>

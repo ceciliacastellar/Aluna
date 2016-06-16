@@ -50,8 +50,8 @@
 					                        <div class="col-lg-12">
 					                            <h3 class="page-header"><i class="fa fa-pencil-square-o"></i> Registrar empleados</h3>
 					                            <ol class="breadcrumb">
-					                                <li><i class="fa fa-home"></i><a href="index.html">Principal</a></li>
-					                                <li><i class="fa fa-pencil-square-o"></i><a href="registro.html">Registro de empleados</a></li>
+					                                <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
+					                                <li><i class="fa fa-pencil-square-o"></i><a href="/auth/index">Registro de empleados</a></li>
 					                            </ol>
 					                        </div>
 					                    </div>

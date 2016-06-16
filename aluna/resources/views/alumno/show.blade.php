@@ -12,9 +12,9 @@
       <h3 class="page-header"><i class="fa fa-files-o"></i> DATOS DEL ALUMNO</h3>
       <ol class="breadcrumb">
 
-        <li><i class="fa fa-home"></i>Principal</li>
-        <li><i class="fa fa-table"></i>Tabla de alumnos</li>
-                                            <li><i class="fa fa-files-o"></i>Información del niño, niña o joven</li>
+        <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
+        <li><i class="fa fa-table"></i><a href="/alumno">Listado de alumnos</a></li>
+        <li><i class="fa fa-files-o"></i>Información del niño, niña o joven</li>
       </ol>
     </div>
   </div>
