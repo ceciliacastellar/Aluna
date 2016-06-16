@@ -35,7 +35,7 @@
                            <td>{{ $users->name }}</td>
                            <td>{{ $users->email }}</td>
                            <td>{{ $users->password}}</td>
-                           <td>{{ $users->role->name}}</td>
+
 
 
 
