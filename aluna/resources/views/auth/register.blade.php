@@ -91,7 +91,7 @@
 					                                                </div>-->
 
 					                                                <div class="form-group col-md-5 bio-row">
-					                                                    <div class="input-group">
+					                                                    <div class="input-group col-md-9">
 					                                                        <label for="email" class="control-label">E-mail</label>
 					                                                        <span class=""><i class=""></i></span>
 					                                                        <input type="email" class="form-control" placeholder="email" name="email" value="{{ old('email') }}">
@@ -99,7 +99,7 @@
 					                                                </div>
 
 					                                                <div class="form-group col-md-5 bio-row">
-					                                                    <div class="input-group">
+					                                                    <div class="input-group col-md-9">
 					                                                        <label for="contaseña" class="control-label">Contraseña</label>
 					                                                        <span class=""><i class=""></i></span>
 					                                                        <input type="password" class="form-control" placeholder="Password" name="password">
@@ -108,7 +108,7 @@
 
 
 					                                                <div class="form-group col-md-5 bio-row">
-					                                                    <div class="input-group">
+					                                                    <div class="input-group col-md-9">
 					                                                        <label for="confirmar_contraseña" class="control-label">Confirmar contraseña</label>
 					                                                        <span class=""><i class="" ></i></span>
 					                                                        <input type="password" class="form-control" placeholder="Confirm Password" name="password_confirmation">

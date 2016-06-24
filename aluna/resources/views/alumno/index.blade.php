@@ -41,24 +41,21 @@
                                   <a class="btn btn-primary" href="{{ route('alumno.show', $alumnos)}}"><i class="fa fa-eye"></i></a>
                               </div>
                               </td>
-
+                              @role('administrativo')
                               <td>
                                <div class="btn-group">
                                    <a class="btn btn-primary"  href="{{ route('alumno.edit', $alumnos)}}"><i class="fa fa-edit"></i></a>
                                </div>
                                </td>
-
+                               @endrole
+                               @role('salud')
                                <td>
-                                <div class="btn-group">               <!--"{{ route('alumno.edit', $alumnos)}}"-->
-                                    <a class="btn btn-primary"  href="cita">Citas</a>
+                                <div class="btn-group">
+                                    <a class="btn btn-primary"  href="{{ route('cita.index', $alumnos)}}">Citas</a>
                                 </div>
                                 </td>
+                                @endrole
 
-                                <td>
-                                 <div class="btn-group">
-                                     <a class="btn btn-primary"  href="{{ route('cita.seecreate', $alumnos)}}">Crear Cita</a>
-                                 </div>
-                                 </td>
 
 
 

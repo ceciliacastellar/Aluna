@@ -24,6 +24,7 @@ class CitaController extends Controller
        $citas = Cita::find($id);
        return View::make('cita.show')->with('citas', $citas);
    }
+
    public function seecreate($id){
      $alumnos = Alumno::find($id);
      return  View::make('cita.seecreate')->with('alumnos', $alumnos);
@@ -49,7 +50,7 @@ class CitaController extends Controller
            $cita->descripcion = $request->descripcion;
            $cita->alumno_id = $request->alumno_id;
            $cita->save();
-           return view('principal');
+           return view('/principal');
 
          }
 

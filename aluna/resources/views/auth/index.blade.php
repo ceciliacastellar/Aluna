@@ -27,7 +27,7 @@
                            <th><i class="icon_calendar"></i> Nombre</th>
                            <th><i class="icon_profile"></i> Email</th>
                            <th colspan="3"><i class="icon_profile"></i> Password</th>
-                           <th><i class="icon_profile"></i> Area de trabajo</th>
+                           
                         </tr>
 
                         @foreach($users as $users)

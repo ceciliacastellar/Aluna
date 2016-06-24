@@ -278,8 +278,14 @@ select[multiple],
 textarea {
   background-image: none;
 }
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
 a {
-  color: #007aff;
+  color: #3C81C5;
   text-decoration: none;
 }
 a:hover,

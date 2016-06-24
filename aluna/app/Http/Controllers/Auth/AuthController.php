@@ -57,8 +57,17 @@ class AuthController extends Controller
           'name' => $data['name'],
           'email' => $data['email'],
           'password' => bcrypt($data['password']),
+          'tipo_usuario' => $data['tipo_usuario'],
       ]);
-
+      /*$users = User::all();
+      if($tipo_usuario = 'administrativo'){
+        $user->attachRole($administrativo);
+      }if($tipo_usuario = 'salud'){
+        $user->attachRole($salud);
+      }
+      else($tipo_usuario = 'educador'){
+        $user->attachRole($educador);
+      }*/
 
     }
 

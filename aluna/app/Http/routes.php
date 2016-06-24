@@ -1,4 +1,7 @@
 <?php
+use App\Role;
+use App\Permission;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +26,56 @@ Route::get('/', [
 
 
 );
+
+Route::get('/start', function()
+{
+
+    $administrativo = new Role();
+    $administrativo->name = 'administrativo';
+    $administrativo->display_name = 'usuario para personal administrativo';
+    $administrativo->save();
+
+    $salud = new Role();
+    $salud->name = 'salud';
+    $salud->display_name = 'usuario para personal de salud';
+    $salud->save();
+
+    $vo = new Role();
+    $vo->name = 'educador';
+    $vo->display_name = 'usuario para docentes';
+    $vo->save();
+
+    $user = User::where('name','=','Javier')->first();
+    $user->attachRole($administrativo);
+
+    $user = User::where('name','=','Cecilia')->first();
+    $user->attachRole($salud);
+
+    $user = User::where('name','=','Javier')->first();
+    $user->attachRole($educador);
+
+    $read = new Permission();
+    $read->name = 'can_read';
+    $read->display_name = 'Can Read Data';
+    $read->save();
+
+    $edit = new Permission();
+    $edit->name = 'can_edit';
+    $edit->display_name = 'Can Edit Data';
+    $edit->save();
+
+    $administrativo->attachPermission($read);
+
+
+
+
+    // print_r($userRole);
+    // die();
+    return 'Woohoo!';
+});
+
+
+
 
 Route::get('login', [
       'uses' => 'Auth\AuthController@getLogin',
@@ -73,33 +126,32 @@ Route::post('nuevo','AlumnoController@save');*/
 
 
 
-
-
 Route::group(['middleware' => 'auth'], function(){
-
 /**
-                  * Rutas para alumnos
-*/
+                    * Rutas para alumnos
+ */
+Route::get('method/{alumno}',[
+    'uses' => 'AlumnoController@method',
+    'as' => 'cita.index'
+ ]);
 Route::resource('alumno', 'AlumnoController');
-
-
-//                    Rutas para Citas medicas
-
-Route::get('cita/{alumno}', [
-'uses' => 'CitaController@seecreate',
-'as' => 'cita.seecreate'
-]);
-
-
-Route::resource('cita', 'CitaController');
 });
+//                    Rutas para Citas medicas
+Route::group(['middleware' => 'auth'], function(){
+Route::get('cita/{alumno}', [
+  'uses' => 'CitaController@seecreate',
+  'as' => 'cita.seecreate'
+]);
+Route::resource('cita', 'CitaController',
+                ['except' => ['index']]);
+});
+//Route::group(['prefix' => 'administrativo', 'middleware' => ['role:administrativo']], function() {
 
-
-Route::get('auth/index', ['middleware' => 'auth',
+Route::get('auth/index', ['middleware' => 'role:administrativo',
   'uses' => 'UsuarioController@index',
   'as' => 'auth/index'
 ]);
-
+//});
 Route::get('auth/{user}', [
   'uses' => 'UsuarioController@edit',
   'as' => 'auth.edit'

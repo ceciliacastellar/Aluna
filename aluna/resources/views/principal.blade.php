@@ -13,7 +13,6 @@
       <h3 class="page-header"><i class="fa fa-laptop"></i> {{ trans('pagination.home') }}</h3>
       <ol class="breadcrumb">
         <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
-        <li><i class="fa fa-laptop"></i>Home</li>
       </ol>
     </div>
   </div>
@@ -23,9 +22,9 @@
 <!-- Comienzo-->
 
 <div class="container-box">
-  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                          @role('administrativo')
+                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                               <div class="h-serviceuno " >
-
                                   <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
                                       <i class="fa fa-pencil fa-lg"></i>
                                   </div>
@@ -37,6 +36,7 @@
                                   </div>
                               </div>
                           </div>
+                          @endrole
                           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                           <div class="h-servicedos" >
                               <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
@@ -51,6 +51,7 @@
 
                           </div>
                       </div>
+                      @role('administrativo')
                       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                           <div class="h-servicetres" >
                               <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
@@ -77,6 +78,7 @@
                                 </div>
                             </div>
                         </div>
+                        @endrole
 
 
 

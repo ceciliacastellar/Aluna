@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Alumno;
+use App\Cita;
 use Validator;
 use View;
 use DB;
@@ -130,7 +131,6 @@ class AlumnoController extends Controller
           $alumno->tel_trabajoa = $request->tel_trabajoa;
           $alumno->nombre_emergencia = $request->nombre_emergencia;
           $alumno->apellido_emergencia = $request->apellido_emergencia;
-
           $alumno->direccion_emergencia = $request->direccion_emergencia;
           $alumno->tel_emergencia = $request->tel_emergencia;
           $alumno->tel_trabajoe = $request->tel_trabajoe;
@@ -196,6 +196,12 @@ class AlumnoController extends Controller
             return View::make('alumno.show')->with('alumnos', $alumnos);
           }
 
-
+      public function method($id)
+        {
+          $alumnos = Alumno::find($id);
+          $citas = $alumnos->citas;
+          $citas = Cita::where('alumno_id', $alumnos->id)->get();
+          return view('cita.index', ['alumnos'=>$alumnos, 'citas'=>$citas]);
+        }
     //
 }

@@ -151,7 +151,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         //Illuminate\Html\HtmlServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
-  //      Zizaco\Entrust\EntrustServiceProvider::class,
+        Zizaco\Entrust\EntrustServiceProvider::class,
 
 
         /*
@@ -210,8 +210,8 @@ return [
       //  'Form' => Illuminate\Html\FormFacade::class,
       //  'Html' => Illuminate\Html\Facade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-      //  'Bican' => Bican\Roles\RolesServiceProvider::class,
-      //  'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'Bican' => Bican\Roles\RolesServiceProvider::class,
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
     ],
 
 ];

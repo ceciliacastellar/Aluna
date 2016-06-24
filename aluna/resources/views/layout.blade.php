@@ -42,7 +42,7 @@
 <div class="logo navbar-form">
 <i href="#navigation-main" class="btn btn-purple menu-bar fa fa-bars" ></i>
 <span ></span>
-<a href="index.html" id="logo">  <strong>FUNDACION </strong><span class="litea">A</span><span class="litel">L</span><span class="liteu">U</span><span class="liten">N</span><span class="liteaa">A</span></a>
+<a href="/principal" id="logo">  <strong>FUNDACION </strong><span class="litea">A</span><span class="litel">L</span><span class="liteu">U</span><span class="liten">N</span><span class="liteaa">A</span></a>
 <ul class="nav navbar-nav navbar-right">
     @if (Auth::guest())
           <li><a href="{{ route('home') }}">Login</a></li>
