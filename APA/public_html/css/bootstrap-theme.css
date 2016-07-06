@@ -336,6 +336,7 @@ hr {
 }
 p {
   margin: 0 0 10px;
+  margin-left: 20px;
 }
 .lead {
   margin-bottom: 20px;

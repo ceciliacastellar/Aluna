@@ -201,7 +201,7 @@ hr {
     
 }
 .sidebar h2{
-    text-align: center;
+    text-align : center;
     margin: 0;
     padding: 10px;
     background: #2a2a2a;
@@ -241,9 +241,55 @@ hr {
  }
  .abrir{
      transform: translateX(250px);
+     width: calc(100% - 250px);
  }
 
 /*--- - ----- -- -- ---- ---- El sidebar movible --- ---- ----- ----- --- */
+/*--- - ----- -- -- ---- ---- Pestañas historia inicial --- ---- ----- ----- --- */
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .parteuno{
+    color: #fff;
+    background: #2775e2 ;
+}
+
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .partedos{
+    color: #fff;
+    background: #00aced;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .partetres{
+    color: #fff;
+    background: #f4b162;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .partecuatro{
+    color: #fff;
+    background: #ff2121;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .partecinco{
+    color: #fff;
+    background:#79c447;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .parteseis{
+    color: #fff;
+    background:#8383EE;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .partesiete{
+    color: #fff;
+    background: #1BB61B ;
+}
+
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .parteocho{
+    color: #fff;
+    background: #16EBE8;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .partenueve{
+    color: #fff;
+    background: #D4DA23;
+}
+.tab-bg-info.panel-heading .nav > li.active > a, .tab-bg-info.panel-heading .nav > li > .sitio:hover{
+    color: #fff;
+    background:#F2731F;
+}
+
+/*--- - ----- -- -- ---- ---- Pestañas historia inicial --- ---- ----- ----- --- */
 
 
 
