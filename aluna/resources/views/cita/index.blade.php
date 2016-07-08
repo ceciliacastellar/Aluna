@@ -25,15 +25,15 @@
                            <th><i class="icon_document"></i> Hora</th>
                            <th colspan="4"><center><i class="icon_cogs"></i>Acción</center></th>
                         </tr>
-                        @foreach($citas as $citas)
+                        @foreach($citas as $cita)
                         <tr>
-                           <td>{{ $citas->nombre_medico }}</td>
-                           <td>{{ $citas->area }}</td>
-                           <td>{{ $citas->fecha }}</td>
-                           <td>{{ $citas->hora }}</td>
+                           <td>{{ $cita->nombre_medico }}</td>
+                           <td>{{ $cita->area }}</td>
+                           <td>{{ $cita->fecha }}</td>
+                           <td>{{ $cita->hora }}</td>
                            <td>
                               <div class="btn-group">
-                                  <a class="btn btn-primary" href="{{ route('cita.edit', $citas)}}">Ver</a>
+                                  <a class="btn btn-primary" href="{{ route('cita.edit', $cita)}}">Ver</a>
                               </div>
                             </td>
                               <!--<td>
@@ -43,7 +43,9 @@
                              </td>-->
                         </tr>
                         @endforeach
+
                      </tbody>
                   </table>
-        </div>
+                  <center>{!! $citas->render() !!}</center>
+      </div>
 @endsection

@@ -13,7 +13,7 @@ class UsuarioController extends Controller
 {
   public function index()
    {
-      $users = User::all();
+      $users = User::paginate(8);
       return View::make('auth.index')->with('users', $users);
    }
 

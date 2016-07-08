@@ -16,6 +16,13 @@
 </div>
         <!-- page start-->
 
+  {!! Form::open(['route' => 'alumno.index', 'method' => 'GET', 'class' => 'navbar-form navbar-left pull-left', 'role' => 'search']) !!}
+<div class="form-group">
+  {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'nombres']) !!}
+</div>
+<button type="submit" class="btn btn-primary">Buscar</button>
+
+  {!! Form::close() !!}
 
 
                     <table class="table table-striped table-advance table-hover">
@@ -25,52 +32,42 @@
                            <th><i class="icon_calendar"></i> Nombres</th>
                            <th><i class="icon_profile"></i> Apellidos</th>
                            <th><i class="icon_document"></i> Convenio</th>
-                           <th colspan="4"><center><i class="icon_cogs"></i>Accion</center></th>
+                           <th colspan="4"><i class="icon_cogs"></i>Accion</th>
                         </tr>
 
-                        @foreach($alumnos as $alumnos)
+                        @foreach($alumnos as $alumno)
                         <tr>
-                          <td>{{ $alumnos->numero_documento }}</td>
-                           <td>{{ $alumnos->nombres }}</td>
-                           <td>{{ $alumnos->apellidos }}</td>
-                           <td>{{ $alumnos->convenio }}</td>
-
-
-                             <td>
+                          <td>{{ $alumno->numero_documento }}</td>
+                           <td>{{ $alumno->nombres }}</td>
+                           <td>{{ $alumno->apellidos }}</td>
+                           <td>{{ $alumno->convenio }}</td>
+                           <td>
                               <div class="btn-group">
-                                  <a class="btn btn-primary" href="{{ route('alumno.show', $alumnos)}}"><i class="fa fa-eye"></i></a>
+                                  <a class="btn btn-primary" href="{{ route('alumno.show', $alumno)}}"><i class="fa fa-eye"></i></a>
                               </div>
-                              </td>
+                           </td>
                               @role('administrativo')
-                              <td>
+                           <td>
                                <div class="btn-group">
-                                   <a class="btn btn-primary"  href="{{ route('alumno.edit', $alumnos)}}"><i class="fa fa-edit"></i></a>
+                                   <a class="btn btn-primary"  href="{{ route('alumno.edit', $alumno)}}"><i class="fa fa-edit"></i></a>
                                </div>
-                               </td>
-                               @endrole
-                               @role('salud')
-                               <td>
+                           </td>
+                           @endrole
+                           @role('salud')
+                           <td>
                                 <div class="btn-group">
-                                    <a class="btn btn-primary"  href="{{ route('cita.index', $alumnos)}}">Citas</a>
+                                    <a class="btn btn-primary"  href="{{ route('cita.index', $alumno)}}">Citas</a>
                                 </div>
-                                </td>
-                                @endrole
-
-
-
-
-
+                           </td>
+                           @endrole
                         </tr>
-
-
-
                         @endforeach
 
                      </tbody>
-
-
-
                   </table>
+                  <center>{!! $alumnos->render() !!}</center>
+
 </div>
+
 
         @endsection

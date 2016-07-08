@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Contracts\Pagination\Paginator;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 
 class User extends Authenticatable

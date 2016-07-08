@@ -93,8 +93,10 @@ Route::get('principal', [ 'middleware' => 'auth',
 
 
 );
+
+Route::group(['middleware' => 'auth'], function(){
 // Registration routes...
-Route::get('auth/register', ['middleware' => 'auth',
+Route::get('auth/register', ['middleware' => 'role:administrativo',
   'uses' => 'UsuarioController@show',
   'as' => 'auth/register'
 ]);
@@ -104,6 +106,7 @@ Route::get('register', [
   'as' => 'register'
   ]);
 Route::post('register', 'Auth\AuthController@postRegister');
+});
 
 // Password reset link request routes...
 /*Route::get('password', 'Auth\PasswordController@getEmail');
@@ -116,8 +119,9 @@ Route::post('changepassword', 'changePassword@postResetPassword');
 
 // Password reset routes...
 Route::get('reset/{token}', 'Auth\PasswordController@getReset');
-Route::post('reset', 'Auth\PasswordController@postReset');
-Route::post('nuevo','AlumnoController@save');*/
+Route::post('reset', 'Auth\PasswordController@postReset');*/
+
+
 /*Route::get('principal', function () {
     return view('principal');
 });*/
@@ -130,33 +134,38 @@ Route::group(['middleware' => 'auth'], function(){
 /**
                     * Rutas para alumnos
  */
-Route::get('method/{alumno}',[
+
+Route::resource('alumno', 'AlumnoController',
+                ['except' => ['create']]);
+Route::group(['middleware' => ['role:administrativo']], function() {
+Route::get('create', 'AlumnoController@create');
+});
+//                    Rutas para Citas medicas
+
+Route::get('method/{alumno}',['middleware' => 'role:salud',
     'uses' => 'AlumnoController@method',
     'as' => 'cita.index'
  ]);
-Route::resource('alumno', 'AlumnoController');
-});
-//                    Rutas para Citas medicas
-Route::group(['middleware' => 'auth'], function(){
-Route::get('cita/{alumno}', [
+Route::get('cita/{alumno}', ['middleware' => 'role:salud',
   'uses' => 'CitaController@seecreate',
   'as' => 'cita.seecreate'
 ]);
+
+Route::group(['middleware' => ['role:salud']], function() {
 Route::resource('cita', 'CitaController',
                 ['except' => ['index']]);
-});
-//Route::group(['prefix' => 'administrativo', 'middleware' => ['role:administrativo']], function() {
 
+});
 Route::get('auth/index', ['middleware' => 'role:administrativo',
   'uses' => 'UsuarioController@index',
   'as' => 'auth/index'
 ]);
-//});
+
 Route::get('auth/{user}', [
   'uses' => 'UsuarioController@edit',
   'as' => 'auth.edit'
 ]);
-
+});
 /*Route::post('auth/{user}', [
   'uses' => 'UsuarioController@update',
   'as' => 'auth.update'

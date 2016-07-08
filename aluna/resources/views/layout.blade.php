@@ -83,21 +83,22 @@
 
                     <h2><a href= "/principal">Menú</a></h2>
                     <ul>
-                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Registrar<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                              <li><a class="" href="/alumno/create">Alumnos</a></li>
-                                <li><a class="" href="/auth/register">Empleados</a></li>
-                            </ul>
-
-                        </li>
-                        <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Listados<b class="caret"></b></a>
+                    @role('administrativo')
+                    <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Registrar<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="" href="/alumno/create">Alumnos</a></li>
+                            <li><a class="" href="/auth/register">Empleados</a></li>
+                        </ul>
+                    </li>
+                    @endrole
+                    <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Listados<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="/alumno">Alumnos</a></li>
+                                @role('administrativo')
                                 <li><a class="" href="/auth/index">Empleados</a></li>
+                                @endrole
                             </ul>
-                        </li>
-
-
+                     </li>
                     </ul>
                 </div>
 

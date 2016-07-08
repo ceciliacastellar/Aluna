@@ -3,20 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Scope;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Alumno;
 use App\Cita;
-use Validator;
+//use Validator;
 use View;
 use DB;
 
 class AlumnoController extends Controller
 {
 
-  public function index()
+  public function index(Request $request)
    {
-      $alumnos = Alumno::all();
+
+      $alumnos = Alumno::name($request->get('name'))->paginate(8);
       return View::make('alumno.index')->with('alumnos', $alumnos);
    }
 
@@ -200,7 +204,7 @@ class AlumnoController extends Controller
         {
           $alumnos = Alumno::find($id);
           $citas = $alumnos->citas;
-          $citas = Cita::where('alumno_id', $alumnos->id)->get();
+          $citas = Cita::where('alumno_id', $alumnos->id)->paginate(8);
           return view('cita.index', ['alumnos'=>$alumnos, 'citas'=>$citas]);
         }
     //

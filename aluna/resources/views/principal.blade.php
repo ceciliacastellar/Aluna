@@ -30,13 +30,14 @@
                                   </div>
                                   <div class="h-service-content wow fadeInUp">
                                       <br> <center> <h3 id="tittlebox"> Registro de <strong>alumnos</strong> </h3><br>
-                                          <a class="btn btn-info" href="alumno/create"><span>Inscribir</span></a><br>
+                                          <a class="btn btn-info" href="create"><span>Inscribir</span></a><br>
                                           <br>
                                       </center>
                                   </div>
                               </div>
                           </div>
                           @endrole
+                          @role('administrativo')
                           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                           <div class="h-servicedos" >
                               <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
@@ -51,6 +52,39 @@
 
                           </div>
                       </div>
+                      @endrole
+                      @role('educador')
+                      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="h-servicedos" >
+                          <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
+                              <i class="fa fa-folder-open fa-lg"></i>
+                          </div>
+                          <div class="h-service-content wow fadeInUp">
+                              <br> <center> <h3 id="tittlebox"> Listar <strong>alumnos</strong> </h3><br>
+                                  <a class="btn btn-primary" href="alumno"><span>Ver</span></a><br>
+                                  <br>
+                              </center>
+                          </div>
+
+                      </div>
+                  </div>
+                  @endrole
+                      @role('salud')
+                      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <div class="h-servicetres" >
+                          <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
+                              <i class="fa fa-folder-open fa-lg"></i>
+                          </div>
+                          <div class="h-service-content wow fadeInUp">
+                              <br> <center> <h3 id="tittlebox"> Citas <strong>medicas</strong> </h3><br>
+                                  <a class="btn btn-primary" href="alumno"><span>Ver</span></a><br>
+                                  <br>
+                              </center>
+                          </div>
+
+                      </div>
+                  </div>
+                  @endrole
                       @role('administrativo')
                       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                           <div class="h-servicetres" >

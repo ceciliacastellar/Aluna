@@ -38,12 +38,12 @@
   <section id="container" class="">
 
 
-      <header class="main-header blue-bg">
+      <header class="main-header">
             <div class="logo navbar-form">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
             </div>
 
-          
+
 
       </header>
       <!--header end-->

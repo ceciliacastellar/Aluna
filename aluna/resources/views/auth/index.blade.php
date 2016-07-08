@@ -26,36 +26,27 @@
                         <tr>
                            <th><i class="icon_calendar"></i> Nombre</th>
                            <th><i class="icon_profile"></i> Email</th>
-                           <th colspan="3"><i class="icon_profile"></i> Password</th>
-                           
                         </tr>
 
-                        @foreach($users as $users)
+                        @foreach($users as $user)
                         <tr>
-                           <td>{{ $users->name }}</td>
-                           <td>{{ $users->email }}</td>
-                           <td>{{ $users->password}}</td>
-
-
-
-
-
-
-
-
+                           <td>{{ $user->name }}</td>
+                           <td>{{ $user->email }}</td>
                         </tr>
 
 
 
                         @endforeach
 
+
                      </tbody>
 
 
 
                   </table>
-
+<center>{!! $users->render() !!}</center>
             </div>
+
           </div>
           </section>
 

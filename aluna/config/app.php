@@ -152,6 +152,7 @@ return [
         //Illuminate\Html\HtmlServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
 
         /*
@@ -212,6 +213,8 @@ return [
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Bican' => Bican\Roles\RolesServiceProvider::class,
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

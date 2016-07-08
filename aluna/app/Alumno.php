@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Scope;
 
 class Alumno extends Model
 {
@@ -17,4 +18,13 @@ class Alumno extends Model
     public function cita(){
       return $this->hasMany('\App\Cita');
     }
+
+    public function scopeName($query, $name)
+    {
+    //  dd("scope:" , $name);
+    if (trim($name) != ""){
+      $query->where(\DB::raw("CONCAT(nombres,' ',apellidos,' ',convenio,' ',numero_documento,' ',programa,' ',modulo)"),"LIKE", "%$name%");
+    }
+  }
+
 }
