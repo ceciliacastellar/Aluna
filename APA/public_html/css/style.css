@@ -95,7 +95,17 @@ table tr th {
 .h-servicecuatro{
      border: ridge #7234C5 4px;
      height: 210px;
+     
 }
+.h-servicecinco{
+    border: ridge #16EBE8 4px;
+     height: 210px; 
+}
+.h-serviceseis{
+    border: ridge #fc6 4px;
+     height: 210px; 
+}
+
 #tittlebox{
     font-size: 20px;
 }
@@ -106,7 +116,8 @@ table tr th {
     margin-left: 20%;
     margin-right: 10%
    
-} 
+}
+/*--- - ----- -- -- ---- ---- Pestañas informacion niño --- ---- ----- ----- --- */
 .panel-heading .nav > li >  .alumno{
     background:#2775e2 ;
 }
@@ -156,14 +167,14 @@ table tr th {
     color: #fff;
     background:#F2731F;
 }
-
+/*--- - ----- -- -- ---- ---- Pestañas informacion niño --- ---- ----- ----- --- */
 .blue-gray{
     color: #fff;
     background: linear-gradient(90deg,#FFFFFF , #576160 , #0045A0 1500px);
     background-color: linear-gradient(90deg,#FFFFFF , #576160  , #0045A0 1500px );
         
 }
-
+/*  ---- ---- ---- --- --- --- ---- Palabra Aluna ---- --- -- --- -- -- */
 .litea{
     color: #003F73!important;
     font: bold 200% monospace
@@ -185,6 +196,7 @@ table tr th {
     font: bold 200% monospace
     
 }
+/*  ---- ---- ---- --- --- --- ---- Palabra Aluna ---- --- -- --- -- -- */
 hr {
  /* background-color: red;*/
   height: 4px;
@@ -1259,6 +1271,11 @@ div[data-role="editor-toolbar"] {
   color : #fff;
   background : #26c281;
   background-color : #26c281;
+}
+.aquamarine-bg{
+  color: #fff ;
+  background: #16EBE8;
+  background-color: #16EBE8;
 }
 .greenLight-bg {
   color: #71843f;
