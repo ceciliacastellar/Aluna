@@ -11,7 +11,7 @@
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         
 
-        <title>Menu | Fundacion Aluna </title>
+        <title>Citas del dia | Fundacion Aluna </title>
 
         <!-- Bootstrap CSS -->    
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -98,8 +98,8 @@
                     
                     <h2>Menú</h2>
                     <ul>
-                        <li><a class="" href="tabla_alumno_inscripcion.html">Alumnos registrados</a></li>
-                        <li><a class="" href="citasdeldia.html">Citas del dia</a></li>
+                        <li><a class="" href="">Alumnos registrados</a></li>
+                        <li><a class="" href="">Citas del dia</a></li>
                         <li><a class="" href="">Inventario</a></li>
                        
                        
@@ -116,105 +116,72 @@
                        <div class="col-lg-12">
 
                             
-                       <h3> <span class="page-header"><i class="fa fa-laptop"></i> Menu</span></h3>
+                       <h3> <span class="page-header"><i class="fa fa-laptop"></i> Citas del dia</span></h3>
                           
                                 <i class="fa fa-home"></i><a href="indexdocente.html">Principal</a>
+                                <i class="fa fa-home"></i><a href="">Citas del dia</a>
                                 						  	
                             
                         </div>
                     </nav>
-                         <div class="row ">
-                        <!--<div class="col-md-3 col-xs-3 col-sm-12 col-xs-12">
-                                <div class="info-box carpetas " align="center"  >
-                        <!--<a href="LINK"><img src="LINK IMAGEN"></a>-->
-
-                        <!-- <a href="Inscripcion.html"> <img src="img/icons/GenericBlue.png"></a> 
-                         <h4>Inscripcion Alumnos</h4>						
-                 </div>--><!--/.info-box-->			
-                        <!--</div>--><!--/.col-->
-                        <div class="container-box">                        
-
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="h-serviceuno " >
-                                
-                                <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
-                                    <i class="fa fa-pencil fa-lg"></i>
-                                </div>
-                                <div class="h-service-content wow fadeInUp">
-                                    <br> <center> <h3 id="tittlebox"> Alumnos<strong> registrados</strong><br></h3><br>
-                                        <a class="btn btn-info" href="tabla_alumno_inscripcion.html"><span>Ver</span></a>
-                                        <br>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="h-servicedos" >
-                                <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
-                                    <i class="fa fa-pencil-square-o fa-lg" ></i>
-                                </div>
-                                <div class="h-service-content wow fadeInUp">
-                                    <br> <center> <h3 id="tittlebox"> Citas del<strong> dia</strong> </h3><br>
-                                        <a class="btn btn-danger" href="citasdeldia.html"><span>Crear</span></a>
-                                        <br>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-
-                           
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="h-servicecuatro" >
-                                <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
-                                    <i class="fa fa-folder-open fa-lg"></i>
-                                </div>
-                                <div class="h-service-content wow fadeInUp">
-                                    <br> <center> <h3 id="tittlebox">Inven <strong> tario</strong> </h3><br>
-                                        <a class="btn btn-primary" href="l"><span>Ver</span></a>
-                                        <br>
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        
-                      
-
-
-
-                        <!-- --------------------------- calendario ------------------------------------------------------------- -->
-                        <!--<div class="row">
-                                <div class="col-md-6 portlets">
-                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                          <h2><strong>Calendar</strong></h2>
-                                        <div class="panel-actions">
-                            <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
-                            <a href="#" class="wclose"><i class="fa fa-times"></i></a>
-                        </div>  
-                         
-                        </div><br><br><br>
-                        <div class="panel-body">
-                        <!-- Widget content -->
-
-                        <!-- Below line produces calendar. I am using FullCalendar plugin. -->
-                        <!-- <div id="calendar"></div>
-                       
-                     </div>
-                   </div> 
-                    
-                 </div>
-                             
-                                     
-                       
-     
-                       </div>-->
-                        <div class="widget-foot">
-                            <!-- Footer goes here -->
-                        </div>
-                    </div>
+                   <br>
+                   <br>
+                     <!-- -------------------------------------------------- LISTADO DE CITAS QUE HAY EN EL DIA ---------------------------------- -->
                      
+                    <table class="table table-striped table-advance table-hover">
+                           <tbody>
+                              <tr>
+                                 <th><i class="icon_profile"></i> ID</th>
+                                 <th><i class="icon_profile"></i> Nombres</th>
+                                 <th><i class="icon_profile"></i> Apellidos</th>
+                                 <th><i class="icon_folder"></i> Entidad</th>
+                                 <th><i class="icon_folder"></i> Area</th>
+                                 <th><i class="icon_profile"></i> Especialista</th>
+                                 <th><i class="fa fa-clock-o"></i> Hora</th>
+                                 <th><i class="icon_cogs"></i>Acceso informacion</th>
+                              </tr>
+                              <tr>
+                                 <td>12345678</td>
+                                 <td>Ruben Dario</td>
+                                 <td>Fernandez Rhenals</td>
+                                  <td>ICBF</td>
+                                  <td>Terapia acuatica</td>
+                                  <td>Jorge Franco</td>
+                                  <td>10:00 a.m.</td>
+                                 <td>
+                                  <div class="btn-group">
+                                         
+                                      <a class="btn btn-success" href="#"><i class="fa fa-eye"></i></a>
+                                     
+                                  </div>
+                                  </td>
+                              </tr>
+                              
+                              <tr>
+                                  <td>12.345.678</td>
+                                 <td>Javier Enrique</td>
+                                 <td>Galindo Vergel</td>
+                                 <td>Exito</td>
+                                 <td>Psicologia</td>
+                                  <td>Keiner Pajaro</td>
+                                  <td>11:00 a.m.</td>
+                                 <td>
+                                  <div class="btn-group">
+                                         
+                                      <a class="btn btn-success" href="mostrarcitas.html"><i class="fa fa-eye"></i></a>
+                                     
+                                  </div>
+                                  </td>
+                              </tr>
+                              
+                             
+                            
+                              
+                              
+                                                           
+                           </tbody>
+                        </table>
+                    <!-- -------------------------------------------------- LISTADO DE CITAS QUE HAY EN EL DIA ---------------------------------- -->
                   
                
                 </div>
