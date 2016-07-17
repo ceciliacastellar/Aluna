@@ -86,7 +86,7 @@
                     @role('administrativo')
                     <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Registrar<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a class="" href="/alumno/create">Alumnos</a></li>
+                            <li><a class="" href="/create">Alumnos</a></li>
                             <li><a class="" href="/auth/register">Empleados</a></li>
                         </ul>
                     </li>

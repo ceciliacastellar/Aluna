@@ -40,18 +40,18 @@ Route::get('/start', function()
     $salud->display_name = 'usuario para personal de salud';
     $salud->save();
 
-    $vo = new Role();
-    $vo->name = 'educador';
-    $vo->display_name = 'usuario para docentes';
-    $vo->save();
+    $educador = new Role();
+    $educador->name = 'educador';
+    $educador->display_name = 'usuario para docentes';
+    $educador->save();
 
-    $user = User::where('name','=','Javier')->first();
+    $user = User::where('name','=','administrativo')->first();
     $user->attachRole($administrativo);
 
-    $user = User::where('name','=','Cecilia')->first();
+    $user = User::where('name','=','salud')->first();
     $user->attachRole($salud);
 
-    $user = User::where('name','=','Javier')->first();
+    $user = User::where('name','=','educador')->first();
     $user->attachRole($educador);
 
     $read = new Permission();
