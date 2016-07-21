@@ -14,31 +14,34 @@ class UserTableSeeder extends Seeder
     {
         $faker = Faker::create();
         DB::table('users')->insert([
-          'name' => "Javier",
+          'name' => "administrativo",
           //'area_de_trabajo' => "Personal Administrativo",
-          'email' => "javiergaliver@gmail.com",
+          'email' => "administrativo@gmail.com",
           //'role' => 'admin',
           'password' => bcrypt('1234567'),
+          'roles' => "administrativo",
           'created_at' => $faker->dateTime(),
           'updated_at' => $faker->dateTime()
       ]);
       $faker = Faker::create();
       DB::table('users')->insert([
-        'name' => "Cecilia",
+        'name' => "Salud",
         //'area_de_trabajo' => "Personal Administrativo",
-        'email' => "cecilia@gmail.com",
+        'email' => "salud@gmail.com",
         //'role' => 'admin',
         'password' => bcrypt('1234567'),
+        'roles' => "salud",
         'created_at' => $faker->dateTime(),
         'updated_at' => $faker->dateTime()
     ]);
     $faker = Faker::create();
     DB::table('users')->insert([
-      'name' => "Jairo",
+      'name' => "Educador",
       //'area_de_trabajo' => "Personal Administrativo",
-      'email' => "jairo@gmail.com",
+      'email' => "educador@gmail.com",
       //'role' => 'admin',
       'password' => bcrypt('1234567'),
+      'roles' => "educador",
       'created_at' => $faker->dateTime(),
       'updated_at' => $faker->dateTime()
   ]);

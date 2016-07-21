@@ -78,18 +78,6 @@
 					                                                </div>
 
 
-					                                            <!--  <div class="form-group col-md-5 bio-row">
-																														<label for="area_de_trabajo" class="control-label">Area de trabajo<span class="required"></span></label>
-					                                                    <div class="input-group">
-					                                                        <select class="form-control" name="area_de_trabajo">
-																																			<option value= "" selected="selected">Area de trabajo</option>
-					                                                            <option value="Personal administrativo">Personal administrativo</option>
-					                                                            <option value="Personal educativo">Personal educativo</option>
-					                                                            <option value="Personal de salud">Personal de salud</option>
-					                                                        </select>
-					                                                    </div>
-					                                                </div>-->
-
 					                                                <div class="form-group col-md-5 bio-row">
 					                                                    <div class="input-group col-md-9">
 					                                                        <label for="email" class="control-label">E-mail</label>
@@ -97,6 +85,18 @@
 					                                                        <input type="email" class="form-control" placeholder="email" name="email" value="{{ old('email') }}">
 					                                                    </div>
 					                                                </div>
+
+																													<div class="form-group col-md-5 bio-row">
+																														<div class="input-group col-md-9">
+																																<label for="roles" class="control-label">Area de trabajo<span class="required"></span></label>																																
+																																			<select class="form-control" name="roles">
+																																					<option value= "" selected="selected">Area de trabajo</option>
+																																					<option value="administrativo">Personal administrativo</option>
+																																					<option value="educador">Personal educativo</option>
+																																					<option value="salud">Personal de salud</option>
+																																			</select>
+																																	</div>
+																													</div>
 
 					                                                <div class="form-group col-md-5 bio-row">
 					                                                    <div class="input-group col-md-9">

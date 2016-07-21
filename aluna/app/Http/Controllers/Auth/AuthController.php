@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Role;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
@@ -53,21 +54,20 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-      return User::create([
+      $new_user = User::create([
           'name' => $data['name'],
           'email' => $data['email'],
           'password' => bcrypt($data['password']),
-          'tipo_usuario' => $data['tipo_usuario'],
+          'roles' => $data['roles'],
       ]);
-      /*$users = User::all();
-      if($tipo_usuario = 'administrativo'){
-        $user->attachRole($administrativo);
-      }if($tipo_usuario = 'salud'){
-        $user->attachRole($salud);
-      }
-      else($tipo_usuario = 'educador'){
-        $user->attachRole($educador);
-      }*/
+
+      $user = User::find($new_user->id);
+
+      $roles = Role::where('name', $user->roles)->firstOrFail();
+
+      $user->roles()->attach($roles->id);
+
+      return $new_user;
 
     }
 
