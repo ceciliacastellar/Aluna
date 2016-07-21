@@ -263,7 +263,7 @@
                                                 <div class="bio-row">
                                                     
                                                     <p><span><strong>SUBSIDIADO:</strong></span>
-                                                    <select class="form-control-static">
+                                                        <select class="form-control-static" name="subsidio">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -273,7 +273,7 @@
                                                     
                                                 <div class="bio-row">
                                                     <p><span><strong>NIVEL:</strong></span>
-                                                    <select class="form-control-static">
+                                                        <select class="form-control-static" name="nivel">
                                                             <option>1</option>
                                                             <option>2</option>
                                                             <option>3</option>
@@ -284,7 +284,7 @@
                                                      
                                                 <div class="bio-row">
                                                     <p><span><strong>CONTRIBUTIVO:</strong></span>
-                                                    <select class="form-control-static">
+                                                        <select class="form-control-static" name="contributivo">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -299,7 +299,7 @@
                                            <div class="form-group">
                                                     <div class="bio-row">
                                                         <p><span><strong>EPS:</strong></span>
-                                                         <select class="form-control-static">
+                                                         <select class="form-control-static" name="eps">
                                                                     <option>SI</option>
                                                                     <option>NO</option>
 
@@ -310,7 +310,7 @@
                                                
                                                
                                                     <div class="bio-row">
-                                                        <p><span><strong>CUAL:</strong></span><input class="form-control-static" id="cual" name="cual" type="text"></p>
+                                                        <p><span><strong>CUAL:</strong></span><input class="form-control-static" id="cual_inicial" name="cual_inicial" type="text"></p>
                                                              
                                                     </div>
                                             
@@ -330,7 +330,7 @@
                                                    </div>
                                                
                                                   <div class="bio-row">
-                                                      <p><span><strong>OCUPACION/TRABAJO:</strong> </span><input type="text" class="form-control-static"></p>
+                                                      <p><span><strong>OCUPACION/TRABAJO:</strong> </span><input type="text" class="form-control-static" name="trabajo"></p>
 
                                                    </div>
                                                 
@@ -403,7 +403,7 @@
                                        <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
                                            <div class="form-group ">
                                              
-                                                        <textarea class="form-control" rows="4"></textarea>
+                                               <textarea class="form-control" rows="4" name="motivo_consulta"></textarea>
                                                   
                                                
                                            </div>
@@ -439,7 +439,7 @@
                                            <div class="form-group ">
                                                
                                               
-                                                        <textarea class="form-control" rows="11"></textarea>
+                                               <textarea class="form-control" rows="11" name="inicio_curso_evolucion"></textarea>
                                                    
                                              </div>
                                                
@@ -479,7 +479,7 @@
                                                     
                                                    <div class="bio-row">
                                                        <p><span><strong>SOSTEN DE CABEZA:</strong></span>
-                                                       <select class="form-control-static">
+                                                       <select class="form-control-static" name="sosten_cabeza">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -491,7 +491,7 @@
                                                    <div class="bio-row">
                                                     
                                                        <p><span><strong>GATEO</strong></span>
-                                                       <select class="form-control-static">
+                                                       <select class="form-control-static" name=" gateo">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -503,7 +503,7 @@
                                                <div class="bio-row">
                                                     
                                                    <p><span><strong>SEDESTACION</strong></span>
-                                                   <select class="form-control-static">
+                                                   <select class="form-control-static" name=" sedestacion">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -515,7 +515,7 @@
                                                    <div class="bio-row">
                                                     
                                                        <p><span><strong>CAMINO</strong></span>
-                                                           <select class="form-control-static">
+                                                           <select class="form-control-static" name=" camino">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -528,7 +528,7 @@
                                                    <div class="bio-row">
                                                     
                                                        <p><span><strong>LATERALIDAD</strong></span>
-                                                        <select class="form-control-static">
+                                                           <select class="form-control-static" name="lateralidad">
                                                             <option>IZQUIERDA</option>
                                                             <option>DERECHA</option>
                                                             <option>NO DEFINIDA</option>
@@ -543,7 +543,7 @@
                                                <div class="form-group">
                                                     
                                                     <div class="bio-row">
-                                                        <p><span><strong>DESCRIPCION ACTUAL</strong></span> <textarea class="form-control" rows="11"></textarea></p>
+                                                        <p><span><strong>DESCRIPCION ACTUAL</strong></span> <textarea class="form-control" rows="11" name="descripcion_actual"></textarea></p>
                                                         
                                                        
                                                     </div>
@@ -558,7 +558,7 @@
                                                    <div class="bio-row">
                                                     
                                                     <p><strong>BALBUCEO</strong>
-                                                        <select class="form-control-static">
+                                                        <select class="form-control-static" name="balbuceo">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -571,7 +571,7 @@
                                                     <div class="bio-row">
                                                     
                                                         <p><span><strong>PRIMERA PALABRA</strong></span>
-                                                             <select class="form-control-static">
+                                                            <select class="form-control-static" name="primera_palabra">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -584,7 +584,7 @@
                                                     <div class="bio-row">
                                                     
                                                         <p><span><strong>PRIMERA FRASE</strong></span>
-                                                         <select class="form-control-static">
+                                                            <select class="form-control-static" name="primera_frase">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -604,7 +604,7 @@
                                                <div class="form-group">
                                                    <p><span> <strong>4.3 DESARROLLO PERSONAL </strong></span></p>
                                                    <p>(Actividades de agrado, intereses personales, oportunidades de habilitación)
-                                                   <textarea class="form-control" rows="3"></textarea>
+                                                       <textarea class="form-control" rows="3" name="desarrollo_personal"></textarea>
                                                    </p>
                                                    
                                                    
@@ -647,7 +647,7 @@
                                                <div class="form-group">
                                                    <p><span><strong> A) MAPA FAMILIAR </strong></span>
                                                    
-                                                   <textarea class="form-control" rows="3"></textarea>
+                                                       <textarea class="form-control" rows="3" name="mapa_familiar"></textarea>
                                                    </p>
                                                </div>
                                                
@@ -655,7 +655,7 @@
                                                    <p><span> <strong> B) DESCRIPCION </strong></span></p>
                                                    <p>Personas con quien vive, relaciones y parentesco entre los miembros de la familia, reglas del hogar
                                                    
-                                                   <textarea class="form-control" rows="3"></textarea>
+                                                       <textarea class="form-control" rows="3" name="mapa_familiar"></textarea>
                                                    </p>
                                                </div>
                                                
@@ -664,7 +664,7 @@
                                                    <p><span> <strong> C) ASPECTOS PSICOSOCIALES Y AMBIENTALES </strong></span></p>
                                                    <p>Redes de apoyo, nivel socioeconomico, condiciones de trabajo y vivienda.
                                                    
-                                                   <textarea class="form-control" rows="3"></textarea>
+                                                   <textarea class="form-control" rows="3" name=" aspectos_ psicosociales_ambientales"></textarea>
                                                    </p>
                                                </div>
                                                
@@ -702,7 +702,7 @@
                                                     
                                                       <p><span><strong>DURACIÓN DE EMBARAZO</strong></span>
                                                     
-                                                        <select class="form-control-static">
+                                                        <select class="form-control-static" name="duracion_embarazo">
                                                             <option>1 SEMANA</option>
                                                             <option>2 SEMANAS</option>
                                                             <option>3 SEMANAS</option>
@@ -755,7 +755,7 @@
                                                     
                                                       <p><span><strong>CONTROLES</strong></span>
                                                     
-                                                        <select class="form-control-static">
+                                                          <select class="form-control-static" name="controles">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -768,7 +768,7 @@
                                                     
                                                      <p><span><strong>ABORTO</strong></span>
                                                     
-                                                        <select class="form-control-static">
+                                                        <select class="form-control-static" name="aborto">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                          
@@ -780,7 +780,7 @@
                                                     
                                                      <p><span><strong>CAIDAS</strong></span>
                                                     
-                                                        <select class="form-control-static">
+                                                         <select class="form-control-static" name="caidas">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -793,7 +793,7 @@
                                                     
                                                      <p><span><strong>CONSUMO DE ALCOHOL</strong></span>
                                                     
-                                                        <select class="form-control-static">
+                                                        <select class="form-control-static" name="consumo_alcohol">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -806,7 +806,7 @@
                                                     
                                                      <p><span><strong>FUMÓ</strong></span>
                                                     
-                                                        <select class="form-control-static">
+                                                         <select class="form-control-static" name="fumo">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                             
@@ -820,7 +820,7 @@
                                                     
                                                    <p><span><strong>ENFERMEDADES</strong></span>
                                                    
-                                                        <select class="form-control-static">
+                                                        <select class="form-control-static" name="enfermedades">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -829,7 +829,7 @@
                                                </div>
                                                
                                                <div class="bio-row">
-                                                   <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static"></p> 
+                                                   <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static" name=" cuales_enfermedades"></p> 
                                                    
                                                </div>
                                               
@@ -837,7 +837,7 @@
                                                     
                                                   <p><span><strong>TOMO MEDICAMENTOS:</strong></span>
                                                     
-                                                        <select class="form-control-static">
+                                                        <select class="form-control-static" name="tomo_medicamentos">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -847,14 +847,14 @@
                                                
                                                <div class="bio-row">
                                                    <p><span><strong>CUALES?</strong></span> 
-                                                   <input type="text" class="form-control-static">
+                                                       <input type="text" class="form-control-static" name="cuales_medicamentos">
                                                    </p>
                                                </div> 
                                            </div>
                                            <div class="form-group">
                                                <p><span><strong> OBSERVACIONES </strong></span></p>
                                                    
-                                                   <textarea class="form-control-static" rows="3"></textarea>
+                                                   <textarea class="form-control-static" rows="3" name="observaciones"></textarea>
                                                </div>
                                                
                                                
@@ -866,7 +866,7 @@
                                                     
                                                        <p><span><strong>PARTO VAGINAL:</strong></span>
                                                     
-                                                        <select class="form-control-static">
+                                                        <select class="form-control-static" name="parto_vaginal">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -879,7 +879,7 @@
                                                     
                                                        <p><span><strong>CESAREA:</strong></span>
                                                     
-                                                        <select class="form-control-static">
+                                                           <select class="form-control-static" name="cesarea">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -892,7 +892,7 @@
                                                     
                                                        <p><span><strong>UTILIZACION DE FORCEPS:</strong></span>
                                                    
-                                                        <select class="form-control-static">
+                                                        <select class="form-control-static" name="forceps">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -903,13 +903,13 @@
                                            
                                                    <div class="form-group">
                                                    <p>Desarrollo del parto (hubo complicaciones, hemorragias, hipoxia, hospitalizacion, tipo de atencion durando el parto) </p>
-                                                 <textarea class="form-control" rows="2"></textarea>
+                                                 <textarea class="form-control" rows="2" name="desarrolo_parto"></textarea>
                                                    </div>
                                                    
                                                    <div class="form-group">
                                                        <p><span><strong> OBSERVACIONES </strong></span></p>
                                                    
-                                                   <textarea class="form-control" rows="3"></textarea>
+                                                   <textarea class="form-control" rows="3" name="obervaciones_parto"></textarea>
                                                </div>
                                               
                                            <div class="form-group">
@@ -918,7 +918,7 @@
                                                     
                                                        <p><span><strong>CONVULSIONES:</strong></span>
                                                    
-                                                        <select class="form-control-static">
+                                                           <select class="form-control-static" name="convulsiones">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -930,7 +930,7 @@
                                                     
                                                        <p><span><strong>PRIMERA CRISIS:</strong></span>
                                                    
-                                                        <select class="form-control-static">
+                                                           <select class="form-control-static" name="primera_crisis">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -941,7 +941,7 @@
                                                     
                                                        <p><span><strong>ULTIMA CRISIS:</strong></span>
                                                    
-                                                        <select class="form-control-static">
+                                                           <select class="form-control-static" name="ultima_crisis">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -952,7 +952,7 @@
                                                     
                                                        <p><span><strong>CIRUGIAS:</strong></span>
                                                    
-                                                        <select class="form-control-static">
+                                                           <select class="form-control-static" name="cirugias">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -961,7 +961,7 @@
                                                </div>
                                                  
                                                  <div class="bio-row">
-                                                   <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static"></p> 
+                                                   <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static"  name="cuales_cirugias"></p> 
                                                    
                                                </div>
                                                  
@@ -969,7 +969,7 @@
                                                     
                                                        <p><span><strong>FAMILIARES:</strong></span>
                                                    
-                                                        <select class="form-control-static">
+                                                           <select class="form-control-static" name="familiares">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -978,7 +978,7 @@
                                                </div>
                                                
                                                 <div class="bio-row">
-                                                   <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static"></p> 
+                                                    <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static" name="cuales_familiares"></p> 
                                                    
                                                </div>
                                                
@@ -986,7 +986,7 @@
                                                     
                                                        <p><span><strong>OTROS:</strong></span>
                                                    
-                                                        <select class="form-control-static">
+                                                           <select class="form-control-static" name="otros">
                                                             <option>SI</option>
                                                             <option>NO</option>
                                                         
@@ -995,13 +995,13 @@
                                                </div> 
                                                  
                                                  <div class="bio-row">
-                                                   <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static" row="2"></p> 
+                                                     <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static" row="2" name="cuales_otros"></p> 
                                                    
                                                </div>
                                                  <div class="form-group">
                                                        <p><span><strong> EXAMENES ESPECIALIZADOS </strong></span></p>
                                                    
-                                                   <textarea class="form-control" rows="3"></textarea>
+                                                       <textarea class="form-control" rows="3" name="examenes_especializados"></textarea>
                                                </div>
                                            </div>
                                       
@@ -1035,21 +1035,21 @@
                                                <div class="form-group">
                                                        <p><span><strong> PEDAGOGICOS </strong></span></p>
                                                    
-                                                   <textarea class="form-control" rows="3"></textarea>
+                                                       <textarea class="form-control" rows="3" name="pedagogicos"></textarea>
                                                </div>
                                                
                                                
                                                <div class="form-group">
                                                        <p><span><strong> TERAPEUTICOS </strong></span></p>
                                                    
-                                                   <textarea class="form-control" rows="3"></textarea>
+                                                       <textarea class="form-control" rows="3" name="terapeuticos"></textarea>
                                                </div>
                                                
                                                
                                                <div class="form-group">
                                                        <p><span><strong> FARMACOLOGICOS </strong></span></p>
                                                    
-                                                   <textarea class="form-control" rows="3"></textarea>
+                                                       <textarea class="form-control" rows="3" name="farmacologicos"></textarea>
                                                </div>
                                                
                                                
@@ -1083,7 +1083,7 @@
                                        <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
                                            <div class="form-group ">
      
-                                               <textarea class="form-control" rows="3"></textarea>
+                                               <textarea class="form-control" rows="3" name="expectativas"></textarea>
                                                
                                                
                                             </div>
@@ -1114,7 +1114,7 @@
                                        <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
                                            <div class="form-group ">
      
-                                               <textarea class="form-control" rows="4"></textarea>
+                                               <textarea class="form-control" rows="4" name=" plan_trabajo"></textarea>
                                                
                                                
                                             </div>
