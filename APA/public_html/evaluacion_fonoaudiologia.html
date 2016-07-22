@@ -195,7 +195,7 @@
                                               <div class="form-group ">
                                                          <label for="atiende" class="control-label col-sm-4">Atiende a las personas cuando le hablan <span class="required">*</span></label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="responde" name="responde" minlength="5" type="text" required />
+                                                             <input class="form-control" id="atiende" name="atiende" minlength="5" type="text" required />
                                                          </div>
                                                          
                                                      </div>
@@ -223,7 +223,7 @@
                                               <div class="form-group ">
                                              <label for="manejo" class="control-label col-sm-4">Manejo de los siguientes campos semánticos <span class="required">*</span></label>
                                                <div class="col-sm-10">         
-                                             <textarea class="form-control" rows="4"></textarea>
+                                             <textarea class="form-control" rows="4" name="manejo"></textarea>
                                                </div>
                                            </div>
                                               <div class="form-group ">
@@ -256,9 +256,9 @@
                                                      </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Anomias</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="anomias">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -267,9 +267,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Escolalias</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="escolalias">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -278,9 +278,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Perseveraciones</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="perseveraciones">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -298,9 +298,9 @@
                                               
                                                <div class="bio-row">
                                                     <p><span><strong>Analogías</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="analogias">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -309,9 +309,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Opuestos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="opuestos">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -320,9 +320,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Absurdos verbales</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="absurdos_verbales">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -331,9 +331,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Absurdos visuales</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="absurdos_visuales">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -355,9 +355,9 @@
                                              
                                               <div class="bio-row">
                                                     <p><span><strong>Produce fonemas</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="produce_fonemas">
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -366,9 +366,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Silabas</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="silabas">
+                                                        <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -377,9 +377,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Palabras</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="palabras">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -388,9 +388,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Oraciones</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="oraciones">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -399,9 +399,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Oraciones sencillas</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="oraciones_sencillas">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -410,9 +410,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Oraciones compuestas</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="oraciones_compúestas">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -444,9 +444,9 @@
                                                      </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Repite palabras</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="repite_palabras">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -455,9 +455,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Adecudo</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="adecuado">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -466,9 +466,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Inadecuado</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="inadecuado">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -538,9 +538,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Se comunica atraves de gestos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="comunica_gestos">
+                                                            <option value="si">Si</option>
+                                                            <option value=" no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -549,9 +549,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Señalamientos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="señalamientos">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -560,9 +560,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Acercamientos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="acercamientos">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -571,9 +571,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Llanto</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name=" llanto">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -582,9 +582,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Gritos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="gritos">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -593,9 +593,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Sonidos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="sonidos">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -604,9 +604,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Palabras</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="palabras2">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -615,9 +615,9 @@
                                                 </div>
                                               <div class="bio-row">
                                                     <p><span><strong>Oraciones</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="oraciones2">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -719,21 +719,21 @@
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="reflejos" class="control-label col-sm-5"><strong>Reflejos que se encuentran presentes</strong> </label>
+                                                   <label for="reflejos_presentes" class="control-label col-sm-5"><strong>Reflejos que se encuentran presentes</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="reflejos" name="reflejos" minlength="5" type="text" >
+                                                             <input class="form-control" id="reflejos_presentes" name="reflejos_presentes" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="hiper" class="control-label col-sm-5"><strong>Hipersensibilidad al tacto o a texturas perioral</strong> </label>
+                                                   <label for="hipersensibilidad_perioral" class="control-label col-sm-5"><strong>Hipersensibilidad al tacto o a texturas perioral</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="hiper" name="hiper" minlength="5" type="text" >
+                                                             <input class="form-control" id="hipersensibilidad_perioral" name="hipersensibilidad_perioral" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="hiper" class="control-label col-sm-5"><strong>Hipersensibilidad al tacto o a texturas intraoral</strong> </label>
+                                                   <label for="hipersensibilidad_intraoral" class="control-label col-sm-5"><strong>Hipersensibilidad al tacto o a texturas intraoral</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="hiper" name="hiper" minlength="5" type="text" >
+                                                             <input class="form-control" id="hipersensibilidad_intraoral" name="hipersensibilidad_intraoral" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               
@@ -745,9 +745,9 @@
                                                  </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Masticar</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="masticar">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -756,9 +756,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Deglutir</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="deglutir">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -766,45 +766,45 @@
                                                         
                                                 </div>
                                               <div class="form-group ">
-                                                   <label for="liquidos" class="control-label col-sm-5"><strong>Toma de liquidos en vaso</strong> </label>
+                                                   <label for="liquidos_vaso" class="control-label col-sm-5"><strong>Toma de liquidos en vaso</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="liquidos" name="liquidos" minlength="5" type="text" >
+                                                             <input class="form-control" id="liquidos_vaso" name="liquidos_vaso" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="liquidos" class="control-label col-sm-5"><strong>Toma de liquidos en cuchara</strong> </label>
+                                                   <label for="liquidos_cuchara" class="control-label col-sm-5"><strong>Toma de liquidos en cuchara</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="liquidos" name="liquidos" minlength="5" type="text" >
+                                                             <input class="form-control" id="liquidos_cuchara" name="liquidos_cuchara" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="liquidos" class="control-label col-sm-5"><strong>Tipo de consistencias alimenticias: liquidos claros</strong> </label>
+                                                   <label for="liquidos_claros" class="control-label col-sm-5"><strong>Tipo de consistencias alimenticias: liquidos claros</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="liquidos" name="liquidos" minlength="5" type="text" >
+                                                             <input class="form-control" id="liquidos_claros" name="liquidos_claros" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="alimenticias" class="control-label col-sm-5"><strong>Liquidos expresos</strong> </label>
+                                                   <label for="liquidos_espesos" class="control-label col-sm-5"><strong>Liquidos espesos</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="alimenticias" name="alimenticias" minlength="5" type="text" >
+                                                             <input class="form-control" id="liquidos_espesos" name="liquidos_espesos" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="alimenticias" class="control-label col-sm-5"><strong>Semi sólidos</strong> </label>
+                                                   <label for="semi_solidos" class="control-label col-sm-5"><strong>Semi sólidos</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="alimenticias" name="alimenticias" minlength="5" type="text" >
+                                                             <input class="form-control" id="semi_solidos" name="semi_solidos" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="alimenticias" class="control-label col-sm-5"><strong>Sólidos blandos</strong> </label>
+                                                   <label for="solidos_blandos" class="control-label col-sm-5"><strong>Sólidos blandos</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="alimenticias" name="alimenticias" minlength="5" type="text" >
+                                                             <input class="form-control" id="solidos_blandos" name="solidos_blandos" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="alimenticias" class="control-label col-sm-5"><strong>Sólidos(secos, duros, disgregantes)</strong> </label>
+                                                   <label for="solidos" class="control-label col-sm-5"><strong>Sólidos(secos, duros, disgregantes)</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="alimenticias" name="alimenticias" minlength="5" type="text" >
+                                                             <input class="form-control" id="solidos" name="solidos" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
@@ -826,9 +826,9 @@
                                           <div class="row">
                                           
                                               <div class="form-group ">
-                                                   <label for="estable" class="control-label col-sm-4"><strong>Estable contacto y segumiento visual</strong> </label>
+                                                   <label for="estable_contacto" class="control-label col-sm-4"><strong>Estable contacto y segumiento visual</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="estable" name="estable" minlength="5" type="text" >
+                                                             <input class="form-control" id="estable_contacto" name="estable_contacto" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
@@ -839,28 +839,28 @@
                                                  </div>
                                               
                                               <div class="form-group ">
-                                                   <label for="voces" class="control-label col-sm-5"><strong>Reacciona ante ruidos fuertes y estimulacion auditiva</strong> </label>
+                                                   <label for="voces_fuertes" class="control-label col-sm-5"><strong>Reacciona ante ruidos fuertes y estimulacion auditiva</strong> </label>
                                                          <div class="col-sm-10">
-                                                             <input class="form-control" id="voces" name="voces" minlength="5" type="text" >
+                                                             <input class="form-control" id="voces_fuertes" name="voces_fuertes" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="voces" class="control-label col-sm-5"><strong>Ubica fuente sonora</strong> </label>
+                                                   <label for="fuente_sonora" class="control-label col-sm-5"><strong>Ubica fuente sonora</strong> </label>
                                                          <div class="col-sm-3">
-                                                             <input class="form-control" id="voces" name="voces" minlength="5" type="text" >
+                                                             <input class="form-control" id="fuente_sonora" name="fuente_sonora" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               
                                               <div class="form-group ">
-                                                   <label for="contacto" class="control-label col-sm-5"><strong>Tolera contacto corporal</strong> </label>
+                                                   <label for="contacto_corporal" class="control-label col-sm-5"><strong>Tolera contacto corporal</strong> </label>
                                                          <div class="col-sm-3">
-                                                             <input class="form-control" id="contacto" name="contacto" minlength="5" type="text" >
+                                                             <input class="form-control" id="contacto_corporal" name="contacto_corporal" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="contacto" class="control-label col-sm-5"><strong>Con texturas</strong> </label>
+                                                   <label for="texturas" class="control-label col-sm-5"><strong>Con texturas</strong> </label>
                                                          <div class="col-sm-3">
-                                                             <input class="form-control" id="contacto" name="contacto" minlength="5" type="text" >
+                                                             <input class="form-control" id="texturas" name="texturas" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               
@@ -878,9 +878,9 @@
                                           <div class="row">
                                             <div class="bio-row">
                                                     <p><span><strong>Lengua: Subirla</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="lengua_subirla">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -889,9 +889,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Sacarla</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="lengua_sacarla">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -900,9 +900,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Llevarla a los lados</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="llevarla_lados">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -911,9 +911,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>vibrarla</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="vibrarla">
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -922,9 +922,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>chasquiar</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="chasquiar">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -933,9 +933,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Lamer los labios</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="lamer_labios">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -944,9 +944,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Labios: Vibrarlos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="labios_vibrarlos">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -955,9 +955,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Sonarlos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="sonarlos">
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -966,9 +966,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>hacer muecas</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="hacer_muecas">
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -977,9 +977,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Levantarlos adelante</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="levantarlos_adelante">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -988,9 +988,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Levartarlo atras</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="levantarlos_atras">
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -999,9 +999,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>Tirar besos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="tirar_besos">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -1009,21 +1009,21 @@
                                                         
                                                 </div>
                                            <div class="form-group ">
-                                                   <label for="soplo" class="control-label col-sm-5"><strong>Soplo abierto</strong> </label>
+                                                   <label for="soplo_abierto" class="control-label col-sm-5"><strong>Soplo abierto</strong> </label>
                                                          <div class="col-sm-3">
-                                                             <input class="form-control" id="soplo" name="soplo" minlength="5" type="text" >
+                                                             <input class="form-control" id="soplo_abierto" name="soplo_abierto" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="soplo" class="control-label col-sm-5"><strong>Soplo cerrado</strong> </label>
+                                                   <label for="soplo_cerrado" class="control-label col-sm-5"><strong>Soplo cerrado</strong> </label>
                                                          <div class="col-sm-3">
-                                                             <input class="form-control" id="soplo" name="soplo" minlength="5" type="text" >
+                                                             <input class="form-control" id="soplo_cerrado" name="soplo_cerrado" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               <div class="form-group ">
-                                                   <label for="boca" class="control-label col-sm-5"><strong>Abrir y cerrar boca</strong> </label>
+                                                   <label for="boca_abce" class="control-label col-sm-5"><strong>Abrir y cerrar boca</strong> </label>
                                                          <div class="col-sm-3">
-                                                             <input class="form-control" id="boca" name="boca" minlength="5" type="text" >
+                                                             <input class="form-control" id="boca_abce" name="boca_abce" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                               
@@ -1059,19 +1059,19 @@
                                                          </div>
                                                  </div>
                                                <div class="form-group ">
-                                                   <label for="lectura" class="control-label col-sm-5"><strong>Lectura espontanea</strong> </label>
+                                                   <label for="lectura_espontanea" class="control-label col-sm-5"><strong>Lectura espontanea</strong> </label>
                                                          <div class="col-sm-3">
-                                                             <input class="form-control" id="lectura" name="lectura" minlength="5" type="text" >
+                                                             <input class="form-control" id="lectura_espontanea" name="lectura_espontanea" minlength="5" type="text" >
                                                          </div>
                                                  </div> <div class="form-group ">
-                                                   <label for="lectura" class="control-label col-sm-5"><strong>Lectura comprensiva: por el</strong> </label>
+                                                   <label for="lectura_compresiva" class="control-label col-sm-5"><strong>Lectura comprensiva: por el</strong> </label>
                                                          <div class="col-sm-3">
-                                                             <input class="form-control" id="lectura" name="lectura" minlength="5" type="text" >
+                                                             <input class="form-control" id="lectura_comprensiva" name="lectura_comprensiva" minlength="5" type="text" >
                                                          </div>
                                                  </div> <div class="form-group ">
-                                                   <label for="lectura" class="control-label col-sm-5"><strong>Por otro</strong> </label>
+                                                   <label for="lectura_otro" class="control-label col-sm-5"><strong>Por otro</strong> </label>
                                                          <div class="col-sm-3">
-                                                             <input class="form-control" id="lectura" name="lectura" minlength="5" type="text" >
+                                                             <input class="form-control" id="lectura_otro" name="lectura_otro" minlength="5" type="text" >
                                                          </div>
                                                  </div>
                                           </div>
@@ -1145,7 +1145,7 @@
                                                Observaciones y recomendaciones
                                            </div>
                                           <div class="row">
-                                             <textarea class="form-control" rows="14"></textarea>
+                                             <textarea class="form-control" rows="14" name="observaciones_fonoa"></textarea>
                                           </div>
                                       </div>
                                     </section>

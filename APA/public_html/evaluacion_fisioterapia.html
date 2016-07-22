@@ -154,11 +154,11 @@
                                                <div class="form-group">
                                              
                                                  <div class="bio-row">
-                                                    <p><span><strong>1. Alerta</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
-                                                            <option>N.A</option>
+                                                    <p for="alerta_fisio"><span><strong>1. Alerta</strong></span>
+                                                        <select class="form-control-static" name="alerta_fisio">
+                                                            <option value="Si">Si</option>
+                                                            <option value="No">No</option>
+                                                            <option value="N.A">N.A</option>
                                                             
                                                         </select>
                                                     </p>
@@ -166,11 +166,11 @@
                                                         
                                                 </div>
                                                 <div class="bio-row">
-                                                    <p><span><strong>2. Orientado</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
-                                                            <option>N.A</option>
+                                                    <p for="orientado_fisio"><span><strong>2. Orientado</strong></span>
+                                                        <select class="form-control-static" name="orientado_fisio">
+                                                            <option value="Si">Si</option>
+                                                            <option value="No">No</option>
+                                                            <option value="N.A">N.A</option>
                                                         </select>
                                                     </p>
                                                     
@@ -178,10 +178,10 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>3. Lenguaje</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
-                                                            <option>N.A</option>
+                                                    <select class="form-control-static" name="lenguaje_fisio">
+                                                            <option value="Si">Si</option>
+                                                            <option value="No">No</option>
+                                                            <option value="N.A">N.A</option>
                                                         </select>
                                                     </p>
                                                     
@@ -189,10 +189,10 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>4. Sensopercepción</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
-                                                            <option>N.A</option>
+                                                    <select class="form-control-static" name="sensopercepcion_fisio">
+                                                        <option value="Si">Si</option>
+                                                        <option value="No">No</option>
+                                                        <option value="N.A">N.A</option>
                                                         </select>
                                                     </p>
                                                     
@@ -200,9 +200,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>5. Alteración de pares craneales</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="alteracion_pares_craneales_fisio">
+                                                            <option value="Si">Si</option>
+                                                            <option value="No">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -211,7 +211,7 @@
                                                 </div>
                                                    <div class="bio-row">
                                                     <p><span><strong>¿Cual?</strong></span>
-                                                        <input class=" form-control-static " id="cual1" name="cual1"  type="text">
+                                                        <input class=" form-control-static " id="cual_pares_fisio" name="cual_pares_fisio"  type="text">
                                                     </p>
                                                     
                                                         
@@ -221,13 +221,13 @@
                                                     <p><span><strong>6. Fuerza muscular</strong></span></p>
                                                     <div class="btn-group btn-group-justified" role="group" aria-label="...">
                                                         <div class="btn-group" role="group">
-                                                            <button type="button" class="btn btn-default"><center>1</center></button>
+                                                            <button type="button" class="btn btn-default">1</button>
                                                         </div>
                                                         <div class="btn-group btn-md" role="group">
-                                                            <button type="button" class="btn btn-default"><center>2</center></button>
+                                                            <button type="button" class="btn btn-default">2</button>
                                                         </div>
                                                         <div class="btn-group btn-md" role="group">
-                                                            <button type="button" class="btn btn-default"><center>3</center></button>
+                                                            <button type="button" class="btn btn-default">3</button>
                                                         </div>
                                                         <div class="btn-group btn-md" role="group">
                                                           <button type="button" class="btn btn-default">4-</button>
@@ -246,12 +246,12 @@
                                                
                                                  <div class="bio-row">
                                                     <p><span><strong>7. Trofismo</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Hipotrófico</option>
-                                                            <option>Eutrófico</option>
-                                                             <option>Atrofia</option>
-                                                            <option>Hipertrofia</option>
-                                                            <option>Pseudohipertrofia</option>
+                                                        <select class="form-control-static" name="trofismo_fisio">
+                                                            <option value="hipotrofico">Hipotrófico</option>
+                                                            <option value="eutrofico">Eutrófico</option>
+                                                            <option value="atrofia">Atrofia</option>
+                                                            <option value="hipertrofia">Hipertrofia</option>
+                                                            <option value="pseudohipertrofia">Pseudohipertrofia</option>
                                                         </select>
                                                     </p>
                                                     
@@ -261,13 +261,13 @@
                                                
                                                 <div class="bio-row">
                                                     <p><span><strong>8. Tono</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Normo-tónico</option>
-                                                            <option>Hipotónico</option>
-                                                             <option>Atonía</option>
-                                                            <option>Hipertonía</option>
-                                                            <option>Espasticidad</option>
-                                                            <option>Riqidez</option>
+                                                    <select class="form-control-static" name="tono_fisio">
+                                                        <option value="normo-tonico">Normo-tónico</option>
+                                                            <option value="hipotonico">Hipotónico</option>
+                                                             <option value="atonia">Atonía</option>
+                                                             <option value="hipertonia">Hipertonía</option>
+                                                             <option value="espasticidad">Espasticidad</option>
+                                                             <option value="rigidez">Rigidez</option>
                                                         </select>
                                                     </p>
                                                     
@@ -276,19 +276,19 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>Distribución</strong></span>
-                                                        <input class=" form-control-static " id="distribucion" name="distribucion"  type="text">
+                                                        <input class=" form-control-static " id="distribucion_fisio" name="distribucion_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>9. Reflejos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Normoreflexia</option>
-                                                            <option>Arreflexia</option>
-                                                             <option>Hiporreflexia</option>
-                                                            <option>Hiperreflexia</option>
-                                                            <option>Clonus</option>
+                                                        <select class="form-control-static" name="reflejos_fisio">
+                                                            <option value="normoreflexia">Normoreflexia</option>
+                                                            <option value="arreflexia">Arreflexia</option>
+                                                            <option value="hiporreflexia">Hiporreflexia</option>
+                                                            <option value="hiperreflexia">Hiperreflexia</option>
+                                                            <option value="clonus">Clonus</option>
                                                             
                                                         </select>
                                                     </p>
@@ -297,7 +297,7 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Signos patologicos:</strong></span>
-                                                        <input class=" form-control-static " id="signos" name="signos"  type="text">
+                                                        <input class=" form-control-static " id="signos_fisio" name="signos_fisio"  type="text">
                                                     </p>
                                                     
                                                         
@@ -306,10 +306,10 @@
                                                <div class="form-group">
                                                <div class="bio-row">
                                                     <p><span><strong>10. Sensibilidad superficial</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>C</option>
-                                                            <option>Alt</option>
-                                                            <option>N.E</option>
+                                                    <select class="form-control-static" name=" sensibilidad_superficial_fisio">
+                                                        <option value="c">C</option>
+                                                        <option value="alt">Alt</option>
+                                                        <option value="n.e">N.E</option>
                                                         </select>
                                                     </p>
                                                     
@@ -318,10 +318,10 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>11. Sensibilidad profunda</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>C</option>
-                                                            <option>Alt</option>
-                                                            <option>N.E</option>
+                                                        <select class="form-control-static" name="sensibilidad_profunda_fisio">
+                                                            <option value="c">C</option>
+                                                            <option value="alt">Alt</option>
+                                                            <option value="n.e">N.E</option>
                                                         </select>
                                                     </p>
                                                     
@@ -329,10 +329,10 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>12. Control de cabeza</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>B</option>
-                                                            <option>R</option>
-                                                            <option>M</option>
+                                                        <select class="form-control-static" name="control_cabeza_fisio">
+                                                            <option value="b">B</option>
+                                                            <option value="r">R</option>
+                                                            <option value="m">M</option>
                                                         </select>
                                                     </p>
                                                     
@@ -341,10 +341,10 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>13. Control de tronco</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>B</option>
-                                                            <option>R</option>
-                                                            <option>M</option>
+                                                        <select class="form-control-static" name="control_tronco_fisio">
+                                                            <option value="b">B</option>
+                                                            <option value="r">R</option>
+                                                            <option value="m">M</option>
                                                         </select>
                                                     </p>
                                                     
@@ -353,9 +353,9 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>14. Realiza progresiones posicionales</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="progresiones_posicionales_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -364,9 +364,9 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>15. Realiza rolados</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="rolados_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -375,11 +375,11 @@
                                                 </div>
                                                
                                                 <div class="bio-row">
-                                                    <p><span><strong>16. Matones de mov. selectivo</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>B</option>
-                                                            <option>R</option>
-                                                            <option>M</option>
+                                                    <p><span><strong>16. Patrones de mov. selectivo</strong></span>
+                                                        <select class="form-control-static" name="patrones_mov_selectivo_fisio">
+                                                          <option value="b">B</option>
+                                                            <option value="r">R</option>
+                                                            <option value="m">M</option>
                                                         </select>
                                                     </p>
                                                     
@@ -389,9 +389,9 @@
                                                <div class="form-group">
                                                 <div class="bio-row">
                                                     <p><span><strong>17. Presenta reacciones</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="reacciones_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -401,16 +401,16 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>¿Cuales?</strong></span>
-                                                        <input class=" form-control-static " id="cuales" name="cuales"  type="text">
+                                                        <input class=" form-control-static " id="cuales_reaccioness_fisio" name="cuales_reaccioness_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>18. Se desplaza</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="desplaza_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -420,23 +420,23 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>¿Como lo hace?</strong></span>
-                                                        <input class=" form-control-static " id="como" name="como"  type="text">
+                                                        <input class=" form-control-static " id="como_hace_desplaza_fisio" name="como_hace_desplaza_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>19. Caracteristicas de la pelvis</strong></span>
-                                                        <input class=" form-control-static " id="pelvis" name="pelvis"  type="text">
+                                                        <input class=" form-control-static " id="pelvis_fisio" name="pelvis_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>20. Altración en pelvis</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="alteracion_pelvis_fisio">
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -446,7 +446,7 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>¿Cual?</strong></span>
-                                                        <input class=" form-control-static " id="cual" name="cual"  type="text">
+                                                        <input class=" form-control-static " id="cual_alteracion_pelvis_fisio" name="cual_alteracion_pelvis_fisio"  type="text">
                                                     </p>
                                                     
                                                         
@@ -454,9 +454,9 @@
                                                 
                                                 <div class="bio-row">
                                                     <p><span><strong>21. Altración de postura</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="alteracion_postura_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -466,7 +466,7 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>¿Cual?</strong></span>
-                                                        <input class=" form-control-static " id="cual" name="cual"  type="text">
+                                                        <input class=" form-control-static " id="cual_alteracion_postura_fisio" name="cual_alteracion_postura_fisio"  type="text">
                                                     </p>
                                                     
                                                         
@@ -475,9 +475,9 @@
                                                 
                                                 <div class="bio-row">
                                                     <p><span><strong>22. Presenta restricciones</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="restricciones_fisio">
+                                                        <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -487,16 +487,16 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>¿Donde?</strong></span>
-                                                        <input class=" form-control-static " id="donde" name="donde"  type="text">
+                                                        <input class=" form-control-static " id="donde_restricciones_fisio" name="donde_restricciones_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
                                                 <div class="bio-row">
-                                                    <p><span><strong>23. SE aplicaron pruebas especialess</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <p><span><strong>23. Se aplicaron pruebas especialess</strong></span>
+                                                    <select class="form-control-static" name="pruebas_especiales_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -506,16 +506,16 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>¿Cuales?</strong></span>
-                                                        <input class=" form-control-static " id="cuales" name="cuales"  type="text">
+                                                        <input class=" form-control-static " id="cuales_pruebas_especiales_fisio" name="cuales_pruebas_especiales_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>24. Presenta deformidades</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="deformaciones_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -525,7 +525,7 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>¿Cuales?</strong></span>
-                                                        <input class=" form-control-static " id="cuales" name="cuales"  type="text">
+                                                        <input class=" form-control-static " id="cuales_deformaciones_fisio" name="cuales_deformaciones_fisio"  type="text">
                                                     </p>
                                                     
                                                         
@@ -535,7 +535,7 @@
                                                <div class="form-group">
                                                <div class="bio-row">
                                                     <p><span><strong>25. Longitud real del MID</strong></span>
-                                                        <input class=" form-control-static " id="mid" name="mid"  type="text">
+                                                        <input class=" form-control-static " id="mid_fisio" name="mid_fisio"  type="text">
                                                     </p>
                                                     
                                                         
@@ -544,7 +544,7 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>26. Longitud real MII</strong></span>
-                                                        <input class=" form-control-static " id="mii" name="mii"  type="text">
+                                                        <input class=" form-control-static " id="mii_fisio" name="mii_fisio"  type="text">
                                                     </p>
                                                     
                                                         
@@ -552,14 +552,14 @@
                                                
                                                   <div class="bio-row">
                                                     <p><span><strong>27. Componente de torsión tibial</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="torsion_tibial_fisio">
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
                                                             
                                                         </select>
-                                                        <select class="form-control-static">
-                                                            <option>Torsión tibial izquierda</option>
-                                                            <option>Torsión tibial derecha</option>
+                                                        <select class="form-control-static"name="torsion_tibial2_fisio">
+                                                            <option value="torsión tibial izquierda">Torsión tibial izquierda</option>
+                                                            <option value="torsión tibial derecha">Torsión tibial derecha</option>
                                                             
                                                         </select>
                                                     </p>
@@ -568,14 +568,14 @@
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>28. Patrón respiratorio</strong></span>
-                                                        <input class=" form-control-static " id="patron" name="patron"  type="text">
+                                                        <input class=" form-control-static " id="patron_respiratorio_fisio" name="patron_respiratorio_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
                                                 <div class="bio-row">
                                                     <p><span><strong>29. A la auscultación</strong></span>
-                                                        <input class=" form-control-static " id="aus" name="aus"  type="text">
+                                                        <input class=" form-control-static " id="auscultacion_fisio" name="auscultacion_fisio"  type="text">
                                                     </p>
                                                     
                                                         
@@ -583,10 +583,10 @@
                                                </div>
                                                <div class="form-group">
                                                <div class="bio-row">
-                                                    <p><span><strong>30. Camina en putna de pie</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <p><span><strong>30. Camina en punta de pie</strong></span>
+                                                        <select class="form-control-static" name="camina_punta_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -595,9 +595,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>31. Camina sobre talones</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="camina_talones_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -606,9 +606,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>32. Camina hacia atras</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="camina_atras_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -617,9 +617,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>33. Camina hacia los lados</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="camina_lados_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -628,9 +628,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>34. Camina en cuclillas</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="camina_cuclillas_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -639,9 +639,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>35. Camina en barra de equilibrio</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="camina_equilibrio_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -650,9 +650,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>36. Se sostiene en un solo pie</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="sostiene_pie_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -661,9 +661,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>37. Sube y baja escaleras</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="escaleras_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -673,9 +673,9 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>38. Sube y baja rampa</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="rampa_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -684,9 +684,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>39. Corre</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="corre_fisio">
+                                                        <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -695,9 +695,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>40. Salta </strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                    <select class="form-control-static" name="salta_fisio">
+                                                        <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -706,9 +706,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>41. Sortea obstaculos</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="obstaculos_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -717,9 +717,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>42. Lanza</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="lanza_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -728,9 +728,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>43. Atrapa</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="atrapa_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -739,9 +739,9 @@
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>44. Patea</strong></span>
-                                                    <select class="form-control-static">
-                                                            <option>Si</option>
-                                                            <option>No</option>
+                                                        <select class="form-control-static" name="patea_fisio">
+                                                            <option value="si">Si</option>
+                                                            <option value="no">No</option>
                                                             
                                                         </select>
                                                     </p>
@@ -751,7 +751,7 @@
                                                
                                                <div class="bio-row">
                                                     <p><span><strong>Nivel de funcionalidad</strong></span>
-                                                        <input class=" form-control-static " id="nivel" name="nivel"  type="text">
+                                                        <input class=" form-control-static " id="nivel_fisio" name="nivel_fisio"  type="text">
                                                     </p>
                                                     
                                                         
@@ -759,27 +759,28 @@
                                                </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Dx Fisioterapéutico</strong></span>
-                                                        <input class=" form-control-static " id="nivel" name="nivel"  type="text">
+                                                        <input class=" form-control-static " id="fisioterapeutico_fisio" name="fisioterapeutico_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Principal problema motor</strong></span>
-                                                        <input class=" form-control-static " id="nivel" name="nivel"  type="text">
+                                                        <input class=" form-control-static " id="motor_fisio" name="motor_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
                                                <div class="bio-row">
                                                     <p><span><strong>Recomendaciones</strong></span>
-                                                       1. <input class=" form-control-static " id="nivel" name="nivel"  type="text">                                                      
-                                                       2. <input class=" form-control-static " id="nivel" name="nivel"  type="text">                                                       
-                                                       3. <input class=" form-control-static " id="nivel" name="nivel"  type="text">
+                                                       1. <input class=" form-control-static " id="recomendaciones1_fisio" name=recomendaciones1_fisio"  type="text">                                                      
+                                                       2. <input class=" form-control-static " id="recomendaciones2_fisio" name="recomendaciones2_fisio"  type="text">                                                       
+                                                       3. <input class=" form-control-static " id="recomendaciones3_fisio" name="recomendaciones3_fisio"  type="text">
                                                     </p>
                                                     
                                                         
                                                 </div>
+                                               
                                                
                                                
                                                
