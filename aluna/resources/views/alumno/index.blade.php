@@ -23,6 +23,7 @@
 <button type="submit" class="btn btn-primary">Buscar</button>
 
   {!! Form::close() !!}
+  <a href="{{ route('pdf.invoice') }}" class="btn btn-primary pull-right"><i class="fa fa-cloud-download"></i></a>
 
 
                     <table class="table table-striped table-advance table-hover">
@@ -57,6 +58,13 @@
                            <td>
                                 <div class="btn-group">
                                     <a class="btn btn-primary"  href="{{ route('cita.index', $alumno)}}">Citas</a>
+                                </div>
+                           </td>
+                           @endrole
+                           @role('salud')
+                           <td>
+                                <div class="btn-group">
+                                    <a class="btn btn-primary"  href="{{ route('formatos.salud', $alumno)}}">Otros</a>
                                 </div>
                            </td>
                            @endrole

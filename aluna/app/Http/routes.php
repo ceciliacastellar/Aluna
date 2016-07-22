@@ -165,6 +165,26 @@ Route::get('auth/{user}', [
   'uses' => 'UsuarioController@edit',
   'as' => 'auth.edit'
 ]);
+
+
+
+Route::get('pdf/invoice',[
+  'uses'=> 'PdfController@invoice',
+  'as' => 'pdf.invoice'
+]);
+
+Route::get('formatos/{alumno}', ['middleware' => 'role:salud',
+  'uses' => 'FormatosController@salud',
+  'as' => 'formatos.salud'
+]);
+
+Route::get('formatos/hisotriaini/{alumno}', ['middleware' => 'role:salud',
+  'uses' => 'FormatosController@createini',
+  'as' => 'formatos.historiaini'
+]);
+
+
+
 });
 /*Route::post('auth/{user}', [
   'uses' => 'UsuarioController@update',
