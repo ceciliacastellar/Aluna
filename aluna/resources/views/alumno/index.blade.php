@@ -33,7 +33,12 @@
                            <th><i class="icon_calendar"></i> Nombres</th>
                            <th><i class="icon_profile"></i> Apellidos</th>
                            <th><i class="icon_document"></i> Convenio</th>
+                           @role('administrativo')
                            <th colspan="4"><i class="icon_cogs"></i>Accion</th>
+                           @endrole
+                           @role('salud')
+                           <th colspan="4"><i class="icon_cogs"></i>Ver perfil del alumno/Area de salud</th>
+                           @endrole
                         </tr>
 
                         @foreach($alumnos as $alumno)
@@ -43,11 +48,18 @@
                            <td>{{ $alumno->apellidos }}</td>
                            <td>{{ $alumno->convenio }}</td>
                            <td>
+                             @role('educador')
                               <div class="btn-group">
                                   <a class="btn btn-primary" href="{{ route('alumno.show', $alumno)}}"><i class="fa fa-eye"></i></a>
                               </div>
                            </td>
+                           @endrole
                               @role('administrativo')
+                              <td>
+                                 <div class="btn-group">
+                                     <a class="btn btn-primary" href="{{ route('alumno.show', $alumno)}}"><i class="fa fa-eye"></i></a>
+                                 </div>
+                              </td>
                            <td>
                                <div class="btn-group">
                                    <a class="btn btn-primary"  href="{{ route('alumno.edit', $alumno)}}"><i class="fa fa-edit"></i></a>
@@ -56,15 +68,13 @@
                            @endrole
                            @role('salud')
                            <td>
-                                <div class="btn-group">
-                                    <a class="btn btn-primary"  href="{{ route('cita.index', $alumno)}}">Citas</a>
-                                </div>
+                              <div class="btn-group">
+                                  <a class="btn btn-primary" href="{{ route('alumno.show', $alumno)}}"><i class="fa fa-eye"></i></a>
+                              </div>
                            </td>
-                           @endrole
-                           @role('salud')
                            <td>
                                 <div class="btn-group">
-                                    <a class="btn btn-primary"  href="{{ route('formatos.salud', $alumno)}}">Otros</a>
+                                    <a class="btn btn-primary"  href="{{ route('formatos.salud', $alumno)}}"><i class="fa fa-user-md"></i></a>
                                 </div>
                            </td>
                            @endrole

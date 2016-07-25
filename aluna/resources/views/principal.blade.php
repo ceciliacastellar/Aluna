@@ -76,7 +76,7 @@
                               <i class="fa fa-folder-open fa-lg"></i>
                           </div>
                           <div class="h-service-content wow fadeInUp">
-                              <br> <center> <h3 id="tittlebox"> Citas <strong>medicas</strong> </h3><br>
+                              <br> <center> <h3 id="tittlebox"> Listado de <strong>alumnos</strong> </h3><br>
                                   <a class="btn btn-primary" href="alumno"><span>Ver</span></a><br>
                                   <br>
                               </center>

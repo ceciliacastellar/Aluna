@@ -14,7 +14,9 @@
                     <h3 class="page-header"><i class="fa fa-laptop"></i> Citas Medicas</h3>
                     <ol class="breadcrumb">
                       <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
-                      <li><i class="fa fa-table"><a href="/alumno"></i>Listado de alumnos</a></li>
+                      <li><i class="fa fa-table"></i><a href="/alumno">Listado de alumnos</a></li>
+                      <li><i class="fa fa-th-list"></i> <a href="{{ route('formatos.salud', $alumnos)}}">Area de salud de: {{ $alumnos->nombres }}{{ $alumnos->apellidos }}</a></li>
+                      <li><i class="fa fa-th-list"></i><a href="{{ route('cita.index', $alumnos)}}">Listado de citas</a></li>
                       <li><i class="fa fa-stethoscope"></i>Crear cita medica</li>
                     </ol>
                 </div>

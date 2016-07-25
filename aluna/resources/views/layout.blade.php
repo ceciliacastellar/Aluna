@@ -20,6 +20,9 @@
     <link href="/css/elegant-icons-style.css" rel="stylesheet" />
     <link href="/css/font-awesome.min.css" rel="stylesheet" />
 
+    <script src="/js/jquery.scrollTo.min.js"></script>
+    <script src="/js/jquery.nicescroll.js" type="text/javascript"></script>
+
     <!-- Custom styles -->
 
 	<link href="/css/widgets.css" rel="stylesheet">
@@ -111,6 +114,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script src="/js/abrir.js"></script>
   <script src="/js/jquery-1.11.3.min.js"></script>
+  <script src="/js/jquery.slimscroll.min.js"></script>
 
 	@yield('scripts')
 </body>

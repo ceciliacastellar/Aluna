@@ -13,7 +13,7 @@
                     <ol class="breadcrumb">
                       <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
                       <li><i class="fa fa-table"></i><a href="/alumno">Listado de alumnos</a></li>
-                      <li><i class="fa fa-th-list"><a href="/cita"></i>Listado de citas</a></li>
+                      <li><i class="fa fa-th-list"></i>Listado de citas</li>
                       <li><i class="fa fa-th-list"></i>Cita de {{ $citas->alumno->nombres}} {{ $citas->alumno->apellidos }} </li>
 
                     </ol>

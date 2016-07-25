@@ -183,6 +183,11 @@ Route::get('formatos/hisotriaini/{alumno}', ['middleware' => 'role:salud',
   'as' => 'formatos.historiaini'
 ]);
 
+Route::post('formatos.saveini', ['middleware' => 'role:salud',
+  'uses' => 'FormatosController@saveini',
+  'as' => 'formatos.saveini'
+]);
+
 
 
 });

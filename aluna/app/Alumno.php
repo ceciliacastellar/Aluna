@@ -19,6 +19,10 @@ class Alumno extends Model
       return $this->hasMany('\App\Cita');
     }
 
+    public function historiaini(){
+      return $this->hasMany('\App\Historiaini');
+    }
+
     public function scopeName($query, $name)
     {
     //  dd("scope:" , $name);

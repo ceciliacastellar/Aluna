@@ -131,15 +131,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 30px;
+  margin-right: 100px;
 }
 
 table th,
 table td {
-  text-align: center;
+  text-align: justify;
 }
 
 table th {
-  padding: 5px 20px;
+  padding: 5px 0px;
   color: #5D6975;
   border-bottom: 1px solid #C1CED9;
   white-space: nowrap;
@@ -152,13 +153,14 @@ table .desc {
 }
 
 table td {
-  padding: 20px;
-  text-align: right;
+  padding: 10px;
+  margin-right: 300px;
+  text-align: justify;
 }
 
 table td.service,
 table td.desc {
-  vertical-align: top;
+  vertical-align: center;
 }
 
 table td.unit,
