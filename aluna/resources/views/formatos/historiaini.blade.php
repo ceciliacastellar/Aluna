@@ -188,7 +188,7 @@
                                 <div class="form-group">
                                          <div class="bio-row">
                                              <p><span><strong>EPS:</strong></span>
-                                              <select class="form-control-static" name="eps">
+                                              <select class="form-control-static" id="eps" name="eps">
                                                          <option value= "SI">SI</option>
                                                          <option value= "NO">NO</option>
 
@@ -541,7 +541,7 @@
                                     <div class="form-group">
                                         <p><span><strong> A) MAPA FAMILIAR </strong></span>
 
-                                            <textarea class="form-control" rows="3" type="text" name="mapa_familiar"></textarea>
+                                            <textarea class="form-control" rows="3" type="text" id="mapa_familiar" name="mapa_familiar"></textarea>
                                         </p>
                                     </div>
 
@@ -549,7 +549,7 @@
                                         <p><span> <strong> B) DESCRIPCION </strong></span></p>
                                         <p>Personas con quien vive, relaciones y parentesco entre los miembros de la familia, reglas del hogar
 
-                                            <textarea class="form-control" rows="3" id="mapa_familiar" type="text" name="mapa_familiar"></textarea>
+                                            <textarea class="form-control" rows="3" id="descripcion" type="text" name="descripcion"></textarea>
                                         </p>
                                     </div>
 
@@ -803,7 +803,7 @@
                                         <div class="form-group">
                                             <p><span><strong> OBSERVACIONES </strong></span></p>
 
-                                        <textarea class="form-control" rows="3" id="observaciones_parto" v name="obervaciones_parto"></textarea>
+                                        <textarea class="form-control" rows="3" id="observaciones_parto" type="text" name="obervaciones_parto"></textarea>
                                     </div>
 
                                 <div class="form-group">
@@ -855,7 +855,7 @@
                                     </div>
 
                                       <div class="bio-row">
-                                        <p><span><strong>CUALES?</strong></span><input type="text"  type="text" class="form-control-static" id="cuales_cirugias" name="cuales_cirugias"></p>
+                                        <p><span><strong>CUALES?</strong></span><input type="text"   class="form-control-static" id="cuales_cirugias" name="cuales_cirugias"></p>
 
                                     </div>
 
@@ -872,7 +872,7 @@
                                     </div>
 
                                      <div class="bio-row">
-                                         <p><span><strong>CUALES?</strong></span><input type="text" type="text" class="form-control-static" id="cuales_familiares" name="cuales_familiares"></p>
+                                         <p><span><strong>CUALES?</strong></span><input type="text"  class="form-control-static" id="cuales_familiares" name="cuales_familiares"></p>
 
                                     </div>
 
@@ -889,7 +889,7 @@
                                     </div>
 
                                       <div class="bio-row">
-                                          <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static" type="text" row="2" id="cuales_otros" name="cuales_otros"></p>
+                                          <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static"  row="2" id="cuales_otros" name="cuales_otros"></p>
 
                                     </div>
                                       <div class="form-group">
