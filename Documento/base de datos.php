@@ -293,9 +293,9 @@ $table->string('tomo_medicamentos')->nullable();
 $table->string('cuales_medicamentos')->nullable();
 $table->string('observaciones')->nullable();
 $table->string('parto_vaginal')->nullable();
-$table->string('cesaria')->nullable();
+$table->string('cesarea')->nullable();
 $table->string('forceps')->nullable();
-$table->string('desarrolo_parto')->nullable();
+$table->string('desarrollo_parto')->nullable();
 $table->string('observaciones_parto')->nullable();
 $table->string('convulsiones')->nullable();
 $table->string('primera_crisis')->nullable();
@@ -312,6 +312,7 @@ $table->string('terapeuticos')->nullable();
 $table->string('farmacologicos')->nullable();
 $table->string('expectativas')->nullable();
 $table->string('plan_trabajo')->nullable();
+descripcion_proceso
 
 
 __________________________________Historia Inicial_____________________________________

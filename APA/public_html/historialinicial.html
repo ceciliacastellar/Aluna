@@ -222,74 +222,82 @@
                                        <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
                                             <div class="form-group ">
 
-                                           <div class="bio-row">
+                                           <div class="form-group bio-row">
 
                                                <p> <span><strong>NOMBRE COMPLETO:</strong></span> Javier Enrique Galindo Vergel</p>
                                               </div>
 
-                                           <div class="bio-row">
-                                               <p><span><strong>FECHA DE NACIMIENTO: </strong></span> 05 Mayo 1988</p>
+                                           <div class="form-group bio-row">
+                                               <label class="control-label col-xs-5">FECHA DE NACIMIENTO: </strong></span> 05 Mayo 1988</p>
                                               </div>
 
-                                           <div class="bio-row">
-                                               <p><span><strong>EDAD:</strong> </span> 27</p>
+                                           <div class="form-group bio-row">
+                                               <label class="control-label col-xs-5">EDAD:</strong> </span> 27</p>
                                               </div>
 
 
-                                                   <div class="bio-row">
-                                                       <p><span><strong>DIAGNOSTICO:</strong></span> <input class=" form-control-static " id="diagnostico" name="diagnostico"  type="text"></p>
+                                                   <div class="form-group bio-row">
+                                                       <label for="diagnostico" class="control-label col-xs-5">DIAGNOSTICO:</label>
+                                                       <input class=" form-control-static " id="diagnostico" name="diagnostico"  type="text">
 
                                                    </div>
 
-                                                   <div class="bio-row">
-                                                       <p><span><strong>PERFIL ALUNA:</strong></span><input class="form-control-static" id="perfil" name="perfil"  type="text"> </p>
+                                                   <div class="form-group bio-row">
+                                                       <label for="perfil" class="control-label col-xs-5">PERFIL ALUNA:</label>
+                                                       <input class="form-control-static" id="perfil" name="perfil"  type="text">
 
                                                    </div>
 
-                                                   <div class="bio-row">
-                                                       <p><span><strong>REMITIDO POR:</strong></span><input class="form-control-static" id="remitido" name="remitido" type="text"></p>
+                                                   <div class="form-group bio-row">
+                                                       <label for="remitido" class="control-label col-xs-5">REMITIDO POR:</label>
+                                                       <input class="form-control-static" id="remitido" name="remitido" type="text">
 
                                                    </div>
 
-                                                <div class="bio-row">
-                                                   <p><span><strong>ESCOLARIZACION:</strong></span><input class="form-control-static" id="escolarizacion" name="escolarizacion" type="text"><p>
+                                                <div class="form-group bio-row">
+                                                   <label for="escolarizacion" class="control-label col-xs-5">ESCOLARIZACION:</label>
+                                                   <input class="form-control-static" id="escolarizacion" name="escolarizacion" type="text">
 
                                                 </div>
                                             </div>
 
                                            <div class="form-group">
-                                                <p><span><strong>AFILIACION EN SALUD REGIMEN:</strong></span></p>
+                                                <label  class="control-label col-xs-5">AFILIACION EN SALUD REGIMEN:</label>
 
-                                                <div class="bio-row">
+                                                <div class="form-group bio-row">
 
-                                                    <p><span><strong>SUBSIDIADO:</strong></span></p>
+                                                    <label for="subsidio" class="control-label col-xs-5">SUBSIDIADO:</label>
+                                                      <div class="col-xs-7">
                                                         <select class="form-control-static" name="subsidio">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
 
-                                                </div>
+                                                    </div>
 
-                                                <div class="bio-row">
-                                                    <p><span><strong>NIVEL:</strong></span></p>
+                                                <div class="form-group bio-row">
+                                                    <label for="nivel" class="control-label col-xs-5">NIVEL:</label>
+                                                      <div class="col-xs-7">
                                                         <select class="form-control-static" name="nivel">
                                                             <option>1</option>
                                                             <option>2</option>
                                                             <option>3</option>
 
                                                         </select>
-                                                    </p>
+                                                    </div>
                                                 </div>
 
-                                                <div class="bio-row">
-                                                    <p><span><strong>CONTRIBUTIVO:</strong></span></p>
+                                                <div class="form-group bio-row">
+                                                    <label for="contributivo" class="control-label col-xs-5">CONTRIBUTIVO:</label>
+                                                      <div class="col-xs-7">
                                                         <select class="form-control-static" name="contributivo">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
-                                                    </p>
+                                                    </div>
 
 
                                                 </div>
@@ -297,20 +305,22 @@
                                                    </div>
 
                                            <div class="form-group">
-                                                    <div class="bio-row">
-                                                        <p><span><strong>EPS:</strong></span></p>
+                                                    <div class="form-group bio-row">
+                                                        <label for="eps" class="control-label col-xs-5">EPS:</label>
+                                                          <div class="col-xs-7">
                                                          <select class="form-control-static" name="eps">
                                                                     <option>SI</option>
                                                                     <option>NO</option>
 
                                                                 </select>
-                                                        </p>
+                                                        </div>
 
                                                     </div>
 
 
-                                                    <div class="bio-row">
-                                                        <p><span><strong>CUAL:</strong></span><input class="form-control-static" id="cual_inicial" name="cual_inicial" type="text"></p>
+                                                    <div class="form-group bio-row">
+                                                        <label for="cual_inicial" class="control-label col-xs-5">CUAL:</label>
+                                                        <input class="form-control-static" id="cual_inicial" name="cual_inicial" type="text">
 
                                                     </div>
 
@@ -318,56 +328,57 @@
 
 
                                            <div class="form-group">
-                                                <p><span><strong>INFORMACION DEL PADRE</strong></span></p>
+                                                <label  class="control-label col-xs-5">INFORMACION DEL PADRE</label>
                                                 <br>
-                                                <div class="bio-row">
-                                                    <p><span><strong> NOMBRE COMPLETO</strong></span>: Javier Enrique Galindo Mejia</p>
+                                                <div class="form-group bio-row">
+                                                    <label class="control-label col-xs-5"> NOMBRE COMPLETO</strong></span>: Javier Enrique Galindo Mejia</p>
                                                    </div>
 
-                                                <div class="bio-row">
-                                                    <p><span><strong>EDAD: </strong></span><input type="number" name="num" min="0" max="100"></p>
-
-                                                   </div>
-
-                                                  <div class="bio-row">
-                                                      <p><span><strong>OCUPACION/TRABAJO:</strong> </span><input type="text" class="form-control-static" name="trabajo"></p>
+                                                <div class="form-group bio-row">
+                                                    <label for="edad_padre" class="control-label col-xs-5">EDAD: </strong></span><input type="number" name="edad_padre" min="0" max="100"></p>
 
                                                    </div>
 
-                                               <div class="bio-row">
-                                                   <p><span><strong>TELEFONO:</strong></span> 6666666</p>
+                                                  <div class="form-group bio-row">
+                                                      <label for="trabajo" class="control-label col-xs-5">OCUPACION/TRABAJO:</label>
+                                                      <input type="text" class="form-control-static" name="trabajo">
+
+                                                   </div>
+
+                                               <div class="form-group bio-row">
+                                                   <label  class="control-label col-xs-5">TELEFONO:</strong></span> 6666666</p>
                                                    </div>
 
                                            </div>
 
                                            <div class="form-group">
-                                                <p><span><strong>INFORMACION DEL MADRE</strong></span></p>
+                                                <label  class="control-label col-xs-5">INFORMACION DEL MADRE</label>
 
-                                                   <div class="bio-row">
-                                                       <p><span><strong> NOMBRE COMPLETO:</strong></span> Mafalda Vergel Armenta</p>
+                                                   <div class="form-group bio-row">
+                                                       <label  class="control-label col-xs-5"> NOMBRE COMPLETO:</strong></span> Mafalda Vergel Armenta</p>
                                                    </div>
 
-                                                <div class="bio-row">
-                                                    <p><span><strong>EDAD:</strong> </span></p><input type="number" name="num" min="0" max="100"></p>
+                                                <div class="form-group bio-row">
+                                                    <label for="edad_madre" class="control-label col-xs-5">EDAD:</label><input type="number" name="edad_madre" min="0" max="100"></p>
 
                                                    </div>
 
-                                                  <div class="bio-row">
-                                                      <p><span><strong>OCUPACION/TRABAJO:</strong></p> </span><input type="text" class="form-control-static"></p>
+                                                  <div class="form-group bio-row">
+                                                      <label for="trabajo_madre" class="control-label col-xs-5">OCUPACION/TRABAJO:</label><input type="text" name="trabajo_madre" class="form-control-static"></p>
 
                                                    </div>
-                                               <div class="bio-row">
-                                                   <p><span><strong>TELEFONO</strong></span>: 6666666</p>
+                                               <div class="form-group bio-row">
+                                                   <label  class="control-label col-xs-5">TELEFONO</strong></span>: 6666666</p>
                                                    </div>
                                            </div>
 
                                            <div class="form-group">
-                                                    <div class="bio-row">
-                                                        <p><span><strong>ACUDIENTE: </strong></span>Carlos Galindo Vergel</p>
+                                                    <div class="form-group bio-row">
+                                                        <label class="control-label col-xs-5">ACUDIENTE: </strong></span>Carlos Galindo Vergel</p>
 
                                                    </div>
-                                               <div class="bio-row">
-                                                   <p><span><strong>TELEFONO:</strong></span> 6666666</p>
+                                               <div class="form-group bio-row">
+                                                   <label  class="control-label col-xs-5">TELEFONO:</strong></span> 6666666</p>
                                                    </div>
                                            </div>
 
@@ -401,9 +412,9 @@
                                <div class="panel-body">
                                    <div class="form">
                                        <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
-                                           <div class="form-group ">
+                                           <div class="form-group bio-row ">
 
-                                               <textarea class="form-control" rows="4" name="motivo_consulta"></textarea>
+                                               <textarea class="form-control" rows="4" minlength="5" name="motivo_consulta" type="text"></textarea>
 
 
                                            </div>
@@ -436,10 +447,10 @@
                                <div class="panel-body">
                                    <div class="form">
                                        <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
-                                           <div class="form-group ">
+                                           <div class="form-group bio-row">
 
 
-                                               <textarea class="form-control" rows="11" name="inicio_curso_evolucion"></textarea>
+                                               <textarea class="form-control" rows="11" name="inicio_curso_evolucion" minlength="5" type="text"></textarea>
 
                                              </div>
 
@@ -472,62 +483,68 @@
                                    <div class="form">
                                        <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
                                            <div class="form-group ">
-                                               <div class="form-group">
+                                               <div class="form-group bio-row">
                                                    <p><span><strong>  4.1 DESARROLLO PSICOMOTOR </strong></span></p>
 
                                                    <br>
 
-                                                   <div class="bio-row">
-                                                       <p><span><strong>SOSTEN DE CABEZA:</strong></span></p>
+                                                   <div class="form-group bio-row">
+                                                       <label for="sosten_cabeza" class="control-label col-xs-5">SOSTEN DE CABEZA:</label>
+                                                       <div class="col-xs-7">
                                                        <select class="form-control-static" name="sosten_cabeza">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
 
 
                                                     </div>
 
-                                                   <div class="bio-row">
+                                                   <div class="form-group bio-row">
 
-                                                       <p><span><strong>GATEO</strong></span></p>
-                                                       <select class="form-control-static" name=" gateo">
-                                                            <option>SI</option>
-                                                            <option>NO</option>
+                                                       <label for="gateo" class="control-label col-xs-5">GATEO</label>
+                                                       <div class="col-xs-7">
+                                                              <select class="form-control-static" name=" gateo">
+                                                                    <option>SI</option>
+                                                                    <option>NO</option>
 
-                                                        </select>
-
+                                                                  </select>
+                                                          </div>
 
                                                </div>
 
-                                               <div class="bio-row">
+                                               <div class="form-group bio-row">
 
-                                                   <p><span><strong>SEDESTACION</strong></span></p>
+                                                   <label for="sedestacion" class="control-label col-xs-5">SEDESTACION</label>
+                                                  <div class="col-xs-7">
                                                    <select class="form-control-static" name=" sedestacion">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
-
+                                                      </div>
 
                                                </div>
 
-                                                   <div class="bio-row">
+                                                   <div class="form-group bio-row">
 
-                                                       <p><span><strong>CAMINO</strong></span></p>
-                                                           <select class="form-control-static" name=" camino">
+                                                       <label for="camino" class="control-label col-xs-5">CAMINO</label>
+                                                       <div class="col-xs-7">
+                                                           <select class="form-control-static" name="camino">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
 
-
+                                                      </div>
                                                </div>
 
 
-                                                   <div class="bio-row">
+                                                   <div class="form-group bio-row">
 
-                                                       <p><span><strong>LATERALIDAD</strong></span></p>
+                                                       <label for="lateralidad" class="control-label col-xs-5">LATERALIDAD</label>
+                                                       <div class="col-xs-7">
                                                            <select class="form-control-static" name="lateralidad">
                                                             <option>IZQUIERDA</option>
                                                             <option>DERECHA</option>
@@ -535,15 +552,16 @@
 
                                                         </select>
 
-
+                                                      </div>
                                                </div>
 
                                                </div>
 
                                                <div class="form-group">
 
-                                                    <div class="bio-row">
-                                                        <p><span><strong>DESCRIPCION ACTUAL</strong></span></p> <textarea class="form-control" rows="11" name="descripcion_actual"></textarea
+                                                    <div class="form-group bio-row">
+                                                        <label for="descripcion_actual" class="control-label col-xs-5">DESCRIPCION ACTUAL</label>
+                                                        <textarea class="form-control" rows="11" name="descripcion_actual"></textarea>
 
 
                                                     </div>
@@ -555,54 +573,58 @@
                                                    <p><span><strong>4.2 DESARROLLO DEL LENGUAJE </strong></span></p>
 
                                                    <br>
-                                                   <div class="bio-row">
+                                                   <div class="form-group bio-row">
 
-                                                    <p><strong>BALBUCEO</strong></p>
+                                                    <label for="balbuceo" class="control-label col-xs-5">BALBUCEO</label>
+                                                    <div class="col-xs-7">
                                                         <select class="form-control-static" name="balbuceo">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
 
                                                         </select>
-
+                                                      </div>
 
                                                </div>
 
-                                                    <div class="bio-row">
+                                                    <div class="form-group bio-row">
 
-                                                        <p><span><strong>PRIMERA PALABRA</strong></span></p>
+                                                        <label for="primera_palabra" class="control-label col-xs-5">PRIMERA PALABRA</label>
+                                                        <div class="col-xs-7">
                                                             <select class="form-control-static" name="primera_palabra">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
 
                                                         </select>
-
+                                                      </div>
 
                                                </div>
 
-                                                    <div class="bio-row">
+                                                    <div class="form-group bio-row">
 
-                                                        <p><span><strong>PRIMERA FRASE</strong></span></p>
+                                                        <label for="primera_frase" class="control-label col-xs-5">PRIMERA FRASE</label>
+                                                        <div class="col-xs-7">
                                                             <select class="form-control-static" name="primera_frase">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
 
                                                         </select>
-
+                                                      </div>
 
                                                </div>
                                                </div>
-                                                   <div class="form-group">
+                                                   <div class="form-group bio-row">
 
-                                                           <p><span><strong>DESCRIPCION DE CARACTERISTICAS ACTUALES Y PROCESO DE ALIMENTACION</strong></span></p><textarea class="form-control" rows="3"></textarea
+                                                           <label for="descripcion_proceso" class="control-label col-xs-5">DESCRIPCION DE CARACTERISTICAS ACTUALES Y PROCESO DE ALIMENTACION</label>
+                                                           <textarea class="form-control" rows="3" name="descripcion_proceso"></textarea>
 
 
                                                     </div>
 
                                                <div class="form-group">
-                                                   <p><span> <strong>4.3 DESARROLLO PERSONAL </strong></span></p>
+                                                   <label for="desarrollo_personal" class="control-label col-xs-5">4.3 DESARROLLO PERSONAL </label>
                                                    <p>(Actividades de agrado, intereses personales, oportunidades de habilitación)</p>
                                                        <textarea class="form-control" rows="3" name="desarrollo_personal"></textarea>
 
@@ -645,26 +667,26 @@
                                            <div class="form-group ">
 
                                                <div class="form-group">
-                                                   <p><span><strong> A) MAPA FAMILIAR </strong></span></p>
+                                                   <label for="mapa_familiar" class="control-label col-xs-5"> A) MAPA FAMILIAR </label>
 
                                                        <textarea class="form-control" rows="3" name="mapa_familiar"></textarea>
 
                                                </div>
 
                                                <div class="form-group">
-                                                   <p><span> <strong> B) DESCRIPCION </strong></span></p>
+                                                   <label for="descripcion" class="control-label col-xs-5"> B) DESCRIPCION </label>
                                                    <p>Personas con quien vive, relaciones y parentesco entre los miembros de la familia, reglas del hogar</p>
 
-                                                       <textarea class="form-control" rows="3" name="mapa_familiar"></textarea>
+                                                       <textarea class="form-control" rows="3" name="descripcion"></textarea>
 
                                                </div>
 
 
                                                <div class="form-group">
-                                                   <p><span> <strong> C) ASPECTOS PSICOSOCIALES Y AMBIENTALES </strong></span></p>
+                                                   <label for="aspectos_psicosociales_ambientales" class="control-label col-xs-5"> C) ASPECTOS PSICOSOCIALES Y AMBIENTALES </label>
                                                    <p>Redes de apoyo, nivel socioeconomico, condiciones de trabajo y vivienda.</p>
 
-                                                   <textarea class="form-control" rows="3" name=" aspectos_ psicosociales_ambientales"></textarea>
+                                                   <textarea class="form-control" rows="3" name=" aspectos_psicosociales_ambientales"></textarea>
 
                                                </div>
 
@@ -698,10 +720,10 @@
                                            <div class="form-group ">
 
 
-                                                  <div class="bio-row">
+                                                  <div class="form-group bio-row">
 
-                                                      <p><span><strong>DURACIÓN DE EMBARAZO</strong></span></p>
-
+                                                      <label for="duracion_embarazo" class="control-label col-xs-5">DURACIÓN DE EMBARAZO</label>
+                                                      <div class="col-xs-7">
                                                         <select class="form-control-static" name="duracion_embarazo">
                                                             <option>1 SEMANA</option>
                                                             <option>2 SEMANAS</option>
@@ -746,113 +768,117 @@
 
 
                                                         </select>
-
+                                                      </div>
                                                </div>
 
 
 
-                                                  <div class="bio-row">
+                                                  <div class="form-group bio-row">
 
-                                                      <p><span><strong>CONTROLES</strong></span></p>
-
+                                                      <label for="controles" class="control-label col-xs-5">CONTROLES</label>
+                                                      <div class="col-xs-7">
                                                           <select class="form-control-static" name="controles">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
 
                                                         </select>
-
+                                                      </div>
                                                </div>
 
-                                                 <div class="bio-row">
+                                                 <div class="form-group bio-row">
 
-                                                     <p><span><strong>ABORTO</strong></span></p>
-
+                                                     <label for="aborto" class="control-label col-xs-5">ABORTO</label>
+                                                     <div class="col-xs-7">
                                                         <select class="form-control-static" name="aborto">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
-
+                                                      </div>
                                                </div>
 
-                                                 <div class="bio-row">
+                                                 <div class="form-group bio-row">
 
-                                                     <p><span><strong>CAIDAS</strong></span>
-                                                    </p>
+                                                     <label for="caidos" class="control-label col-xs-5">CAIDAS</label>
+                                                     <div class="col-xs-7">
                                                          <select class="form-control-static" name="caidas">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
 
                                                         </select>
-
+                                                      </div>
                                                </div>
 
-                                                 <div class="bio-row">
+                                                 <div class="form-group bio-row">
 
-                                                     <p><span><strong>CONSUMO DE ALCOHOL</strong></span></p>
-
+                                                     <label for="consumo_alcohol" class="control-label col-xs-5">CONSUMO DE ALCOHOL</label>
+                                                     <div class="col-xs-7">
                                                         <select class="form-control-static" name="consumo_alcohol">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
 
                                                         </select>
+                                                      </div>
 
-                                               </div>
+                                                    </div>
 
-                                                 <div class="bio-row">
+                                                 <div class="form-group bio-row">
 
-                                                     <p><span><strong>FUMÓ</strong></span></p>
-
+                                                     <label for="fumo" class="control-label col-xs-5">FUMÓ</label>
+                                                      <div class="col-xs-7">
                                                          <select class="form-control-static" name="fumo">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
 
                                                         </select>
-
+                                                      </div>
                                                </div>
 
 
-                                               <div class="bio-row">
+                                               <div class="form-group bio-row">
 
-                                                   <p><span><strong>ENFERMEDADES</strong></span></p>
-
+                                                   <label for="enfermedades" class="control-label col-xs-5">ENFERMEDADES</label>
+                                                   <div class="col-xs-7">
                                                         <select class="form-control-static" name="enfermedades">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
 
-                                               </div>
+                                                    </div>
 
-                                               <div class="bio-row">
-                                                   <p><span><strong>CUALES?</strong></span></p><input type="text" class="form-control-static" name=" cuales_enfermedades"
+                                               <div class="form-group bio-row">
+                                                   <label for="cuales_enfermedades" class="control-label col-xs-5">CUALES?</label>
+                                                   <input type="text" class="form-control-static" name=" cuales_enfermedades">
 
-                                               </div>
+                                                 </div>
 
-                                              <div class="bio-row">
+                                              <div class="form-group bio-row">
 
-                                                  <p><span><strong>TOMO MEDICAMENTOS:</strong></span></p>
-
+                                                  <label for="tomo_medicamentos" class="control-label col-xs-5">TOMO MEDICAMENTOS:</label>
+                                                    <div class="col-xs-7">
                                                         <select class="form-control-static" name="tomo_medicamentos">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
 
                                                </div>
 
-                                               <div class="bio-row">
-                                                   <p><span><strong>CUALES?</strong></span> </p>
+                                               <div class="form-group bio-row">
+                                                   <label for="cuales_medicamentos" class="control-label col-xs-5">CUALES?</label>
                                                        <input type="text" class="form-control-static" name="cuales_medicamentos">
 
                                                </div>
                                            </div>
                                            <div class="form-group">
-                                               <p><span><strong> OBSERVACIONES </strong></span></p>
+                                               <label for="observaciones" class="control-label col-xs-5"> OBSERVACIONES </label>
 
                                                    <textarea class="form-control-static" rows="3" name="observaciones"></textarea>
                                                </div>
@@ -862,144 +888,154 @@
                                                     <p><span> <strong> 6.2 ANTECENTES PERINATALES </strong></span></p>
 
 
-                                                   <div class="bio-row">
+                                                   <div class="form-group bio-row">
 
-                                                       <p><span><strong>PARTO VAGINAL:</strong></span></p>
-
+                                                       <label for="parto_vaginal" class="control-label col-xs-5">PARTO VAGINAL:</label>
+                                                       <div class="col-xs-7">
                                                         <select class="form-control-static" name="parto_vaginal">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
-
+                                                      </div>
                                                </div>
 
 
-                                                   <div class="bio-row">
+                                                   <div class="form-group bio-row">
 
-                                                       <p><span><strong>CESAREA:</strong></span></p>
-
+                                                       <label for="cesarea" class="control-label col-xs-5">CESAREA:</label>
+                                                       <div class="col-xs-7">
                                                            <select class="form-control-static" name="cesarea">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
-
+                                                      </div>
                                                </div>
 
 
-                                                   <div class="bio-row">
+                                                   <div class="form-group bio-row">
 
-                                                       <p><span><strong>UTILIZACION DE FORCEPS:</strong></span></p>
-
+                                                       <label for="forceps" class="control-label col-xs-5">UTILIZACION DE FORCEPS:</label>
+                                                       <div class="col-xs-7">
                                                         <select class="form-control-static" name="forceps">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
 
-                                               </div>
+                                                    </div>
                                              </div>
 
                                                    <div class="form-group">
                                                    <p>Desarrollo del parto (hubo complicaciones, hemorragias, hipoxia, hospitalizacion, tipo de atencion durando el parto) </p>
-                                                 <textarea class="form-control" rows="2" name="desarrolo_parto"></textarea>
+                                                 <textarea class="form-control" rows="2" name="desarrollo_parto"></textarea>
                                                    </div>
 
                                                    <div class="form-group">
-                                                       <p><span><strong> OBSERVACIONES </strong></span></p>
+                                                       <label for="obeservaciones_parto" class="control-label col-xs-5"> OBSERVACIONES </label>
 
                                                    <textarea class="form-control" rows="3" name="obervaciones_parto"></textarea>
                                                </div>
 
                                            <div class="form-group">
                                                  <p><span> <strong> 6.3 ANTECENTES POSNATALES </strong></span></p>
-                                                  <div class="bio-row">
+                                                  <div class="form-group bio-row">
 
-                                                       <p><span><strong>CONVULSIONES:</strong></span></p>
-
+                                                       <label for="convulsiones" class="control-label col-xs-5">CONVULSIONES:</label>
+                                                        <div class="col-xs-7">
                                                            <select class="form-control-static" name="convulsiones">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
 
-                                               </div>
+                                                    </div>
 
-                                                  <div class="bio-row">
+                                                  <div class="form-group bio-row">
 
-                                                       <p><span><strong>PRIMERA CRISIS:</strong></span></p>
-
+                                                       <label for="primera_crisis" class="control-label col-xs-5">PRIMERA CRISIS:</label>
+                                                       <div class="col-xs-7">
                                                            <select class="form-control-static" name="primera_crisis">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
 
-                                               </div>
-                                                  <div class="bio-row">
+                                                    </div>
+                                                  <div class="form-group bio-row">
 
-                                                       <p><span><strong>ULTIMA CRISIS:</strong></span></p>
-
+                                                       <label for="ultima_crisis" class="control-label col-xs-5">ULTIMA CRISIS:</label>
+                                                       <div class="col-xs-7">
                                                            <select class="form-control-static" name="ultima_crisis">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
 
-                                               </div>
-                                                  <div class="bio-row">
+                                                    </div>
+                                                  <div class="form-group bio-row">
 
-                                                       <p><span><strong>CIRUGIAS:</strong></span></p>
-
+                                                       <label for="cirugias" class="control-label col-xs-5">CIRUGIAS:</label>
+                                                       <div class="col-xs-7">
                                                            <select class="form-control-static" name="cirugias">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
+
+                                                    </div>
+
+                                                 <div class="form-group bio-row">
+                                                   <label for="cuales_cirugias" class="control-label col-xs-5">CUALES?</label>
+                                                   <input type="text" class="form-control-static"  name="cuales_cirugias">
 
                                                </div>
 
-                                                 <div class="bio-row">
-                                                   <p><span><strong>CUALES?</strong></span></p><input type="text" class="form-control-static"  name="cuales_cirugias">
+                                                 <div class="form-group bio-row">
 
-                                               </div>
-
-                                                 <div class="bio-row">
-
-                                                       <p><span><strong>FAMILIARES:</strong></span></p>
-
+                                                       <label for="familiares" class="control-label col-xs-5">FAMILIARES:</label>
+                                                          <div class="col-xs-7">
                                                            <select class="form-control-static" name="familiares">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
+                                                      </div>
 
                                                </div>
 
-                                                <div class="bio-row">
-                                                    <p><span><strong>CUALES?</strong></span></p><input type="text" class="form-control-static" name="cuales_familiares">
+                                                <div class="form-group bio-row">
+                                                    <label for="cuales_familiares" class="control-label col-xs-5">CUALES?</label>
+                                                    <input type="text" class="form-control-static" name="cuales_familiares">
 
                                                </div>
 
-                                               <div class="bio-row">
+                                               <div class="form-group bio-row">
 
-                                                       <p><span><strong>OTROS:</strong></span></p>
+                                                       <label for="otros" class="control-label col-xs-5">OTROS:</label>
 
+                                                       <div class="col-xs-7">
                                                            <select class="form-control-static" name="otros">
                                                             <option>SI</option>
                                                             <option>NO</option>
 
                                                         </select>
-
+                                                        <div>
                                                </div>
 
-                                                 <div class="bio-row">
-                                                     <p><span><strong>CUALES?</strong></span></p><input type="text" class="form-control-static" row="2" name="cuales_otros"></p>
+                                                 <div class="form-group bio-row">
+                                                     <label for="cuales_otros" class="control-label col-xs-5">CUALES?</label>
+                                                     <input type="text" class="form-control-static" row="2" name="cuales_otros"></p>
 
                                                </div>
-                                                 <div class="form-group">
-                                                       <p><span><strong> EXAMENES ESPECIALIZADOS </strong></span></p>
+                                                 <div class="form-group bio-row">
+                                                       <label for="examenes_especializados" class="control-label col-xs-5"> EXAMENES ESPECIALIZADOS </label>
 
                                                        <textarea class="form-control" rows="3" name="examenes_especializados"></textarea>
                                                </div>
@@ -1033,21 +1069,21 @@
 
 
                                                <div class="form-group">
-                                                       <p><span><strong> PEDAGOGICOS </strong></span></p>
+                                                       <label for="pedagogicos" class="control-label col-xs-5"> PEDAGOGICOS </label>
 
                                                        <textarea class="form-control" rows="3" name="pedagogicos"></textarea>
                                                </div>
 
 
                                                <div class="form-group">
-                                                       <p><span><strong> TERAPEUTICOS </strong></span></p>
+                                                       <label for="terapeuticos" class="control-label col-xs-5"> TERAPEUTICOS </label>
 
                                                        <textarea class="form-control" rows="3" name="terapeuticos"></textarea>
                                                </div>
 
 
                                                <div class="form-group">
-                                                       <p><span><strong> FARMACOLOGICOS </strong></span></p>
+                                                       <label for="farmacologicos" class="control-label col-xs-5"> FARMACOLOGICOS </label>
 
                                                        <textarea class="form-control" rows="3" name="farmacologicos"></textarea>
                                                </div>
