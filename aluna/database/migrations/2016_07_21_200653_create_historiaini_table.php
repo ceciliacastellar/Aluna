@@ -40,7 +40,8 @@ class CreateHistoriainiTable extends Migration
         $table->string('primera_frase')->nullable();
         $table->string('desarrollo_personal')->nullable();
         $table->string('mapa_familiar')->nullable();
-        $table->string('aspectos_ psicosociales_ambientales')->nullable();
+        $table->string('descripcion_familiar')->nullable();
+        $table->string('aspectos_psicosociales_ambientales')->nullable();
         $table->string('duracion_embarazo')->nullable();
         $table->string('controles')->nullable();
         $table->string('aborto')->nullable();
@@ -55,7 +56,7 @@ class CreateHistoriainiTable extends Migration
         $table->string('parto_vaginal')->nullable();
         $table->string('cesaria')->nullable();
         $table->string('forceps')->nullable();
-        $table->string('desarrolo_parto')->nullable();
+        $table->string('desarrollo_parto')->nullable();
         $table->string('observaciones_parto')->nullable();
         $table->string('convulsiones')->nullable();
         $table->string('primera_crisis')->nullable();
@@ -72,7 +73,7 @@ class CreateHistoriainiTable extends Migration
         $table->string('farmacologicos')->nullable();
         $table->string('expectativas')->nullable();
         $table->string('plan_trabajo')->nullable();
-        $table->integer('alumno_id')->unsigned();
+        $table->integer('alumno_id')->unsigned()->unique();
         $table->foreign('alumno_id')->references('id')->on('alumno')
               ->onUpdate('cascade')->onDelete('cascade');
         $table->timestamps();

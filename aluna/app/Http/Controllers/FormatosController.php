@@ -24,8 +24,9 @@ class FormatosController extends Controller
        return View::make('formatos.historiaini')->with('alumnos', $alumnos);
     }
 
-    public function saveini(Request $request)
+    public function saveini(Request $request, $id)
     {
+      $alumnos = Alumno::find($id);
       $historiaini = new historiaini;
       $historiaini->diagnostico = $request->diagnostico;
       $historiaini->perfil = $request->perfil;
@@ -53,6 +54,7 @@ class FormatosController extends Controller
       $historiaini->primera_frase = $request->primera_frase;
       $historiaini->desarrollo_personal = $request->desarrollo_personal;
       $historiaini->mapa_familiar = $request->mapa_familiar;
+      $historiaini->descripcion_familiar = $request->descripcion_familiar;
       $historiaini->aspectos_psicosociales_ambientales = $request->aspectos_psicosociales_ambientales;
       $historiaini->duracion_embarazo = $request->duracion_embarazo;
       $historiaini->controles = $request->controles;
@@ -64,11 +66,11 @@ class FormatosController extends Controller
       $historiaini->cuales_enfermedades = $request->cuales_enfermedades;
       $historiaini->tomo_medicamentos = $request->tomo_medicamentos;
       $historiaini->cuales_medicamentos = $request->cuales_medicamentos;
-      $historiaini->rvaciones = $request->rvaciones;
+      $historiaini->observaciones = $request->observaciones;
       $historiaini->parto_vaginal = $request->parto_vaginal;
       $historiaini->cesaria = $request->cesaria;
       $historiaini->forceps = $request->forceps;
-      $historiaini->desarrolo_parto = $request->desarrolo_parto;
+      $historiaini->desarrollo_parto = $request->desarrollo_parto;
       $historiaini->observaciones_parto = $request->observaciones_parto;
       $historiaini->convulsiones = $request->convulsiones;
       $historiaini->primera_crisis = $request->primera_crisis;
@@ -87,7 +89,8 @@ class FormatosController extends Controller
       $historiaini->plan_trabajo = $request->plan_trabajo;
       $historiaini->alumno_id = $request->alumno_id;
       $historiaini->save();
-      return view('formatos.historiaini');
+      return View::make('formatos.salud')->with('alumnos', $alumnos);
+
     }
 
 

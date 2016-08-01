@@ -20,7 +20,7 @@ class Alumno extends Model
     }
 
     public function historiaini(){
-      return $this->hasMany('\App\Historiaini');
+      return $this->hasOne('\App\Historiaini', 'alumno_id', 'id');
     }
 
     public function scopeName($query, $name)
