@@ -93,6 +93,12 @@ class FormatosController extends Controller
 
     }
 
+    public function showhini($id)
+      {
+        $alumnos = Alumno::find($id);
+        return View::make('formatos.showhini')->with('alumnos', $alumnos);
+      }
+
 
     public function edit($id)
       {

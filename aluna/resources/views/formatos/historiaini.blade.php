@@ -2,6 +2,9 @@
 
 @section('content')
 
+
+<body>
+
   <div class="contenido">
      <!-- <img src="img/menu.png" alt="" class="menu-bar">-->
 
@@ -26,7 +29,7 @@
 
      <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
 <div class="row">
-  <form method="POST" action="{{ route('formatos.saveini') }}" accept-charset="UTF-8" enctype="multipart/form-data">
+  <form method="POST" action="{{ route('formatos.saveini', $alumnos->id) }}" accept-charset="UTF-8" enctype="multipart/form-data">
     <input type="hidden" name="_token" value="{{ csrf_token()}}">
    <div class="col-lg-12">
       <section class="panel">
@@ -93,6 +96,7 @@
 
                     </li>
                 </ul>
+              </header>
 
 <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
       <div class="panel-body">
@@ -107,8 +111,14 @@
                       </header>
                  <div class="panel-body">
                      <div class="form">
-                         <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
                               <div class="form-group ">
+
+                                <div class="form-group">
+
+                                            <input type="hidden" class="form-control" name="alumno_id"  value="{{ $alumnos->id }}"  minlength="5" type="text" required />
+
+                                </div>
 
                                 <div class="bio-row">
 
@@ -188,7 +198,7 @@
                                 <div class="form-group">
                                          <div class="bio-row">
                                              <p><span><strong>EPS:</strong></span>
-                                              <select class="form-control-static" id="eps" name="eps">
+                                              <select class="form-control-static" name="eps">
                                                          <option value= "SI">SI</option>
                                                          <option value= "NO">NO</option>
 
@@ -266,7 +276,7 @@
                                 </div>
 
 
-                                </form>
+
                                 </div>
 
                                 </div>
@@ -275,10 +285,7 @@
 
                                 </section>
                                 </div>
-                                <ul class="pager">
 
-                                <li class="next"><a href="#partedos">Siguiente &rarr;</a></li>
-                                </ul>
                                 </div>
                                 </div>
 
@@ -294,14 +301,14 @@
                                 </header>
                                 <div class="panel-body">
                                 <div class="form">
-                                <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
                                 <div class="form-group ">
 
-                                    <textarea class="form-control" rows="4" id="motivo_consulta" type="text" name="motivo_consulta"></textarea>
+                                    <textarea class="form-control" rows="4"  type="text" name="motivo_consulta"></textarea>
 
 
                                 </div>
-                                </form>
+
                                 </div>
 
                                 </div>
@@ -309,10 +316,7 @@
                                 </div>
                                 </div>
 
-                                <ul class="pager">
-                                <li class="previous"><a href="#parteuno">&larr; Anterior</a></li>
-                                <li class="next"><a href="#partetres">Siguiente &rarr;</a></li>
-                                </ul>
+
 
 
 
@@ -329,7 +333,7 @@
                                 </header>
                                 <div class="panel-body">
                                 <div class="form">
-                                <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
                                 <div class="form-group ">
 
 
@@ -338,16 +342,13 @@
                                   </div>
 
 
-                                </form>
+
                                 </div>
 
                                 </div>
                                 </section>
                                 </div>
-                                <ul class="pager">
-                                <li class="previous"><a href="#partedos">&larr; Anterior</a></li>
-                                <li class="next"><a href="#partecuatro">Siguiente &rarr;</a></li>
-                                </ul>
+
                                 </div>
 
                                 </div>
@@ -364,7 +365,7 @@
                                 </header>
                                 <div class="panel-body">
                                 <div class="form">
-                                <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
                                 <div class="form-group ">
                                     <div class="form-group">
                                         <p><span><strong>  4.1 DESARROLLO PSICOMOTOR </strong></span></p>
@@ -433,11 +434,15 @@
                                     </div>
 
                                     </div>
+                                  </div>
 
-                                    <div class="form-group">
 
-                                         <div class="bio-row">
-                                             <p><span><strong>DESCRIPCION ACTUAL</strong></span> <textarea class="form-control" rows="11" type="text" id="descripcion_actual"name="descripcion_actual"></textarea></p>
+
+                                    <div class="form-group bio-row">
+
+                                         <div class="">
+                                             <p><span><strong>DESCRIPCION ACTUAL</strong></span>
+                                               <textarea class="form-control" rows="11" type="text" id="descripcion_actual"name="descripcion_actual"></textarea></p>
 
 
                                          </div>
@@ -497,15 +502,15 @@
 
                                     <div class="form-group">
                                         <p><span> <strong>4.3 DESARROLLO PERSONAL </strong></span></p>
-                                        <p>(Actividades de agrado, intereses personales, oportunidades de habilitación)
+                                        <p>(Actividades de agrado, intereses personales, oportunidades de habilitación)</p>
                                             <textarea class="form-control" rows="3" id="desarrollo_personal" type="text" name="desarrollo_personal"></textarea>
-                                        </p>
+
 
 
                                     </div>
-                                </div>
 
-                                </form>
+
+
                                 </div>
 
                                 </div>
@@ -514,10 +519,6 @@
                                 </div>
 
 
-                                <ul class="pager">
-                                <li class="previous"><a href="historialinicial3.html">&larr; Anterior</a></li>
-                                <li class="next"><a href="historialinicial5.html">Siguiente &rarr;</a></li>
-                                </ul>
 
 
                                 </div>
@@ -535,7 +536,7 @@
                                 </header>
                                 <div class="panel-body">
                                 <div class="form">
-                                <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
                                 <div class="form-group ">
 
                                     <div class="form-group">
@@ -547,9 +548,10 @@
 
                                     <div class="form-group">
                                         <p><span> <strong> B) DESCRIPCION </strong></span></p>
-                                        <p>Personas con quien vive, relaciones y parentesco entre los miembros de la familia, reglas del hogar
+                                        <p>Personas con quien vive, relaciones y parentesco entre los miembros de la familia, reglas del hogar</p>
+                                        <p>
 
-                                            <textarea class="form-control" rows="3" id="descripcion" type="text" name="descripcion"></textarea>
+                                            <textarea class="form-control" rows="3" id="descripcion_familiar" type="text" name="descripcion_familiar"></textarea>
                                         </p>
                                     </div>
 
@@ -558,22 +560,19 @@
                                         <p><span> <strong> C) ASPECTOS PSICOSOCIALES Y AMBIENTALES </strong></span></p>
                                         <p>Redes de apoyo, nivel socioeconomico, condiciones de trabajo y vivienda.
 
-                                        <textarea class="form-control" rows="3" id="aspectos_psicosociales_ambientales" type="text" name=" aspectos_ psicosociales_ambientales"></textarea>
+                                        <textarea class="form-control" rows="3" id="aspectos_psicosociales_ambientales" type="text" name=" aspectos_psicosociales_ambientales"></textarea>
                                         </p>
                                     </div>
 
 
                                 </div>
-                                </form>
+
                                 </div>
                                 </div>
                                 </section>
                                 </div>
                                 </div>
-                                <ul class="pager">
-                                <li class="previous"><a href="">&larr; Anterior</a></li>
-                                <li class="next"><a href="">Siguiente &rarr;</a></li>
-                                </ul>
+
                                 </div>
 
                                 <!-- ---------------------------------------------------- INFORMACION FAMILIAR ------------------------------------ -->
@@ -588,7 +587,7 @@
                                 </header>
                                 <div class="panel-body">
                                 <div class="form">
-                                <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
                                 <div class="form-group ">
 
 
@@ -797,14 +796,15 @@
 
                                         <div class="form-group">
                                         <p>Desarrollo del parto (hubo complicaciones, hemorragias, hipoxia, hospitalizacion, tipo de atencion durando el parto) </p>
-                                      <textarea class="form-control" rows="2" id="desarrolo_parto"  type="text" name="desarrolo_parto"></textarea>
+                                      <textarea class="form-control" rows="2" id="desarrollo_parto"  type="text" name="desarrollo_parto"></textarea>
                                         </div>
 
                                         <div class="form-group">
                                             <p><span><strong> OBSERVACIONES </strong></span></p>
-
-                                        <textarea class="form-control" rows="3" id="observaciones_parto" type="text" name="obervaciones_parto"></textarea>
+                                      <p>
+                                        <textarea class="form-control" rows="3" id="observaciones_parto" type="text" name="observaciones_parto"></textarea>
                                     </div>
+                                  </p>
 
                                 <div class="form-group">
                                       <p><span> <strong> 6.3 ANTECENTES POSNATALES </strong></span></p>
@@ -855,7 +855,7 @@
                                     </div>
 
                                       <div class="bio-row">
-                                        <p><span><strong>CUALES?</strong></span><input type="text"   class="form-control-static" id="cuales_cirugias" name="cuales_cirugias"></p>
+                                        <p><span><strong>CUALES?</strong></span><input type="text"  type="text" class="form-control-static" id="cuales_cirugias" name="cuales_cirugias"></p>
 
                                     </div>
 
@@ -872,7 +872,7 @@
                                     </div>
 
                                      <div class="bio-row">
-                                         <p><span><strong>CUALES?</strong></span><input type="text"  class="form-control-static" id="cuales_familiares" name="cuales_familiares"></p>
+                                         <p><span><strong>CUALES?</strong></span><input type="text" type="text" class="form-control-static" id="cuales_familiares" name="cuales_familiares"></p>
 
                                     </div>
 
@@ -889,7 +889,7 @@
                                     </div>
 
                                       <div class="bio-row">
-                                          <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static"  row="2" id="cuales_otros" name="cuales_otros"></p>
+                                          <p><span><strong>CUALES?</strong></span><input type="text" class="form-control-static" type="text" row="2" id="cuales_otros" name="cuales_otros"></p>
 
                                     </div>
                                       <div class="form-group">
@@ -902,14 +902,11 @@
                                 </div>
 
                                 </div>
-                                </form>
+
 
                                 </div>
                                 </div>
-                                <ul class="pager">
-                                <li class="previous"><a href="">&larr; Anterior</a></li>
-                                <li class="next"><a href="">Siguiente &rarr;</a></li>
-                                </ul>
+
                                 </div>
                                 <!-- ---------------------------------------------------- ANTECEDENTES ------------------------------------ -->
                                 <!-- ---------------------------------------------------- TRATAMIENTOS REALIZADOS ------------------------------------ -->
@@ -922,7 +919,7 @@
                                 </header>
                                 <div class="panel-body">
                                 <div class="form">
-                                <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
                                 <div class="form-group ">
 
 
@@ -950,16 +947,13 @@
 
 
                                 </div>
-                                </form>
+
                                 </div>
                                 </div>
                                 </section>
                                 </div>
                                 </div>
-                                <ul class="pager">
-                                <li class="previous"><a href="">&larr; Anterior</a></li>
-                                <li class="next"><a href="">Siguiente &rarr;</a></li>
-                                </ul>
+
 
                                 </div>
                                 <!-- ---------------------------------------------------- TRATAMIENTOS REALIZADOS ------------------------------------ -->
@@ -974,23 +968,20 @@
                                 </header>
                                 <div class="panel-body">
                                 <div class="form">
-                                <form class="form-validate form-horizontal" type="text" id="feedback_form" method="get" action="">
+
                                 <div class="form-group ">
 
                                     <textarea class="form-control" rows="3" type="text" id="expectativas"  name="expectativas"></textarea>
 
 
                                  </div>
-                                </form>
+
                                 </div>
                                 </div>
                                 </section>
                                 </div>
                                 </div>
-                                <ul class="pager">
-                                <li class="previous"><a href="">&larr; Anterior</a></li>
-                                <li class="next"><a href="">Siguiente &rarr;</a></li>
-                                </ul>
+
 
                                 </div>
                                 <!-- ---------------------------------------------------- EXPECTATIVAS ------------------------------------ -->
@@ -1005,27 +996,27 @@
                                 </header>
                                 <div class="panel-body">
                                 <div class="form">
-                                <form class="form-validate form-horizontal"  id="feedback_form" method="get" action="">
+
                                 <div class="form-group ">
 
                                     <textarea class="form-control" rows="4" type="text" id="plan_trabajo" name=" plan_trabajo"></textarea>
 
 
                                  </div>
-                                </form>
+
+
+
                                 </div>
                                 </div>
                                 <div class="btn">
+                                </form>
 
                                 <button type="submit" class="btn btn-info" >Guardar </button>
                                 </div>
                                 </section>
                                 </div>
                                 </div>
-                                <ul class="pager">
-                                <li class="previous"><a href="">&larr; Anterior</a></li>
 
-                                </ul>
 
                                 </div>
 
@@ -1037,7 +1028,7 @@
 
 </div>
 
-
+</section>
   </div>
 
 
@@ -1047,12 +1038,12 @@
 
       </div>
 
+</div>
 
-  </div>
           <script src="js/jquery.slimscroll.min.js"></script>
 
 
-
+</body>
 
 
 

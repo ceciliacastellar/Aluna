@@ -23,6 +23,10 @@ class Alumno extends Model
       return $this->hasOne('\App\Historiaini', 'alumno_id', 'id');
     }
 
+    public function fisioterapia(){
+      return $this->hasOne('\App\Fisioterapia', 'alumno_id', 'id');
+    }
+
     public function scopeName($query, $name)
     {
     //  dd("scope:" , $name);

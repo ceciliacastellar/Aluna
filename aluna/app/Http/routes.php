@@ -189,6 +189,13 @@ Route::post('formatos.saveini/{alumno}', ['middleware' => 'role:salud',
 ]);
 
 
+Route::get('formatos.showhini/{alumno}', ['middleware' => 'role:salud',
+'uses' => 'FormatosController@showhini',
+'as' => 'formatos.showhini'
+]);
+
+
+
 
 });
 /*Route::post('auth/{user}', [

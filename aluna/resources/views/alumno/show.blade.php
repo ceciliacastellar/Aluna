@@ -59,6 +59,14 @@
                                   </a>
 
                               </li>
+
+                              <li class="panel purple-bg">
+                                  <a data-toggle="tab" href="#hmedico" class="hmedico">
+                                      <i class="icon-envelope"></i>
+                                      H. Inicial
+                                  </a>
+
+                              </li>
                           </ul>
 
 <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
@@ -342,6 +350,48 @@
                               </div>
 
 <!-- --------------------------------------- FUNDACION ----------------------------------------------------->
+<div id="hmedico" class="tab-pane">
+            <section class="panel medico">
+
+              <div class="panel-body bio-graph-info">
+                   <table class="table table-striped table-advance table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th><i class="icon_profile"></i> Terapia</th>
+                                            <th><i class="fa fa-calendar"></i> Fecha</th>
+                                            <th><i class="fa fa-eye"></i>Ver</th>
+                                          </tr>
+                                          <tr>
+                                              <td>Historia inicial</td>
+                                              <td> {{ $alumnos->historiaini->created_at }} </td>
+
+                                              <td>
+                                               <div class="btn-group">
+
+                                                   <a class="btn btn-success" href="{{ route('formatos.showhini', $alumnos)}}"><i class="fa fa-eye"></i></a>
+
+                                               </div>
+                                               </td>
+                                          </tr>
+
+                                      </tbody>
+                                  </table>
+
+                  <!--<div class="row">
+                      <div>
+
+
+                      </div>
+                  </div>-->
+              </div>
+            </section>
+
+
+
+
+          </div>
+
+
                           </div>
                       </div>
                 </section>

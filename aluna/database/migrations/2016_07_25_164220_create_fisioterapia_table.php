@@ -71,7 +71,7 @@ class CreateFisioterapiaTable extends Migration
       $table->string('recomendaciones1')->nullable();
       $table->string('recomendaciones2')->nullable();
       $table->string('recomendaciones3')->nullable();
-      $table->integer('alumno_id')->unsigned();
+      $table->integer('alumno_id')->unsigned()->unique();
       $table->foreign('alumno_id')->references('id')->on('alumno')
             ->onUpdate('cascade')->onDelete('cascade');
       $table->timestamps();

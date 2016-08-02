@@ -878,5 +878,6 @@
 
 
 </div>
+</div>
 
 @endsection
