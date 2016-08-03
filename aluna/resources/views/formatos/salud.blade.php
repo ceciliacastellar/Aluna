@@ -7,11 +7,11 @@
        <div class="col-lg-12">
 
 
-       <h3> <span class="page-header"><i class="fa fa-laptop"></i> Menu</span></h3>
+       <h3> <span class="page-header"><i class="fa fa-laptop"></i> Area de salud de: {{ $alumnos->nombres }} {{ $alumnos->apellidos }}</span></h3>
   <ol class="breadcrumb">
        <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
        <li><i class="fa fa-table"></i><a href="/alumno">Listado de alumnos</a></li>
-       <li><i class="fa fa-th-list"></i>Area de salud de: {{ $alumnos->nombres }}{{ $alumnos->apellidos }}</li>
+       <li><i class="fa fa-user-md"></i>Area de salud de: {{ $alumnos->nombres }} {{ $alumnos->apellidos }}</li>
   </ol>
 
         </div>
@@ -35,6 +35,7 @@
                 <div class="h-service-content wow fadeInUp">
                     <br> <center> <h3 id="tittlebox"> Historial<strong> Inicial</strong> </h3><br>
                         <a class="btn btn-danger" href="{{ route('formatos.historiaini', $alumnos)}}"><span>Crear</span></a>
+                        <a class="btn btn-danger" href="{{ route('formatos.showhini', $alumnos)}}"><span>Ver</span></a>
                         <br>
                     </center>
                 </div>
@@ -63,7 +64,7 @@
                 </div>
                 <div class="h-service-content wow fadeInUp">
                     <br> <center> <h3 id="tittlebox"> Formatos de<strong> Terapias</strong> </h3><br>
-                        <a class="btn btn-primary" href="formato_terapias.html"><span>Ver</span></a>
+                        <a class="btn btn-primary" href="{{ route('formatos.index', $alumnos)}}"><span>Ver</span></a>
                         <br>
                     </center>
                 </div>

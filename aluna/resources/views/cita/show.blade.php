@@ -13,7 +13,8 @@
                     <ol class="breadcrumb">
                       <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
                       <li><i class="fa fa-table"></i><a href="/alumno">Listado de alumnos</a></li>
-                      <li><i class="fa fa-th-list"></i>Listado de citas</li>
+                      <li><i class="fa fa-user-md"></i> <a href="{{ route('formatos.salud', $alumnos)}}">Area de salud de: {{ $alumnos->nombres }}{{ $alumnos->apellidos }}</a></li>
+                      <li><i class="fa fa-th-list"></i><a href="{{ route('cita.index', $alumnos)}}">Listado de citas</a></li>
                       <li><i class="fa fa-th-list"></i>Cita de {{ $citas->alumno->nombres}} {{ $citas->alumno->apellidos }} </li>
 
                     </ol>

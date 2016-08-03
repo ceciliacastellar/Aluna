@@ -14,6 +14,8 @@ class EntrustMiddleware
 
     public function __construct(Guard $auth, Route $route)
     {
+      //dd($auth);
+
         /**
          * Información del usuario autentificado
          */

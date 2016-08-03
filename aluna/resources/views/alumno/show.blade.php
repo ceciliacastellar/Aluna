@@ -60,13 +60,13 @@
 
                               </li>
 
-                              <li class="panel purple-bg">
+                              <!--<li class="panel purple-bg">
                                   <a data-toggle="tab" href="#hmedico" class="hmedico">
                                       <i class="icon-envelope"></i>
                                       H. Inicial
                                   </a>
 
-                              </li>
+                              </li>-->
                           </ul>
 
 <!-- --------------------------------------- PESTAÑAS------------------------------------------------- -->
@@ -350,7 +350,7 @@
                               </div>
 
 <!-- --------------------------------------- FUNDACION ----------------------------------------------------->
-<div id="hmedico" class="tab-pane">
+<!--<div id="hmedico" class="tab-pane">
             <section class="panel medico">
 
               <div class="panel-body bio-graph-info">
@@ -363,7 +363,7 @@
                                           </tr>
                                           <tr>
                                               <td>Historia inicial</td>
-                                              <td> {{ $alumnos->historiaini->created_at }} </td>
+                                              <td> </td>
 
                                               <td>
                                                <div class="btn-group">
@@ -382,14 +382,14 @@
 
 
                       </div>
-                  </div>-->
+                  </div>  -->
               </div>
             </section>
 
 
 
 
-          </div>
+          </div>-->
 
 
                           </div>

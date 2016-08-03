@@ -173,6 +173,7 @@ Route::get('pdf/invoice',[
   'as' => 'pdf.invoice'
 ]);
 
+//  Rutas para formatos de salud
 Route::get('formatos/{alumno}', ['middleware' => 'role:salud',
   'uses' => 'FormatosController@salud',
   'as' => 'formatos.salud'
@@ -193,6 +194,42 @@ Route::get('formatos.showhini/{alumno}', ['middleware' => 'role:salud',
 'uses' => 'FormatosController@showhini',
 'as' => 'formatos.showhini'
 ]);
+
+Route::get('formatos.index/{alumno}', ['middleware' => 'role:salud',
+'uses' => 'FormatosController@index',
+'as' => 'formatos.index'
+]);
+
+Route::get('formatos.fisioterapia/{alumno}', ['middleware' => 'role:salud',
+'uses' => 'FormatosController@fisioterapia',
+'as' => 'formatos.fisioterapia'
+]);
+
+Route::post('formatos.storefisio/{alumno}', ['middleware' => 'role:salud',
+  'uses' => 'FormatosController@storefisio',
+  'as' => 'formatos.storefisio'
+]);
+
+Route::get('formatos.verfisio/{alumno}', ['middleware' => 'role:salud',
+'uses' => 'FormatosController@verfisio',
+'as' => 'formatos.verfisio'
+]);
+
+Route::get('formatos.equinoterapia/{alumno}', ['middleware' => 'role:salud',
+'uses' => 'FormatosController@equinoterapia',
+'as' => 'formatos.equinoterapia'
+]);
+
+Route::post('formatos.storeequi/{alumno}', ['middleware' => 'role:salud',
+  'uses' => 'FormatosController@storeequi',
+  'as' => 'formatos.storeequi'
+]);
+
+Route::get('formatos.verequino/{alumno}', ['middleware' => 'role:salud',
+'uses' => 'FormatosController@verequino',
+'as' => 'formatos.verequino'
+]);
+
 
 
 

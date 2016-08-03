@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFisioterapiaTable extends Migration
+class CreateEquinoterapiaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateFisioterapiaTable extends Migration
      */
     public function up()
     {
-     Schema::create('fisioterapia', function (Blueprint $table) {
+     Schema::create('equinoterapia', function (Blueprint $table) {
       $table->string('alerta')->nullable();
       $table->string('orientado')->nullable();
       $table->string('lenguaje')->nullable();
@@ -88,6 +88,6 @@ class CreateFisioterapiaTable extends Migration
      */
     public function down()
     {
-        Schema::drop('fisioterapia');
+        Schema::drop('equinoterapia');
     }
 }

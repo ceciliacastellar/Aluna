@@ -1731,6 +1731,7 @@ textarea.input-lg {
 }
 .form-control-static {
   margin-bottom: 0;
+  margin-left: 30px;
   padding-top: 7px;
 }
 .help-block {

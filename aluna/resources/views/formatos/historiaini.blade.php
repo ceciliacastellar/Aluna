@@ -17,7 +17,7 @@
          <ol class="breadcrumb">
            <li><i class="fa fa-home"></i><a href="/principal">{{ trans('pagination.home') }}</a></li>
            <li><i class="fa fa-table"></i><a href="/alumno">Listado de alumnos</a></li>
-           <li><i class="fa fa-th-list"></i> <a href="{{ route('formatos.salud', $alumnos)}}">Area de salud de: {{ $alumnos->nombres }}{{ $alumnos->apellidos }}</a></li>
+           <li><i class="fa fa-user-md"></i> <a href="{{ route('formatos.salud', $alumnos)}}">Area de salud de: {{ $alumnos->nombres }}{{ $alumnos->apellidos }}</a></li>
            <li><i class="fa fa-th-list"></i>Historia inicial</li>
          </ol>
 
@@ -1008,11 +1008,11 @@
 
                                 </div>
                                 </div>
-                                <div class="btn">
-                                </form>
 
+                                </form>
+                                <center><div class="btn">
                                 <button type="submit" class="btn btn-info" >Guardar </button>
-                                </div>
+                              </div></center>
                                 </section>
                                 </div>
                                 </div>
