@@ -167,11 +167,14 @@ Route::get('auth/{user}', [
 ]);
 
 
-
+// Rutas para exportar datos en pdf y excel
 Route::get('pdf/invoice',[
   'uses'=> 'PdfController@invoice',
   'as' => 'pdf.invoice'
 ]);
+
+Route::resource('excel', 'ExcelController',
+                  ['except' => ['edit', 'show', 'store', 'destroy', 'update', 'create']]);
 
 //  Rutas para formatos de salud
 Route::get('formatos/{alumno}', ['middleware' => 'role:salud',

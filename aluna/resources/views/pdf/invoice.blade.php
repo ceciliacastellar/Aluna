@@ -21,6 +21,7 @@
             <th><i class="service"></i> Numero Documento</th>
             <th><i class="service"></i> Nombres</th>
             <th><i class="service"></i> Apellidos</th>
+            <th><i class="service"></i> Edad</th>
             <th><i class="service"></i> Convenio</th>
           </tr>
         </thead>
@@ -30,6 +31,7 @@
             <td class="service"> {{ $datas->numero_documento }}</td>
             <td class="service"> {{ $datas->nombres }}</td>
             <td class="service"> {{ $datas->apellidos }}</td>
+            <td class="service"> {{ $datas->edad }}</td>
             <td class="service"> {{ $datas->convenio }} </td>
           </tr>
           @endforeach

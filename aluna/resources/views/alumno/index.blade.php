@@ -23,7 +23,10 @@
 <button type="submit" class="btn btn-primary">Buscar</button>
 
   {!! Form::close() !!}
+  <div>
   <a href="{{ route('pdf.invoice') }}" class="btn btn-primary pull-right"><i class="fa fa-cloud-download"></i></a>
+  <a class="btn btn-primary pull-right" href="excel"><span>descargar en excel</span></a>
+</div>
 
 
                     <table class="table table-striped table-advance table-hover">

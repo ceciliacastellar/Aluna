@@ -43,8 +43,12 @@
                 </div>
                 <div class="h-service-content wow fadeInUp">
                     <br> <center> <h3 id="tittlebox"> Fisioterapia<br></h3><br>
+                      @if($alumnos->fisioterapia == false)
                         <a class="btn btn-info" href="{{ route('formatos.fisioterapia', $alumnos)}}"><span>Crear</span></a>
+                      @endif
+                      @if($alumnos->fisioterapia == true)
                         <a class="btn btn-info" href="{{ route('formatos.verfisio', $alumnos)}}"><span>Ver</span></a><br>
+                      @endif
                         <br>
                     </center>
                 </div>
@@ -72,8 +76,12 @@
                 </div>
                 <div class="h-service-content wow fadeInUp">
                     <br> <center> <h3 id="tittlebox">Equinoterapia</h3><br>
+                      @if($alumnos->equinoterapia == false)
                         <a class="btn btn-success" href="{{ route('formatos.equinoterapia', $alumnos)}}"><span>Crear</span></a>
+                      @endif
+                      @if($alumnos->equinoterapia == true)
                         <a class="btn btn-success" href="{{ route('formatos.verequino', $alumnos)}}"><span>Ver</span></a><br>
+                      @endif
                         <br>
                     </center>
                 </div>

@@ -14,24 +14,24 @@ class CreateAlumnoTable extends Migration
     {
         Schema::create('alumno', function (Blueprint $table) {
           $table->increments('id');
-          $table->string('file');
+          $table->string('file')->nullable();
           $table->string('nombres');
           $table->string('apellidos');
           $table->string('tipo_documento');
           $table->string('numero_documento')->unique();
-          $table->string('fecha_nacimiento');
-          $table->string('departamento');
-          $table->string('municipio');
-          $table->string('edad');
-          $table->string('direccion_residencia');
-          $table->string('nombre_persona');
-          $table->string('apellido_persona');
-          $table->string('parentesco');
-          $table->string('nombre_padre');
-          $table->string('apellido_padre');
-          $table->string('tipo_documentop');
-          $table->string('numero_documentop');
-          $table->string('direccion_padre');
+          $table->string('fecha_nacimiento')->nullable();
+          $table->string('departamento')->nullable();
+          $table->string('municipio')->nullable();
+          $table->string('edad')->nullable();
+          $table->string('direccion_residencia')->nullable();
+          $table->string('nombre_persona')->nullable();
+          $table->string('apellido_persona')->nullable();
+          $table->string('parentesco')->nullable();
+          $table->string('nombre_padre')->nullable();
+          $table->string('apellido_padre')->nullable();
+          $table->string('tipo_documentop')->nullable();
+          $table->string('numero_documentop')->nullable();
+          $table->string('direccion_padre')->nullable();
           $table->string('tel_padre')->nullable();
           $table->string('dir_trabajop')->nullable();
           $table->string('tel_trabajop')->nullable();
@@ -63,6 +63,13 @@ class CreateAlumnoTable extends Migration
           $table->string('convenio')->nullable();
           $table->string('modulo')->nullable();
           $table->string('programa')->nullable();
+        /*  $table->string('fisioterapia')->nullable();
+          $table->string('equinoterapia')->nullable();
+          $table->string('talleres')->nullable();
+          $table->string('fonoaudiologia')->nullable();
+          $table->string('psicologia')->nullable();
+          $table->string('terapia_acuatica')->nullable();
+          $table->string('terapia_ocupacional')->nullable();*/
           $table->timestamps();
         });
     }

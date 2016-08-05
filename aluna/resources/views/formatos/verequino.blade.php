@@ -129,7 +129,7 @@
                                  <div class="form-group">
                                  <div class="bio-row">
                                       <p><span><strong>10. Sensibilidad superficial</strong></span>{{ $alumnos->equinoterapia->sensibilidad_superficial }}</p>
-                                      
+
 
 
 
@@ -463,7 +463,7 @@
                                  <div class="bio-row">
                                       <p><span><strong>Recomendaciones</strong></span></p>
                                       1. <p>{{ $alumnos->equinoterapia->recomendaciones1 }}</p>
-                                      2. <<p>{{ $alumnos->equinoterapia->recomendaciones2 }}</p>
+                                      2. <p>{{ $alumnos->equinoterapia->recomendaciones2 }}</p>
                                       3. <p>{{ $alumnos->equinoterapia->recomendaciones3 }}</p>
 
 

@@ -34,8 +34,13 @@
                 </div>
                 <div class="h-service-content wow fadeInUp">
                     <br> <center> <h3 id="tittlebox"> Historial<strong> Inicial</strong> </h3><br>
+
+                      @if($alumnos->historiaini==false)
                         <a class="btn btn-danger" href="{{ route('formatos.historiaini', $alumnos)}}"><span>Crear</span></a>
+                      @endif
+                      @if($alumnos->historiaini==true)
                         <a class="btn btn-danger" href="{{ route('formatos.showhini', $alumnos)}}"><span>Ver</span></a>
+                      @endif
                         <br>
                     </center>
                 </div>
