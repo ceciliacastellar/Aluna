@@ -336,6 +336,27 @@
                                           <div class="bio-row">
                                               <p><span>PROGRAMA </span>: {{ $alumnos->programa }} </p>
                                           </div>
+                                          <div class="bio-row">
+                                              <p><span>FISIOTERAPIA </span>: {{ $alumnos->fisioterapia }} </p>
+                                          </div>
+                                          <div class="bio-row">
+                                              <p><span>EQUINOTERAPIA </span>: {{ $alumnos->equinoterapia }} </p>
+                                          </div>
+                                          <div class="bio-row">
+                                              <p><span>FONOAUDIOLOGIA </span>: {{ $alumnos->fonoaudiologia }} </p>
+                                          </div>
+                                          <div class="bio-row">
+                                              <p><span>PSICOLOGIA </span>: {{ $alumnos->psicologia }} </p>
+                                          </div>
+                                          <div class="bio-row">
+                                              <p><span>TERAPIA ACUATICA </span>: {{ $alumnos->terapia_acuatica }} </p>
+                                          </div>
+                                          <div class="bio-row">
+                                              <p><span>TERAPIA OCUPACIONAL </span>: {{ $alumnos->terapia_ocupacional }} </p>
+                                          </div>
+                                          <div class="bio-row">
+                                              <p><span>TALLERES </span>: {{ $alumnos->talleres }} </p>
+                                          </div>
 
                                       </div>
                                   </div>

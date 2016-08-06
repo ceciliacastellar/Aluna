@@ -826,6 +826,91 @@
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------  PROGRAMA ---------------------------------------------------- -->
+                                        <div class="form-group  bio-row">
+                                          <label for="fisioterapia" class="control-label col-xs-3">FISIOTERAPIA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="fisioterapia">
+                                                        <option value= "" selected="selected">----</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="equinoterapia" class="control-label col-xs-3">EQUINOTERAPIA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="equinoterapia">
+                                                        <option value= "" selected="selected">----</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="fonoaudiologia" class="control-label col-xs-3">FONOAUDIOLOGIA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="fonoaudiologia">
+                                                        <option value= "" selected="selected">----</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="psicologia" class="control-label col-xs-3">PSICOLOGIA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="psicologia">
+                                                        <option value= "" selected="selected">----</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="terapia_acuatica" class="control-label col-xs-3">TERAPIA ACUATICA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="terapia_acuatica">
+                                                        <option value= "" selected="selected">----</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="terapia_ocupacional" class="control-label col-xs-3">TERAPIA OCUPACIONAL:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="terapia_ocupacional">
+                                                        <option value= "" selected="selected">----</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="talleres" class="control-label col-xs-3">TALLERES:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="talleres">
+                                                        <option value= "" selected="selected">----</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+
 
                                         <div class="form-group  bio-row">
                                             <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">

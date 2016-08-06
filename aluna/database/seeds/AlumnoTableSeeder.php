@@ -60,8 +60,13 @@ class AlumnoTableSeeder extends Seeder
       'convenio' => "ICBF",
       'modulo' => "Azul",
       'programa' => "Delfin",
-
-
+      'fisioterapia' => "si",
+      'equinoterapia' => "si",
+      'talleres' => "no",
+      'fonoaudiologia' => "si",
+      'psicologia' => "si",
+      'terapia_acuatica' => "si",
+      'terapia_ocupacional' => "si",
 
       //'role' => 'admin',
 
@@ -71,7 +76,7 @@ class AlumnoTableSeeder extends Seeder
 
     $faker = Faker::create();
     DB::table('alumno')->insert([
-    'nombres' => "Cecilua Alejandra",
+    'nombres' => "Cecilia Alejandra",
     'apellidos' => "Castellar Bustillo",
     'tipo_documento' => "C.C",
     'numero_documento' => "13234567899",
@@ -116,6 +121,13 @@ class AlumnoTableSeeder extends Seeder
     'convenio' => "ICBF",
     'modulo' => "Azul",
     'programa' => "Delfin",
+    'fisioterapia' => "no",
+    'equinoterapia' => "si",
+    'talleres' => "no",
+    'fonoaudiologia' => "si",
+    'psicologia' => "no",
+    'terapia_acuatica' => "no",
+    'terapia_ocupacional' => "si",
 
 
 

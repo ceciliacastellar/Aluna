@@ -142,9 +142,15 @@ class AlumnoController extends Controller
           $alumno->convenio = $request->convenio;
           $alumno->modulo = $request->modulo;
           $alumno->programa = $request->programa;
+          $alumno->fisioterapia = $request->fisioterapia;
+          $alumno->equinoterapia = $request->equinoterapia;
+          $alumno->talleres = $request->talleres;
+          $alumno->fonoaudiologia = $request->fonoaudiologia;
+          $alumno->psicologia = $request->psicologia;
+          $alumno->terapia_acuatica = $request->terapia_acuatica;
+          $alumno->terapia_ocupacional = $request->terapia_ocupacional;
           $alumno->save();
           return view('alumno.create');
-
         }
 
         public function update(Request $request, $id)
@@ -195,6 +201,13 @@ class AlumnoController extends Controller
             $alumno->convenio = $request->convenio;
             $alumno->modulo = $request->modulo;
             $alumno->programa = $request->programa;
+            $alumno->fisioterapia = $request->fisioterapia;
+            $alumno->equinoterapia = $request->equinoterapia;
+            $alumno->talleres = $request->talleres;
+            $alumno->fonoaudiologia = $request->fonoaudiologia;
+            $alumno->psicologia = $request->psicologia;
+            $alumno->terapia_acuatica = $request->terapia_acuatica;
+            $alumno->terapia_ocupacional = $request->terapia_ocupacional;
             $alumno->update();
             $alumnos = Alumno::find($id);
             return View::make('alumno.show')->with('alumnos', $alumnos);

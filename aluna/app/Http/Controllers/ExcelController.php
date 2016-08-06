@@ -20,8 +20,7 @@ class ExcelController extends Controller {
 
             $excel->sheet('alumnos', function($sheet) {
 
-                $alumnos = Alumno::select('id', 'tipo_documento', 'numero_documento', 'nombres', 'apellidos', 'edad', 'convenio' )->get();
-
+                $alumnos = Alumno::select('id', 'tipo_documento', 'numero_documento', 'nombres', 'apellidos', 'edad', 'convenio', 'fisioterapia' , 'equinoterapia', 'fonoaudiologia', 'psicologia', 'terapia_acuatica' , 'terapia_ocupacional' , 'talleres')->get();
                 $sheet->fromArray($alumnos);
 
             });
