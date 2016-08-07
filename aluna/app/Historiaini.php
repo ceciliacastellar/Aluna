@@ -14,6 +14,6 @@ class Historiaini extends Model
    'ultima_crisis','cirugias','cuales_cirugias','familiares','cuales_familiares','otros','cuales_otros','examenes_especializados','pedagogicos','terapeuticos','farmacologicos','expectativas','plan_trabajo','alumno_id'];
 
     public function alumno(){
-        return $this->belongsTo('\App\Alumno', 'alumno_id', 'id');
+        return $this->belongsTo('\App\Alumno');
     }
 }

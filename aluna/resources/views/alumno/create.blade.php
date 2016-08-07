@@ -827,10 +827,10 @@
                                         </div>
     <!-- -------------------------------------------------------  PROGRAMA ---------------------------------------------------- -->
                                         <div class="form-group  bio-row">
-                                          <label for="fisioterapia" class="control-label col-xs-3">FISIOTERAPIA:<span class="required">*</span> </label>
+                                          <label for="fisio" class="control-label col-xs-3">FISIOTERAPIA:<span class="required">*</span> </label>
                                             <div class="col-xs-3">
 
-                                                    <select class="form-control" name="fisioterapia">
+                                                    <select class="form-control" name="fisio">
                                                         <option value= "" selected="selected">----</option>
                                                         <option value="si">Si</option>
                                                         <option value="no">No</option>
@@ -839,10 +839,10 @@
                                         </div>
 
                                         <div class="form-group  bio-row">
-                                          <label for="equinoterapia" class="control-label col-xs-3">EQUINOTERAPIA:<span class="required">*</span> </label>
+                                          <label for="equino" class="control-label col-xs-3">EQUINOTERAPIA:<span class="required">*</span> </label>
                                             <div class="col-xs-3">
 
-                                                    <select class="form-control" name="equinoterapia">
+                                                    <select class="form-control" name="equino">
                                                         <option value= "" selected="selected">----</option>
                                                         <option value="si">Si</option>
                                                         <option value="no">No</option>
@@ -851,10 +851,10 @@
                                         </div>
 
                                         <div class="form-group  bio-row">
-                                          <label for="fonoaudiologia" class="control-label col-xs-3">FONOAUDIOLOGIA:<span class="required">*</span> </label>
+                                          <label for="fono" class="control-label col-xs-3">FONOAUDIOLOGIA:<span class="required">*</span> </label>
                                             <div class="col-xs-3">
 
-                                                    <select class="form-control" name="fonoaudiologia">
+                                                    <select class="form-control" name="fono">
                                                         <option value= "" selected="selected">----</option>
                                                         <option value="si">Si</option>
                                                         <option value="no">No</option>
@@ -863,10 +863,10 @@
                                         </div>
 
                                         <div class="form-group  bio-row">
-                                          <label for="psicologia" class="control-label col-xs-3">PSICOLOGIA:<span class="required">*</span> </label>
+                                          <label for="psico" class="control-label col-xs-3">PSICOLOGIA:<span class="required">*</span> </label>
                                             <div class="col-xs-3">
 
-                                                    <select class="form-control" name="psicologia">
+                                                    <select class="form-control" name="psico">
                                                         <option value= "" selected="selected">----</option>
                                                         <option value="si">Si</option>
                                                         <option value="no">No</option>

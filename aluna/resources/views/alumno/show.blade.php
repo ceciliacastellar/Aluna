@@ -337,16 +337,16 @@
                                               <p><span>PROGRAMA </span>: {{ $alumnos->programa }} </p>
                                           </div>
                                           <div class="bio-row">
-                                              <p><span>FISIOTERAPIA </span>: {{ $alumnos->fisioterapia }} </p>
+                                              <p><span>FISIOTERAPIA </span>: {{ $alumnos->fisio }} </p>
                                           </div>
                                           <div class="bio-row">
-                                              <p><span>EQUINOTERAPIA </span>: {{ $alumnos->equinoterapia }} </p>
+                                              <p><span>EQUINOTERAPIA </span>: {{ $alumnos->equino }} </p>
                                           </div>
                                           <div class="bio-row">
-                                              <p><span>FONOAUDIOLOGIA </span>: {{ $alumnos->fonoaudiologia }} </p>
+                                              <p><span>FONOAUDIOLOGIA </span>: {{ $alumnos->fono }} </p>
                                           </div>
                                           <div class="bio-row">
-                                              <p><span>PSICOLOGIA </span>: {{ $alumnos->psicologia }} </p>
+                                              <p><span>PSICOLOGIA </span>: {{ $alumnos->psico }} </p>
                                           </div>
                                           <div class="bio-row">
                                               <p><span>TERAPIA ACUATICA </span>: {{ $alumnos->terapia_acuatica }} </p>

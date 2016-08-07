@@ -16,11 +16,11 @@ class ExcelController extends Controller {
 	public function index()
 	{
 
-        Excel::create('Laravel Excel', function($excel) {
+        Excel::create('lista alumnos', function($excel) {
 
             $excel->sheet('alumnos', function($sheet) {
 
-                $alumnos = Alumno::select('id', 'tipo_documento', 'numero_documento', 'nombres', 'apellidos', 'edad', 'convenio', 'fisioterapia' , 'equinoterapia', 'fonoaudiologia', 'psicologia', 'terapia_acuatica' , 'terapia_ocupacional' , 'talleres')->get();
+                $alumnos = Alumno::select('id', 'tipo_documento', 'numero_documento', 'nombres', 'apellidos', 'edad', 'convenio', 'fisio' , 'equino', 'fono', 'psico', 'terapia_acuatica' , 'terapia_ocupacional' , 'talleres')->get();
                 $sheet->fromArray($alumnos);
 
             });
