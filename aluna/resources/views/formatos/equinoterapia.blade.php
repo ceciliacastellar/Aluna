@@ -761,9 +761,7 @@
                                 </div>
                                <div class="bio-row">
                                     <p><span><strong>Recomendaciones</strong></span></p>
-                                      <p> 1. <input class="form-control-static" id="recomendaciones1" name="recomendaciones1"  type="text"></p>
-                                      <p> 2. <input class=" form-control-static " id="recomendaciones2" name="recomendaciones2"  type="text"></p>
-                                      <p> 3. <input class=" form-control-static " id="recomendaciones3" name="recomendaciones3"  type="text"></p>
+                                      <textarea class="form-control" id="recomendaciones1" name="recomendaciones1"  type="text" rows="4"></textarea>
 
 
 
