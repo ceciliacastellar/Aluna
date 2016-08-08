@@ -55,19 +55,24 @@
             </div>
         </div>
 
-            <!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="h-servicedos" >
                 <div class="icon-wrap ico-bg round-fifty wow fadeInDown ">
                     <i class="fa fa-folder-open fa-lg" ></i>
                 </div>
                 <div class="h-service-content wow fadeInUp">
-                    <br> <center> <h3 id="tittlebox">Fonoaudiologia  </h3><br>
-                        <a class="btn btn-danger" href="fonodiologia.html"><span>Crear</span></a><br>
+                    <br> <center> <h3 id="tittlebox">Psicologia </h3><br>
+                      @if($alumnos->psicologia == false)
+                        <a class="btn btn-danger" href="{{ route('formatos.psicologia', $alumnos)}}"><span>Crear</span></a><br>
+                        @endif
+                      @if($alumnos->psicologia == true)
+                      <a class="btn btn-danger" href="{{ route('formatos.verpsico', $alumnos)}}"><span>Ver</span></a><br>
+                    @endif
                         <br>
                     </center>
                 </div>
             </div>
-        </div>-->
+        </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="h-servicetres" >

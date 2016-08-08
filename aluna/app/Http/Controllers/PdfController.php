@@ -22,16 +22,4 @@ class PdfController extends Controller
       return $pdf->stream('lista.pdf');
   }
 
-  /*public function getData()
-  {
-      $data = Alumno::all();
-      $data = [
-        'documento' => '$alumnos->numero_documento',
-        'nombres' => '$alumnos->nombres',
-        'apellidos' => '$alumnos->apellidos',
-        'convenio' => '$alumnos->convenio'
-      ];
-
-      return $data;
-  }*/
 }

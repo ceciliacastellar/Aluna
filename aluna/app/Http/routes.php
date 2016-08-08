@@ -233,6 +233,20 @@ Route::get('formatos.verequino/{alumno}', ['middleware' => 'role:salud',
 'as' => 'formatos.verequino'
 ]);
 
+Route::get('formatos.psicologia/{alumno}', ['middleware' => 'role:salud',
+'uses' => 'FormatosController@psicologia',
+'as' => 'formatos.psicologia'
+]);
+
+Route::post('formatos.storepsico/{alumno}', ['middleware' => 'role:salud',
+  'uses' => 'FormatosController@storepsico',
+  'as' => 'formatos.storepsico'
+]);
+
+Route::get('formatos.verpsico/{alumno}', ['middleware' => 'role:salud',
+'uses' => 'FormatosController@verpsico',
+'as' => 'formatos.verpsico'
+]);
 
 
 

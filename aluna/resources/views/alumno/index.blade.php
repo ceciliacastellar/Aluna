@@ -24,8 +24,8 @@
 
   {!! Form::close() !!}
   <div>
-  <a href="{{ route('pdf.invoice') }}" class="btn btn-primary pull-right"><i class="fa fa-cloud-download"></i></a>
-  <a class="btn btn-primary pull-right" href="excel"><span>Descargar en excel</span></a>
+  <!--<a href="{{ route('pdf.invoice') }}" class="btn btn-primary pull-right"><i class="fa fa-cloud-download"></i></a>-->
+  <a class="btn btn-primary pull-right" href="excel"><i class="fa fa-cloud-download"></i></a>
 </div>
 
 

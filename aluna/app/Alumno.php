@@ -13,8 +13,8 @@ class Alumno extends Model
     'nombre_padre','apellido_padre','tipo_documentop','numero_documentop','direccion_padre','tel_padre','dir_trabajop','tel_trabajop',
     'nombre_madre','apellido_madre','tipo_documentom','direccion_madre','tel_madre','dir_trabajom','tel_trabajom',
     'nombre_acudiente','apellido_acudiente','tipo_documentopa','numero_documentoa','direccion_acudiente','tel_acudiente','dir_trabajoa','tel_trabajoa',
-    'nombre_emergencia','apellido_emergencia','direccion_emergencia','tel_emergencia','tel_trabajoe','fecha_matricula','convenio','modulo','programa','fisio',
-    'equino','talleres','fono','psico','terapia_acuatica','terapia_ocupacional'];
+    'nombre_emergencia','apellido_emergencia','direccion_emergencia','tel_emergencia','tel_trabajoe','fecha_matricula','convenio','modulo','programa','_fisioterapia_',
+    '_equinoterapia_','talleres','_fonoaudiologia_','_psicologia_','terapia_acuatica','terapia_ocupacional'];
 
     public function cita(){
       return $this->hasMany('\App\Cita');
@@ -30,6 +30,10 @@ class Alumno extends Model
 
     public function equinoterapia(){
       return $this->hasOne('\App\Equinoterapia', 'alumno_id', 'id');
+    }
+
+    public function psicologia(){
+      return $this->hasOne('\App\Psicologia', 'alumno_id', 'id');
     }
 
     public function scopeName($query, $name)

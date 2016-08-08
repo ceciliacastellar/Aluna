@@ -63,11 +63,11 @@ class CreateAlumnoTable extends Migration
           $table->string('convenio')->nullable();
           $table->string('modulo')->nullable();
           $table->string('programa')->nullable();
-          $table->string('fisio')->nullable();
-          $table->string('equino')->nullable();
+          $table->string('_fisioterapia_')->nullable();
+          $table->string('_equinoterapia_')->nullable();
           $table->string('talleres')->nullable();
-          $table->string('fono')->nullable();
-          $table->string('psico')->nullable();
+          $table->string('_fonoaudiologia_')->nullable();
+          $table->string('_psicologia_')->nullable();
           $table->string('terapia_acuatica')->nullable();
           $table->string('terapia_ocupacional')->nullable();
           $table->timestamps();

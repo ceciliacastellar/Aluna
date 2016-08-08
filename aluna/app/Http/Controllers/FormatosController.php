@@ -7,6 +7,7 @@ use App\Alumno;
 use App\historiaini;
 use App\Fisioterapia;
 use App\Equinoterapia;
+use App\Psicologia;
 use Validator;
 use View;
 
@@ -131,6 +132,18 @@ class FormatosController extends Controller
                 return  View::make('formatos.verequino')->with('alumnos', $alumnos);
           }
 
+          public function psicologia($id)
+          {
+              $alumnos = Alumno::find($id);
+              return  View::make('formatos.psicologia')->with('alumnos', $alumnos);
+          }
+
+          public function verpsico($id)
+          {
+              $alumnos = Alumno::find($id);
+              return  View::make('formatos.verpsico')->with('alumnos', $alumnos);
+          }
+
     public function storefisio(Request $request, $id)
       {
           $alumnos = Alumno::find($id);
@@ -198,7 +211,7 @@ class FormatosController extends Controller
           $fisioterapia->recomendaciones3 = $request->recomendaciones3;
           $fisioterapia->alumno_id = $request->alumno_id;
           $fisioterapia->save();
-          return View::make('formatos.salud')->with('alumnos', $alumnos);
+          return View::make('formatos.index')->with('alumnos', $alumnos);
 
         }
 
@@ -269,9 +282,39 @@ class FormatosController extends Controller
               $equinoterapia->recomendaciones3 = $request->recomendaciones3;
               $equinoterapia->alumno_id = $request->alumno_id;
               $equinoterapia->save();
-              return View::make('formatos.salud')->with('alumnos', $alumnos);
+              return View::make('formatos.index')->with('alumnos', $alumnos);
 
             }
+
+            public function storepsico(Request $request, $id)
+              {
+                  $alumnos = Alumno::find($id);
+                  $equinoterapia = new psicologia;
+                  $equinoterapia->porte_actitud = $request->porte_actitud;
+                  $equinoterapia->conciencia = $request->conciencia;
+                  $equinoterapia->orientacion = $request->orientacion;
+                  $equinoterapia->atencion = $request->atencion;
+                  $equinoterapia->memoria = $request->memoria;
+                  $equinoterapia->inteligencia = $request->inteligencia;
+                  $equinoterapia->psicomotora = $request->psicomotora;
+                  $equinoterapia->afecto = $request->afecto;
+                  $equinoterapia->pensamiento = $request->pensamiento;
+                  $equinoterapia->lenguaje_comunicacion = $request->lenguaje_comunicacion;
+                  $equinoterapia->sensopercepcion = $request->sensopercepcion;
+                  $equinoterapia->juicio = $request->juicio;
+                  $equinoterapia->prospeccion = $request->prospeccion;
+                  $equinoterapia->introspeccion = $request->introspeccion;
+                  $equinoterapia->procesos_cognitivos = $request->procesos_cognitivos;
+                  $equinoterapia->conocimientos_academicos = $request->conocimientos_academicos;
+                  $equinoterapia->socializacion_juego = $request->socializacion_juego;
+                  $equinoterapia->sexualidad_desarrollo = $request->sexualidad_desarrollo;
+                  $equinoterapia->repertorio_conductal = $request->repertorio_conductal;
+                  $equinoterapia->recomendaciones = $request->recomendaciones;
+                  $equinoterapia->alumno_id = $request->alumno_id;
+                  $equinoterapia->save();
+                  return View::make('formatos.index')->with('alumnos', $alumnos);
+
+                }
 
 
 
