@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Alumno;
-use App\historiaini;
+use App\Historiaini;
 use App\Fisioterapia;
 use App\Equinoterapia;
 use App\Psicologia;

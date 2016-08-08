@@ -858,6 +858,91 @@
                                             </div>
                                         </div>
     <!-- -------------------------------------------------------  PROGRAMA ---------------------------------------------------- -->
+                                        <div class="form-group  bio-row">
+                                          <label for="_fisioterapia_" class="control-label col-xs-3">FISIOTERAPIA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="_fisioterapia_">
+                                                        <option value= "{{ $alumnos->_fisioterapia_ }}">{{ $alumnos->_fisioterapia_ }}</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="_equinoterapia_" class="control-label col-xs-3">EQUINOTERAPIA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="_equinoterapia_">
+                                                        <option value= "{{ $alumnos->_equinoterapia_ }}">{{ $alumnos->_equinoterapia_ }}</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="_fonoaudiologia_" class="control-label col-xs-3">FONOAUDIOLOGIA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="_fonoaudiologia_">
+                                                        <option value= "{{ $alumnos->_fonoaudiologia_ }}">{{ $alumnos->_fonoaudiologia_ }}</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="_psicologia_" class="control-label col-xs-3">PSICOLOGIA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="_psicologia_">
+                                                        <option value= "{{ $alumnos->_psicologia_ }}">{{ $alumnos->_psicologia_ }}</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="terapia_acuatica" class="control-label col-xs-3">TERAPIA ACUATICA:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="terapia_acuatica">
+                                                        <option value= "{{ $alumnos->terapia_acuatica }}">{{ $alumnos->terapia_acuatica }}</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="terapia_ocupacional" class="control-label col-xs-3">TERAPIA OCUPACIONAL:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="terapia_ocupacional">
+                                                        <option value= "{{ $alumnos->terapia_ocupacional }}">{{ $alumnos->terapia_ocupacional }}</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group  bio-row">
+                                          <label for="talleres" class="control-label col-xs-3">TALLERES:<span class="required">*</span> </label>
+                                            <div class="col-xs-3">
+
+                                                    <select class="form-control" name="talleres">
+                                                        <option value= "{{ $alumnos->talleres }}">{{ $alumnos->talleres }}</option>
+                                                        <option value="si">Si</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+
 
                                         <div class="form-group">
                                             <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
