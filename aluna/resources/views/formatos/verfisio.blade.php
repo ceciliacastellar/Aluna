@@ -34,9 +34,9 @@
                       </header>
                  <div class="panel-body">
                      <div class="form">
-                         <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
                              <div class="form-group ">
-                                 <div class="form-group">
+
 
                                    <div class="bio-row">
                                       <p ><span><strong>1. Alerta</strong></span> {{ $alumnos->fisioterapia->alerta }}</p>
@@ -79,13 +79,13 @@
 
 
                                   </div>
-                                 </div>
-                                  <div class="form-group">
+
+                                  <div class="bio-row">
                                       <p><span><strong>6. Fuerza muscular</strong></span>{{ $alumnos->fisioterapia->fuerza_muscular }}</p>
 
 
                                   </div>
-                                 <div class="form-group">
+
 
                                    <div class="bio-row">
                                       <p><span><strong>7. Trofismo</strong></span>{{ $alumnos->fisioterapia->trofismo }} </p>
@@ -125,7 +125,7 @@
 
 
                                   </div>
-                                 </div>
+
                                  <div class="form-group">
                                  <div class="bio-row">
                                       <p><span><strong>10. Sensibilidad superficial</strong></span>{{ $alumnos->fisioterapia->sensibilidad_superficial }}</p>
@@ -477,7 +477,7 @@
                              </div>
 
 
-                         </form>
+                      
                      </div>
 
                  </div>

@@ -82,10 +82,10 @@
                                                   <form class="form-horizontal" method="get">
                 <!-- ------------------------------------- SUBIR IMAGEN -------------------------------------------------- -->
 
-                         <div class="form-group" align="center">
+                      <!--   <div class="form-group" align="center">
                              <input id="file" type="file" class="file" name="file" multiple=true data-preview-file-type="any">
 
-                         </div>
+                         </div>-->
 
             <!-- ------------------------------------- SUBIR IMAGEN -------------------------------------------------- -->
 

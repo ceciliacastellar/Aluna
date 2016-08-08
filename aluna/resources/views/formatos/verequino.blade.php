@@ -34,7 +34,7 @@
                       </header>
                  <div class="panel-body">
                      <div class="form">
-                         <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+
                              <div class="form-group ">
                                  <div class="form-group">
 
@@ -477,7 +477,7 @@
                              </div>
 
 
-                         </form>
+                        
                      </div>
 
                  </div>
