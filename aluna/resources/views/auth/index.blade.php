@@ -26,12 +26,16 @@
                         <tr>
                            <th><i class="icon_calendar"></i> Nombre</th>
                            <th><i class="icon_profile"></i> Email</th>
+                           <th colspan="4"><i class="icon_cogs"></i>Eliminar</th>
                         </tr>
 
                         @foreach($users as $user)
                         <tr>
                            <td>{{ $user->name }}</td>
                            <td>{{ $user->email }}</td>
+                           <td>
+                                  <a class="btn btn-danger" href="{{ route('auth.destroy', $user)}}"><i class="fa fa-times"></i></a>
+                           </td>
                         </tr>
 
 

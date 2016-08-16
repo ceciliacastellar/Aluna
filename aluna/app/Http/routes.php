@@ -156,17 +156,26 @@ Route::resource('cita', 'CitaController',
                 ['except' => ['index']]);
 
 });
+
+// Rutas para usuarios
 Route::get('auth/index', ['middleware' => 'role:administrativo',
   'uses' => 'UsuarioController@index',
   'as' => 'auth/index'
 ]);
 
-Route::get('auth/{user}', [
-  'uses' => 'UsuarioController@edit',
-  'as' => 'auth.edit'
+Route::get('auth/{user}', ['middleware' => 'role:administrativo',
+  'uses' => 'UsuarioController@destroy',
+  'as' => 'auth.destroy'
 ]);
 
 
+
+/*Route::get('auth/{user}', [
+  'uses' => 'UsuarioController@edit',
+  'as' => 'auth.edit'
+]);*/
+
+// Fin de rutas para usuarios
 // Rutas para exportar datos en pdf y excel
 Route::get('pdf/invoice',[
   'uses'=> 'PdfController@invoice',
@@ -191,7 +200,6 @@ Route::post('formatos.saveini/{alumno}', ['middleware' => 'role:salud',
   'uses' => 'FormatosController@saveini',
   'as' => 'formatos.saveini'
 ]);
-
 
 Route::get('formatos.showhini/{alumno}', ['middleware' => 'role:salud',
 'uses' => 'FormatosController@showhini',
@@ -248,6 +256,17 @@ Route::get('formatos.verpsico/{alumno}', ['middleware' => 'role:salud',
 'as' => 'formatos.verpsico'
 ]);
 
+/*Route::get('formatos.fonoaudiologia/{alumno}', ['middleware' => 'role:salud',
+'uses' => 'FormatosController@fonoaudiologia',
+'as' => 'formatos.fonoaudiologia'
+]);
+
+Route::post('formatos.storefono/{alumno}', ['middleware' => 'role:salud',
+  'uses' => 'FormatosController@storefono',
+  'as' => 'formatos.storefono'
+]);*/
+
+// fin de rutas de formatos de salud
 
 
 

@@ -22,6 +22,15 @@ class UsuarioController extends Controller
        return View::make('auth.register');
     }
 
+    public function destroy($id)
+      {
+            $user = User::find($id)->delete();
+            $users = User::paginate(8);
+            return View::make('auth.index')->with('users', $users);
+
+      }
+
+
     public function edit($id)
       {
             $users = User::find($id);
